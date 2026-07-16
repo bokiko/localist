@@ -69,12 +69,32 @@ def load_watchlist(path: str | Path) -> list[dict]:
     return tools
 
 
+_MD_IMAGE = re.compile(r"!\[[^\]]*\]\([^)]*\)")
+_HTML_TAG = re.compile(r"<[^>]+>")
+_MD_HEADING = re.compile(r"^\s*#+\s*")
+_MD_LIST_MARKER = re.compile(r"^\s*[-*]\s+")
+
+
 def _first_lines(text: str | None, n: int = 2, max_len: int = 200) -> str:
-    """First n non-empty lines of a release body, length-capped."""
+    """First n meaningful lines of a release body, cleaned for README use.
+
+    Strips markdown images, HTML tags, and heading markers; collapses
+    whitespace; skips lines that end up empty. Length-capped.
+    """
     if not text:
         return ""
-    lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
-    return " ".join(lines[:n])[:max_len]
+    cleaned: list[str] = []
+    for line in text.splitlines():
+        line = _MD_IMAGE.sub("", line)
+        line = _HTML_TAG.sub("", line)
+        line = _MD_HEADING.sub("", line)
+        line = _MD_LIST_MARKER.sub("", line)
+        line = " ".join(line.split())
+        if line:
+            cleaned.append(line)
+        if len(cleaned) == n:
+            break
+    return " ".join(cleaned)[:max_len]
 
 
 def fetch_tool_releases(

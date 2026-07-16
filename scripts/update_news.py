@@ -50,8 +50,12 @@ EMPTY_SEEN = {
 def build_clients(token: str | None) -> tuple[httpx.Client, httpx.Client]:
     """(github_client, page_client). The token goes ONLY on the GitHub client —
     the page client fetches third-party changelog hosts and must never carry it."""
-    github = httpx.Client(headers=github_headers(token), timeout=30)
-    page = httpx.Client(headers={"User-Agent": "localist"}, timeout=30)
+    github = httpx.Client(
+        headers=github_headers(token), timeout=30, follow_redirects=True
+    )
+    page = httpx.Client(
+        headers={"User-Agent": "localist"}, timeout=30, follow_redirects=True
+    )
     return github, page
 
 

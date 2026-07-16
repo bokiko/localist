@@ -20,6 +20,7 @@ from sources.common import GITHUB_API
 TOPICS = ("local-ai", "local-llm", "ollama")
 NEW_WINDOW_DAYS = 7
 ACTIVE_WINDOW_DAYS = 2
+ACTIVE_MAX_AGE_DAYS = 90  # "active" repos must also be recent — keeps out old giants
 MIN_STARS_NEW = 30
 MIN_STARS_ACTIVE = 500
 CAP = 5
@@ -29,6 +30,9 @@ def _search_queries(today: datetime.date) -> list[dict]:
     """Build the search calls with exact ISO dates (never relative like '7d')."""
     created_after = (today - datetime.timedelta(days=NEW_WINDOW_DAYS)).isoformat()
     pushed_after = (today - datetime.timedelta(days=ACTIVE_WINDOW_DAYS)).isoformat()
+    active_created_after = (
+        today - datetime.timedelta(days=ACTIVE_MAX_AGE_DAYS)
+    ).isoformat()
     queries = []
     for topic in TOPICS:
         queries.append(
@@ -41,7 +45,10 @@ def _search_queries(today: datetime.date) -> list[dict]:
         )
         queries.append(
             {
-                "q": f"topic:{topic} pushed:>{pushed_after} stars:>{MIN_STARS_ACTIVE}",
+                "q": (
+                    f"topic:{topic} created:>{active_created_after} "
+                    f"pushed:>{pushed_after} stars:>{MIN_STARS_ACTIVE}"
+                ),
                 "sort": "updated",
                 "order": "desc",
                 "per_page": 10,

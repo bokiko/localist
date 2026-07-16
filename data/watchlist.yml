@@ -39,7 +39,7 @@ tools:
 
   - name: ComfyUI
     source: github_releases
-    repo: comfyanonymous/ComfyUI
+    repo: Comfy-Org/ComfyUI
 
   - name: LM Studio
     # Closed-source app: no GitHub Releases. Verified 2026-07: no RSS feed,

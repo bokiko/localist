@@ -211,3 +211,11 @@ def test_build_clients_no_token():
     assert "authorization" not in {k.lower() for k in gh.headers}
     assert gh.headers["User-Agent"] == "localist"
     gh.close(), page.close()
+
+
+def test_build_clients_follow_redirects():
+    # renamed GitHub repos 301 (e.g. ComfyUI) — both clients must follow
+    gh, page = build_clients(None)
+    assert gh.follow_redirects is True
+    assert page.follow_redirects is True
+    gh.close(), page.close()

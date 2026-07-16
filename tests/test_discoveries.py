@@ -63,12 +63,23 @@ def test_queries_use_exact_iso_dates_not_relative():
     captured = []
     fetch_discoveries(search_client(capture=captured), TODAY, set(), set())
     assert captured, "expected at least one search query"
-    new_queries = [q for q in captured if "created:" in q]
+    new_queries = [q for q in captured if "pushed:" not in q]
     active_queries = [q for q in captured if "pushed:" in q]
     assert new_queries and active_queries
     assert all("created:>2026-07-09" in q for q in new_queries)
     assert all("pushed:>2026-07-14" in q for q in active_queries)
-    assert not any("7d" in q or "2d" in q for q in captured)
+    assert not any("7d" in q or "2d" in q or "90d" in q for q in captured)
+
+
+def test_active_query_requires_repo_created_within_90_days():
+    # Query B without a created cutoff surfaces huge old repos that merely
+    # pushed recently (langchain4j, 1Panel) — observed in the 2026-07-16 smoke.
+    captured = []
+    fetch_discoveries(search_client(capture=captured), TODAY, set(), set())
+    active_queries = [q for q in captured if "pushed:" in q]
+    assert active_queries
+    assert all("created:>2026-04-17" in q for q in active_queries)  # 90 days back
+    assert all("stars:>500" in q for q in active_queries)
 
 
 # ── result handling ──────────────────────────────────────────────────

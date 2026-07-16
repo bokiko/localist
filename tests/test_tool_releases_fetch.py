@@ -5,7 +5,7 @@ import json
 
 import httpx
 
-from sources.tool_releases import fetch_tool_releases
+from sources.tool_releases import _first_lines, fetch_tool_releases
 
 WINDOW_START = datetime.date(2026, 7, 9)  # 7 days before the 16th
 
@@ -120,3 +120,74 @@ def test_non_github_sources_are_ignored_here():
     client = client_with({})
     out = fetch_tool_releases([LMSTUDIO], client, {}, WINDOW_START)
     assert out == []
+
+
+def test_renamed_repo_301_redirect_is_followed():
+    """ComfyUI-style case: /repos/<old-name>/releases 301s to /repositories/<id>/."""
+    comfy = {"name": "ComfyUI", "source": "github_releases", "repo": "comfyanonymous/ComfyUI"}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        if "/repos/comfyanonymous/ComfyUI/releases" in request.url.path:
+            return httpx.Response(
+                301,
+                headers={"Location": "https://api.github.com/repositories/589831718/releases?per_page=5"},
+            )
+        if "/repositories/589831718/releases" in request.url.path:
+            return httpx.Response(200, json=[release("v1.2.3")])
+        return httpx.Response(404)
+
+    # follow_redirects=True mirrors what build_clients now configures
+    client = httpx.Client(transport=httpx.MockTransport(handler), follow_redirects=True)
+    out = fetch_tool_releases([comfy], client, {}, WINDOW_START)
+    assert [r["version"] for r in out] == ["v1.2.3"]
+
+
+# ── _first_lines note cleanup ────────────────────────────────────────
+
+
+def test_notes_strip_markdown_heading_markers():
+    body = "## What's Changed\nNew interactive agent experience"
+    assert _first_lines(body) == "What's Changed New interactive agent experience"
+
+
+def test_notes_strip_leading_list_markers():
+    body = "- Fixed terminal output\n* Added Vulkan backend"
+    assert _first_lines(body) == "Fixed terminal output Added Vulkan backend"
+
+
+def test_notes_list_marker_only_at_line_start():
+    body = "Improved multi-GPU support - now 2x faster"
+    assert _first_lines(body) == "Improved multi-GPU support - now 2x faster"
+
+
+def test_notes_heading_only_body():
+    body = "# vLLM v0.25.1\n## Highlights"
+    assert _first_lines(body) == "vLLM v0.25.1 Highlights"
+
+
+def test_notes_strip_html_and_markdown_images():
+    body = (
+        '# koboldcpp-1.117.1\n'
+        '<img width="420" height="350" alt="image" src="https://example.com/x.png" />\n'
+        "Actual release note text here."
+    )
+    out = _first_lines(body)
+    assert "<img" not in out
+    assert "https://example.com" not in out
+    assert out == "koboldcpp-1.117.1 Actual release note text here."
+
+
+def test_notes_markdown_image_syntax_removed():
+    body = "![screenshot](https://example.com/pic.png)\nReal text."
+    assert _first_lines(body) == "Real text."
+
+
+def test_notes_normal_text_preserved_and_whitespace_collapsed():
+    body = "Fixes GPU   detection on\tsome cards.\nSecond line."
+    assert _first_lines(body) == "Fixes GPU detection on some cards. Second line."
+
+
+def test_notes_remain_length_capped():
+    body = "word " * 100
+    out = _first_lines(body)
+    assert len(out) <= 200

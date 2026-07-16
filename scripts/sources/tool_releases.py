@@ -8,9 +8,14 @@ so it can be tested offline.
 
 from __future__ import annotations
 
+import datetime
+import re
+import sys
 from pathlib import Path
 
 import yaml
+
+GITHUB_API = "https://api.github.com"
 
 # source type -> extra keys that entry must provide
 SOURCE_TYPES = {
@@ -62,3 +67,132 @@ def load_watchlist(path: str | Path) -> list[dict]:
         tools.append(tool)
 
     return tools
+
+
+def _first_lines(text: str | None, n: int = 2, max_len: int = 200) -> str:
+    """First n non-empty lines of a release body, length-capped."""
+    if not text:
+        return ""
+    lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+    return " ".join(lines[:n])[:max_len]
+
+
+def fetch_tool_releases(
+    tools: list[dict],
+    client,
+    seen_releases: dict[str, list[str]],
+    window_start: datetime.date,
+) -> list[dict]:
+    """Fetch new GitHub releases for every `github_releases` tool.
+
+    Dedup is per-tag against seen_releases[repo] (a list of tag names), so
+    multiple releases published close together are all surfaced. A tool whose
+    request fails is logged to stderr and skipped — it never blocks the rest.
+    """
+    out: list[dict] = []
+    for tool in tools:
+        if tool.get("source") != "github_releases":
+            continue
+        repo = tool["repo"]
+        try:
+            resp = client.get(
+                f"{GITHUB_API}/repos/{repo}/releases", params={"per_page": 5}
+            )
+            resp.raise_for_status()
+            releases = resp.json()
+        except Exception as exc:  # noqa: BLE001 — isolation is the contract
+            print(f"[tool_releases] {tool['name']}: fetch failed: {exc}", file=sys.stderr)
+            continue
+
+        skip = [re.compile(p) for p in tool.get("skip_patterns", [])]
+        seen_tags = set(seen_releases.get(repo, []))
+
+        for rel in releases:
+            tag = rel.get("tag_name", "")
+            if rel.get("draft") or rel.get("prerelease"):
+                continue
+            if any(p.search(tag) for p in skip):
+                continue
+            if tag in seen_tags:
+                continue
+            published = rel.get("published_at") or ""
+            try:
+                pub_date = datetime.date.fromisoformat(published[:10])
+            except ValueError:
+                continue
+            if pub_date < window_start:
+                continue
+            out.append(
+                {
+                    "tool": tool["name"],
+                    "repo": repo,
+                    "version": tag,
+                    "url": rel.get("html_url", ""),
+                    "notes": _first_lines(rel.get("body")),
+                }
+            )
+    return out
+
+
+# LM Studio-style changelog links: /changelog/lmstudio-v0.4.13
+_CHANGELOG_LINK = re.compile(r'href="(/changelog/[a-z-]+v(\d+(?:\.\d+)*))"')
+
+
+def _version_key(version: str) -> tuple[int, ...]:
+    return tuple(int(part) for part in version.split("."))
+
+
+def fetch_changelog_releases(
+    tools: list[dict], client, seen_pages: dict[str, str]
+) -> list[dict]:
+    """Best-effort scrape of `changelog_page` tools.
+
+    The contract is: never block the run. Any failure — HTTP error, redesigned
+    markup, weird versions — logs to stderr and yields nothing for that tool.
+    """
+    out: list[dict] = []
+    for tool in tools:
+        if tool.get("source") != "changelog_page":
+            continue
+        name, page_url = tool["name"], tool["url"]
+        try:
+            resp = client.get(page_url)
+            resp.raise_for_status()
+            matches = _CHANGELOG_LINK.findall(resp.text)
+            if not matches:
+                raise ValueError("no changelog version links found (markup changed?)")
+            path, version = max(matches, key=lambda m: _version_key(m[1]))
+        except Exception as exc:  # noqa: BLE001 — best-effort is the contract
+            print(f"[changelog] {name}: skipped: {exc}", file=sys.stderr)
+            continue
+
+        if seen_pages.get(page_url) == version:
+            continue
+
+        base = page_url.split("/changelog")[0]
+        out.append(
+            {"tool": name, "version": version, "url": f"{base}{path}", "notes": ""}
+        )
+    return out
+
+
+def manual_releases(tools: list[dict], seen_pages: dict[str, str]) -> list[dict]:
+    """Render `manual` tools whose hand-edited `latest` block is new."""
+    out: list[dict] = []
+    for tool in tools:
+        if tool.get("source") != "manual":
+            continue
+        latest = tool.get("latest")
+        if not isinstance(latest, dict) or not latest.get("version"):
+            continue
+        if seen_pages.get(tool["name"]) == latest["version"]:
+            continue
+        out.append(
+            {
+                "tool": tool["name"],
+                "version": latest["version"],
+                "url": latest.get("url", ""),
+                "notes": latest.get("notes", ""),
+            }
+        )
+    return out

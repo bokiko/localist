@@ -145,9 +145,15 @@ def test_renamed_repo_301_redirect_is_followed():
 # ── _first_lines note cleanup ────────────────────────────────────────
 
 
-def test_notes_strip_markdown_heading_markers():
+def test_notes_drop_whats_changed_boilerplate_line():
+    # "What's Changed" is GitHub's default section header — noise, not news
     body = "## What's Changed\nNew interactive agent experience"
-    assert _first_lines(body) == "What's Changed New interactive agent experience"
+    assert _first_lines(body) == "New interactive agent experience"
+
+
+def test_notes_drop_release_notes_and_changelog_boilerplate():
+    body = "# Release Notes\n## Changelog\nActual improvement described here"
+    assert _first_lines(body) == "Actual improvement described here"
 
 
 def test_notes_strip_leading_list_markers():
@@ -160,9 +166,42 @@ def test_notes_list_marker_only_at_line_start():
     assert _first_lines(body) == "Improved multi-GPU support - now 2x faster"
 
 
-def test_notes_heading_only_body():
+def test_notes_highlights_boilerplate_dropped_without_hints():
     body = "# vLLM v0.25.1\n## Highlights"
-    assert _first_lines(body) == "vLLM v0.25.1 Highlights"
+    # "Highlights" is boilerplate; the title line survives only absent hints
+    assert _first_lines(body) == "vLLM v0.25.1"
+
+
+def test_notes_vllm_style_title_echo_yields_empty_with_hints():
+    # the whole body is just the release title + boilerplate → no note is
+    # better than a junk note
+    body = "# vLLM v0.25.1\n## Highlights"
+    assert _first_lines(body, title_hints=("v0.25.1", "vLLM")) == ""
+
+
+def test_notes_pr_line_url_noise_removed():
+    # ComfyUI-style: default-generated PR line with attribution URL
+    body = (
+        "# What's Changed\n"
+        "* Add AGENTS.md by @comfyanonymous in "
+        "https://github.com/Comfy-Org/ComfyUI/pull/14696"
+    )
+    out = _first_lines(body, title_hints=("v0.28.0", "ComfyUI"))
+    assert "http" not in out
+    assert "@" not in out
+    assert "Add AGENTS.md" in out
+
+
+def test_notes_bare_url_only_body_yields_empty():
+    body = "https://example.com/full-changelog"
+    assert _first_lines(body) == ""
+
+
+def test_notes_title_echo_with_tool_prefix_dropped():
+    # koboldcpp bodies open with "# koboldcpp-1.117.1" — pure title echo
+    body = "# koboldcpp-1.117.1\nFixed terminal output"
+    out = _first_lines(body, title_hints=("v1.117.1", "KoboldCpp"))
+    assert out == "Fixed terminal output"
 
 
 def test_notes_strip_html_and_markdown_images():
@@ -191,3 +230,13 @@ def test_notes_remain_length_capped():
     body = "word " * 100
     out = _first_lines(body)
     assert len(out) <= 200
+
+
+def test_notes_truncation_does_not_cut_mid_word():
+    # 21-char words guarantee the 200-char cap lands inside a word
+    body = "supercalifragilistic " * 20
+    out = _first_lines(body)
+    assert len(out) <= 200
+    assert out.endswith("supercalifragilistic")  # ends on a whole word
+    assert set(out.split()) == {"supercalifragilistic"}  # no partial fragments
+    assert out == out.rstrip()  # trimmed, no trailing whitespace

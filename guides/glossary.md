@@ -65,6 +65,12 @@ chat. No terminal.
 address like `localhost:11434` that mimics OpenAI's. Any app built for ChatGPT's
 API can be pointed at your local model instead.
 
+**RAG (Retrieval-Augmented Generation)** — "chat with your documents." The app
+finds the relevant passages from files you give it and hands them to the model
+along with your question, so answers can draw on your own notes, PDFs, or code —
+not just what the model memorized in training. AnythingLLM and Open WebUI's
+Knowledge feature do this for you.
+
 ## Model-picking vocabulary
 
 **Instruct / chat model** — tuned to follow instructions and converse. This is what

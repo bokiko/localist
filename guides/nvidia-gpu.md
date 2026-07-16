@@ -79,6 +79,6 @@ does everything (download, manage, chat) with clicks instead of commands.
 - **Coding assistant:** [Aider](https://github.com/Aider-AI/aider) (terminal) or
   [OpenCode](https://github.com/anomalyco/opencode) pointed at your Ollama instance
 - **Which model size fits your card:** [choosing models](choosing-models.md)
-- **Image generation:** [ComfyUI](https://github.com/comfyanonymous/ComfyUI) —
+- **Image generation:** [ComfyUI](https://github.com/Comfy-Org/ComfyUI) —
   NVIDIA cards are first-class citizens there too
 - **Stuck?** [r/LocalLLaMA](https://reddit.com/r/LocalLLaMA) is the community hub

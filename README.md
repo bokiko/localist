@@ -16,7 +16,22 @@ projects and fresh tool releases — so what you read here is what's true *today
 ## 🔥 What's New
 
 <!-- NEWS:START -->
-*The daily update pipeline hasn't run yet. First automated update coming soon.*
+*Updated 2026-07-16*
+
+**🆕 New & active projects**
+- [thClaws/thClaws](https://github.com/thClaws/thClaws) — Open-source AI agent harness in native Rust — GUI, CLI, headless, and webapp from one binary. Multi-provider, MCP, skills, plugins, agent teams. · ⭐ 1158
+- [Gitlawb/zero](https://github.com/Gitlawb/zero) — The coding agent that answers to you, your model, your machine, your rules. · ⭐ 1089
+- [kennss/SiliconScope](https://github.com/kennss/SiliconScope) — Sudoless Apple Silicon system monitor (native SwiftUI GUI) with ANE / Media Engine / memory-bandwidth tracking · ⭐ 750
+- [AtomicBot-ai/atomic-agent](https://github.com/AtomicBot-ai/atomic-agent) — Local First Ai Agent. Optimized for Local Ai models. Long context window. Proper tools callings. Runs privately on your device. · ⭐ 723
+- [deepanwadhwa/samosa-chat](https://github.com/deepanwadhwa/samosa-chat) — Run Qwen3.6-35B-A3B locally on a 16 GB RAM machine · ⭐ 32
+
+**📦 Tool releases**
+- [Ollama v0.32.0](https://github.com/ollama/ollama/releases/tag/v0.32.0) — What's Changed New interactive agent experience: running `ollama` now launches an agent to help you code and delegate work
+- [vLLM v0.25.1](https://github.com/vllm-project/vllm/releases/tag/v0.25.1) — vLLM v0.25.1 Highlights
+- [vLLM v0.25.0](https://github.com/vllm-project/vllm/releases/tag/v0.25.0) — vLLM v0.25.0 Release Notes Highlights
+- [KoboldCpp v1.117.1](https://github.com/LostRuins/koboldcpp/releases/tag/v1.117.1) — koboldcpp-1.117.1 Fixed terminal output sometimes not showing thinking traces
+- [ComfyUI v0.28.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.28.0) — What's Changed Add AGENTS.md by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/14696
+- [LM Studio 0.4.19](https://lmstudio.ai/changelog/lmstudio-v0.4.19)
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

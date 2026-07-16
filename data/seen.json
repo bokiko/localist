@@ -1,6 +1,112 @@
 {
-  "featured_repos": [],
-  "releases": {},
-  "changelog_pages": {},
-  "history": []
+  "featured_repos": [
+    "thclaws/thclaws",
+    "gitlawb/zero",
+    "kennss/siliconscope",
+    "atomicbot-ai/atomic-agent",
+    "deepanwadhwa/samosa-chat"
+  ],
+  "releases": {
+    "ollama/ollama": [
+      "v0.32.0"
+    ],
+    "vllm-project/vllm": [
+      "v0.25.1",
+      "v0.25.0"
+    ],
+    "LostRuins/koboldcpp": [
+      "v1.117.1"
+    ],
+    "Comfy-Org/ComfyUI": [
+      "v0.28.0"
+    ]
+  },
+  "changelog_pages": {
+    "https://lmstudio.ai/changelog": "0.4.19"
+  },
+  "history": [
+    {
+      "date": "2026-07-16",
+      "discoveries": [
+        {
+          "name": "thClaws/thClaws",
+          "url": "https://github.com/thClaws/thClaws",
+          "description": "Open-source AI agent harness in native Rust \u2014 GUI, CLI, headless, and webapp from one binary. Multi-provider, MCP, skills, plugins, agent teams.",
+          "stars": 1158,
+          "created_at": "2026-04-20T01:27:39Z"
+        },
+        {
+          "name": "Gitlawb/zero",
+          "url": "https://github.com/Gitlawb/zero",
+          "description": "The coding agent that answers to you, your model, your machine, your rules.",
+          "stars": 1089,
+          "created_at": "2026-05-28T14:11:35Z"
+        },
+        {
+          "name": "kennss/SiliconScope",
+          "url": "https://github.com/kennss/SiliconScope",
+          "description": "Sudoless Apple Silicon system monitor (native SwiftUI GUI) with ANE / Media Engine / memory-bandwidth tracking",
+          "stars": 750,
+          "created_at": "2026-06-08T17:19:50Z"
+        },
+        {
+          "name": "AtomicBot-ai/atomic-agent",
+          "url": "https://github.com/AtomicBot-ai/atomic-agent",
+          "description": "Local First Ai Agent. Optimized for Local Ai models. Long context window. Proper tools callings. Runs privately on your device.",
+          "stars": 723,
+          "created_at": "2026-04-21T21:34:51Z"
+        },
+        {
+          "name": "deepanwadhwa/samosa-chat",
+          "url": "https://github.com/deepanwadhwa/samosa-chat",
+          "description": "Run Qwen3.6-35B-A3B locally on a 16 GB RAM machine",
+          "stars": 32,
+          "created_at": "2026-07-12T22:25:41Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "Ollama",
+          "repo": "ollama/ollama",
+          "version": "v0.32.0",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.32.0",
+          "notes": "What's Changed New interactive agent experience: running `ollama` now launches an agent to help you code and delegate work"
+        },
+        {
+          "tool": "vLLM",
+          "repo": "vllm-project/vllm",
+          "version": "v0.25.1",
+          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.25.1",
+          "notes": "vLLM v0.25.1 Highlights"
+        },
+        {
+          "tool": "vLLM",
+          "repo": "vllm-project/vllm",
+          "version": "v0.25.0",
+          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.25.0",
+          "notes": "vLLM v0.25.0 Release Notes Highlights"
+        },
+        {
+          "tool": "KoboldCpp",
+          "repo": "LostRuins/koboldcpp",
+          "version": "v1.117.1",
+          "url": "https://github.com/LostRuins/koboldcpp/releases/tag/v1.117.1",
+          "notes": "koboldcpp-1.117.1 Fixed terminal output sometimes not showing thinking traces"
+        },
+        {
+          "tool": "ComfyUI",
+          "repo": "Comfy-Org/ComfyUI",
+          "version": "v0.28.0",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.28.0",
+          "notes": "What's Changed Add AGENTS.md by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/14696"
+        },
+        {
+          "tool": "LM Studio",
+          "version": "0.4.19",
+          "url": "https://lmstudio.ai/changelog/lmstudio-v0.4.19",
+          "notes": ""
+        }
+      ]
+    }
+  ]
 }

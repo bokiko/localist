@@ -1,0 +1,36 @@
+name: Daily update
+
+on:
+  schedule:
+    - cron: "30 6 * * *"      # 06:30 UTC daily
+  workflow_dispatch: {}        # manual trigger for testing
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-update          # cron + manual dispatch never mutate README/news/seen.json concurrently
+  cancel-in-progress: false    # let a running update finish; a new one queues behind it
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+
+      - name: Run daily update
+        run: uv run scripts/update_news.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: daily update $(date -u +%F)"
+            git push
+          fi

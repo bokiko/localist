@@ -249,7 +249,7 @@ entries:
   - name: ComfyUI
     category: image
     pick: true
-    repo_or_url: comfyanonymous/ComfyUI
+    repo_or_url: Comfy-Org/ComfyUI
     license: GPL-3.0
     beginner_fit: low
     hardware_fit: NVIDIA first-class; AMD and Mac supported with caveats

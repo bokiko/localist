@@ -2,7 +2,7 @@ name: Daily update
 
 on:
   schedule:
-    - cron: "30 6 * * *"      # 06:30 UTC daily
+    - cron: "3 23 * * *"      # TEMPORARY cron test — restore after verification
   workflow_dispatch: {}        # manual trigger for testing
 
 permissions:

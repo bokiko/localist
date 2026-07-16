@@ -1,0 +1,54 @@
+name: Suggest a tool
+description: Propose a tool, app, or resource for the curated list
+title: "[suggest] "
+labels: [suggestion]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Tool name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Repository or website URL
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - runner
+        - engine
+        - desktop-app
+        - web-ui
+        - coding-assistant
+        - image-gen
+        - speech-to-text
+        - text-to-speech
+        - other (explain below)
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why should this be listed?
+      description: >
+        Who is it for, and why is it better than (or complementary to) the
+        current pick in its category? "Popular" is not a reason on its own.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: It runs fully locally (no cloud dependency for its core function)
+          required: true
+        - label: It has commits or releases within the last 3 months
+          required: true
+        - label: I have disclosed if this is my own project
+          required: true

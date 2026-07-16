@@ -1,0 +1,48 @@
+# Tools watched by the daily update pipeline (scripts/sources/tool_releases.py).
+#
+# Each entry declares HOW its releases are discovered via `source`:
+#   github_releases — GitHub Releases API (needs `repo`)
+#   changelog_page  — fetch `url` and diff against last seen entry (for tools
+#                     without GitHub Releases, e.g. closed-source apps)
+#   manual          — no scrapeable feed; entry is rendered only when a
+#                     `latest` block is hand-updated here
+#
+# Optional per-tool keys:
+#   skip_patterns   — list of regexes; matching tag names are ignored
+
+tools:
+  - name: llama.cpp
+    source: github_releases
+    repo: ggml-org/llama.cpp
+    # llama.cpp tags every CI build (b1234); those are noise for beginners
+    skip_patterns: ["^b\\d+$"]
+
+  - name: Ollama
+    source: github_releases
+    repo: ollama/ollama
+
+  - name: vLLM
+    source: github_releases
+    repo: vllm-project/vllm
+
+  - name: Open WebUI
+    source: github_releases
+    repo: open-webui/open-webui
+
+  - name: Jan
+    source: github_releases
+    repo: janhq/jan
+
+  - name: KoboldCpp
+    source: github_releases
+    repo: LostRuins/koboldcpp
+
+  - name: ComfyUI
+    source: github_releases
+    repo: comfyanonymous/ComfyUI
+
+  - name: LM Studio
+    # Closed-source app: no GitHub Releases. Verified 2026-07: no RSS feed,
+    # but a stable changelog page exists.
+    source: changelog_page
+    url: https://lmstudio.ai/changelog

@@ -1,0 +1,31 @@
+name: Report a stale entry
+description: Flag an abandoned tool, broken instruction, or outdated recommendation
+title: "[stale] "
+labels: [stale-report]
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Which entry or guide?
+      placeholder: e.g. "KoboldCpp in curated.yml" or "guides/amd-gpu.md step 2"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What's wrong?
+      options:
+        - Project appears abandoned (no activity in 6+ months)
+        - Instructions no longer work
+        - Model recommendation is outdated
+        - Link is dead
+        - Other (explain below)
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What did you observe? Links or error messages help a lot.
+    validations:
+      required: true

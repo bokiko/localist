@@ -1,0 +1,361 @@
+# Localist curated entries — single source of truth.
+#
+# `pick: true` marks the one recommended entry per category (shown in the
+# README Essentials table). Everything else is a documented alternative.
+#
+# Schema per entry:
+#   name           — display name
+#   category       — runner | desktop_gui | web_ui | models_general |
+#                    models_coding | image | voice_stt | voice_tts |
+#                    rag_documents | coding_assistant
+#   pick           — true for the one recommended entry per category
+#   repo_or_url    — GitHub repo (owner/name) or website URL
+#   license        — SPDX id if known, "proprietary", or "open-weights"
+#   beginner_fit   — high | medium | low (how approachable for a newcomer)
+#   hardware_fit   — plain-words note on what it needs / where it shines
+#   why_this_one   — one line: the reason it's listed
+#   caveats        — honest warnings (empty string if none)
+#   added          — date first curated
+#
+# Currency notes verified 2026-07-16 via web search; see git history for sources.
+
+entries:
+  # ── Runners & engines ────────────────────────────────────────────
+  - name: Ollama
+    category: runner
+    pick: true
+    repo_or_url: ollama/ollama
+    license: MIT
+    beginner_fit: high
+    hardware_fit: Everything — NVIDIA, AMD (ROCm), Apple Silicon, CPU-only
+    why_this_one: One command to install, one to run a model; de-facto beginner standard with an OpenAI-compatible API everything else plugs into.
+    caveats: ""
+    added: 2026-07-16
+
+  - name: llama.cpp
+    category: runner
+    pick: false
+    repo_or_url: ggml-org/llama.cpp
+    license: MIT
+    beginner_fit: low
+    hardware_fit: Everything; the reference GGUF engine
+    why_this_one: The engine most local-AI tools (including Ollama) are built on; go direct for maximum control and newest features.
+    caveats: Command-line flags galore; not where beginners should start.
+    added: 2026-07-16
+
+  - name: KoboldCpp
+    category: runner
+    pick: false
+    repo_or_url: LostRuins/koboldcpp
+    license: AGPL-3.0
+    beginner_fit: medium
+    hardware_fit: Single binary; runs on modest hardware including old GPUs
+    why_this_one: Single-file llama.cpp bundle with a built-in UI; beloved for creative writing and roleplay.
+    caveats: ""
+    added: 2026-07-16
+
+  - name: vLLM
+    category: runner
+    pick: false
+    repo_or_url: vllm-project/vllm
+    license: Apache-2.0
+    beginner_fit: low
+    hardware_fit: Serious GPUs (NVIDIA/AMD); built for serving many users
+    why_this_one: The standard high-throughput serving engine when a model must serve a team or an app, not one person.
+    caveats: Overkill for personal chat; setup assumes Linux + real GPU.
+    added: 2026-07-16
+
+  - name: SGLang
+    category: runner
+    pick: false
+    repo_or_url: sgl-project/sglang
+    license: Apache-2.0
+    beginner_fit: low
+    hardware_fit: Serious GPUs; production/multi-user serving
+    why_this_one: High-performance serving framework and the main vLLM alternative; strong batching and day-0 support for new models.
+    caveats: Production tool — not for beginners running chat on a laptop.
+    added: 2026-07-16
+
+  # ── Desktop GUI apps ─────────────────────────────────────────────
+  - name: LM Studio
+    category: desktop_gui
+    pick: true
+    repo_or_url: https://lmstudio.ai
+    license: proprietary
+    beginner_fit: high
+    hardware_fit: Windows, Mac (MLX-accelerated), Linux; Vulkan path for AMD
+    why_this_one: Point-and-click everything — browse, download, chat; warns before you download a model that won't fit your machine.
+    caveats: Closed source (free for personal use).
+    added: 2026-07-16
+
+  - name: Jan
+    category: desktop_gui
+    pick: false
+    repo_or_url: janhq/jan
+    license: Apache-2.0
+    beginner_fit: high
+    hardware_fit: Windows, Mac, Linux
+    why_this_one: The fully open-source LM Studio alternative.
+    caveats: ""
+    added: 2026-07-16
+
+  - name: Msty
+    category: desktop_gui
+    pick: false
+    repo_or_url: https://msty.app
+    license: proprietary
+    beginner_fit: high
+    hardware_fit: Windows, Mac, Linux
+    why_this_one: Polished one-interface app for local models and remote APIs; split-chat model comparison; offline with zero telemetry.
+    caveats: Closed source; key features behind a paid yearly license.
+    added: 2026-07-16
+
+  - name: GPT4All
+    category: desktop_gui
+    pick: false
+    repo_or_url: nomic-ai/gpt4all
+    license: MIT
+    beginner_fit: high
+    hardware_fit: Modest hardware; CPU-friendly
+    why_this_one: Long-standing beginner app with built-in document chat (LocalDocs).
+    caveats: Low development activity lately (no major release since early 2025) — still works, but momentum is elsewhere.
+    added: 2026-07-16
+
+  # ── Web UIs ──────────────────────────────────────────────────────
+  - name: Open WebUI
+    category: web_ui
+    pick: true
+    repo_or_url: open-webui/open-webui
+    license: BSD-3-Clause (with branding clause)
+    beginner_fit: medium
+    hardware_fit: Runs anywhere Docker runs; pairs with Ollama
+    why_this_one: ChatGPT-style interface on top of Ollama — multi-user, built-in RAG ("Knowledge"), voice.
+    caveats: Needs Docker or Python setup; license added a branding restriction in 2025.
+    added: 2026-07-16
+
+  - name: LibreChat
+    category: web_ui
+    pick: false
+    repo_or_url: danny-avila/LibreChat
+    license: MIT
+    beginner_fit: low
+    hardware_fit: Self-hosted server; happiest with Docker
+    why_this_one: The power self-hosted option — agents, code execution, enterprise auth (OAuth/SAML/LDAP), multi-provider.
+    caveats: Aimed at teams/orgs more than a first-time single user.
+    added: 2026-07-16
+
+  # ── Models — general chat ────────────────────────────────────────
+  - name: Qwen3 family
+    category: models_general
+    pick: true
+    repo_or_url: https://ollama.com/library/qwen3
+    license: Apache-2.0
+    beginner_fit: high
+    hardware_fit: Sizes from 0.6B to 32B+ — a fit for every tier in guides/choosing-models.md
+    why_this_one: Best quality-per-GB across the widest size range right now; strong reasoning modes.
+    caveats: ""
+    added: 2026-07-16
+
+  - name: Llama 3.x family
+    category: models_general
+    pick: false
+    repo_or_url: https://ollama.com/library/llama3.3
+    license: open-weights (Llama license)
+    beginner_fit: high
+    hardware_fit: 3B (light) to 70B (24GB+ VRAM or big Macs)
+    why_this_one: Meta's family — the ecosystem default for years; enormous fine-tune ecosystem.
+    caveats: License has usage restrictions (not OSI open source).
+    added: 2026-07-16
+
+  - name: Gemma 3 family
+    category: models_general
+    pick: false
+    repo_or_url: https://ollama.com/library/gemma3
+    license: open-weights (Gemma license)
+    beginner_fit: high
+    hardware_fit: 1B–27B; 27B is a favorite on 24GB cards
+    why_this_one: Google's open-weights family; excellent multilingual ability and vision support.
+    caveats: ""
+    added: 2026-07-16
+
+  - name: Mistral / Ministral family
+    category: models_general
+    pick: false
+    repo_or_url: https://ollama.com/library/mistral
+    license: Apache-2.0 (most sizes)
+    beginner_fit: high
+    hardware_fit: Ministral small models to Mistral Small 24B-class
+    why_this_one: European lab with consistently efficient models; Apache licensing on most.
+    caveats: ""
+    added: 2026-07-16
+
+  - name: Phi-4 family
+    category: models_general
+    pick: false
+    repo_or_url: https://ollama.com/library/phi4
+    license: MIT
+    beginner_fit: high
+    hardware_fit: Mini variants shine on 8GB machines and CPUs
+    why_this_one: Microsoft's small-model line — remarkable quality for the size; great first model on weak hardware.
+    caveats: ""
+    added: 2026-07-16
+
+  - name: DeepSeek-R1 distills
+    category: models_general
+    pick: false
+    repo_or_url: https://ollama.com/library/deepseek-r1
+    license: MIT
+    beginner_fit: medium
+    hardware_fit: Distilled sizes (7B–70B) run on consumer hardware
+    why_this_one: Reasoning models distilled to local-friendly sizes — watch a model think step-by-step on your own GPU.
+    caveats: Reasoning output is slower and more verbose; full R1 needs datacenter hardware.
+    added: 2026-07-16
+
+  # ── Models — coding ──────────────────────────────────────────────
+  - name: Qwen Coder family
+    category: models_coding
+    pick: true
+    repo_or_url: https://ollama.com/library/qwen3-coder
+    license: Apache-2.0
+    beginner_fit: high
+    hardware_fit: Sizes for 12GB up; bigger MoE variants need serious hardware
+    why_this_one: The strongest open coding line — smaller sizes fit consumer GPUs and pair perfectly with Aider/OpenCode.
+    caveats: Flagship MoE sizes are beyond consumer hardware; use the smaller variants.
+    added: 2026-07-16
+
+  - name: Devstral Small
+    category: models_coding
+    pick: false
+    repo_or_url: https://ollama.com/library/devstral
+    license: Apache-2.0
+    beginner_fit: medium
+    hardware_fit: 24B — fits a 24GB GPU or 32GB Mac
+    why_this_one: Mistral's agent-coding model, purpose-built to drive coding agents.
+    caveats: ""
+    added: 2026-07-16
+
+  - name: DeepSeek Coder line
+    category: models_coding
+    pick: false
+    repo_or_url: https://ollama.com/library/deepseek-coder-v2
+    license: open-weights (DeepSeek license)
+    beginner_fit: medium
+    hardware_fit: The 16B "Lite" MoE variant fits ~12GB VRAM
+    why_this_one: Strong coding quality; the Lite MoE variant is fast for its capability on mid-range hardware.
+    caveats: ""
+    added: 2026-07-16
+
+  # ── Image generation ─────────────────────────────────────────────
+  - name: ComfyUI
+    category: image
+    pick: true
+    repo_or_url: comfyanonymous/ComfyUI
+    license: GPL-3.0
+    beginner_fit: low
+    hardware_fit: NVIDIA first-class; AMD and Mac supported with caveats
+    why_this_one: Node-based powerhouse that runs every major open image/video model; the ecosystem standard.
+    caveats: Steep learning curve — see SwarmUI for a gentler front door.
+    added: 2026-07-16
+
+  - name: SwarmUI
+    category: image
+    pick: false
+    repo_or_url: mcmonkeyprojects/SwarmUI
+    license: MIT
+    beginner_fit: high
+    hardware_fit: Same broad model support, friendlier requirements
+    why_this_one: Beginner-friendly Generate tab in front, ComfyUI power under the hood; supports current model families (Flux, SD, video models).
+    caveats: ""
+    added: 2026-07-16
+
+  # ── Voice — speech-to-text ───────────────────────────────────────
+  - name: whisper.cpp
+    category: voice_stt
+    pick: true
+    repo_or_url: ggml-org/whisper.cpp
+    license: MIT
+    beginner_fit: medium
+    hardware_fit: Excellent everywhere, even CPU-only and Raspberry Pi
+    why_this_one: Fast local transcription on any hardware; the default answer for local speech-to-text.
+    caveats: ""
+    added: 2026-07-16
+
+  - name: faster-whisper
+    category: voice_stt
+    pick: false
+    repo_or_url: SYSTRAN/faster-whisper
+    license: MIT
+    beginner_fit: medium
+    hardware_fit: Shines with an NVIDIA GPU; solid on CPU
+    why_this_one: The Python-ecosystem Whisper — the common choice inside voice-assistant stacks (e.g. Home Assistant pipelines).
+    caveats: ""
+    added: 2026-07-16
+
+  # ── Voice — text-to-speech ───────────────────────────────────────
+  - name: Piper
+    category: voice_tts
+    pick: true
+    repo_or_url: OHF-Voice/piper1-gpl
+    license: GPL-3.0
+    beginner_fit: medium
+    hardware_fit: Real-time on a Raspberry Pi; trivial on any desktop
+    why_this_one: Fast, natural offline TTS with 30+ languages and 100+ voices; the local-voice-stack standard.
+    caveats: Original rhasspy/piper repo was archived in 2025 — this is the active successor (note the GPL license change).
+    added: 2026-07-16
+
+  # ── RAG / chat with your documents ───────────────────────────────
+  - name: AnythingLLM
+    category: rag_documents
+    pick: true
+    repo_or_url: Mintplex-Labs/anything-llm
+    license: MIT
+    beginner_fit: high
+    hardware_fit: Desktop app or Docker; pairs with Ollama/LM Studio
+    why_this_one: The most approachable "chat with your documents" app — point it at a folder and a local model and go.
+    caveats: ""
+    added: 2026-07-16
+
+  - name: Open WebUI Knowledge
+    category: rag_documents
+    pick: false
+    repo_or_url: open-webui/open-webui
+    license: BSD-3-Clause (with branding clause)
+    beginner_fit: medium
+    hardware_fit: Wherever Open WebUI runs
+    why_this_one: If you already run Open WebUI, its built-in Knowledge feature covers basic document Q&A — no extra app needed.
+    caveats: Less document-focused than a dedicated RAG app.
+    added: 2026-07-16
+
+  # ── Coding assistants (the tool, not the model) ──────────────────
+  - name: OpenCode
+    category: coding_assistant
+    pick: true
+    repo_or_url: anomalyco/opencode
+    license: MIT
+    beginner_fit: medium
+    hardware_fit: Terminal agent; talks to Ollama/LM Studio via OpenAI-compatible API
+    why_this_one: The most popular open-source coding agent, with first-class local-endpoint support.
+    caveats: ""
+    added: 2026-07-16
+
+  - name: Aider
+    category: coding_assistant
+    pick: false
+    repo_or_url: Aider-AI/aider
+    license: Apache-2.0
+    beginner_fit: medium
+    hardware_fit: Terminal; `aider --model ollama/<model>` just works
+    why_this_one: Git-native pair programmer — edits your repo in commits; the classic local-first choice.
+    caveats: ""
+    added: 2026-07-16
+
+  - name: Continue
+    category: coding_assistant
+    pick: false
+    repo_or_url: continuedev/continue
+    license: Apache-2.0
+    beginner_fit: high
+    hardware_fit: VS Code / JetBrains extension → local API
+    why_this_one: The long-time in-IDE assistant for local models; v2.0.0 still works well.
+    caveats: Acquired by Cursor (June 2026); the open-source repo is read-only — functional but no longer evolving.
+    added: 2026-07-16

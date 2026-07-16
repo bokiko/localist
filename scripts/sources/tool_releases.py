@@ -73,13 +73,36 @@ _MD_IMAGE = re.compile(r"!\[[^\]]*\]\([^)]*\)")
 _HTML_TAG = re.compile(r"<[^>]+>")
 _MD_HEADING = re.compile(r"^\s*#+\s*")
 _MD_LIST_MARKER = re.compile(r"^\s*[-*]\s+")
+_PR_ATTRIBUTION = re.compile(r"\bby @[\w-]+ in https?://\S+", re.IGNORECASE)
+_BARE_URL = re.compile(r"https?://\S+")
+# GitHub's auto-generated section headers — noise, never news
+_BOILERPLATE_LINE = re.compile(
+    r"^(what'?s changed|highlights|release notes|changelog)[:!.]?$", re.IGNORECASE
+)
+_HINT_LEFTOVER = " \t-–—:vV.()[]"
 
 
-def _first_lines(text: str | None, n: int = 2, max_len: int = 200) -> str:
+def _is_title_echo(line: str, title_hints: tuple[str, ...]) -> bool:
+    """True if the line is just the release title/tag restated."""
+    remainder = line.lower()
+    for hint in title_hints:
+        if hint:
+            remainder = remainder.replace(hint.lower().lstrip("v"), "")
+    return remainder.strip(_HINT_LEFTOVER) == ""
+
+
+def _first_lines(
+    text: str | None,
+    n: int = 2,
+    max_len: int = 200,
+    title_hints: tuple[str, ...] = (),
+) -> str:
     """First n meaningful lines of a release body, cleaned for README use.
 
-    Strips markdown images, HTML tags, and heading markers; collapses
-    whitespace; skips lines that end up empty. Length-capped.
+    Beyond markdown/HTML stripping, drops boilerplate section headers
+    ("What's Changed", "Highlights", ...), PR attribution + bare URLs, and
+    lines that merely restate the release title. If nothing meaningful
+    survives, returns "" — no note beats a junk note.
     """
     if not text:
         return ""
@@ -89,12 +112,22 @@ def _first_lines(text: str | None, n: int = 2, max_len: int = 200) -> str:
         line = _HTML_TAG.sub("", line)
         line = _MD_HEADING.sub("", line)
         line = _MD_LIST_MARKER.sub("", line)
+        line = _PR_ATTRIBUTION.sub("", line)
+        line = _BARE_URL.sub("", line)
         line = " ".join(line.split())
-        if line:
-            cleaned.append(line)
+        if not line or _BOILERPLATE_LINE.match(line):
+            continue
+        if title_hints and _is_title_echo(line, title_hints):
+            continue
+        cleaned.append(line)
         if len(cleaned) == n:
             break
-    return " ".join(cleaned)[:max_len]
+    joined = " ".join(cleaned)
+    if len(joined) > max_len:
+        # truncate at the last whitespace before the cap — never mid-word
+        cut = joined.rfind(" ", 0, max_len)
+        joined = joined[: cut if cut > 0 else max_len].rstrip()
+    return joined
 
 
 def fetch_tool_releases(
@@ -148,7 +181,9 @@ def fetch_tool_releases(
                     "repo": repo,
                     "version": tag,
                     "url": rel.get("html_url", ""),
-                    "notes": _first_lines(rel.get("body")),
+                    "notes": _first_lines(
+                        rel.get("body"), title_hints=(tag, tool["name"])
+                    ),
                 }
             )
     return out

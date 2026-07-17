@@ -4,11 +4,15 @@
     "gitlawb/zero",
     "kennss/siliconscope",
     "atomicbot-ai/atomic-agent",
-    "deepanwadhwa/samosa-chat"
+    "deepanwadhwa/samosa-chat",
+    "r14dd/patent",
+    "giannisanni/pulsar",
+    "bbarit/bbarit-agent-oss"
   ],
   "releases": {
     "ollama/ollama": [
-      "v0.32.0"
+      "v0.32.0",
+      "v0.32.1"
     ],
     "vllm-project/vllm": [
       "v0.25.1",
@@ -105,6 +109,41 @@
           "version": "0.4.19",
           "url": "https://lmstudio.ai/changelog/lmstudio-v0.4.19",
           "notes": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "discoveries": [
+        {
+          "name": "r14dd/patent",
+          "url": "https://github.com/r14dd/patent",
+          "description": "A prior-art search for your code ideas \u2014 has this dev tool already been shipped?",
+          "stars": 510,
+          "created_at": "2026-05-30T11:12:04Z"
+        },
+        {
+          "name": "giannisanni/pulsar",
+          "url": "https://github.com/giannisanni/pulsar",
+          "description": "SSD-streaming inference engine for giant MoE models (Rust + CUDA). GLM 5.2 743B at 2 tok/s and Hy3 295B at 7 tok/s on two consumer 16GB GPUs. Zero-config multi-GPU: measures PCIe bandwidth, places attention and hot experts where they fit.",
+          "stars": 42,
+          "created_at": "2026-07-13T04:08:14Z"
+        },
+        {
+          "name": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss",
+          "description": "Open-source AI coding agent for your terminal \u2014 one Rust binary, 15+ LLM providers, 1,000+ models. A self-hostable Claude Code / Codex CLI alternative (MIT).",
+          "stars": 31,
+          "created_at": "2026-07-16T04:00:27Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "Ollama",
+          "repo": "ollama/ollama",
+          "version": "v0.32.1",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.32.1",
+          "notes": "Improved Gemma 4 tool calling and multi-turn reasoning, including more reliable tool-response continuations Fixed a recurrent MLX model cache leak that could increase memory use across requests, and"
         }
       ]
     }

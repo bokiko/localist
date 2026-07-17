@@ -22,13 +22,15 @@ body:
       label: Category
       options:
         - runner
-        - engine
-        - desktop-app
-        - web-ui
-        - coding-assistant
-        - image-gen
-        - speech-to-text
-        - text-to-speech
+        - desktop_gui
+        - web_ui
+        - models_general
+        - models_coding
+        - image
+        - voice_stt
+        - voice_tts
+        - rag_documents
+        - coding_assistant
         - other (explain below)
     validations:
       required: true

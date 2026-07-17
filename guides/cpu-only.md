@@ -25,6 +25,8 @@ expectations right and this is genuinely useful — not a toy.
   ```bash
   curl -fsSL https://ollama.com/install.sh | sh
   ```
+  *(Prefer not to pipe scripts into your shell? Use the manual install steps on
+  [ollama.com/download](https://ollama.com/download) instead — same result.)*
 
 ## Step 2: Run a small model
 

@@ -25,7 +25,7 @@ You need to know your graphics card (GPU):
 |---|---|
 | NVIDIA / GeForce RTX / GTX | [NVIDIA guide](nvidia-gpu.md) |
 | AMD / Radeon RX | [AMD guide](amd-gpu.md) |
-| Intel Arc / Intel Iris / "integrated" | [CPU-only guide](cpu-only.md) |
+| Intel Arc / Intel Iris / "integrated" | [CPU-only guide](cpu-only.md) *(for now — Vulkan support for Intel GPUs is improving, so this routing may change)* |
 | No GPU listed | [CPU-only guide](cpu-only.md) |
 
 ## Question 2: How much memory does it have?

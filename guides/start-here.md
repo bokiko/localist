@@ -45,6 +45,10 @@ see [choosing models](choosing-models.md).
 
 ## What "running AI locally" actually gets you
 
+<p align="center">
+  <img src="../assets/benefits.jpg" alt="Local AI gives you control: no monthly subscription, no API limits, and no provider can remove the model you depend on" width="680">
+</p>
+
 - **Privacy** — your conversations never leave your machine
 - **Free** — no subscription, no API bills, no rate limits
 - **Offline** — works on a plane, works when the internet is down

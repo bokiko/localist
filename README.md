@@ -28,6 +28,10 @@ not hoarded.
 Don't read everything. Find your row, follow one guide, and you'll be chatting with a
 local model in under 15 minutes.
 
+<p align="center">
+  <img src="assets/steps.jpg" alt="Four steps: identify your hardware, install one tool, download one model that fits, start chatting" width="680">
+</p>
+
 | I have… | Your guide |
 |---|---|
 | **An NVIDIA GPU** (any GeForce RTX) | [NVIDIA GPU path](guides/nvidia-gpu.md) |

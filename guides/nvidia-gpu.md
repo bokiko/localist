@@ -31,6 +31,9 @@ Look at the memory column (e.g. `12288MiB` = 12 GB). Find your tier:
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
+*(Prefer not to pipe scripts into your shell? Use the manual install steps on
+[ollama.com/download](https://ollama.com/download) instead — same result.)*
+
 ## Step 2: Run your first model
 
 ```bash

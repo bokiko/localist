@@ -47,6 +47,8 @@ only bother with ROCm if you want to squeeze out the last bit of speed.
    ```bash
    curl -fsSL https://ollama.com/install.sh | sh
    ```
+   *(Prefer not to pipe scripts into your shell? Use the manual install steps on
+   [ollama.com/download](https://ollama.com/download) instead — same result.)*
 3. Run a model:
    ```bash
    ollama run qwen3:8b

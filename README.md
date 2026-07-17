@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.jpg" alt="Localist — local AI, made simple" width="380">
+  <img src="assets/logo.png" alt="Localist — local AI, made simple" width="520">
 </p>
 
 # Localist

@@ -11,6 +11,8 @@ from __future__ import annotations
 import datetime
 from pathlib import Path
 
+from sources.common import sanitize_text
+
 MARKER_START = "<!-- NEWS:START -->"
 MARKER_END = "<!-- NEWS:END -->"
 
@@ -46,19 +48,22 @@ def render_news_block(
         )
         return "\n".join(lines)
 
+    # defense in depth: sanitize again at render time so pre-sanitizer
+    # history in seen.json can never inject Markdown into the README
     if discoveries:
         lines.append("**🆕 New & active projects**")
         for d in discoveries:
-            desc = (d.get("description") or "").strip()
+            desc = sanitize_text(d.get("description"))
+            desc_txt = f" — {desc}" if desc else ""
             stars = d.get("stars")
             star_txt = f" · ⭐ {stars}" if stars is not None else ""
-            lines.append(f"- [{d['name']}]({d['url']}) — {desc}{star_txt}")
+            lines.append(f"- [{d['name']}]({d['url']}){desc_txt}{star_txt}")
         lines.append("")
 
     if releases:
         lines.append("**📦 Tool releases**")
         for r in releases:
-            notes = (r.get("notes") or "").strip()
+            notes = sanitize_text(r.get("notes"))
             note_txt = f" — {notes}" if notes else ""
             lines.append(f"- [{r['tool']} {r['version']}]({r['url']}){note_txt}")
         lines.append("")

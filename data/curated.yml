@@ -356,6 +356,6 @@ entries:
     license: Apache-2.0
     beginner_fit: high
     hardware_fit: VS Code / JetBrains extension → local API
-    why_this_one: The long-time in-IDE assistant for local models; v2.0.0 still works well.
-    caveats: Acquired by Cursor (June 2026); the open-source repo is read-only — functional but no longer evolving.
+    why_this_one: The long-time in-IDE assistant for local models; the final v2.0.0 still works well.
+    caveats: Ownership and direction changed — acquired by Cursor (June 2026), repo read-only after the final v2.0.0, standalone cloud features wound down mid-2026. Local installs keep working, but verify current status before making it your primary choice.
     added: 2026-07-16

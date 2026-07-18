@@ -104,6 +104,23 @@ def test_releases_before_window_are_excluded():
     assert [r["version"] for r in out] == ["v0.20.1"]
 
 
+def test_bad_skip_pattern_regex_skips_tool_not_run(capsys):
+    # a broken regex in the watchlist must disable that one tool, not the fetch
+    broken = {
+        "name": "BrokenTool",
+        "source": "github_releases",
+        "repo": "x/broken",
+        "skip_patterns": ["(["],  # invalid regex
+    }
+    client = client_with(
+        {"x/broken": [release("v9.9.9")], "ollama/ollama": [release("v0.20.1")]}
+    )
+    out = fetch_tool_releases([broken, OLLAMA], client, {}, WINDOW_START)
+    assert [r["version"] for r in out] == ["v0.20.1"]
+    err = capsys.readouterr().err
+    assert "BrokenTool" in err and "regex" in err.lower()
+
+
 def test_one_failing_repo_does_not_block_others(capsys):
     client = client_with(
         {

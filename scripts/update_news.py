@@ -27,7 +27,7 @@ from render import (
     render_news_block,
     replace_marker_block,
 )
-from sources.common import github_headers
+from sources.common import github_headers, sanitize_text
 from sources.github_discoveries import fetch_discoveries, load_curated_repos
 from sources.tool_releases import (
     fetch_changelog_releases,
@@ -69,12 +69,15 @@ def _load_seen(path: Path) -> dict:
 
 
 def _archive_lines(discoveries: list[dict], releases: list[dict]) -> list[str]:
+    # sanitize here too — same defense-in-depth contract as render_news_block
     lines = []
     for d in discoveries:
-        desc = f" — {d['description']}" if d.get("description") else ""
+        clean = sanitize_text(d.get("description"))
+        desc = f" — {clean}" if clean else ""
         lines.append(f"- 🆕 [{d['name']}]({d['url']}){desc} (⭐ {d.get('stars', 0)})")
     for r in releases:
-        notes = f" — {r['notes']}" if r.get("notes") else ""
+        clean = sanitize_text(r.get("notes"))
+        notes = f" — {clean}" if clean else ""
         lines.append(f"- 📦 [{r['tool']} {r['version']}]({r['url']}){notes}")
     return lines
 

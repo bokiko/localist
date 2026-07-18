@@ -14,8 +14,8 @@
 Localist is a beginner-first guide, not another giant tool list. You start from the
 machine you already own, follow one guide, and skip the other 50 options. And it
 doesn't rot: a pipeline — not vibes — refreshes the
-[Fresh updates](#-fresh-updates) section every morning and stale tools get dropped,
-not hoarded.
+[Fresh updates](#-fresh-updates) section every morning, and we review and prune
+stale recommendations instead of hoarding them.
 
 **Jump to:** [Start here](#-start-here--pick-your-hardware) ·
 [The essentials](#-the-essentials) · [Fresh updates](#-fresh-updates) ·

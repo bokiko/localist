@@ -15,7 +15,7 @@ from pathlib import Path
 
 import yaml
 
-from sources.common import GITHUB_API
+from sources.common import GITHUB_API, sanitize_text
 
 TOPICS = ("local-ai", "local-llm", "ollama")
 NEW_WINDOW_DAYS = 7
@@ -88,7 +88,9 @@ def fetch_discoveries(
             found[key] = {
                 "name": full_name,
                 "url": item.get("html_url", ""),
-                "description": item.get("description") or "",
+                # description is anonymous, attacker-controlled text — sanitize
+                # before it can enter seen.json history or any Markdown
+                "description": sanitize_text(item.get("description")),
                 "stars": item.get("stargazers_count", 0),
                 "created_at": item.get("created_at", ""),
             }

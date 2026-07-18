@@ -157,7 +157,16 @@ def fetch_tool_releases(
             print(f"[tool_releases] {tool['name']}: fetch failed: {exc}", file=sys.stderr)
             continue
 
-        skip = [re.compile(p) for p in tool.get("skip_patterns", [])]
+        try:
+            skip = [re.compile(p) for p in tool.get("skip_patterns", [])]
+        except re.error as exc:
+            # a bad regex disables this one tool, never the whole fetch
+            print(
+                f"[tool_releases] {tool['name']}: invalid skip_patterns regex "
+                f"({exc}) — tool skipped",
+                file=sys.stderr,
+            )
+            continue
         seen_tags = set(seen_releases.get(repo, []))
 
         for rel in releases:

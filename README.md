@@ -79,15 +79,17 @@ picks come from.
 New projects and tool releases from the past week, refreshed daily by the pipeline.
 
 <!-- NEWS:START -->
-*Updated 2026-07-17*
+*Updated 2026-07-18*
 
 **🆕 New & active projects**
 - [thClaws/thClaws](https://github.com/thClaws/thClaws) — Open-source AI agent harness in native Rust — GUI, CLI, headless, and webapp from one binary. Multi-provider, MCP, skills, plugins, agent teams. · ⭐ 1158
 - [Gitlawb/zero](https://github.com/Gitlawb/zero) — The coding agent that answers to you, your model, your machine, your rules. · ⭐ 1089
+- [youssofal/MTPLX](https://github.com/youssofal/MTPLX) — 2.24x decode TPS increase On Qwen 3.6 27B @ temp 0.6 | Native MTP Speculative Decoding On Apple Silicon With No External Drafter. · ⭐ 1051
 - [kennss/SiliconScope](https://github.com/kennss/SiliconScope) — Sudoless Apple Silicon system monitor (native SwiftUI GUI) with ANE / Media Engine / memory-bandwidth tracking · ⭐ 750
 - [AtomicBot-ai/atomic-agent](https://github.com/AtomicBot-ai/atomic-agent) — Local First Ai Agent. Optimized for Local Ai models. Long context window. Proper tools callings. Runs privately on your device. · ⭐ 723
 - [r14dd/patent](https://github.com/r14dd/patent) — A prior-art search for your code ideas — has this dev tool already been shipped? · ⭐ 510
 - [giannisanni/pulsar](https://github.com/giannisanni/pulsar) — SSD-streaming inference engine for giant MoE models (Rust + CUDA). GLM 5.2 743B at 2 tok/s and Hy3 295B at 7 tok/s on two consumer 16GB GPUs. Zero-config multi-GPU: measures PCIe bandwidth, places attention and hot experts where they fit. · ⭐ 42
+- [zeraix/zeraix](https://github.com/zeraix/zeraix) — Open-source local AI workspace — advancing on-device inference. · ⭐ 40
 - [deepanwadhwa/samosa-chat](https://github.com/deepanwadhwa/samosa-chat) — Run Qwen3.6-35B-A3B locally on a 16 GB RAM machine · ⭐ 32
 - [bbarit/bbarit-agent-oss](https://github.com/bbarit/bbarit-agent-oss) — Open-source AI coding agent for your terminal — one Rust binary, 15+ LLM providers, 1,000+ models. A self-hostable Claude Code / Codex CLI alternative (MIT). · ⭐ 31
 

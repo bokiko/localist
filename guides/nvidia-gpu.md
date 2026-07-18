@@ -20,7 +20,7 @@ Look at the memory column (e.g. `12288MiB` = 12 GB). Find your tier:
 | 16 GB | Strong | `qwen3:14b` |
 | 24 GB (3090/4090) | Enthusiast | `qwen3:32b` or `gemma3:27b` |
 
-*(Model landscape moves fast — the What's New feed on the front page tracks new releases.)*
+*(Model landscape moves fast — the Fresh updates feed on the front page tracks new releases.)*
 
 ## Step 1: Install Ollama
 

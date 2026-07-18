@@ -27,9 +27,9 @@ roughly two setup styles:
 | 16 GB (e.g. RX 7800 XT) | `qwen3:14b` |
 | 20–24 GB (RX 7900 XT/XTX) | `qwen3:32b` or `gemma3:27b` |
 
-24 GB Radeons (RX 7900 XT/XTX class) deliver strong inference performance at a
-significantly lower price than their NVIDIA equivalents — they're widely considered
-the value play of local AI.
+High-VRAM Radeons such as the RX 7900 XT (20 GB) and RX 7900 XTX (24 GB) deliver
+strong inference performance at a significantly lower price than their NVIDIA
+equivalents — they're widely considered the value play of local AI.
 
 ## Easiest path: LM Studio with Vulkan (Windows & Linux)
 

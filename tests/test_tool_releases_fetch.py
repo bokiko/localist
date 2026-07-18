@@ -1,7 +1,6 @@
 """Tests for the github_releases fetch handler — httpx.MockTransport only, no network."""
 
 import datetime
-import json
 
 import httpx
 

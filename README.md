@@ -62,11 +62,13 @@ command? Start with Ollama. You do not need both.
 | **Chat models** | [Qwen3 family](https://ollama.com/library/qwen3) | Strong at every size, tiny to huge. Which size fits you → [choosing models](guides/choosing-models.md). |
 | **Coding models** | [Qwen Coder](https://ollama.com/library/qwen3-coder) | Same idea, meaningfully better at code. Pairs with the coding agent below. |
 | **Coding agent** | [OpenCode](https://github.com/anomalyco/opencode) | Most popular open-source coding agent; points at your local models. |
-| **Engine (advanced)** | [llama.cpp](https://github.com/ggml-org/llama.cpp) | The engine most tools are built on. Go direct when you outgrow the wrappers. |
 | **Image generation** | [ComfyUI](https://github.com/Comfy-Org/ComfyUI) | Node-based, runs every major open image model. Steeper curve, unmatched power. |
 | **Chat with your docs** | [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) | Point it at a folder and a local model — done. |
 | **Speech-to-text** | [whisper.cpp](https://github.com/ggml-org/whisper.cpp) | Fast local transcription on any hardware. |
 | **Text-to-speech** | [Piper](https://github.com/OHF-Voice/piper1-gpl) | Fast, natural offline voices — runs even on a Raspberry Pi. |
+
+When you outgrow beginner tools, [llama.cpp](https://github.com/ggml-org/llama.cpp)
+is the engine worth learning — it's what most of the tools above are built on.
 
 The full curated set (with licenses, hardware fit, and honest caveats) lives in
 [`data/curated.yml`](data/curated.yml) — it's the single source of truth these

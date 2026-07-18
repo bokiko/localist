@@ -15,7 +15,7 @@ Apple menu → **About This Mac** → Memory.
 | 32 GB | Genuinely powerful | Qwen3 14B, or the fast 30B-class MoE models |
 | 64 GB+ | Big leagues | 70B-class models run comfortably |
 
-*(Model landscape moves fast — the What's New feed on the front page tracks new releases.)*
+*(Model landscape moves fast — the Fresh updates feed on the front page tracks new releases.)*
 
 ## Step 1: Install LM Studio (the no-terminal route)
 

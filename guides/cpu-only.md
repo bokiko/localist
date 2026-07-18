@@ -16,7 +16,7 @@ expectations right and this is genuinely useful — not a toy.
 | 16 GB | `qwen3:4b` | Solid daily assistant |
 | 32 GB | `qwen3:8b` | Good quality, patient pace |
 
-*(Model landscape moves fast — the What's New feed on the front page tracks new releases.)*
+*(Model landscape moves fast — the Fresh updates feed on the front page tracks new releases.)*
 
 ## Step 1: Install Ollama
 
@@ -44,7 +44,7 @@ shows you *before downloading* whether a model fits your RAM.
 1. **Stay quantized at Q4.** The default downloads are already Q4 — good. Resist
    "higher quality" Q8 variants; on CPU the speed cost isn't worth it.
 2. **Smaller + newer beats bigger + older.** A current 4B model beats a two-year-old
-   13B model in most tasks — and runs much faster. Check the What's New feed.
+   13B model in most tasks — and runs much faster. Check the Fresh updates feed on the front page.
 3. **Close the RAM hogs.** Browsers eat gigabytes. Models need contiguous memory.
 4. **Try MoE models.** Mixture-of-experts models (e.g. the 30B-A3B class) activate
    only a few billion parameters per token — surprisingly fast on CPU if you have

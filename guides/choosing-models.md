@@ -66,5 +66,5 @@ If the tag has no `q…` suffix, you're usually getting Q4 anyway.
   doesn't fully fit. It works, but speed drops sharply — a smaller fully-on-GPU
   model usually feels better.
 
-*Model recommendations here are as of mid-2026 — the What's New feed on the front
+*Model recommendations here are as of mid-2026 — the Fresh updates feed on the front
 page is the living version of this advice.*

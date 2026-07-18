@@ -30,17 +30,25 @@ You need to know your graphics card (GPU):
 
 ## Question 2: How much memory does it have?
 
-This decides how big a model you can run. Rough expectations:
+This decides how big a model you can run — but **which memory counts depends on
+your path**:
 
-| Memory | What you can expect |
+- **NVIDIA / AMD GPU paths:** the number that matters is your GPU's own memory
+  (**VRAM**) — not your system RAM. Your hardware guide shows how to check it.
+- **CPU-only and Mac paths:** the number that matters is your **system RAM**
+  (on Apple Silicon, RAM is shared with the GPU).
+
+Rough expectations, using whichever number applies to you:
+
+| VRAM (GPU paths) or RAM (CPU/Mac paths) | What you can expect |
 |---|---|
 | 8 GB | Small models (3–4B). Fine for chat, summaries, quick questions. |
 | 16 GB | Mid-size models (7–14B). Genuinely useful daily-driver territory. |
 | 24–32 GB | Large models (14–32B). Quality that rivals cloud chatbots for many tasks. |
 | 64 GB+ | The big leagues (70B+). You probably didn't need this page. |
 
-**Note for GPU owners:** what matters is the GPU's own memory (**VRAM**), not system RAM.
-Your hardware guide explains how to check it. For the full size-by-memory breakdown,
+A 16 GB-RAM laptop and a 16 GB-VRAM graphics card are *not* the same tier in
+practice — the GPU will feel much faster. For the full size-by-memory breakdown,
 see [choosing models](choosing-models.md).
 
 ## What "running AI locally" actually gets you

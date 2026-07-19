@@ -11,6 +11,11 @@
 ![Code: MIT](https://img.shields.io/badge/code-MIT-green)
 ![Content: CC--BY--4.0](https://img.shields.io/badge/content-CC--BY--4.0-blue)
 
+<p align="center">
+  <a href="https://medium.com/p/dadded1dda24">Backstory</a> ·
+  <a href="https://x.com/bokiko">Follow updates on X</a>
+</p>
+
 Localist is a beginner-first guide, not another giant tool list. You start from the
 machine you already own, follow one guide, and skip the other 50 options. And it
 doesn't rot: a pipeline — not vibes — refreshes the
@@ -112,10 +117,6 @@ The [glossary](guides/glossary.md) explains every term you'll bump into —
 GGUF, quantization, context window, VRAM, tokens/sec — in plain words.
 And [choosing models](guides/choosing-models.md) answers the #1 question:
 *which model size actually fits my machine?*
-
-## 📝 Backstory
-
-Why Localist exists: [the launch post](https://medium.com/p/dadded1dda24).
 
 ## 🤝 Contributing
 

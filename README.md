@@ -113,6 +113,10 @@ GGUF, quantization, context window, VRAM, tokens/sec — in plain words.
 And [choosing models](guides/choosing-models.md) answers the #1 question:
 *which model size actually fits my machine?*
 
+## 📝 Backstory
+
+Why Localist exists: [the launch post](https://medium.com/p/dadded1dda24).
+
 ## 🤝 Contributing
 
 Found a great tool? Spotted a dead project? Open an issue —

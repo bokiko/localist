@@ -125,6 +125,25 @@ def test_categories_match_documented_schema():
     assert used <= documented, f"undocumented categories: {used - documented}"
 
 
+def test_discovery_policy_file_shape():
+    policy = yaml.safe_load((REPO / "data" / "discovery.yml").read_text())
+    assert isinstance(policy["render"]["max_discoveries"], int)
+    assert policy["render"]["max_discoveries"] >= 1
+    for key in ("require_any", "deny_unless_strong", "editorial_hold",
+                "allowlist_repos", "blocklist_repos"):
+        assert isinstance(policy[key], list), f"{key} must be a list"
+    assert policy["require_any"], "require_any must not be empty"
+    assert isinstance(policy["agent_like"]["match_any"], list)
+    assert isinstance(policy["agent_like"]["require_any"], list)
+
+
+def test_readme_has_feed_disclaimer_outside_markers():
+    # locked decision: disclaimer sits under the Fresh updates heading,
+    # BEFORE the NEWS markers, so the pipeline never rewrites it
+    head, _, _ = README.partition("<!-- NEWS:START -->")
+    assert "not curated recommendations" in head
+
+
 def test_readme_relative_links_resolve():
     # guides/... and data/... links in README must point at real files
     for target in re.findall(r"\]\(((?:guides|data)/[^)#]+)\)", README):

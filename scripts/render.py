@@ -36,9 +36,20 @@ def replace_marker_block(readme_text: str, block: str) -> str:
 
 
 def render_news_block(
-    discoveries: list[dict], releases: list[dict], date: datetime.date
+    discoveries: list[dict],
+    releases: list[dict],
+    date: datetime.date,
+    max_discoveries: int | None = None,
 ) -> str:
-    """Render the README What's New block for the past-7-days window."""
+    """Render the README Fresh updates block for the past-7-days window.
+
+    With max_discoveries set, only the top-N by stars are shown (full history
+    stays in seen.json/news archive).
+    """
+    if max_discoveries is not None:
+        discoveries = sorted(
+            discoveries, key=lambda d: d.get("stars", 0), reverse=True
+        )[:max_discoveries]
     lines: list[str] = [f"*Updated {date.isoformat()}*", ""]
 
     if not discoveries and not releases:

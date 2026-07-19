@@ -57,16 +57,65 @@ def _search_queries(today: datetime.date) -> list[dict]:
     return queries
 
 
+def load_discovery_policy(path: str | Path) -> dict:
+    """Load data/discovery.yml. Raises on missing file — the policy is not
+    optional once wired; run without a policy only by passing policy=None."""
+    return yaml.safe_load(Path(path).read_text())
+
+
+def policy_verdict(item: dict, policy: dict) -> tuple[bool, str]:
+    """Pure decision function: does this item pass the feed policy?
+
+    Accepts both raw GitHub search items (`full_name`) and stored history
+    entries (`name`). Returns (passes, reason). Matching runs on name +
+    description ONLY — topics are excluded because every discovery arrives
+    via topic search, which would make relevance rules pass vacuously.
+    """
+    full_name = (item.get("full_name") or item.get("name") or "").lower()
+    corpus = f"{full_name} {(item.get('description') or '')}".lower()
+
+    if full_name in {r.lower() for r in policy.get("allowlist_repos", [])}:
+        return True, "allowlisted"
+    if full_name in {r.lower() for r in policy.get("blocklist_repos", [])}:
+        return False, "blocklisted"
+
+    for term in policy.get("editorial_hold", []):
+        if term.lower() in corpus:
+            return False, f"editorial hold ('{term}') — weekly review only"
+
+    agent_like = policy.get("agent_like", {})
+    if any(t.lower() in corpus for t in agent_like.get("match_any", [])):
+        # agent-class projects: the stricter local-signal list replaces R1
+        if any(t.lower() in corpus for t in agent_like.get("require_any", [])):
+            return True, "agent with explicit local signal"
+        return False, "agent-like without explicit local/self-hosted signal"
+
+    relevance_hits = {
+        t for t in policy.get("require_any", []) if t.lower() in corpus
+    }
+    if not relevance_hits:
+        return False, "no local-AI relevance signal in name/description"
+
+    for term in policy.get("deny_unless_strong", []):
+        if term.lower() in corpus and len(relevance_hits) < 2:
+            return False, f"denied category ('{term}') without strong relevance"
+
+    return True, "passes relevance rules"
+
+
 def fetch_discoveries(
     client,
     today: datetime.date,
     seen_repos: set[str],
     curated_repos: set[str],
     cap: int = CAP,
+    policy: dict | None = None,
 ) -> list[dict]:
     """Return up to `cap` new/active repos, deduped by full name, stars-desc.
 
-    A failing query is logged and skipped — it never blocks the other queries.
+    With a policy, items are filtered after dedup/seen/curated exclusion and
+    every drop is logged with its reason. A failing query is logged and
+    skipped — it never blocks the other queries.
     """
     found: dict[str, dict] = {}
     for params in _search_queries(today):
@@ -85,6 +134,14 @@ def fetch_discoveries(
                 continue
             if key in seen_repos or key in curated_repos:
                 continue
+            if policy is not None:
+                passes, reason = policy_verdict(item, policy)
+                if not passes:
+                    print(
+                        f"[discovery] dropped {full_name}: {reason}",
+                        file=sys.stderr,
+                    )
+                    continue
             found[key] = {
                 "name": full_name,
                 "url": item.get("html_url", ""),

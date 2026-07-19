@@ -33,8 +33,11 @@ numbers).
 
 - **Self-promotion without disclosure** — say so if it's your project (that's fine!)
 - **Exhaustive lists** — we link the best, not everything; other lists do that well
-- **Edits to the What's New block or `news/`** — those are pipeline-generated;
-  edit `scripts/` or `data/watchlist.yml` instead
+- **Edits to the Fresh updates block or `news/`** — those are pipeline-generated;
+  never hand-edit generated news. To change *what* the feed surfaces, tune the
+  discovery policy in [`data/discovery.yml`](data/discovery.yml) (keyword rules,
+  category denylist, per-repo allow/block lists) or the release watchlist in
+  `data/watchlist.yml`
 - **Manual edits to `data/seen.json`** — pipeline state
 
 ## How curation works

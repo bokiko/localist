@@ -28,7 +28,12 @@ from render import (
     replace_marker_block,
 )
 from sources.common import github_headers, sanitize_text
-from sources.github_discoveries import fetch_discoveries, load_curated_repos
+from sources.github_discoveries import (
+    fetch_discoveries,
+    load_curated_repos,
+    load_discovery_policy,
+    policy_verdict,
+)
 from sources.tool_releases import (
     fetch_changelog_releases,
     fetch_tool_releases,
@@ -109,11 +114,12 @@ def run(
 
     tools = load_watchlist(repo_root / "data" / "watchlist.yml")
     curated = load_curated_repos(repo_root / "data" / "curated.yml")
+    policy = load_discovery_policy(repo_root / "data" / "discovery.yml")
     seen = _load_seen(seen_path)
 
     # ── fetch (each source isolated; failures log and continue) ──────
     discoveries = fetch_discoveries(
-        github_client, date, set(seen["featured_repos"]), curated
+        github_client, date, set(seen["featured_repos"]), curated, policy=policy
     )
     window_start = date - datetime.timedelta(days=RELEASE_WINDOW_DAYS)
     releases = (
@@ -144,7 +150,23 @@ def run(
 
     # ── render ───────────────────────────────────────────────────────
     win_disc, win_rel = _window_from_history(seen["history"])
-    block = render_news_block(win_disc, win_rel, date)
+    # display-only policy pass over the window: entries recorded before the
+    # current policy (or under an older one) are hidden from the README but
+    # kept intact in seen.json history — no purge, no rewrite
+    kept = [d for d in win_disc if policy_verdict(d, policy)[0]]
+    if len(kept) < len(win_disc):
+        print(
+            f"[render] {len(win_disc) - len(kept)} historical entr(y/ies) "
+            "hidden by current discovery policy (history unchanged)",
+            file=sys.stderr,
+        )
+    win_disc = kept
+    block = render_news_block(
+        win_disc,
+        win_rel,
+        date,
+        max_discoveries=policy.get("render", {}).get("max_discoveries"),
+    )
 
     try:
         new_readme = replace_marker_block(readme_path.read_text(), block)

@@ -1,0 +1,70 @@
+# Discovery feed policy — single source of truth for what the daily pipeline
+# may surface in Fresh updates and the news archive.
+#
+# Filters are keyword rules only (no LLM judge). Matching runs against the
+# repo's name + description ONLY — topics are deliberately excluded, because
+# every discovery already arrives via topic search (topic:local-ai etc.), so
+# topics would make every rule pass vacuously.
+#
+# Every exclusion is logged to stderr (visible in the Action log) — no silent
+# drops. Tune this file via PR; do not hand-edit generated output.
+
+version: 1
+
+render:
+  # locked decision 2026-07-19: at most 5 discoveries shown in the README
+  # block, stars-first. Full history stays in data/seen.json.
+  max_discoveries: 5
+
+# R1 — relevance: a discovery must match >=1 term in name+description.
+require_any:
+  - local
+  - on-device
+  - self-host        # self-hosted / self-hostable
+  - offline
+  - gguf
+  - mlx
+  - ollama
+  - llama.cpp
+  - inference
+  - quantiz          # quantized / quantization
+  - vram
+  - decoding         # speculative decoding class of inference work
+
+# R2 — agent/assistant projects are held to a stricter bar: they pass ONLY
+# with an explicit local/self-hosted signal (replaces R1 for these).
+agent_like:
+  match_any:
+    - agent
+    - assistant
+    - copilot
+    - harness
+  require_any:
+    - local
+    - on-device
+    - self-host
+    - ollama
+    - your machine
+    - local endpoint
+    - private
+
+# R3 — category denylist: reject when matched, unless the repo shows a strong
+# relevance signal (>=2 distinct require_any terms).
+deny_unless_strong:
+  - monitor
+  - dashboard
+  - patent
+  - price
+  - trading
+  - wallpaper
+
+# R6 — editorial hold: never auto-feature in the beginner-facing feed; these
+# can be surfaced by the weekly human review instead. Not a judgment on the
+# project — a judgment about the audience of the auto-feed.
+editorial_hold:
+  - uncensored
+  - nsfw
+
+# Manual overrides by full repo name (lowercase owner/name).
+allowlist_repos: []   # always pass, skipping all rules
+blocklist_repos: []   # always drop

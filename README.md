@@ -79,6 +79,8 @@ picks come from.
 ## 🔥 Fresh updates
 
 New projects and tool releases from the past week, refreshed daily by the pipeline.
+*Pipeline-surfaced projects are not curated recommendations. Start with the
+Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
 *Updated 2026-07-19*

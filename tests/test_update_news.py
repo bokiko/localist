@@ -60,6 +60,21 @@ RELEASE = {
 CHANGELOG_HTML = '<a href="/changelog/lmstudio-v0.4.13">LM Studio 0.4.13</a>'
 
 
+DISCOVERY_POLICY = """
+version: 1
+render:
+  max_discoveries: 5
+require_any: [local, ollama, inference, gguf]
+agent_like:
+  match_any: [agent]
+  require_any: [local, self-host]
+deny_unless_strong: [monitor]
+editorial_hold: [uncensored]
+allowlist_repos: []
+blocklist_repos: []
+"""
+
+
 @pytest.fixture
 def repo(tmp_path):
     (tmp_path / "data").mkdir()
@@ -68,6 +83,7 @@ def repo(tmp_path):
     (tmp_path / "data" / "watchlist.yml").write_text(WATCHLIST)
     (tmp_path / "data" / "curated.yml").write_text(CURATED)
     (tmp_path / "data" / "seen.json").write_text(json.dumps(EMPTY_SEEN))
+    (tmp_path / "data" / "discovery.yml").write_text(DISCOVERY_POLICY)
     return tmp_path
 
 
@@ -171,6 +187,79 @@ def test_nothing_new_exits_zero(repo):
     assert code == 0
     assert not (repo / "news" / "2026-07.md").exists()  # no empty archive entry
     assert "Quiet week" in (repo / "README.md").read_text()
+
+
+# ── render-time policy filtering of the history window ───────────────
+
+
+def hist_disc(name, desc, stars=100):
+    return {
+        "name": name,
+        "url": f"https://github.com/{name}",
+        "description": desc,
+        "stars": stars,
+        "created_at": "2026-07-16T00:00:00Z",
+    }
+
+
+PRE_POLICY_HISTORY = [
+    {
+        "date": "2026-07-16",
+        "discoveries": [
+            hist_disc("thClaws/thClaws", "AI agent harness, multi-provider, MCP", 1158),
+            hist_disc("kennss/SiliconScope", "Apple hardware system stats viewer", 750),
+            hist_disc("Gitlawb/zero", "Local coding agent — your model, your machine", 1089),
+        ],
+        "releases": [],
+    }
+]
+
+
+def seed_history(repo, history):
+    seen = dict(EMPTY_SEEN)
+    seen = json.loads(json.dumps(seen))
+    seen["history"] = history
+    (repo / "data" / "seen.json").write_text(json.dumps(seen))
+
+
+def test_pre_policy_history_junk_hidden_from_readme(repo):
+    seed_history(repo, json.loads(json.dumps(PRE_POLICY_HISTORY)))
+    run(repo, DATE, gh_client(search_items=(), releases=()), page_client("<x>"), dry_run=False)
+    readme = (repo / "README.md").read_text()
+    assert "thClaws/thClaws" not in readme  # agent, no local signal
+    assert "kennss/SiliconScope" not in readme  # no relevance signal
+    assert "Gitlawb/zero" in readme  # local agent passes
+
+
+def test_seen_json_history_not_mutated_by_render_filter(repo):
+    seed_history(repo, json.loads(json.dumps(PRE_POLICY_HISTORY)))
+    run(repo, DATE, gh_client(search_items=(), releases=()), page_client("<x>"), dry_run=False)
+    seen = json.loads((repo / "data" / "seen.json").read_text())
+    names = {d["name"] for day in seen["history"] for d in day["discoveries"]}
+    # full history preserved — filtering is display-only
+    assert {"thClaws/thClaws", "kennss/SiliconScope", "Gitlawb/zero"} <= names
+
+
+def test_dry_run_with_history_still_writes_nothing(repo, capsys):
+    seed_history(repo, json.loads(json.dumps(PRE_POLICY_HISTORY)))
+    before = snapshot(repo)
+    code = run(repo, DATE, gh_client(search_items=(), releases=()), page_client("<x>"), dry_run=True)
+    assert code == 0
+    assert snapshot(repo) == before
+
+
+def test_cap_applies_after_history_filtering(repo):
+    passing = [
+        hist_disc(f"u/local{i}", f"Local inference tool number {i}", stars=i * 10)
+        for i in range(1, 8)  # 7 passing entries
+    ]
+    seed_history(repo, [{"date": "2026-07-18", "discoveries": passing, "releases": []}])
+    run(repo, DATE, gh_client(search_items=(), releases=()), page_client("<x>"), dry_run=False)
+    readme = (repo / "README.md").read_text()
+    shown = [ln for ln in readme.splitlines() if ln.startswith("- [u/local")]
+    assert len(shown) == 5
+    assert "u/local7" in readme and "u/local3" in readme
+    assert "u/local1" not in readme and "u/local2" not in readme
 
 
 # ── history window ───────────────────────────────────────────────────

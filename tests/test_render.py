@@ -107,6 +107,29 @@ def test_render_news_block_discoveries_only():
     assert "v0.20.1" not in block
 
 
+def test_render_caps_discoveries_stars_first():
+    many = [
+        {"name": f"u/repo{i}", "url": f"https://github.com/u/repo{i}",
+         "description": "d", "stars": i * 10, "created_at": ""}
+        for i in range(1, 9)  # stars 10..80
+    ]
+    block = render_news_block(many, [], DATE, max_discoveries=5)
+    shown = [ln for ln in block.splitlines() if ln.startswith("- ")]
+    assert len(shown) == 5
+    assert "u/repo8" in block and "u/repo4" in block  # top-5 by stars
+    assert "u/repo3" not in block and "u/repo1" not in block
+
+
+def test_render_without_cap_shows_all():
+    many = [
+        {"name": f"u/repo{i}", "url": "https://x", "description": "", "stars": i,
+         "created_at": ""}
+        for i in range(7)
+    ]
+    block = render_news_block(many, [], DATE)
+    assert sum(1 for ln in block.splitlines() if ln.startswith("- ")) == 7
+
+
 # ── append_daily_entry ───────────────────────────────────────────────
 
 

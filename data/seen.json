@@ -9,7 +9,8 @@
     "giannisanni/pulsar",
     "bbarit/bbarit-agent-oss",
     "youssofal/mtplx",
-    "zeraix/zeraix"
+    "zeraix/zeraix",
+    "techjarves/uncensored-local-studio"
   ],
   "releases": {
     "ollama/ollama": [
@@ -165,6 +166,19 @@
           "description": "Open-source local AI workspace \u2014 advancing on-device inference.",
           "stars": 40,
           "created_at": "2026-07-14T03:12:28Z"
+        }
+      ],
+      "releases": []
+    },
+    {
+      "date": "2026-07-19",
+      "discoveries": [
+        {
+          "name": "techjarves/Uncensored-Local-Studio",
+          "url": "https://github.com/techjarves/Uncensored-Local-Studio",
+          "description": "Uncensored local AI studio for Windows, Linux, and macOS. Zero-setup GUI for Image Generation, GGUF LLMs, Text to Speech & Speech to Text",
+          "stars": 643,
+          "created_at": "2026-06-04T03:45:01Z"
         }
       ],
       "releases": []

@@ -10,7 +10,8 @@
     "bbarit/bbarit-agent-oss",
     "youssofal/mtplx",
     "zeraix/zeraix",
-    "techjarves/uncensored-local-studio"
+    "techjarves/uncensored-local-studio",
+    "lidge-jun/opencodex"
   ],
   "releases": {
     "ollama/ollama": [
@@ -179,6 +180,19 @@
           "description": "Uncensored local AI studio for Windows, Linux, and macOS. Zero-setup GUI for Image Generation, GGUF LLMs, Text to Speech & Speech to Text",
           "stars": 643,
           "created_at": "2026-06-04T03:45:01Z"
+        }
+      ],
+      "releases": []
+    },
+    {
+      "date": "2026-07-20",
+      "discoveries": [
+        {
+          "name": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex",
+          "description": "Universal provider proxy for OpenAI Codex & Claude Code \u2014 use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama\u2026) with Codex CLI, App, SDK, and Claude Code",
+          "stars": 709,
+          "created_at": "2026-06-18T23:03:18Z"
         }
       ],
       "releases": []

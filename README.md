@@ -88,14 +88,14 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-07-21*
+*Updated 2026-07-22*
 
 **🆕 New & active projects**
 - [Gitlawb/zero](https://github.com/Gitlawb/zero) — The coding agent that answers to you, your model, your machine, your rules. · ⭐ 1089
 - [youssofal/MTPLX](https://github.com/youssofal/MTPLX) — 2.24x decode TPS increase On Qwen 3.6 27B @ temp 0.6 | Native MTP Speculative Decoding On Apple Silicon With No External Drafter. · ⭐ 1051
 - [AtomicBot-ai/atomic-agent](https://github.com/AtomicBot-ai/atomic-agent) — Local First Ai Agent. Optimized for Local Ai models. Long context window. Proper tools callings. Runs privately on your device. · ⭐ 723
 - [lidge-jun/opencodex](https://github.com/lidge-jun/opencodex) — Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code · ⭐ 709
-- [giannisanni/pulsar](https://github.com/giannisanni/pulsar) — SSD-streaming inference engine for giant MoE models (Rust + CUDA). GLM 5.2 743B at 2 tok/s and Hy3 295B at 7 tok/s on two consumer 16GB GPUs. Zero-config multi-GPU: measures PCIe bandwidth, places · ⭐ 42
+- [drumih/turbo-fieldfare](https://github.com/drumih/turbo-fieldfare) — Gemma 4 26B-A4B inference in ~2 GB of RAM on any M-series MacBook · ⭐ 67
 
 **📦 Tool releases**
 - [Ollama v0.32.0](https://github.com/ollama/ollama/releases/tag/v0.32.0) — What's Changed New interactive agent experience: running `ollama` now launches an agent to help you code and delegate work
@@ -105,6 +105,7 @@ Essentials table above if you want the trusted beginner picks.*
 - [ComfyUI v0.28.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.28.0) — What's Changed Add AGENTS.md by @comfyanonymous in
 - [LM Studio 0.4.19](https://lmstudio.ai/changelog/lmstudio-v0.4.19)
 - [Ollama v0.32.1](https://github.com/ollama/ollama/releases/tag/v0.32.1) — Improved Gemma 4 tool calling and multi-turn reasoning, including more reliable tool-response continuations Fixed a recurrent MLX model cache leak that could increase memory use across requests, and
+- [LM Studio 0.4.20](https://lmstudio.ai/changelog/lmstudio-v0.4.20)
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

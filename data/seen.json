@@ -11,7 +11,8 @@
     "youssofal/mtplx",
     "zeraix/zeraix",
     "techjarves/uncensored-local-studio",
-    "lidge-jun/opencodex"
+    "lidge-jun/opencodex",
+    "drumih/turbo-fieldfare"
   ],
   "releases": {
     "ollama/ollama": [
@@ -30,7 +31,7 @@
     ]
   },
   "changelog_pages": {
-    "https://lmstudio.ai/changelog": "0.4.19"
+    "https://lmstudio.ai/changelog": "0.4.20"
   },
   "history": [
     {
@@ -196,6 +197,26 @@
         }
       ],
       "releases": []
+    },
+    {
+      "date": "2026-07-22",
+      "discoveries": [
+        {
+          "name": "drumih/turbo-fieldfare",
+          "url": "https://github.com/drumih/turbo-fieldfare",
+          "description": "Gemma 4 26B-A4B inference in ~2 GB of RAM on any M-series MacBook",
+          "stars": 67,
+          "created_at": "2026-07-17T15:57:54Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "LM Studio",
+          "version": "0.4.20",
+          "url": "https://lmstudio.ai/changelog/lmstudio-v0.4.20",
+          "notes": ""
+        }
+      ]
     }
   ]
 }

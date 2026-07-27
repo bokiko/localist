@@ -88,11 +88,11 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-07-26*
+*Updated 2026-07-27*
 
 **🆕 New & active projects**
-- [lidge-jun/opencodex](https://github.com/lidge-jun/opencodex) — Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code · ⭐ 709
 - [drumih/turbo-fieldfare](https://github.com/drumih/turbo-fieldfare) — Gemma 4 26B-A4B inference in ~2 GB of RAM on any M-series MacBook · ⭐ 67
+- [LYiHub/pub-local-jarvis](https://github.com/LYiHub/pub-local-jarvis) — Windows 本地多模态 AI 桌面桌宠，支持屏幕与音频感知。 · ⭐ 57
 
 **📦 Tool releases**
 - [LM Studio 0.4.20](https://lmstudio.ai/changelog/lmstudio-v0.4.20)

@@ -1,0 +1,110 @@
+# Hardware chooser taxonomy — the structured form of guides/start-here.md.
+#
+# The localist.dev homepage chooser reads this file: platform -> accelerator ->
+# memory tier -> a result bundle. Keep it faithful to start-here.md and
+# choosing-models.md (enforced by tests/test_hardware_contract.py).
+#
+# memory_basis names a key in `memory_tiers` (vram | ram). memory_kind is a
+# human note only. Nothing here is a recommendation on its own — the picks come
+# from curated.yml and the model tiers from models.yml.
+
+version: 1
+
+platforms:
+  - id: windows
+    label: Windows PC
+    asks_accelerator: true
+  - id: mac
+    label: Mac
+    implies_accelerator: apple_silicon   # About This Mac says Apple M-series
+    intel_fallback: cpu_only             # an Intel Mac is treated as CPU-only
+  - id: linux
+    label: Linux PC
+    asks_accelerator: true
+  - id: mini_pc
+    label: Mini PC / home server
+    asks_accelerator: true
+    default_accelerator: cpu_only        # most are CPU-only, but allow a GPU
+  - id: not_sure
+    label: I'm not sure
+    routes_to: helper
+
+accelerators:
+  - id: nvidia
+    label: NVIDIA GPU
+    memory_basis: vram
+    memory_kind: dedicated_vram
+    guide: nvidia-gpu
+  - id: amd
+    label: AMD GPU
+    memory_basis: vram
+    memory_kind: dedicated_vram
+    guide: amd-gpu
+  - id: apple_silicon
+    label: Apple Silicon
+    memory_basis: ram
+    memory_kind: unified
+    guide: mac-apple-silicon
+  - id: cpu_only
+    label: CPU only
+    memory_basis: ram
+    memory_kind: system
+    guide: cpu-only
+  - id: not_sure
+    label: Not sure
+    routes_to: helper
+
+# Memory buckets. `vram` for GPU paths, `ram` for CPU/Mac paths. Each bucket
+# maps to a model tier id in models.yml.
+memory_tiers:
+  vram:
+    - id: 8gb
+      label: 8 GB
+      model_tier: t1
+    - id: 12gb
+      label: 12 GB
+      model_tier: t2
+    - id: 16gb
+      label: 16 GB
+      model_tier: t3
+    - id: 24gb
+      label: 24 GB
+      model_tier: t4
+    - id: 48gb-plus
+      label: 48 GB+
+      model_tier: t5
+  ram:
+    - id: 8gb
+      label: 8 GB
+      model_tier: t1c
+    - id: 16gb
+      label: 16 GB
+      model_tier: t2c
+    - id: 32gb
+      label: 32 GB
+      model_tier: t3c
+    - id: 64gb-plus
+      label: 64 GB+
+      model_tier: t4c
+
+# 2–3 hardware-specific "mistakes to avoid" surfaced in the result card.
+mistakes:
+  nvidia:
+    - "Match the model's download size to your VRAM, not your system RAM — the GPU number is what counts."
+    - "Don't load a model bigger than your VRAM expecting speed; spilling into system RAM slows it to a crawl."
+  amd:
+    - "Check ROCm support for your card first; some older Radeon RX cards run better on Vulkan."
+    - "Size the model to your VRAM, not your system RAM."
+  apple_silicon:
+    - "Unified memory is shared — a 16 GB Mac is not 16 GB for models; leave room for macOS and your apps."
+    - "Prefer MLX-format models for the best speed on Apple Silicon."
+  cpu_only:
+    - "Skip the huge models — a snappy 4B beats a 13B that runs like a slideshow."
+    - "Keep the context window modest; a big context eats the RAM the model needs."
+
+# "How to check" copy so a not-sure user never dead-ends.
+helpers:
+  find_gpu_windows: "Press Ctrl+Shift+Esc, open the Performance tab, look for GPU."
+  find_gpu_linux: "Run: lspci | grep -i vga"
+  find_mac_chip: "Apple menu -> About This Mac. Apple M1/M2/M3/M4 = Apple Silicon; Intel = treat as CPU-only."
+  find_memory: "Windows: Task Manager -> Performance -> Memory (system RAM) or GPU (VRAM). Mac: About This Mac shows total memory."

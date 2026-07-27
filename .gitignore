@@ -1,5 +1,24 @@
+# ── local-only / private — NEVER commit ──────────────────────────────
+# Planning drafts, distribution material, private benchmarks, infra/machine
+# notes, analytics exports all live under thoughts/. Committed here (not just
+# in .git/info/exclude) so protection travels to every clone.
+thoughts/
+.env
+.env.*
+*.local
+# project instructions doc — not committed until sanitized + explicitly approved
+CLAUDE.md
+
+# ── site build outputs & caches (generated, never committed) ─────────
+# site/src/content/generated/ is produced by sync-content at build time.
+site/node_modules/
+site/dist/
+site/.astro/
+site/src/content/generated/
+
+# ── tooling caches ───────────────────────────────────────────────────
 __pycache__/
 *.pyc
 .venv/
 .pytest_cache/
-.env
+.ruff_cache/

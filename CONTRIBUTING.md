@@ -50,6 +50,34 @@ numbers).
   `data/watchlist.yml`
 - **Manual edits to `data/seen.json`** — pipeline state
 
+## Security / local-only files
+
+Some files are **local-only and must never be committed**:
+
+- `thoughts/` — planning notes, drafts, private benchmarks
+- `.env` / `.env.*` — secrets
+- `CLAUDE.md` — machine/infra context
+
+They are protected by the committed `.gitignore`. As a local backstop, install
+the pre-push hook once:
+
+```bash
+git config core.hooksPath scripts/hooks
+```
+
+The hook blocks pushing tracked local-only files, history hits, or detected
+secrets — but it is **convenience only. CI (`.github/workflows/security.yml`,
+gitleaks) is the real, non-bypassable gate.** Do not use `--no-verify` as a
+habit.
+
+Any allowlist entry in `.gitleaks.toml` must be **individually justified** with a
+comment — never broaden the allowlist to silence a real finding.
+
+If a sensitive file is ever tracked or found in history, **stop and report — do
+not silently clean it up.** Removing a file later does not remove it from git
+history, and a public repo is scraped quickly; remediation (history rewrite +
+secret rotation) is a deliberate, separate task.
+
 ## How curation works
 
 All curated entries live in [`data/curated.yml`](data/curated.yml) — one entry per

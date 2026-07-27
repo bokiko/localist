@@ -1,19 +1,22 @@
 # Model tiers by available memory — the structured form of the tables in
-# guides/choosing-models.md.
+# guides/choosing-models.md (VRAM + Mac) and guides/cpu-only.md (CPU).
 #
-# `tiers` map a memory bucket to a size class + example models + honest
-# expectations. `catalog` holds the example models; every catalog entry's
-# `family_ref` MUST match a model entry in curated.yml (models_general or
-# models_coding) so this file never becomes a second source of truth.
-# Both rules are enforced by tests/test_models_contract.py.
+# THREE tier groups by memory type, because bandwidth differs sharply:
+#   vram     -> GPU tiers (choosing-models.md VRAM table)
+#   mac_ram  -> Apple Silicon unified memory (choosing-models.md Mac table)
+#   cpu_ram  -> plain system RAM (cpu-only.md table) — calibrated DOWN vs Mac,
+#               so a CPU beginner is told what runs well, not merely what fits.
 #
-# Hand-curated and dated for V1 — NOT pipeline-fed. Update alongside
-# choosing-models.md and curated.yml.
+# `catalog` holds example models; every `family_ref` MUST match a curated.yml
+# model entry (models_general / models_coding) so this file never becomes a
+# second source of truth. All rules enforced by tests/test_models_contract.py.
+#
+# Hand-curated and dated for V1 — NOT pipeline-fed.
 
 version: 1
 
 tiers:
-  # ── VRAM tiers (NVIDIA / AMD GPU paths) ──────────────────────────────
+  # ── VRAM tiers (NVIDIA / AMD GPU paths) — choosing-models.md VRAM table ──
   - id: t1
     basis: vram
     memory: "8 GB"
@@ -25,7 +28,7 @@ tiers:
     memory: "12 GB"
     size_class: "7B–8B"
     examples: [qwen3-8b, llama31-8b]
-    expectations: "The 7–8B sweet spot: a genuinely useful daily driver."
+    expectations: "The 7–8B sweet spot: a genuinely useful daily driver, fast on-GPU."
   - id: t3
     basis: vram
     memory: "16 GB"
@@ -45,40 +48,72 @@ tiers:
     examples: [llama33-70b, r1-distill-70b]
     expectations: "70B-class models — the big leagues, if your hardware can hold them."
 
-  # ── RAM tiers (CPU-only and Apple Silicon paths) ─────────────────────
-  - id: t1c
-    basis: ram
+  # ── Apple Silicon tiers (unified memory) — choosing-models.md Mac table ──
+  - id: mac1
+    basis: mac_ram
     memory: "8 GB"
     size_class: "3B–4B"
     examples: [qwen3-4b, llama32-3b]
-    expectations: "Small models fit in ~4–5 GB of usable RAM. Fine for chat and summaries."
-  - id: t2c
-    basis: ram
+    expectations: "Small models fit in ~4–5 GB of usable memory. Fine for chat and summaries."
+  - id: mac2
+    basis: mac_ram
     memory: "16 GB"
     size_class: "7B–8B"
     examples: [qwen3-8b]
-    expectations: "The 7–8B daily-driver tier on CPU or a 16 GB Mac."
-  - id: t3c
-    basis: ram
+    expectations: "The 7–8B daily-driver tier — quick on Apple Silicon's fast unified memory."
+  - id: mac3
+    basis: mac_ram
     memory: "32 GB"
     size_class: "14B, fast 30B-class MoE"
     examples: [qwen3-14b, qwen3-30b-a3b]
-    expectations: "14B dense, or a fast 30B-A3B MoE — the RAM-rich sweet spot."
-  - id: t4c
-    basis: ram
+    expectations: "14B dense, or a fast 30B-A3B MoE — the unified-memory sweet spot."
+  - id: mac4
+    basis: mac_ram
     memory: "64 GB+"
     size_class: "70B"
     examples: [llama33-70b]
-    expectations: "70B-class models on a big-memory Mac or workstation."
+    expectations: "70B-class models on a big-memory Mac."
+
+  # ── CPU-only tiers (plain system RAM) — cpu-only.md table ────────────────
+  # Calibrated below the Mac tiers: same RAM, far less bandwidth. Honest copy.
+  - id: cpu1
+    basis: cpu_ram
+    memory: "8 GB"
+    size_class: "1B–4B"
+    examples: [qwen3-1-7b, phi4-mini]
+    expectations: "Quick answers and light chat. Slower than a GPU or Apple Silicon Mac — that's normal for CPU. Keep prompts and context short."
+  - id: cpu2
+    basis: cpu_ram
+    memory: "16 GB"
+    size_class: "3B–4B"
+    examples: [qwen3-4b]
+    expectations: "A solid daily assistant at a patient pace. A smaller current model feels better than a larger one that crawls."
+  - id: cpu3
+    basis: cpu_ram
+    memory: "32 GB"
+    size_class: "7B–8B"
+    examples: [qwen3-8b]
+    expectations: "Good quality, patient pace. Long documents and big context windows are where CPU hurts most — keep them modest."
+  - id: cpu4
+    basis: cpu_ram
+    memory: "64 GB+"
+    size_class: "30B-A3B MoE"
+    examples: [qwen3-30b-a3b]
+    expectations: "Enough RAM for a 30B-A3B MoE — it activates only a few billion params per token, so it stays usable on CPU. Dense models this big will crawl; prefer the MoE."
 
 # Example models referenced by tiers. family_ref must match a curated.yml
 # model entry name (models_general / models_coding).
 catalog:
+  - id: qwen3-1-7b
+    name: "Qwen3 1.7B"
+    family_ref: "Qwen3 family"
+    ollama: "qwen3:1.7b"
+    why: "Tiny, quick — the CPU-friendly starter."
   - id: qwen3-4b
     name: "Qwen3 4B"
     family_ref: "Qwen3 family"
     ollama: "qwen3:4b"
-    why: "Strong tiny general model."
+    why: "Strong small general model."
   - id: qwen3-8b
     name: "Qwen3 8B"
     family_ref: "Qwen3 family"
@@ -133,7 +168,7 @@ catalog:
     name: "Phi-4 Mini"
     family_ref: "Phi-4 family"
     ollama: "phi4-mini"
-    why: "Compact, reasoning-focused."
+    why: "Compact, reasoning-focused — a good CPU starter."
   - id: devstral-small
     name: "Devstral Small"
     family_ref: "Devstral Small"

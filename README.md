@@ -88,7 +88,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-07-27*
+*Updated 2026-07-28*
 
 **🆕 New & active projects**
 - [drumih/turbo-fieldfare](https://github.com/drumih/turbo-fieldfare) — Gemma 4 26B-A4B inference in ~2 GB of RAM on any M-series MacBook · ⭐ 67
@@ -100,6 +100,8 @@ Essentials table above if you want the trusted beginner picks.*
 - [Ollama v0.32.3](https://github.com/ollama/ollama/releases/tag/v0.32.3) — Fixed model downloads that stall before sending data. Improved integrations: restored Claude Code Channels, fixed Anthropic thinking streams, and made Hermes Desktop respect `--force-build`.
 - [Ollama v0.32.4](https://github.com/ollama/ollama/releases/tag/v0.32.4) — Support Laguna on Apple GPUs via the MLX engine Quantize draft-model output heads at the requested type when creating speculative-decoding drafts.
 - [vLLM v0.26.0](https://github.com/vllm-project/vllm/releases/tag/v0.26.0) — vLLM v0.26.0 Release Notes This release features 411 commits from 212 contributors (61 new)!
+- [Ollama v0.32.5](https://github.com/ollama/ollama/releases/tag/v0.32.5) — Fixed an MLX Metal bug that could reduce output quality for NVFP4 models, particularly Laguna. **Full Changelog**:
+- [Open WebUI v0.11.0](https://github.com/open-webui/open-webui/releases/tag/v0.11.0) — Added 🎨 **Redesigned interface.** Open WebUI has been visually rebuilt from the ground up. All aspects of the User Interface, from the chat view to the admin panel. Now with a narrower conversation
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

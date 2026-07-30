@@ -88,14 +88,13 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-07-29*
+*Updated 2026-07-30*
 
 **🆕 New & active projects**
 - [gavamedia/deltafin](https://github.com/gavamedia/deltafin) — Run Kimi K3, a 2.8T-parameter Mixture-of-Experts LLM, on a single Apple Silicon Mac. Streams MXFP4 experts on demand over HTTP into a local disk cache — fused NEON kernels, Metal/MPS compute, exact · ⭐ 188
 - [LYiHub/pub-local-jarvis](https://github.com/LYiHub/pub-local-jarvis) — Windows 本地多模态 AI 桌面桌宠，支持屏幕与音频感知。 · ⭐ 57
 
 **📦 Tool releases**
-- [Jan v0.8.4](https://github.com/janhq/jan/releases/tag/v0.8.4) — Migration **Settings and credentials now live in a backend-managed store.**
 - [Ollama v0.32.3](https://github.com/ollama/ollama/releases/tag/v0.32.3) — Fixed model downloads that stall before sending data. Improved integrations: restored Claude Code Channels, fixed Anthropic thinking streams, and made Hermes Desktop respect `--force-build`.
 - [Ollama v0.32.4](https://github.com/ollama/ollama/releases/tag/v0.32.4) — Support Laguna on Apple GPUs via the MLX engine Quantize draft-model output heads at the requested type when creating speculative-decoding drafts.
 - [vLLM v0.26.0](https://github.com/vllm-project/vllm/releases/tag/v0.26.0) — vLLM v0.26.0 Release Notes This release features 411 commits from 212 contributors (61 new)!

@@ -48,19 +48,6 @@
   },
   "history": [
     {
-      "date": "2026-07-23",
-      "discoveries": [],
-      "releases": [
-        {
-          "tool": "Jan",
-          "repo": "janhq/jan",
-          "version": "v0.8.4",
-          "url": "https://github.com/janhq/jan/releases/tag/v0.8.4",
-          "notes": "Migration **Settings and credentials now live in a backend-managed store.**"
-        }
-      ]
-    },
-    {
       "date": "2026-07-24",
       "discoveries": [],
       "releases": [

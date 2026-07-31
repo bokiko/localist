@@ -34,7 +34,8 @@
     ],
     "Comfy-Org/ComfyUI": [
       "v0.28.0",
-      "v0.29.0"
+      "v0.29.0",
+      "v0.29.2"
     ],
     "janhq/jan": [
       "v0.8.4"
@@ -47,19 +48,6 @@
     "https://lmstudio.ai/changelog": "0.4.20"
   },
   "history": [
-    {
-      "date": "2026-07-24",
-      "discoveries": [],
-      "releases": [
-        {
-          "tool": "Ollama",
-          "repo": "ollama/ollama",
-          "version": "v0.32.3",
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.32.3",
-          "notes": "Fixed model downloads that stall before sending data. Improved integrations: restored Claude Code Channels, fixed Anthropic thinking streams, and made Hermes Desktop respect `--force-build`."
-        }
-      ]
-    },
     {
       "date": "2026-07-26",
       "discoveries": [],
@@ -131,6 +119,19 @@
           "version": "v0.29.0",
           "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.29.0",
           "notes": "fix(Video): stream the video transcode instead of buffering every frame in RAM (CORE-353) (CORE-351) [Partner Nodes] feat(client): send ComfyUI Job Id in request headers"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-31",
+      "discoveries": [],
+      "releases": [
+        {
+          "tool": "ComfyUI",
+          "repo": "Comfy-Org/ComfyUI",
+          "version": "v0.29.2",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.29.2",
+          "notes": "Frontend fixes and new api/partner nodes. **Full Changelog**:"
         }
       ]
     }

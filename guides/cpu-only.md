@@ -30,12 +30,16 @@ expectations right and this is genuinely useful — not a toy.
 
 ## Step 2: Run a small model
 
-Installing Ollama doesn't open a window — it gives you a command to type. So
-first, open a terminal:
+Ollama installs two things: an app you can click, and a command you can type.
+On Windows and Mac the app can download and chat with models on its own — open
+it from the Start menu or Applications if you'd rather not use commands at all.
 
-- **Windows:** press `Start`, type `PowerShell`, press Enter
-- **Mac:** press `Cmd+Space`, type `Terminal`, press Enter
-- **Linux:** `Ctrl+Alt+T`, or search your applications for Terminal
+The rest of this page uses the command, because the tips further down are
+written as commands. To reach it, open a terminal:
+
+- **Windows:** click **Start**, type `powershell`, press Enter
+- **Mac:** press **Cmd+Space**, type `terminal`, press Enter
+- **Linux:** press **Ctrl+Alt+T**, or search your applications for Terminal
 
 A window with a text prompt appears. Type this into it and press Enter:
 

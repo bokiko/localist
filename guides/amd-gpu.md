@@ -17,17 +17,47 @@ roughly two setup styles:
 
 ## Step 0: Check your card and VRAM
 
-- **Windows:** `Ctrl+Shift+Esc` → Performance → GPU, and read the
-  **Dedicated GPU memory** figure
-- **Linux:** `rocm-smi --showmeminfo vram` if ROCm is installed, otherwise
-  `glxinfo -B | grep -i "Video memory"` (from the `mesa-utils` package)
+**Windows:** `Ctrl+Shift+Esc` → Performance → GPU, and read the
+**Dedicated GPU memory** figure. If more than one GPU is listed, pick the one
+named Radeon RX.
 
-`lspci | grep -i vga` will name your card, but it never prints the VRAM number —
-and VRAM is what the table below is keyed on.
+**Linux:** if you have ROCm installed, `rocm-smi --showmeminfo vram`. If you
+don't, ask the driver directly — this works with no extra packages:
+
+```bash
+awk '{printf "%.1f GB VRAM  (%s)\n", $1/1073741824, FILENAME}' \
+  /sys/class/drm/card*/device/mem_info_vram_total
+```
+
+Only AMD cards appear here, one line each.
+
+- **Two lines?** Your CPU has built-in graphics as well as your Radeon. Take
+  the **larger** number — built-in graphics reserve much less, usually well
+  under 2 GB. A line reading `0.5 GB` is the built-in one, not a broken card.
+  Then read the rules below for that larger number.
+- **8 GB or more?** That's your Radeon. Use it in the table below, rounding
+  down to the nearest row — a 10 GB card uses the 5–8 GB row.
+- **Under 8 GB but 2 GB or more?** A real Radeon, just a small one — the 4 GB
+  version of the RX 6500 XT lands here. **Stay on this page.** The Vulkan path
+  below works on cards this size; you just need a smaller model, so use one of
+  the top two rows in the table. (If you know you have no separate graphics card and
+  this is your CPU's built-in graphics, [CPU-only](cpu-only.md) fits better.)
+- **Under 2 GB?** That's your CPU's built-in graphics, not a separate card.
+  [CPU-only](cpu-only.md) is your path.
+- **An error instead of a number?** (`no matches found`, or `cannot open file`.)
+  The `amdgpu` driver isn't loaded for your card. Check the
+  [ROCm compatibility docs](https://rocm.docs.amd.com/) before going further —
+  local AI won't use the GPU until that's sorted.
+
+Two commands worth skipping: `lspci | grep -i vga` names your card but never
+prints its VRAM, and `glxinfo` reports whichever GPU is currently driving your
+display — on a laptop that's usually the built-in one, so it can hand you a
+*larger* number than your Radeon actually has and send you to the wrong row.
 
 | VRAM | Example cards | First model to run |
 |---|---|---|
-| 8 GB | — | `qwen3:4b` |
+| Under 5 GB | RX 6500 XT (4 GB) | `qwen3:1.7b` |
+| 5–8 GB | — | `qwen3:4b` |
 | 12 GB | — | `qwen3:8b` |
 | 16 GB | RX 7800 XT, RX 9070 / 9070 XT | `qwen3:14b` |
 | 20 GB | RX 7900 XT | `qwen3:14b` |

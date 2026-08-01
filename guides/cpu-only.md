@@ -30,14 +30,29 @@ expectations right and this is genuinely useful — not a toy.
 
 ## Step 2: Run a small model
 
+On Windows and Mac, Ollama installs two things: an app you can click, and a
+command you can type. The app can download and chat with models on its own —
+open it from the Start menu or Applications if you'd rather not use commands at
+all. On Linux you get the command only.
+
+The rest of this page uses the command, because the tips further down are
+written as commands. To reach it, open a terminal:
+
+- **Windows:** click **Start**, type `powershell`, press Enter
+- **Mac:** press **Cmd+Space**, type `terminal`, press Enter
+- **Linux:** press **Ctrl+Alt+T**, or search your applications for Terminal
+
+A window with a text prompt appears. Type this into it and press Enter:
+
 ```bash
 ollama run qwen3:4b
 ```
 
-First run downloads a couple of GB. Then chat directly in the terminal.
+First run downloads a couple of GB. Then chat directly in that same window.
 
-**Prefer an app?** [LM Studio](https://lmstudio.ai) does the same with a GUI and
-shows you *before downloading* whether a model fits your RAM.
+**Want to know a model fits before you download it?** [LM Studio](https://lmstudio.ai)
+checks a model against your RAM up front and warns you if it won't fit — useful
+when you're close to the limit.
 
 ## Tricks that matter more on CPU
 

@@ -9,6 +9,12 @@ when a model name like `qwen3:8b-q4_K_M` stops making sense.
 ("weights") that predicts text. ChatGPT runs one in the cloud; you're about to run
 one on your machine.
 
+**Weights** — the numbers inside that file. They're what the model *learned* during
+training, and together they're the model: download the weights and you have it,
+permanently, offline. Everything else — Ollama, LM Studio — is just a program that
+loads them and does the maths. It's also why models are big: "8 billion parameters"
+means 8 billion of these numbers to store.
+
 **Model parameters (the "B" numbers)** — `qwen3:8b` means 8 **b**illion parameters.
 More parameters ≈ smarter but bigger and slower. 3–4B is small, 7–14B is mid,
 30B+ is large, 70B+ is huge.
@@ -38,6 +44,20 @@ fits in 5 GB instead of 16 GB.
 parameter: Q4 = strong compression (the standard default), Q8 = nearly lossless but
 twice the size. Start with Q4; only step up if you notice quality issues.
 
+**The `_K_M` bit (as in `q4_K_M`)** — you can safely ignore it, but here's what it
+says. **K** is the modern compression method (the older one had no letter). **M** is
+the size within that method: **S**mall, **M**edium, **L**arge. M spends a few extra
+bits on the parts of the model that matter most, so it's slightly bigger and slightly
+better than S. It's the one almost everyone ships as the default — if you see a model
+with no `q…` label at all, this is usually what you're getting.
+
+**Offloading** — when a model is too big for your GPU, the runner can put *part* of it
+on the GPU and leave the rest in ordinary system RAM. It works, and it's why an
+oversized model still "runs" instead of refusing — but the part on the CPU is far
+slower, so the whole thing crawls. This is the usual reason a model that technically
+loads feels unusably slow. A smaller model that fits entirely on the GPU almost always
+feels better. See [choosing models](choosing-models.md).
+
 **GGUF** — the universal file format for quantized models. If a tool runs local
 models, it almost certainly reads GGUF.
 
@@ -61,9 +81,16 @@ chat. No terminal.
 
 **Open WebUI** — a ChatGPT-lookalike web interface that sits on top of Ollama.
 
-**Local API / OpenAI-compatible API** — most runners expose an interface at an
-address like `localhost:11434` that mimics OpenAI's. Any app built for ChatGPT's
-API can be pointed at your local model instead.
+**API** — a way for one program to talk to another without a human in the middle.
+Not something you use directly; it's what lets a *different* app (a notes app, a
+code editor) send questions to your model and get answers back.
+
+**Local API / OpenAI-compatible API** — most runners quietly offer one of these at an
+address like `localhost:11434`. `localhost` means "this computer, not the internet" —
+the address only works on your own machine, and nothing is being published. It's
+called *OpenAI-compatible* because it speaks the same format ChatGPT's service does,
+which is the useful part: apps built to talk to ChatGPT can be pointed at your local
+model instead, usually by pasting that address into a settings box.
 
 **RAG (Retrieval-Augmented Generation)** — "chat with your documents." The app
 finds the relevant passages from files you give it and hands them to the model

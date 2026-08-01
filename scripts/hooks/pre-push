@@ -11,7 +11,7 @@ fail=0
 
 # 1. tracked-file gate: local-only material must never be tracked.
 #    Keep this list in sync with tests/test_git_hygiene.py::SENSITIVE_TRACKED.
-tracked="$(git ls-files thoughts/ .env '.env.*' CLAUDE.md 2>/dev/null || true)"
+tracked="$(git ls-files thoughts/ .env '.env.*' '*.local' CLAUDE.md 2>/dev/null || true)"
 if [ -n "$tracked" ]; then
   echo "PRE-PUSH BLOCK: local-only files are tracked:" >&2
   echo "$tracked" >&2
@@ -19,9 +19,10 @@ if [ -n "$tracked" ]; then
 fi
 
 # 2. history gate: local-only files must never appear in history.
-#    '.env.*' catches variants (.env.production, .env.local); bare '.env' does not.
-if git log --all --oneline -- thoughts/ .env '.env.*' CLAUDE.md 2>/dev/null | grep -q .; then
-  echo "PRE-PUSH BLOCK: thoughts/, .env, .env.*, or CLAUDE.md found in git history." >&2
+#    '.env.*' catches variants (.env.production, .env.local) and '*.local'
+#    catches secrets.local etc.; bare '.env' matches neither.
+if git log --all --oneline -- thoughts/ .env '.env.*' '*.local' CLAUDE.md 2>/dev/null | grep -q .; then
+  echo "PRE-PUSH BLOCK: thoughts/, .env, .env.*, *.local, or CLAUDE.md found in git history." >&2
   fail=1
 fi
 

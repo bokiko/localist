@@ -17,13 +17,34 @@ roughly two setup styles:
 
 ## Step 0: Check your card and VRAM
 
-- **Windows:** `Ctrl+Shift+Esc` → Performance → GPU, and read the
-  **Dedicated GPU memory** figure
-- **Linux:** `rocm-smi --showmeminfo vram` if ROCm is installed, otherwise
-  `glxinfo -B | grep -i "Video memory"` (from the `mesa-utils` package)
+**Windows:** `Ctrl+Shift+Esc` → Performance → GPU, and read the
+**Dedicated GPU memory** figure. If more than one GPU is listed, pick the one
+named Radeon RX.
 
-`lspci | grep -i vga` will name your card, but it never prints the VRAM number —
-and VRAM is what the table below is keyed on.
+**Linux:** if you have ROCm installed, `rocm-smi --showmeminfo vram`. If you
+don't, ask the driver directly — this works with no extra packages:
+
+```bash
+awk '{printf "%.1f GB VRAM  (%s)\n", $1/1073741824, FILENAME}' \
+  /sys/class/drm/card*/device/mem_info_vram_total
+```
+
+Only AMD cards appear here, one line each.
+
+- **One line?** That's your card. Use that number.
+- **Two lines?** Your CPU has built-in graphics as well as your Radeon. The
+  **larger** number is the Radeon — built-in graphics reserve a much smaller
+  amount, usually well under 2 GB. A line reading `0.5 GB` is the built-in one,
+  not a broken card.
+- **An error instead of a number?** (`no matches found`, or `cannot open file`.)
+  The `amdgpu` driver isn't loaded for your card. Check the
+  [ROCm compatibility docs](https://rocm.docs.amd.com/) before going further —
+  local AI won't use the GPU until that's sorted.
+
+Two commands worth skipping: `lspci | grep -i vga` names your card but never
+prints its VRAM, and `glxinfo` reports whichever GPU is currently driving your
+display — on a laptop that's usually the built-in one, so it can hand you a
+*larger* number than your Radeon actually has and send you to the wrong row.
 
 | VRAM | Example cards | First model to run |
 |---|---|---|

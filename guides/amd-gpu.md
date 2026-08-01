@@ -31,7 +31,11 @@ awk '{printf "%.1f GB VRAM  (%s)\n", $1/1073741824, FILENAME}' \
 
 Only AMD cards appear here, one line each.
 
-- **One line?** That's your card. Use that number.
+- **One line, 8 GB or more?** That's your Radeon. Use that number.
+- **One line, under 8 GB?** That is almost certainly your CPU's built-in
+  graphics rather than a discrete Radeon card. Either way the table below
+  starts at 8 GB, so it has no row for you — follow [CPU-only](cpu-only.md)
+  instead, which is the right path for integrated AMD graphics.
 - **Two lines?** Your CPU has built-in graphics as well as your Radeon. The
   **larger** number is the Radeon — built-in graphics reserve a much smaller
   amount, usually well under 2 GB. A line reading `0.5 GB` is the built-in one,

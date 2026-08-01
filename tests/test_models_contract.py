@@ -150,7 +150,12 @@ def test_vram_tiers_match_choosing_guide():
         f"VRAM tiers differ. yaml={sorted(yaml_vram)} guide={sorted(guide)}"
     )
     for mem, sizes in guide.items():
-        assert sizes <= yaml_vram[mem], f"{mem}GB VRAM size drifted: {sizes} vs {yaml_vram[mem]}"
+        # Exact match: the YAML must not offer larger/extra sizes than the guide
+        # promises for a given VRAM tier (over-promise guard), nor fewer (drift guard).
+        assert yaml_vram[mem] == sizes, (
+            f"{mem}GB VRAM size drifted — yaml must match the guide exactly: "
+            f"yaml={sorted(yaml_vram[mem])} guide={sorted(sizes)}"
+        )
 
 
 def test_mac_tiers_match_mac_table():
@@ -162,7 +167,11 @@ def test_mac_tiers_match_mac_table():
         f"Mac tiers differ. yaml={sorted(yaml_mac)} guide={sorted(guide)}"
     )
     for mem, sizes in guide.items():
-        assert sizes <= yaml_mac[mem], f"{mem}GB Mac size drifted: {sizes} vs {yaml_mac[mem]}"
+        # Exact match: same over-promise + drift guard as the VRAM table.
+        assert yaml_mac[mem] == sizes, (
+            f"{mem}GB Mac size drifted — yaml must match the guide exactly: "
+            f"yaml={sorted(yaml_mac[mem])} guide={sorted(sizes)}"
+        )
 
 
 def test_cpu_tiers_match_cpu_only_guide():

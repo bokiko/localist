@@ -43,9 +43,15 @@ def test_no_sensitive_files_are_tracked():
 
 
 def test_local_only_files_never_in_history():
-    hist = _git("log", "--all", "--oneline", "--", "thoughts/", ".env", "CLAUDE.md")
+    # ".env.*" catches variants like .env.production / .env.local; the bare
+    # ".env" pathspec does not match them, so both must be listed.
+    hist = _git(
+        "log", "--all", "--oneline", "--",
+        "thoughts/", ".env", ".env.*", "CLAUDE.md",
+    )
     assert hist == "", (
-        f"thoughts/, .env, or CLAUDE.md appear in git history — remediation required: {hist!r}"
+        f"thoughts/, .env, .env.*, or CLAUDE.md appear in git history — "
+        f"remediation required: {hist!r}"
     )
 
 
@@ -60,8 +66,9 @@ def test_committed_gitignore_covers_local_only_and_build_outputs():
 
 
 def test_sensitive_paths_are_actually_ignored():
-    # git check-ignore exits 0 when the path IS ignored
-    for path in ["thoughts/", ".env", "CLAUDE.md"]:
+    # git check-ignore exits 0 when the path IS ignored. ".env.production" is a
+    # concrete variant that must be caught by the ".env.*" rule, not just ".env".
+    for path in ["thoughts/", ".env", ".env.production", "CLAUDE.md"]:
         r = subprocess.run(
             ["git", "check-ignore", "-q", path], cwd=REPO
         )

@@ -19,8 +19,9 @@ if [ -n "$tracked" ]; then
 fi
 
 # 2. history gate: local-only files must never appear in history.
-if git log --all --oneline -- thoughts/ .env CLAUDE.md 2>/dev/null | grep -q .; then
-  echo "PRE-PUSH BLOCK: thoughts/, .env, or CLAUDE.md found in git history." >&2
+#    '.env.*' catches variants (.env.production, .env.local); bare '.env' does not.
+if git log --all --oneline -- thoughts/ .env '.env.*' CLAUDE.md 2>/dev/null | grep -q .; then
+  echo "PRE-PUSH BLOCK: thoughts/, .env, .env.*, or CLAUDE.md found in git history." >&2
   fail=1
 fi
 

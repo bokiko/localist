@@ -88,7 +88,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-07-31*
+*Updated 2026-08-01*
 
 **🆕 New & active projects**
 - [gavamedia/deltafin](https://github.com/gavamedia/deltafin) — Run Kimi K3, a 2.8T-parameter Mixture-of-Experts LLM, on a single Apple Silicon Mac. Streams MXFP4 experts on demand over HTTP into a local disk cache — fused NEON kernels, Metal/MPS compute, exact · ⭐ 188

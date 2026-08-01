@@ -19,6 +19,7 @@ Look at the memory column (e.g. `12288MiB` = 12 GB). Find your tier:
 | 10–12 GB | Solid | `qwen3:8b` |
 | 16 GB | Strong | `qwen3:14b` |
 | 24 GB (3090/4090) | Enthusiast | `qwen3:32b` or `gemma3:27b` |
+| 32 GB (5090) | Top tier | `qwen3:32b` with plenty of context headroom |
 
 *(Model landscape moves fast — the Fresh updates feed on the front page tracks new releases.)*
 
@@ -43,9 +44,19 @@ ollama run qwen3:8b
 (Swap in the model from your tier table above.) First run downloads the model
 (a few GB — one-time). Then you're chatting, right in the terminal.
 
-Sanity check that it's using your GPU: while the model is answering, run
-`nvidia-smi` in another terminal — you should see GPU utilization and the
-`ollama` process holding VRAM.
+Sanity check that it's using your GPU: in another terminal, run
+
+```bash
+ollama ps
+```
+
+The **PROCESSOR** column should say `100% GPU`. If it says something like
+`38%/62% CPU/GPU`, the model was too big to fit and part of it is running on
+your CPU — that's why it feels slow. Drop down one model size.
+
+(`nvidia-smi` is worth a look too, but it can't tell you this: it shows the
+`ollama` process holding VRAM whether the model is fully resident or only
+half of it is.)
 
 ## Step 3: Get a real interface (optional but recommended)
 
@@ -78,7 +89,11 @@ does everything (download, manage, chat) with clicks instead of commands.
 ## Where to go next
 
 - **Bigger/other models:** browse [ollama.com/library](https://ollama.com/library) —
-  rule of thumb: model file size should be at most ~80% of your VRAM
+  rule of thumb: model file size should be at most ~80% of your VRAM.
+  Watch the units when you do this sum: ollama.com lists sizes in decimal GB,
+  which reads about 7% larger than the GiB your card actually reports. A model
+  listed as "20GB" is 18.8 GiB — comparing the two directly will make a model
+  look bigger than it is
 - **Coding assistant:** [Aider](https://github.com/Aider-AI/aider) (terminal) or
   [OpenCode](https://github.com/anomalyco/opencode) pointed at your Ollama instance
 - **Which model size fits your card:** [choosing models](choosing-models.md)

@@ -46,9 +46,13 @@ shows you *before downloading* whether a model fits your RAM.
 2. **Smaller + newer beats bigger + older.** A current 4B model beats a two-year-old
    13B model in most tasks — and runs much faster. Check the Fresh updates feed on the front page.
 3. **Close the RAM hogs.** Browsers eat gigabytes. Models need contiguous memory.
-4. **Try MoE models.** Mixture-of-experts models (e.g. the 30B-A3B class) activate
-   only a few billion parameters per token — surprisingly fast on CPU if you have
-   the RAM to hold them.
+4. **Try MoE models — but check the size first.** Mixture-of-experts models
+   activate only a few billion parameters per token, so they're surprisingly
+   fast on CPU. The catch is that you still need RAM for *all* of it: the
+   popular `qwen3:30b-a3b` is **17.3 GiB**, which is more than the total system
+   RAM of the 8 GB and 16 GB rows in the table above. On CPU there's no separate
+   GPU memory to spill into, so it simply won't load. This one is for the 32 GB
+   row only.
 
 ## When to upgrade, honestly
 

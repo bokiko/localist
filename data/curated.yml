@@ -126,11 +126,11 @@ entries:
     category: web_ui
     pick: true
     repo_or_url: open-webui/open-webui
-    license: BSD-3-Clause (with branding clause)
+    license: Open WebUI License (BSD-3-Clause base + branding clause; not an SPDX licence)
     beginner_fit: medium
     hardware_fit: Runs anywhere Docker runs; pairs with Ollama
     why_this_one: ChatGPT-style interface on top of Ollama — multi-user, built-in RAG ("Knowledge"), voice.
-    caveats: Needs Docker or Python setup; license added a branding restriction in 2025.
+    caveats: Needs Docker or Python setup. Not BSD-3-Clause despite the familiar wording — clause 4 forbids removing Open WebUI branding above 50 users in any 30-day period without a separate licence; GitHub's licence detector reports NOASSERTION.
     added: 2026-07-16
 
   - name: LibreChat
@@ -319,11 +319,11 @@ entries:
     category: rag_documents
     pick: false
     repo_or_url: open-webui/open-webui
-    license: BSD-3-Clause (with branding clause)
+    license: Open WebUI License (BSD-3-Clause base + branding clause; not an SPDX licence)
     beginner_fit: medium
     hardware_fit: Wherever Open WebUI runs
     why_this_one: If you already run Open WebUI, its built-in Knowledge feature covers basic document Q&A — no extra app needed.
-    caveats: Less document-focused than a dedicated RAG app.
+    caveats: Less document-focused than a dedicated RAG app. Same non-SPDX licence as the main Open WebUI entry — clause 4 restricts branding removal above 50 users.
     added: 2026-07-16
 
   # ── Coding assistants (the tool, not the model) ──────────────────

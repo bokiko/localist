@@ -242,13 +242,16 @@ def test_guides_link_glossary_before_using_its_vocabulary():
     failures = []
     for path in _guides_to_scan():
         lines = path.read_text().split("\n")
-        # A real markdown link, not the bare string: "[glossary](glossary.md"
-        # with a missing paren reads as correct in source and renders broken.
+        # A complete markdown link, not the bare string and not the tail of one.
+        # "[glossary](glossary.md" with a missing paren reads as correct in
+        # source and renders broken; "![glossary](glossary.md)" is an image and
+        # "glossary](glossary.md)" is malformed — neither gives the reader a
+        # link to follow, so both must fail the check that guarantees one.
         link_at = next(
             (
                 i
                 for i, line in enumerate(lines)
-                if re.search(r"\]\(glossary\.md(?:#[\w-]+)?\)", line)
+                if re.search(r"(?<!!)\[[^\]]+\]\(glossary\.md(?:#[\w-]+)?\)", line)
             ),
             None,
         )

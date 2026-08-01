@@ -31,15 +31,17 @@ awk '{printf "%.1f GB VRAM  (%s)\n", $1/1073741824, FILENAME}' \
 
 Only AMD cards appear here, one line each.
 
-- **One line, 8 GB or more?** That's your Radeon. Use that number.
-- **One line, under 8 GB?** That is almost certainly your CPU's built-in
-  graphics rather than a discrete Radeon card. Either way the table below
-  starts at 8 GB, so it has no row for you — follow [CPU-only](cpu-only.md)
-  instead, which is the right path for integrated AMD graphics.
-- **Two lines?** Your CPU has built-in graphics as well as your Radeon. The
-  **larger** number is the Radeon — built-in graphics reserve a much smaller
-  amount, usually well under 2 GB. A line reading `0.5 GB` is the built-in one,
-  not a broken card.
+- **Two lines?** Your CPU has built-in graphics as well as your Radeon. Take
+  the **larger** number — built-in graphics reserve much less, usually well
+  under 2 GB. A line reading `0.5 GB` is the built-in one, not a broken card.
+  Then read the rules below for that larger number.
+- **8 GB or more?** That's your Radeon. Use it in the table below.
+- **Under 8 GB but 2 GB or more?** A real Radeon, just a small one — the 4 GB version of
+  the RX 6500 XT lands here — or a generous built-in-graphics allocation. Either
+  way it's under this table's 8 GB floor, so the models here are too big for it.
+  [CPU-only](cpu-only.md) has the sizes that will actually run.
+- **Under 2 GB?** That's your CPU's built-in graphics, not a separate card.
+  [CPU-only](cpu-only.md) is your path.
 - **An error instead of a number?** (`no matches found`, or `cannot open file`.)
   The `amdgpu` driver isn't loaded for your card. Check the
   [ROCm compatibility docs](https://rocm.docs.amd.com/) before going further —

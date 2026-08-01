@@ -2,8 +2,10 @@
 
 Find what you're seeing on screen. Each fix is the shortest thing that works.
 
-Nothing here can break your computer. The worst case is deleting a model file and
-downloading it again.
+Most of what goes wrong here is undone by deleting a model file and downloading it
+again. The one place to slow down is a **security warning while installing** — that
+one deserves a moment's attention rather than a click-through, and there's a section
+on it [below](#windows-blocked-the-installer).
 
 **Jump to:** [Where do I type this?](#the-guide-gave-me-a-command-and-i-dont-know-where-to-type-it) ·
 [How do I stop?](#how-do-i-stop-the-chat) ·
@@ -34,8 +36,10 @@ A window opens with a blinking cursor. **Type the command there and press Enter.
 You can copy and paste it — right-click pastes in PowerShell,
 `Cmd` + `V` on Mac, `Ctrl` + `Shift` + `V` in most Linux terminals.
 
-Nothing you type in a terminal is dangerous by itself, and nothing here will change
-your system beyond installing the program you asked for.
+The commands in these guides only install and run the program you asked for. The one
+habit worth keeping for life: **don't paste a command you don't understand from a
+source you don't trust.** That's the single way a terminal can genuinely bite you,
+and it's worth more than any warning box.
 
 **Would rather not use a terminal at all?** [LM Studio](https://lmstudio.ai) does all
 of this — download a model, chat with it — with buttons instead of commands. It's a
@@ -139,8 +143,11 @@ came from, delete it and download it again from the official site.
 
 ### It sits on the same percentage for a long time
 
-Model files are gigabytes. On a normal home connection the first download takes
-**5 to 30 minutes**. A progress bar that moves slowly is working.
+Model files are gigabytes. The beginner picks are roughly 2–10 GB, which on a normal
+home connection is **5 to 30 minutes**. A progress bar that moves slowly is working.
+
+If you're on the 64 GB+ tier and pulling a 70B-class model, that's **over 40 GB** —
+budget well over an hour, and don't read a slow bar as a stall.
 
 If it's genuinely frozen — no change for several minutes — press `Ctrl` + `C`,
 then run the same command again. **It resumes where it left off**; you don't
@@ -154,8 +161,15 @@ If it keeps failing at the same point, you're likely out of disk space — see b
 
 ### "No space left" / the download dies near the end
 
-Check you have room. Models are 1–20 GB each, and you need the space *free*, not
-just "nearly free".
+Check you have room, and note you need the space *free*, not just "nearly free":
+
+- **Beginner picks** — about 2–10 GB each (`qwen3:4b` ≈ 2.5 GB, `qwen3:8b` ≈ 5 GB,
+  `qwen3:14b` ≈ 9 GB)
+- **30B-class** — around 17–20 GB
+- **70B-class**, the [64 GB+ tier](start-here.md#question-2-how-much-memory-does-it-have) —
+  **over 40 GB** for a single model
+
+If you're in the top tier, plan disk space against that last number, not the first.
 
 To see what you've downloaded and reclaim space:
 

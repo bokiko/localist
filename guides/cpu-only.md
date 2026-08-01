@@ -30,9 +30,10 @@ expectations right and this is genuinely useful — not a toy.
 
 ## Step 2: Run a small model
 
-Ollama installs two things: an app you can click, and a command you can type.
-On Windows and Mac the app can download and chat with models on its own — open
-it from the Start menu or Applications if you'd rather not use commands at all.
+On Windows and Mac, Ollama installs two things: an app you can click, and a
+command you can type. The app can download and chat with models on its own —
+open it from the Start menu or Applications if you'd rather not use commands at
+all. On Linux you get the command only.
 
 The rest of this page uses the command, because the tips further down are
 written as commands. To reach it, open a terminal:

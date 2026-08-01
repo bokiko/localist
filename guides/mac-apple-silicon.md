@@ -13,7 +13,7 @@ Apple menu → **About This Mac** → Memory.
 | 8 GB | Tight but works | Phi-4 Mini or Qwen3 4B |
 | 16 GB | Sweet spot entry | Qwen3 8B (≈11 GB is usable for models after macOS takes its share) |
 | 32 GB | Genuinely powerful | Qwen3 14B, or the fast 30B-class MoE models |
-| 64 GB+ | Big leagues | 70B-class models run comfortably |
+| 64 GB+ | Big leagues | 70B-class models run, with little room to spare |
 
 *(Model landscape moves fast — the Fresh updates feed on the front page tracks new releases.)*
 
@@ -32,12 +32,24 @@ is too big for your Mac.
 ## Alternative: Ollama (the terminal route)
 
 If you're comfortable in Terminal and want the tool the rest of the ecosystem
-plugs into:
+plugs into, download Ollama from [ollama.com/download](https://ollama.com/download)
+and open it once. That starts the background server and installs the `ollama`
+command. Then:
+
+```bash
+ollama run qwen3:8b
+```
+
+Using Homebrew instead? `brew install ollama` gives you the command but **not**
+a running server, so you need one extra line first:
 
 ```bash
 brew install ollama
+brew services start ollama
 ollama run qwen3:8b
 ```
+
+Without that middle line you'll get `could not connect to ollama server`.
 
 Ollama gives you a local API at `localhost:11434` that other apps
 (coding assistants, web UIs) can connect to.

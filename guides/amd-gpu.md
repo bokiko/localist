@@ -17,19 +17,31 @@ roughly two setup styles:
 
 ## Step 0: Check your card and VRAM
 
-- **Windows:** `Ctrl+Shift+Esc` → Performance → GPU
-- **Linux:** `lspci | grep -i vga`
+- **Windows:** `Ctrl+Shift+Esc` → Performance → GPU, and read the
+  **Dedicated GPU memory** figure
+- **Linux:** `rocm-smi --showmeminfo vram` if ROCm is installed, otherwise
+  `glxinfo -B | grep -i "Video memory"` (from the `mesa-utils` package)
 
-| VRAM | First model to run |
-|---|---|
-| 8 GB | `qwen3:4b` |
-| 12 GB | `qwen3:8b` |
-| 16 GB (e.g. RX 7800 XT) | `qwen3:14b` |
-| 20–24 GB (RX 7900 XT/XTX) | `qwen3:32b` or `gemma3:27b` |
+`lspci | grep -i vga` will name your card, but it never prints the VRAM number —
+and VRAM is what the table below is keyed on.
 
-High-VRAM Radeons such as the RX 7900 XT (20 GB) and RX 7900 XTX (24 GB) deliver
-strong inference performance at a significantly lower price than their NVIDIA
-equivalents — they're widely considered the value play of local AI.
+| VRAM | Example cards | First model to run |
+|---|---|---|
+| 8 GB | — | `qwen3:4b` |
+| 12 GB | — | `qwen3:8b` |
+| 16 GB | RX 7800 XT, RX 9070 / 9070 XT | `qwen3:14b` |
+| 20 GB | RX 7900 XT | `qwen3:14b` |
+| 24 GB | RX 7900 XTX | `qwen3:32b` or `gemma3:27b` |
+
+**Why 20 GB and 24 GB are separate rows:** `qwen3:32b` is 18.8 GiB of weights.
+On a 24 GB card that is 78% — it fits with room for context. On a 20 GB card it
+is 94%, which leaves nothing for the context window, so it either crawls on a
+partial CPU offload or fails to load. `gemma3:27b` (16.2 GiB) is 81% of a 20 GB
+card — technically loadable, but only with a short context.
+
+RDNA4 cards (RX 9070, RX 9070 XT) are supported by ROCm — check the
+[compatibility matrix](https://rocm.docs.amd.com/en/latest/compatibility/compatibility-matrix.html)
+for your exact model and distro before you plan around it.
 
 ## Easiest path: LM Studio with Vulkan (Windows & Linux)
 

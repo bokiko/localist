@@ -1,5 +1,7 @@
 # CPU-Only Path — yes, it works
 
+*Unfamiliar word? The [glossary](glossary.md) explains every term here in plain English.*
+
 No GPU? Intel Mac? Integrated graphics? You can still run real models. Set your
 expectations right and this is genuinely useful — not a toy.
 

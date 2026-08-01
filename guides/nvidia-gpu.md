@@ -1,5 +1,7 @@
 # NVIDIA GPU Path — zero to chatting in 15 minutes
 
+*Unfamiliar word? The [glossary](glossary.md) explains every term here in plain English.*
+
 You have an NVIDIA GeForce card. This is the smoothest road in local AI — everything
 supports CUDA out of the box.
 

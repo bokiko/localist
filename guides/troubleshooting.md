@@ -1,5 +1,7 @@
 # Troubleshooting — when it doesn't just work
 
+*Unfamiliar word? The [glossary](glossary.md) explains every term here in plain English.*
+
 Find what you're seeing on screen. Each fix is the shortest thing that works.
 
 Most of what goes wrong here is undone by deleting a model file and downloading it
@@ -28,22 +30,23 @@ That goes in a **terminal** — a plain window where you type commands instead o
 clicking. Every computer already has one; you just haven't needed it before.
 
 **Open it:**
-- **Windows:** press `Start`, type `powershell`, press Enter
-- **Mac:** press `Cmd` + `Space`, type `terminal`, press Enter
-- **Linux:** `Ctrl` + `Alt` + `T` on most desktops
+- **Windows:** click **Start**, type `powershell`, press Enter
+- **Mac:** press **Cmd+Space**, type `terminal`, press Enter
+- **Linux:** press **Ctrl+Alt+T**, or search your applications for Terminal
 
 A window opens with a blinking cursor. **Type the command there and press Enter.**
 You can copy and paste it — right-click pastes in PowerShell,
-`Cmd` + `V` on Mac, `Ctrl` + `Shift` + `V` in most Linux terminals.
+**Cmd+V** on Mac, **Ctrl+Shift+V** in most Linux terminals.
 
 The commands in these guides only install and run the program you asked for. The one
 habit worth keeping for life: **don't paste a command you don't understand from a
-source you don't trust.** That's the single way a terminal can genuinely bite you,
-and it's worth more than any warning box.
+source you don't trust.** That's the main way a terminal can cause real trouble, and
+this habit is worth more than any warning box.
 
-**Would rather not use a terminal at all?** [LM Studio](https://lmstudio.ai) does all
-of this — download a model, chat with it — with buttons instead of commands. It's a
-normal desktop app. Both the Mac and AMD guides start there.
+**Would rather not type commands at all?** On Windows and Mac, Ollama also installs a
+clickable app — open it from the Start menu or Applications. (On Linux it's the command
+only.) [LM Studio](https://lmstudio.ai) is a separate app that does the same job and adds
+one useful thing: it checks a model against your memory *before* you download it.
 
 ---
 
@@ -57,7 +60,7 @@ You're at a prompt that looks like this and nothing you type ends it:
 
 **Type `/bye` and press Enter.** That's it — you're back at your normal terminal.
 
-`Ctrl` + `D` does the same thing. So does `/exit`. If you press `Ctrl` + `C`,
+**Ctrl+D** does the same thing. So does `/exit`. If you press **Ctrl+C**,
 Ollama will remind you: *"Use Ctrl + d or /bye to exit."*
 
 Closing the terminal window also works and breaks nothing.
@@ -70,9 +73,9 @@ You only download it once.
 The model is still there. You need two things: a terminal, and one command.
 
 **Open a terminal**
-- **Windows:** press `Start`, type `powershell`, press Enter
-- **Mac:** press `Cmd` + `Space`, type `terminal`, press Enter
-- **Linux:** `Ctrl` + `Alt` + `T` on most desktops
+- **Windows:** click **Start**, type `powershell`, press Enter
+- **Mac:** press **Cmd+Space**, type `terminal`, press Enter
+- **Linux:** press **Ctrl+Alt+T**, or search your applications for Terminal
 
 **Then run the same command you ran the first time:**
 
@@ -149,7 +152,7 @@ home connection is **5 to 30 minutes**. A progress bar that moves slowly is work
 If you're on the 64 GB+ tier and pulling a 70B-class model, that's **over 40 GB** —
 budget well over an hour, and don't read a slow bar as a stall.
 
-If it's genuinely frozen — no change for several minutes — press `Ctrl` + `C`,
+If it's genuinely frozen — no change for several minutes — press **Ctrl+C**,
 then run the same command again. **It resumes where it left off**; you don't
 start over.
 
@@ -177,6 +180,17 @@ To see what you've downloaded and reclaim space:
 ollama list           # what you have
 ollama rm qwen3:8b    # delete one you don't want
 ```
+
+**If the download died partway, `ollama list` won't show it.** An unfinished model has no
+entry yet, so `ollama rm` has nothing to remove — but the pieces already downloaded are
+still using your disk. Two ways out:
+
+- **Finish it.** Free up space somewhere else, then run the same command again. It picks
+  up from where it stopped rather than starting over.
+- **Take the space back.** The unfinished pieces sit in `~/.ollama/models/blobs`
+  (on Windows, `%USERPROFILE%\.ollama\models\blobs`). Files with **-partial** in the
+  name are the incomplete ones and are safe to delete. Leave everything else in that
+  folder alone — those are the models you already have.
 
 ---
 

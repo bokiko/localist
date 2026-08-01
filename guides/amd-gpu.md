@@ -1,5 +1,7 @@
 # AMD GPU Path — better than its reputation
 
+*Unfamiliar word? The [glossary](glossary.md) explains every term here in plain English.*
+
 You have a Radeon RX card. The old advice was "AMD and local AI don't mix" — that's
 outdated. ROCm 7.x has significantly improved AMD support, and Ollama, LM Studio,
 llama.cpp, and vLLM all run on Radeon — though exact compatibility depends on your
@@ -39,9 +41,10 @@ Only AMD cards appear here, one line each.
   down to the nearest row — a 10 GB card uses the 5–8 GB row.
 - **Under 8 GB but 2 GB or more?** A real Radeon, just a small one — the 4 GB
   version of the RX 6500 XT lands here. **Stay on this page.** The Vulkan path
-  below works on cards this size; you just need a smaller model, so use one of
-  the top two rows in the table. (If you know you have no separate graphics card and
-  this is your CPU's built-in graphics, [CPU-only](cpu-only.md) fits better.)
+  below works on cards this size; you just need a smaller model, so match your
+  number to one of the top two rows in the table. (If you know you have no
+  separate graphics card and this is your CPU's built-in graphics,
+  [CPU-only](cpu-only.md) fits better.)
 - **Under 2 GB?** That's your CPU's built-in graphics, not a separate card.
   [CPU-only](cpu-only.md) is your path.
 - **An error instead of a number?** (`no matches found`, or `cannot open file`.)

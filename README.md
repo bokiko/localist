@@ -26,6 +26,9 @@ stale recommendations instead of hoarding them.
 [The essentials](#-the-essentials) · [Fresh updates](#-fresh-updates) ·
 [Glossary](guides/glossary.md) · [Contributing](#-contributing)
 
+**Not sure what hardware you have?** → [Work it out in two questions](guides/start-here.md)
+· **Something not working?** → [Troubleshooting](guides/troubleshooting.md)
+
 ---
 
 ## 🚀 Start here — pick your hardware
@@ -48,6 +51,10 @@ local model in under 15 minutes.
 
 Everything here can run locally; many paths work offline after setup, and your
 prompts stay on your machine unless you connect a cloud service.
+
+**Stuck partway?** [Troubleshooting](guides/troubleshooting.md) covers the handful of
+things that actually go wrong — including *"where do I type this command?"*, how to
+stop the chat, and how to start it again tomorrow.
 
 ---
 
@@ -109,10 +116,17 @@ Essentials table above if you want the trusted beginner picks.*
 
 ## 📚 New to all of this?
 
+Don't know what hardware you have? [Start here](guides/start-here.md) works it out in
+two questions, and tells you what a local model will and won't do well before you
+spend time on it.
+
 The [glossary](guides/glossary.md) explains every term you'll bump into —
-GGUF, quantization, context window, VRAM, tokens/sec — in plain words.
+GGUF, quantization, weights, context window, VRAM, tokens/sec — in plain words.
 And [choosing models](guides/choosing-models.md) answers the #1 question:
 *which model size actually fits my machine?*
+
+When something doesn't work, [troubleshooting](guides/troubleshooting.md) is organised
+by what you see on screen — not by what went wrong underneath.
 
 ## 🤝 Contributing
 

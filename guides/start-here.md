@@ -21,11 +21,18 @@ You need to know your graphics card (GPU):
 - **Windows:** press `Ctrl+Shift+Esc` → Performance tab → look for **GPU**
 - **Linux:** run `lspci | grep -i vga` in a terminal
 
+**Seeing two of them — "GPU 0" and "GPU 1"?** That's normal on most laptops: one
+graphics chip built into the processor, one separate and much faster. **Go by the
+faster one.** If either says **NVIDIA** or **AMD / Radeon RX**, that's your answer —
+use its row below and ignore the Intel one. Picking the wrong one here is the most
+common way people end up running a small model slowly on a machine that could have
+run a bigger one quickly.
+
 | Your GPU says… | Go to |
 |---|---|
 | NVIDIA / GeForce RTX / GTX | [NVIDIA guide](nvidia-gpu.md) |
 | AMD / Radeon RX | [AMD guide](amd-gpu.md) |
-| Intel Arc / Intel Iris / "integrated" | [CPU-only guide](cpu-only.md) *(for now — Vulkan support for Intel GPUs is improving, so this routing may change)* |
+| Intel Arc / Intel Iris / "integrated" *(and nothing else listed)* | [CPU-only guide](cpu-only.md) *(for now — Vulkan support for Intel GPUs is improving, so this routing may change)* |
 | No GPU listed | [CPU-only guide](cpu-only.md) |
 
 ## Question 2: How much memory does it have?
@@ -62,12 +69,46 @@ see [choosing models](choosing-models.md).
 - **Offline** — works on a plane, works when the internet is down
 - **Control** — pick your model, tune it, swap it, no one can take it away
 
-The trade-off: local models are smaller than the biggest cloud models. For everyday
-chat, writing help, coding assistance, and summarization, a good local model on
-16 GB+ of memory feels remarkably close.
+## What this will and won't do well
+
+Worth knowing before you start, so nothing here surprises you into giving up. This
+assumes a decent model on 16 GB+ — smaller machines lean further toward the right
+column.
+
+| Genuinely good at | Will disappoint you |
+|---|---|
+| Everyday chat, explaining things, brainstorming | Hard reasoning, tricky maths, long chains of logic |
+| Rewriting, summarising, tone and grammar | Anything needing current facts — it has no internet and no live knowledge |
+| Coding help on a file or function you paste in | Holding a whole codebase in its head |
+| Drafting and editing your own writing | Long documents — speed drops sharply and it starts losing the thread |
+| Working offline, privately, unlimited, free | Matching the biggest cloud models on the hardest questions |
+
+**The honest summary:** a good local model is a capable everyday assistant, not a
+smaller copy of the best cloud model. For the tasks in the left column most people
+stop noticing the difference. For the right column you will notice, and no amount of
+setup fixes it — that's the size of the model, not your machine.
+
+**It will also state wrong things confidently.** Every model does; smaller ones do it
+more. Check anything that matters.
 
 ## Words you'll bump into
 
 Model names look like `qwen3:8b-q4_K_M`. The [glossary](glossary.md) decodes all of it
 in plain words. You don't need it to get started — your hardware guide gives exact
 commands to copy-paste.
+
+## Two things to know before you go
+
+**If something goes wrong**, it's almost certainly one of a handful of common things,
+and none of them break your computer → **[troubleshooting](troubleshooting.md)**.
+
+**When you're done chatting**, type `/bye` to get out. Your model stays on your disk —
+tomorrow you just open a terminal and run the same command again. The
+[how do I get back tomorrow](troubleshooting.md#how-do-i-get-back-tomorrow) section
+has the two-line version.
+
+---
+
+**Now pick your guide** — [Mac](mac-apple-silicon.md) ·
+[NVIDIA](nvidia-gpu.md) · [AMD](amd-gpu.md) · [CPU-only](cpu-only.md) —
+or go back to [the hardware table](../README.md#-start-here--pick-your-hardware).

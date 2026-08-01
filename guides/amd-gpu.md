@@ -35,7 +35,8 @@ Only AMD cards appear here, one line each.
   the **larger** number — built-in graphics reserve much less, usually well
   under 2 GB. A line reading `0.5 GB` is the built-in one, not a broken card.
   Then read the rules below for that larger number.
-- **8 GB or more?** That's your Radeon. Use it in the table below.
+- **8 GB or more?** That's your Radeon. Use it in the table below, rounding
+  down to the nearest row — a 10 GB card uses the 5–8 GB row.
 - **Under 8 GB but 2 GB or more?** A real Radeon, just a small one — the 4 GB
   version of the RX 6500 XT lands here. **Stay on this page.** The Vulkan path
   below works on cards this size; you just need a smaller model, so use one of

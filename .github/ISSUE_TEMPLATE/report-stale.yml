@@ -3,11 +3,21 @@ description: Flag an abandoned tool, broken instruction, or outdated recommendat
 title: "[stale] "
 labels: [stale-report]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping prune dead or risky recommendations.
+
+        If the link, download, install command, or project looks compromised,
+        malicious, or unsafe to run, **do not post details in this public issue**.
+        Use the repository Security tab -> "Report a vulnerability", or follow
+        `SECURITY.md`, so the maintainer can review it privately first.
   - type: input
     id: entry
     attributes:
-      label: Which entry or guide?
-      placeholder: e.g. "KoboldCpp in curated.yml" or "guides/amd-gpu.md step 2"
+      label: Which tool, page, or guide?
+      description: Use the visible name first. File paths are optional if you know them.
+      placeholder: e.g. "LM Studio in The essentials" or "AMD guide step 2"
     validations:
       required: true
   - type: dropdown
@@ -15,10 +25,11 @@ body:
     attributes:
       label: What's wrong?
       options:
-        - Project appears abandoned (no activity in 6+ months)
+        - Project appears abandoned (no commits or releases in 3+ months)
         - Instructions no longer work
         - Model recommendation is outdated
         - Link is dead
+        - Unsafe recommendation or suspicious download
         - Other (explain below)
     validations:
       required: true
@@ -26,6 +37,11 @@ body:
     id: details
     attributes:
       label: Details
-      description: What did you observe? Links or error messages help a lot.
+      description: >
+        What did you observe? Include what you clicked or ran, what happened,
+        what you expected, and your OS or hardware if it matters. Links or error
+        messages help a lot. Remove private details first: tokens, API keys,
+        account names, private file paths, machine names, screenshots with
+        secrets, and anything not meant for a public GitHub issue.
     validations:
       required: true

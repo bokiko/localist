@@ -3,10 +3,16 @@ description: Propose a tool, app, or resource for the curated list
 title: "[suggest] "
 labels: [suggestion]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Please suggest public, locally runnable tools only. Do not include access
+        tokens, API keys, private invite links, or screenshots with secrets.
   - type: input
     id: name
     attributes:
       label: Tool name
+      placeholder: e.g. LM Studio
     validations:
       required: true
   - type: input
@@ -14,6 +20,7 @@ body:
     attributes:
       label: Repository or website URL
       placeholder: https://github.com/owner/repo
+      description: Use a public project page. Do not paste private beta or invite-only links.
     validations:
       required: true
   - type: dropdown
@@ -39,8 +46,9 @@ body:
     attributes:
       label: Why should this be listed?
       description: >
-        Who is it for, and why is it better than (or complementary to) the
-        current pick in its category? "Popular" is not a reason on its own.
+        What beginner problem does it solve, who is it for, and why is it better
+        than (or complementary to) the current pick in its category? "Popular"
+        is not a reason on its own.
     validations:
       required: true
   - type: checkboxes

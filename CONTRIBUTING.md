@@ -17,11 +17,21 @@ to be listed it should be:
 "It's on GitHub and has stars" is not enough. Tell us *who* it's for and *why*
 it beats (or complements) the current pick in its category.
 
+Do not include private invite links, access tokens, API keys, screenshots with
+secrets, or anything that would expose another person's account or machine.
+
 ## Report a stale entry
 
 Tool abandoned? Instructions broken? Model recommendation outdated? Open a
 [report-stale issue](../../issues/new?template=report-stale.yml). This is the most
 valuable contribution of all — most lists rot because nobody does this.
+
+If the entry looks compromised, malicious, or unsafe to run, do **not** post
+details publicly. Follow [SECURITY.md](SECURITY.md) so the maintainer can check
+it privately first.
+
+Use the same freshness rule as new listings: if a tool has no commits or
+releases in the last 3 months, a stale report is useful.
 
 ## Fix or improve a guide
 

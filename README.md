@@ -119,6 +119,8 @@ And [choosing models](guides/choosing-models.md) answers the #1 question:
 Found a great tool? Spotted a dead project? Open an issue —
 [suggest a tool](https://github.com/bokiko/localist/issues/new?template=suggest-tool.yml) ·
 [report a stale entry](https://github.com/bokiko/localist/issues/new?template=report-stale.yml).
+If a link, download, or command looks unsafe or compromised, report it privately
+through [SECURITY.md](SECURITY.md) instead of a public issue.
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the ground rules.
 
 ## 📄 License

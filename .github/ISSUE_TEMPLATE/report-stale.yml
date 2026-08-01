@@ -8,8 +8,8 @@ body:
       value: |
         Thanks for helping prune dead or risky recommendations.
 
-        If the link, download, install command, or project looks compromised,
-        malicious, or unsafe to run, **do not post details in this public issue**.
+        If a third-party link, download, install command, or project looks
+        compromised or malicious, **do not post details in this public issue**.
         Use the repository Security tab -> "Report a vulnerability", or follow
         `SECURITY.md`, so the maintainer can review it privately first.
   - type: input
@@ -29,7 +29,7 @@ body:
         - Instructions no longer work
         - Model recommendation is outdated
         - Link is dead
-        - Unsafe recommendation or suspicious download
+        - Unsafe or dangerous instruction in a Localist guide
         - Other (explain below)
     validations:
       required: true
@@ -40,8 +40,10 @@ body:
       description: >
         What did you observe? Include what you clicked or ran, what happened,
         what you expected, and your OS or hardware if it matters. Links or error
-        messages help a lot. Remove private details first: tokens, API keys,
-        account names, private file paths, machine names, screenshots with
-        secrets, and anything not meant for a public GitHub issue.
+        messages help a lot. If this is about a compromised or malicious
+        third-party download, stop here and use the repository Security tab ->
+        "Report a vulnerability" instead. Remove private details first: tokens,
+        API keys, account names, private file paths, machine names, screenshots
+        with secrets, and anything not meant for a public GitHub issue.
     validations:
       required: true

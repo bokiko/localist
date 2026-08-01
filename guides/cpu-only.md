@@ -50,8 +50,9 @@ ollama run qwen3:4b
 
 First run downloads a couple of GB. Then chat directly in that same window.
 
-**Prefer an app?** [LM Studio](https://lmstudio.ai) does the same with a GUI and
-shows you *before downloading* whether a model fits your RAM.
+**Want to know a model fits before you download it?** [LM Studio](https://lmstudio.ai)
+checks a model against your RAM up front and warns you if it won't fit — useful
+when you're close to the limit.
 
 ## Tricks that matter more on CPU
 

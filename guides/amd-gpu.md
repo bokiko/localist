@@ -36,10 +36,11 @@ Only AMD cards appear here, one line each.
   under 2 GB. A line reading `0.5 GB` is the built-in one, not a broken card.
   Then read the rules below for that larger number.
 - **8 GB or more?** That's your Radeon. Use it in the table below.
-- **Under 8 GB but 2 GB or more?** A real Radeon, just a small one — the 4 GB version of
-  the RX 6500 XT lands here — or a generous built-in-graphics allocation. Either
-  way it's under this table's 8 GB floor, so the models here are too big for it.
-  [CPU-only](cpu-only.md) has the sizes that will actually run.
+- **Under 8 GB but 2 GB or more?** A real Radeon, just a small one — the 4 GB
+  version of the RX 6500 XT lands here. **Stay on this page.** The Vulkan path
+  below works on cards this size; you just need a smaller model, so use one of
+  the top two rows in the table. (If you know you have no separate graphics card and
+  this is your CPU's built-in graphics, [CPU-only](cpu-only.md) fits better.)
 - **Under 2 GB?** That's your CPU's built-in graphics, not a separate card.
   [CPU-only](cpu-only.md) is your path.
 - **An error instead of a number?** (`no matches found`, or `cannot open file`.)
@@ -54,7 +55,8 @@ display — on a laptop that's usually the built-in one, so it can hand you a
 
 | VRAM | Example cards | First model to run |
 |---|---|---|
-| 8 GB | — | `qwen3:4b` |
+| Under 5 GB | RX 6500 XT (4 GB) | `qwen3:1.7b` |
+| 5–8 GB | — | `qwen3:4b` |
 | 12 GB | — | `qwen3:8b` |
 | 16 GB | RX 7800 XT, RX 9070 / 9070 XT | `qwen3:14b` |
 | 20 GB | RX 7900 XT | `qwen3:14b` |

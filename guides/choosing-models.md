@@ -1,5 +1,7 @@
 # Choosing Models — what fits your machine
 
+*Unfamiliar word? The [glossary](glossary.md) explains every term here in plain English.*
+
 The single most common beginner question: *"which model can I actually run?"*
 The answer is almost entirely about **memory** — your GPU's VRAM, or on a Mac,
 your unified memory.

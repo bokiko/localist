@@ -1,5 +1,7 @@
 # Mac (Apple Silicon) Path — zero to chatting in 10 minutes
 
+*Unfamiliar word? The [glossary](glossary.md) explains every term here in plain English.*
+
 M1, M2, M3, or M4 — any of them. Apple Silicon is quietly one of the best local-AI
 platforms: the **unified memory** means your Mac's RAM *is* your GPU memory, and
 Apple's **MLX** framework makes models load faster and run quicker than generic backends.

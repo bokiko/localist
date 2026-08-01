@@ -148,3 +148,96 @@ def test_readme_relative_links_resolve():
     # guides/... and data/... links in README must point at real files
     for target in re.findall(r"\]\(((?:guides|data)/[^)#]+)\)", README):
         assert (REPO / target).exists(), f"README links missing file: {target}"
+
+
+# ── guides link to the glossary before they use its vocabulary ───────
+
+# A guide that says "3-4B parameters" without ever sending the reader to the
+# glossary teaches nothing: the term is defined, but not where they are. This
+# guards the linking convention so it cannot rot back one guide at a time.
+#
+# Scope: guides/*.md MINUS glossary.md -- the glossary is the destination, so
+# requiring it to link to itself is meaningless. README.md is out of scope.
+#
+# Counting: one failure per (file, term) at FIRST use, not per occurrence.
+# Measured before the fix, the parameter pattern alone had 45 occurrences
+# across 5 files -- reporting 45 items for 5 fixes is how a test gets muted.
+#
+# Product names are excluded on purpose. You *install* Ollama and LM Studio;
+# demanding a glossary link before "Install Ollama" is noise, and noise is
+# what gets a check switched off.
+GLOSSARY_PRODUCTS = {"Ollama", "LM Studio", "Open WebUI", "llama.cpp"}
+
+# Adjectives and fragments that match inside unrelated words (e.g. "mini"
+# inside "phi4-mini"). Dropped rather than special-cased.
+GLOSSARY_NON_TERMS = {"mini", "tiny models", "Distilled", "abliterated", "Uncensored"}
+
+# Jargon whose ON-PAGE form differs from its glossary heading. These are NOT a
+# convenience: the heading is 'Model parameters (the "B" numbers)' while every
+# page writes "8B", and the length filter below drops "Q4"/"Q5"/"Q8" entirely
+# because they are two characters. Delete these patterns and three glossary
+# terms lose their only coverage.
+GLOSSARY_PATTERNS = {
+    "parameter count (3-4B, 8B, 70B)": r"(?<![\w.])\d+(?:\.\d+)?B\b",
+    "quantization level (Q4, q4_K_M)": r"(?<![\w])[Qq][458](?:_[A-Za-z_]+)?\b",
+    "MoE tag (30B-A3B)": r"\b\d+B-A\d+B\b",
+}
+
+
+def _glossary_terms() -> list[str]:
+    headings = re.findall(
+        r"^\*\*([^*]+)\*\*", (REPO / "guides" / "glossary.md").read_text(), re.M
+    )
+    terms = set()
+    for heading in headings:
+        heading = re.sub(r"\(.*?\)", "", heading).replace("`", "")
+        for part in heading.split("/"):
+            part = re.sub(r"\s+", " ", part).strip()
+            # len > 2 also drops Q4/Q5/Q8 -- see GLOSSARY_PATTERNS above
+            if len(part) > 2 and part not in GLOSSARY_PRODUCTS | GLOSSARY_NON_TERMS:
+                terms.add(part)
+    return sorted(terms)
+
+
+def _guides_to_scan():
+    return sorted(
+        p for p in (REPO / "guides").glob("*.md") if p.name != "glossary.md"
+    )
+
+
+def test_glossary_terms_are_discoverable():
+    """The term list must not silently empty out if glossary.md is restructured."""
+    terms = _glossary_terms()
+    assert len(terms) >= 20, f"only {len(terms)} glossary terms parsed — check the headings"
+    assert "VRAM" in terms and "Quantization" in terms
+
+
+def test_guides_link_glossary_before_using_its_vocabulary():
+    failures = []
+    for path in _guides_to_scan():
+        lines = path.read_text().split("\n")
+        link_at = next(
+            (i for i, line in enumerate(lines) if "glossary.md" in line), None
+        )
+
+        def first_use(pattern, flags=0):
+            return next(
+                (i for i, line in enumerate(lines) if re.search(pattern, line, flags)),
+                None,
+            )
+
+        checks = [
+            (term, r"(?<![\w`])" + re.escape(term) + r"(?![\w])", re.I)
+            for term in _glossary_terms()
+        ] + [(label, pattern, 0) for label, pattern in GLOSSARY_PATTERNS.items()]
+
+        for label, pattern, flags in checks:
+            used_at = first_use(pattern, flags)
+            if used_at is not None and (link_at is None or link_at > used_at):
+                failures.append(f"{path.name}:{used_at + 1} uses {label!r}")
+
+    assert not failures, (
+        "these guides use glossary vocabulary before linking to the glossary "
+        "(add a glossary.md link at or above the line):\n  "
+        + "\n  ".join(sorted(failures))
+    )

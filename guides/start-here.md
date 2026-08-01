@@ -1,5 +1,7 @@
 # Start Here — figure out what you have
 
+*Unfamiliar word? The [glossary](glossary.md) explains every term here in plain English.*
+
 You want to run AI on your own machine but don't know where to begin.
 Answer two questions and this page routes you to the right guide.
 
@@ -102,10 +104,10 @@ commands to copy-paste.
 **If something goes wrong**, it's almost certainly one of a handful of common things,
 and none of them break your computer → **[troubleshooting](troubleshooting.md)**.
 
-**When you're done chatting**, type `/bye` to get out. Your model stays on your disk —
-tomorrow you just open a terminal and run the same command again. The
+**When you're done chatting**, your model stays on your disk either way — you only
+download it once. Using an app? Just close it. At a terminal prompt? Type `/bye`. The
 [how do I get back tomorrow](troubleshooting.md#how-do-i-get-back-tomorrow) section
-has the two-line version.
+has the two-line version for both.
 
 ---
 

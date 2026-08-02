@@ -11,7 +11,12 @@ fail=0
 
 # 1. tracked-file gate: local-only material must never be tracked.
 #    Keep this list in sync with tests/test_git_hygiene.py::SENSITIVE_TRACKED.
-tracked="$(git ls-files thoughts/ .env '.env.*' '*.local' CLAUDE.md 2>/dev/null || true)"
+#    Run git separately and abort if git ITSELF fails — a broken git must never
+#    be read as "nothing tracked" (fail closed, not open).
+if ! tracked="$(git ls-files thoughts/ .env '.env.*' '*.local' CLAUDE.md)"; then
+  echo "PRE-PUSH ERROR: 'git ls-files' failed; refusing to push (fail closed)." >&2
+  exit 1
+fi
 if [ -n "$tracked" ]; then
   echo "PRE-PUSH BLOCK: local-only files are tracked:" >&2
   echo "$tracked" >&2
@@ -20,8 +25,13 @@ fi
 
 # 2. history gate: local-only files must never appear in history.
 #    '.env.*' catches variants (.env.production, .env.local) and '*.local'
-#    catches secrets.local etc.; bare '.env' matches neither.
-if git log --all --oneline -- thoughts/ .env '.env.*' '*.local' CLAUDE.md 2>/dev/null | grep -q .; then
+#    catches secrets.local etc.; bare '.env' matches neither. Capture the output
+#    first — a `git log | grep` pipeline hides a failing git behind grep's exit.
+if ! history="$(git log --all --oneline -- thoughts/ .env '.env.*' '*.local' CLAUDE.md)"; then
+  echo "PRE-PUSH ERROR: 'git log' failed; refusing to push (fail closed)." >&2
+  exit 1
+fi
+if [ -n "$history" ]; then
   echo "PRE-PUSH BLOCK: thoughts/, .env, .env.*, *.local, or CLAUDE.md found in git history." >&2
   fail=1
 fi

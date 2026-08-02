@@ -31,9 +31,16 @@ REQUIRED_IGNORE_PATTERNS = [
 
 
 def _git(*args):
-    return subprocess.run(
+    # Fail CLOSED: a non-zero git exit must break the test, never be silently
+    # read as clean (empty stdout). Preserve the command + stderr for context.
+    r = subprocess.run(
         ["git", *args], cwd=REPO, capture_output=True, text=True
-    ).stdout.strip()
+    )
+    assert r.returncode == 0, (
+        f"git {' '.join(args)} failed (exit {r.returncode}) — cannot trust this "
+        f"hygiene check: {r.stderr.strip()!r}"
+    )
+    return r.stdout.strip()
 
 
 def test_no_sensitive_files_are_tracked():

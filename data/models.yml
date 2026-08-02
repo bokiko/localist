@@ -91,9 +91,9 @@ tiers:
   - id: cpu3
     basis: cpu_ram
     memory: "32 GB"
-    size_class: "7B–8B"
-    examples: [qwen3-8b]
-    expectations: "Good quality, patient pace. Long documents and big context windows are where CPU hurts most — keep them modest."
+    size_class: "7B–8B dense; optional 30B-A3B MoE"
+    examples: [qwen3-8b, qwen3-30b-a3b]
+    expectations: "Start with Qwen3 8B — good quality at a patient CPU pace. With enough free RAM, the 30B-A3B MoE is an optional step up: it activates only a few billion params per token, so it stays usable on CPU. Long documents and big context windows are where CPU hurts most — keep them modest."
   - id: cpu4
     basis: cpu_ram
     memory: "64 GB+"

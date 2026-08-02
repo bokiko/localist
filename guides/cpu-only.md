@@ -68,8 +68,8 @@ when you're close to the limit.
    fast on CPU. The catch is that you still need RAM for *all* of it: the
    popular `qwen3:30b-a3b` is **17.3 GiB**, which is more than the total system
    RAM of the 8 GB and 16 GB rows in the table above. On CPU there's no separate
-   GPU memory to spill into, so it simply won't load. This one is for the 32 GB
-   row only.
+   GPU memory to spill into, so it simply won't load. It needs at least 32 GB of
+   system RAM — an optional step up once you have that headroom.
 
 ## When to upgrade, honestly
 

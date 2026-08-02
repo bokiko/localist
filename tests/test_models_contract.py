@@ -201,3 +201,36 @@ def test_cpu_tiers_match_cpu_only_guide():
             f"{mem}GB CPU tier drifted from cpu-only.md: guide wants {guide_tags}, "
             f"yaml offers {cpu_by_mem[mem]}"
         )
+
+
+def test_cpu_moe_placement_policy():
+    """Policy lock for the qwen3:30b-a3b MoE on the CPU path.
+
+    The MoE must not be offered below the 32 GB CPU tier. Concretely:
+      - 32 GB CPU tier offers BOTH qwen3:8b (conservative first pick) AND the
+        30B-A3B MoE (optional step up);
+      - 8 GB and 16 GB CPU tiers must NOT offer the MoE;
+      - 64 GB+ retains it (the ratified cpu4 MoE tier).
+    Targeted by design — it inspects the chooser data (tier examples), not guide
+    prose, so it stays robust while still catching a mis-tiered MoE.
+    """
+    catalog = _catalog()
+    tags_by_mem = {}
+    for t in _tiers("cpu_ram"):
+        tags_by_mem[min(_nums(t["memory"]))] = {
+            catalog[ex]["ollama"] for ex in t["examples"]
+        }
+
+    moe = "qwen3:30b-a3b"
+    assert {"qwen3:8b", moe} <= tags_by_mem.get(32, set()), (
+        f"32 GB CPU tier must offer both qwen3:8b and {moe}; got {tags_by_mem.get(32)}"
+    )
+    for mem in (8, 16):
+        assert moe not in tags_by_mem.get(mem, set()), (
+            f"{mem} GB CPU tier must NOT offer {moe} (below the 32 GB MoE floor): "
+            f"{tags_by_mem.get(mem)}"
+        )
+    assert moe in tags_by_mem.get(64, set()), (
+        f"64 GB+ CPU tier should retain {moe} (ratified cpu4 MoE tier); "
+        f"got {tags_by_mem.get(64)}"
+    )

@@ -14,7 +14,9 @@
     "lidge-jun/opencodex",
     "drumih/turbo-fieldfare",
     "lyihub/pub-local-jarvis",
-    "gavamedia/deltafin"
+    "gavamedia/deltafin",
+    "afan4724/clone-chat",
+    "rightnow-ai/local-kimi"
   ],
   "releases": {
     "ollama/ollama": [
@@ -36,7 +38,8 @@
     "Comfy-Org/ComfyUI": [
       "v0.28.0",
       "v0.29.0",
-      "v0.29.2"
+      "v0.29.2",
+      "v0.30.0"
     ],
     "janhq/jan": [
       "v0.8.4"
@@ -49,19 +52,6 @@
     "https://lmstudio.ai/changelog": "0.4.20"
   },
   "history": [
-    {
-      "date": "2026-07-27",
-      "discoveries": [
-        {
-          "name": "LYiHub/pub-local-jarvis",
-          "url": "https://github.com/LYiHub/pub-local-jarvis",
-          "description": "Windows \u672c\u5730\u591a\u6a21\u6001 AI \u684c\u9762\u684c\u5ba0\uff0c\u652f\u6301\u5c4f\u5e55\u4e0e\u97f3\u9891\u611f\u77e5\u3002",
-          "stars": 57,
-          "created_at": "2026-07-24T07:07:31Z"
-        }
-      ],
-      "releases": []
-    },
     {
       "date": "2026-07-28",
       "discoveries": [],
@@ -126,6 +116,34 @@
           "version": "v1.118.1",
           "url": "https://github.com/LostRuins/koboldcpp/releases/tag/v1.118.1",
           "notes": "Row Split has been removed, selecting it will now default to tensor split. Rocwmma has been removed, matching upstream behavior."
+        }
+      ]
+    },
+    {
+      "date": "2026-08-03",
+      "discoveries": [
+        {
+          "name": "AFan4724/clone-chat",
+          "url": "https://github.com/AFan4724/clone-chat",
+          "description": "\u7528 AI \u5927\u6a21\u578b\u590d\u523b\u804a\u5929\u5bf9\u8c61\u7684\u672c\u5730\u5bf9\u8bdd Agent\uff1a\u5bfc\u5165\u771f\u5b9e\u804a\u5929\u8bb0\u5f55\uff0cLLM \u5b66\u4e60 TA \u7684\u8bed\u6c14\u3001\u8868\u60c5\u548c\u56de\u590d\u8282\u594f\u5e76\u4ee5\u4eba\u7269\u8eab\u4efd\u5ef6\u7eed\u5bf9\u8bdd\uff0c\u652f\u6301\u8bed\u97f3\u3001\u4e3b\u52a8\u8054\u7cfb\u4e0e\u957f\u671f\u8bb0\u5fc6\uff0c\u6570\u636e\u5168\u5728\u672c\u5730\u3002 | Clone anyone's texting style from real chat history: a local-first LLM agent that learns their tone,",
+          "stars": 37,
+          "created_at": "2026-08-01T21:19:13Z"
+        },
+        {
+          "name": "RightNow-AI/local-kimi",
+          "url": "https://github.com/RightNow-AI/local-kimi",
+          "description": "Optimized local serving engine for Kimi-Linear-48B: INT4 quantizer, fused decode kernels for a measured 3.18x, and an OpenAI-compatible server. Ships with k3, a bridge that detects the client per",
+          "stars": 31,
+          "created_at": "2026-07-29T02:26:29Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "ComfyUI",
+          "repo": "Comfy-Org/ComfyUI",
+          "version": "v0.30.0",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.30.0",
+          "notes": "Update comfy-kitchen package version to 0.2.23 Support int8 convrot embedding lookup (CORE-371)"
         }
       ]
     }

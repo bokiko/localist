@@ -95,11 +95,12 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-08-02*
+*Updated 2026-08-03*
 
 **🆕 New & active projects**
 - [gavamedia/deltafin](https://github.com/gavamedia/deltafin) — Run Kimi K3, a 2.8T-parameter Mixture-of-Experts LLM, on a single Apple Silicon Mac. Streams MXFP4 experts on demand over HTTP into a local disk cache — fused NEON kernels, Metal/MPS compute, exact · ⭐ 188
-- [LYiHub/pub-local-jarvis](https://github.com/LYiHub/pub-local-jarvis) — Windows 本地多模态 AI 桌面桌宠，支持屏幕与音频感知。 · ⭐ 57
+- [AFan4724/clone-chat](https://github.com/AFan4724/clone-chat) — 用 AI 大模型复刻聊天对象的本地对话 Agent：导入真实聊天记录，LLM 学习 TA 的语气、表情和回复节奏并以人物身份延续对话，支持语音、主动联系与长期记忆，数据全在本地。 | Clone anyone's texting style from real chat history: a local-first LLM agent that learns their tone, · ⭐ 37
+- [RightNow-AI/local-kimi](https://github.com/RightNow-AI/local-kimi) — Optimized local serving engine for Kimi-Linear-48B: INT4 quantizer, fused decode kernels for a measured 3.18x, and an OpenAI-compatible server. Ships with k3, a bridge that detects the client per · ⭐ 31
 
 **📦 Tool releases**
 - [Ollama v0.32.5](https://github.com/ollama/ollama/releases/tag/v0.32.5) — Fixed an MLX Metal bug that could reduce output quality for NVFP4 models, particularly Laguna. **Full Changelog**:
@@ -107,6 +108,7 @@ Essentials table above if you want the trusted beginner picks.*
 - [ComfyUI v0.29.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.29.0) — fix(Video): stream the video transcode instead of buffering every frame in RAM (CORE-353) (CORE-351) [Partner Nodes] feat(client): send ComfyUI Job Id in request headers
 - [ComfyUI v0.29.2](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.29.2) — Frontend fixes and new api/partner nodes. **Full Changelog**:
 - [KoboldCpp v1.118.1](https://github.com/LostRuins/koboldcpp/releases/tag/v1.118.1) — Row Split has been removed, selecting it will now default to tensor split. Rocwmma has been removed, matching upstream behavior.
+- [ComfyUI v0.30.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.30.0) — Update comfy-kitchen package version to 0.2.23 Support int8 convrot embedding lookup (CORE-371)
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

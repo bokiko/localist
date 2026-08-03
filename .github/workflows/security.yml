@@ -1,0 +1,28 @@
+name: Security
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  gitleaks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0          # full history so detect scans every commit
+
+      - name: Install gitleaks
+        run: |
+          VERSION=8.30.1
+          curl -sSL "https://github.com/gitleaks/gitleaks/releases/download/v${VERSION}/gitleaks_${VERSION}_linux_x64.tar.gz" \
+            | tar -xz -C /usr/local/bin gitleaks
+          gitleaks version
+
+      - name: Scan repo history for secrets
+        # exit-code 1 on any non-allowlisted finding -> fails the build
+        run: gitleaks detect --source . --config .gitleaks.toml --redact --exit-code 1

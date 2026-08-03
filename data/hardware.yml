@@ -1,0 +1,135 @@
+# Hardware chooser taxonomy — the structured form of guides/start-here.md.
+#
+# The localist.dev homepage chooser reads this file: platform -> accelerator ->
+# memory tier -> a result bundle. Keep it faithful to start-here.md,
+# choosing-models.md, and cpu-only.md (enforced by tests/test_hardware_contract.py).
+#
+# memory_basis names a key in `memory_tiers`. THREE groups, because memory
+# bandwidth differs sharply by memory type:
+#   vram     -> dedicated GPU VRAM (NVIDIA / AMD)
+#   mac_ram  -> Apple Silicon unified memory (high bandwidth)
+#   cpu_ram  -> plain system RAM on CPU/integrated paths (much lower bandwidth)
+# A 16 GB CPU laptop is NOT a 16 GB Mac — its tiers are calibrated down so we
+# promise what runs *well*, not merely what fits. Nothing here is a recommendation
+# on its own — picks come from curated.yml, model tiers from models.yml.
+
+version: 1
+
+platforms:
+  - id: windows
+    label: Windows PC
+    asks_accelerator: true
+  - id: mac
+    label: Mac
+    implies_accelerator: apple_silicon   # About This Mac says Apple M-series
+    intel_fallback: cpu_only             # an Intel Mac is treated as CPU-only
+  - id: linux
+    label: Linux PC
+    asks_accelerator: true
+  - id: mini_pc
+    label: Mini PC / home server
+    asks_accelerator: true
+    default_accelerator: cpu_only        # most are CPU-only, but allow a GPU
+  - id: not_sure
+    label: I'm not sure
+    routes_to: helper
+
+accelerators:
+  - id: nvidia
+    label: NVIDIA GPU
+    memory_basis: vram
+    memory_kind: dedicated_vram
+    guide: nvidia-gpu
+  - id: amd
+    label: AMD GPU
+    memory_basis: vram
+    memory_kind: dedicated_vram
+    guide: amd-gpu
+  - id: apple_silicon
+    label: Apple Silicon
+    memory_basis: mac_ram
+    memory_kind: unified
+    guide: mac-apple-silicon
+  - id: integrated
+    label: Integrated graphics / no dedicated GPU
+    memory_basis: cpu_ram                # integrated GPUs don't accelerate LLMs -> CPU path
+    memory_kind: system
+    guide: cpu-only
+  - id: cpu_only
+    label: CPU only
+    memory_basis: cpu_ram
+    memory_kind: system
+    guide: cpu-only
+  - id: not_sure
+    label: Not sure
+    routes_to: helper
+
+# Memory buckets per group. Each bucket maps to a model tier id in models.yml.
+memory_tiers:
+  vram:
+    - id: 8gb
+      label: 8 GB
+      model_tier: t1
+    - id: 12gb
+      label: 12 GB
+      model_tier: t2
+    - id: 16gb
+      label: 16 GB
+      model_tier: t3
+    - id: 24gb
+      label: 24 GB
+      model_tier: t4
+    - id: 48gb-plus
+      label: 48 GB+
+      model_tier: t5
+  mac_ram:
+    - id: 8gb
+      label: 8 GB
+      model_tier: mac1
+    - id: 16gb
+      label: 16 GB
+      model_tier: mac2
+    - id: 32gb
+      label: 32 GB
+      model_tier: mac3
+    - id: 64gb-plus
+      label: 64 GB+
+      model_tier: mac4
+  cpu_ram:
+    - id: 8gb
+      label: 8 GB
+      model_tier: cpu1
+    - id: 16gb
+      label: 16 GB
+      model_tier: cpu2
+    - id: 32gb
+      label: 32 GB
+      model_tier: cpu3
+    - id: 64gb-plus
+      label: 64 GB+
+      model_tier: cpu4
+
+# 2–3 hardware-specific "mistakes to avoid" surfaced in the result card.
+mistakes:
+  nvidia:
+    - "Match the model's download size to your VRAM, not your system RAM — the GPU number is what counts."
+    - "Don't load a model bigger than your VRAM expecting speed; spilling into system RAM slows it to a crawl."
+  amd:
+    - "Check ROCm support for your card first; some older Radeon RX cards run better on Vulkan."
+    - "Size the model to your VRAM, not your system RAM."
+  apple_silicon:
+    - "Unified memory is shared — a 16 GB Mac is not 16 GB for models; leave room for macOS and your apps."
+    - "Prefer MLX-format models for the best speed on Apple Silicon."
+  integrated:
+    - "Integrated graphics won't meaningfully accelerate LLMs today — you're on the CPU path, and that's completely fine."
+    - "Pick a small current model; a big model that crawls is worse than a snappy small one."
+  cpu_only:
+    - "Skip the huge models — a snappy 4B beats a 13B that runs like a slideshow."
+    - "Keep the context window modest; a big context eats the RAM the model needs."
+
+# "How to check" copy so a not-sure user never dead-ends.
+helpers:
+  find_gpu_windows: "Press Ctrl+Shift+Esc, open the Performance tab, look for GPU. If it only says Intel/AMD 'integrated' or you see no dedicated GPU, choose Integrated graphics."
+  find_gpu_linux: "Run: lspci | grep -i vga. NVIDIA/AMD Radeon RX = dedicated GPU; Intel or an integrated line = choose Integrated graphics."
+  find_mac_chip: "Apple menu -> About This Mac. Apple M1/M2/M3/M4 = Apple Silicon; Intel = treat as CPU-only."
+  find_memory: "The number that matters depends on your path. Dedicated NVIDIA/AMD GPU: use your GPU's VRAM — Windows: Task Manager -> Performance -> GPU, read 'Dedicated GPU memory'. Integrated graphics or CPU-only: use your system RAM — Windows: Task Manager -> Performance -> Memory. Apple Silicon Mac: use total unified memory — About This Mac shows it."

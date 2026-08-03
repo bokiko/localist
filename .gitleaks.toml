@@ -1,0 +1,20 @@
+# Localist gitleaks configuration.
+#
+# Enforced secret scanner (see the "Security / local-only files" section in
+# CONTRIBUTING.md). Extends gitleaks' default ruleset — do NOT replace it.
+#
+# FALSE POSITIVES are handled ONLY by explicit, individually-justified allowlist
+# entries, each with a comment justifying why the match is safe. Never disable a
+# rule wholesale, never broaden the allowlist to silence real findings, never
+# rely on `--no-verify`. CI is the enforcement backstop; the pre-push hook is
+# convenience.
+
+title = "Localist gitleaks config"
+
+[extend]
+useDefault = true
+
+# No [allowlist] block by design: there are no false positives to suppress yet.
+# gitleaks rejects an [allowlist] that has no active check, so only add one when
+# a real false positive appears — with an actual `paths`, `regexes`, `commits`,
+# or `stopwords` entry plus a comment justifying it. Do not add an empty block.

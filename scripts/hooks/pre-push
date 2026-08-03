@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+# Localist pre-push hook — convenience backstop that blocks pushing secrets or
+# tracked local-only files. CI (.github/workflows/security.yml) is the real
+# enforcement; this catches mistakes before they leave the machine.
+#
+# Install (one-time):   git config core.hooksPath scripts/hooks
+# The hook can be skipped with --no-verify; CI cannot. Do not make skipping a habit.
+
+set -euo pipefail
+fail=0
+
+# 1. tracked-file gate: local-only material must never be tracked.
+#    Keep this list in sync with tests/test_git_hygiene.py::SENSITIVE_TRACKED.
+#    Run git separately and abort if git ITSELF fails — a broken git must never
+#    be read as "nothing tracked" (fail closed, not open).
+if ! tracked="$(git ls-files thoughts/ .env '.env.*' '*.local' CLAUDE.md)"; then
+  echo "PRE-PUSH ERROR: 'git ls-files' failed; refusing to push (fail closed)." >&2
+  exit 1
+fi
+if [ -n "$tracked" ]; then
+  echo "PRE-PUSH BLOCK: local-only files are tracked:" >&2
+  echo "$tracked" >&2
+  fail=1
+fi
+
+# 2. history gate: local-only files must never appear in history.
+#    '.env.*' catches variants (.env.production, .env.local) and '*.local'
+#    catches secrets.local etc.; bare '.env' matches neither. Capture the output
+#    first — a `git log | grep` pipeline hides a failing git behind grep's exit.
+if ! history="$(git log --all --oneline -- thoughts/ .env '.env.*' '*.local' CLAUDE.md)"; then
+  echo "PRE-PUSH ERROR: 'git log' failed; refusing to push (fail closed)." >&2
+  exit 1
+fi
+if [ -n "$history" ]; then
+  echo "PRE-PUSH BLOCK: thoughts/, .env, .env.*, *.local, or CLAUDE.md found in git history." >&2
+  fail=1
+fi
+
+# 3. secret scan (if gitleaks is installed locally).
+if command -v gitleaks >/dev/null 2>&1; then
+  if ! gitleaks detect --source . --config .gitleaks.toml --redact --no-banner --exit-code 1; then
+    echo "PRE-PUSH BLOCK: gitleaks found a secret." >&2
+    fail=1
+  fi
+else
+  echo "pre-push: gitleaks not installed locally — skipping scan (CI still enforces)." >&2
+fi
+
+if [ "$fail" -ne 0 ]; then
+  echo "Push aborted. Resolve the issues above before pushing." >&2
+  exit 1
+fi

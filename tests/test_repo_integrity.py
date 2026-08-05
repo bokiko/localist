@@ -184,12 +184,38 @@ GLOSSARY_PATTERNS = {
 }
 
 
+def _acronym_expansion(heading: str) -> str | None:
+    """'LLM (Large Language Model)' -> 'Large Language Model'.
+
+    Only when the parenthetical's initials actually spell the token in front of
+    it. Stripping every parenthetical also discarded three real aliases, so a
+    guide could spell out "Mixture of Experts" and the check would not notice.
+    The other five parentheticals here are glosses, not aliases -- 'the "B"
+    numbers', 'e.g. q4_K_M', 'MMLU, HumanEval, ...' -- and this rule rejects
+    them without needing a list of exceptions.
+    """
+    match = re.match(r"^\s*([A-Za-z][\w.]*)\s*\(([^)]+)\)\s*$", heading)
+    if not match:
+        return None
+    acronym, inner = match.group(1), match.group(2).strip()
+    if any(c in inner for c in '`"\u2026'):
+        return None
+    words = re.findall(r"[A-Za-z]+", inner)
+    if len(words) < 2:
+        return None
+    initials = "".join(word[0] for word in words)
+    return inner if initials.lower() == acronym.lower() else None
+
+
 def _glossary_terms() -> list[str]:
     headings = re.findall(
         r"^\*\*([^*]+)\*\*", (REPO / "guides" / "glossary.md").read_text(), re.M
     )
     terms = set()
     for heading in headings:
+        expansion = _acronym_expansion(heading)
+        if expansion:
+            terms.add(expansion)
         heading = re.sub(r"\(.*?\)", "", heading).replace("`", "")
         for part in heading.split("/"):
             part = re.sub(r"\s+", " ", part).strip()
@@ -216,8 +242,18 @@ def test_guides_link_glossary_before_using_its_vocabulary():
     failures = []
     for path in _guides_to_scan():
         lines = path.read_text().split("\n")
+        # A complete markdown link, not the bare string and not the tail of one.
+        # "[glossary](glossary.md" with a missing paren reads as correct in
+        # source and renders broken; "![glossary](glossary.md)" is an image and
+        # "glossary](glossary.md)" is malformed — neither gives the reader a
+        # link to follow, so both must fail the check that guarantees one.
         link_at = next(
-            (i for i, line in enumerate(lines) if "glossary.md" in line), None
+            (
+                i
+                for i, line in enumerate(lines)
+                if re.search(r"(?<!!)\[[^\]]+\]\(glossary\.md(?:#[\w-]+)?\)", line)
+            ),
+            None,
         )
 
         def first_use(pattern, flags=0):

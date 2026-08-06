@@ -17,7 +17,8 @@
     "gavamedia/deltafin",
     "afan4724/clone-chat",
     "rightnow-ai/local-kimi",
-    "onetoken-oss/k3flight"
+    "onetoken-oss/k3flight",
+    "david-g-3654/homebench"
   ],
   "releases": {
     "ollama/ollama": [
@@ -25,7 +26,8 @@
       "v0.32.1",
       "v0.32.3",
       "v0.32.4",
-      "v0.32.5"
+      "v0.32.5",
+      "v0.32.6"
     ],
     "vllm-project/vllm": [
       "v0.25.1",
@@ -136,6 +138,27 @@
           "version": "1.0.5",
           "url": "https://lmstudio.ai/changelog/bionic-v1.0.5",
           "notes": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-08-06",
+      "discoveries": [
+        {
+          "name": "david-g-3654/homebench",
+          "url": "https://github.com/david-g-3654/homebench",
+          "description": "Benchmark your local LLMs: speed, memory, and quality, in one command. TUI leaderboard for Ollama, LM Studio, llama.cpp, and vLLM.",
+          "stars": 48,
+          "created_at": "2026-08-03T04:26:15Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "Ollama",
+          "repo": "ollama/ollama",
+          "version": "v0.32.6",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.32.6",
+          "notes": "Qwen3.5 is faster on Apple GPUs: the MLX engine now uses the model's MTP head for speculative decoding automatically `/v1/chat/completions` streaming now matches OpenAI's wire format: `role` only on"
         }
       ]
     }

@@ -95,7 +95,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-08-06*
+*Updated 2026-08-07*
 
 **🆕 New & active projects**
 - [onetoken-oss/K3Flight](https://github.com/onetoken-oss/K3Flight) — Run Kimi K3 locally on CPU with ~55GB measured runtime RAM. A single-file Linux inference server powered by cPilot Runtime. · ⭐ 98
@@ -104,7 +104,6 @@ Essentials table above if you want the trusted beginner picks.*
 - [RightNow-AI/local-kimi](https://github.com/RightNow-AI/local-kimi) — Optimized local serving engine for Kimi-Linear-48B: INT4 quantizer, fused decode kernels for a measured 3.18x, and an OpenAI-compatible server. Ships with k3, a bridge that detects the client per · ⭐ 31
 
 **📦 Tool releases**
-- [ComfyUI v0.29.2](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.29.2) — Frontend fixes and new api/partner nodes. **Full Changelog**:
 - [KoboldCpp v1.118.1](https://github.com/LostRuins/koboldcpp/releases/tag/v1.118.1) — Row Split has been removed, selecting it will now default to tensor split. Rocwmma has been removed, matching upstream behavior.
 - [ComfyUI v0.30.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.30.0) — Update comfy-kitchen package version to 0.2.23 Support int8 convrot embedding lookup (CORE-371)
 - [LM Studio 1.0.4](https://lmstudio.ai/changelog/bionic-v1.0.4)

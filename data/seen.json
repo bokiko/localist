@@ -56,19 +56,6 @@
   },
   "history": [
     {
-      "date": "2026-07-31",
-      "discoveries": [],
-      "releases": [
-        {
-          "tool": "ComfyUI",
-          "repo": "Comfy-Org/ComfyUI",
-          "version": "v0.29.2",
-          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.29.2",
-          "notes": "Frontend fixes and new api/partner nodes. **Full Changelog**:"
-        }
-      ]
-    },
-    {
       "date": "2026-08-02",
       "discoveries": [],
       "releases": [

@@ -18,7 +18,9 @@
     "afan4724/clone-chat",
     "rightnow-ai/local-kimi",
     "onetoken-oss/k3flight",
-    "david-g-3654/homebench"
+    "david-g-3654/homebench",
+    "leonickson1/swiftlet",
+    "sosoj92/jarvis-assistant-vocal"
   ],
   "releases": {
     "ollama/ollama": [
@@ -42,7 +44,8 @@
       "v0.28.0",
       "v0.29.0",
       "v0.29.2",
-      "v0.30.0"
+      "v0.30.0",
+      "v0.31.0"
     ],
     "janhq/jan": [
       "v0.8.4"
@@ -52,7 +55,7 @@
     ]
   },
   "changelog_pages": {
-    "https://lmstudio.ai/changelog": "1.0.5"
+    "https://lmstudio.ai/changelog": "1.0.6"
   },
   "history": [
     {
@@ -146,6 +149,40 @@
           "version": "v0.32.6",
           "url": "https://github.com/ollama/ollama/releases/tag/v0.32.6",
           "notes": "Qwen3.5 is faster on Apple GPUs: the MLX engine now uses the model's MTP head for speculative decoding automatically `/v1/chat/completions` streaming now matches OpenAI's wire format: `role` only on"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-08",
+      "discoveries": [
+        {
+          "name": "leonickson1/Swiftlet",
+          "url": "https://github.com/leonickson1/Swiftlet",
+          "description": "Swiftlet is a Swift and Metal runtime that runs large Qwen Mixture-of-Experts models locally on Apple devices by streaming expert weights from storage, enabling 35B and 80B models to run with low",
+          "stars": 447,
+          "created_at": "2026-08-03T13:03:37Z"
+        },
+        {
+          "name": "sosoj92/jarvis-assistant-vocal",
+          "url": "https://github.com/sosoj92/jarvis-assistant-vocal",
+          "description": "Assistant vocal local en francais : Claude ou Ollama (offline), domotique Hue, OBS, agenda, navigateur, appels Twilio, serveur MCP. Python.",
+          "stars": 33,
+          "created_at": "2026-08-07T15:30:20Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "ComfyUI",
+          "repo": "Comfy-Org/ComfyUI",
+          "version": "v0.31.0",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.31.0",
+          "notes": "Bump comfyui-frontend-package to 1.47.12 Don't pin too much memory on Linux systems with no swap partition."
+        },
+        {
+          "tool": "LM Studio",
+          "version": "1.0.6",
+          "url": "https://lmstudio.ai/changelog/bionic-v1.0.6",
+          "notes": ""
         }
       ]
     }

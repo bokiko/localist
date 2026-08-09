@@ -59,19 +59,6 @@
   },
   "history": [
     {
-      "date": "2026-08-02",
-      "discoveries": [],
-      "releases": [
-        {
-          "tool": "KoboldCpp",
-          "repo": "LostRuins/koboldcpp",
-          "version": "v1.118.1",
-          "url": "https://github.com/LostRuins/koboldcpp/releases/tag/v1.118.1",
-          "notes": "Row Split has been removed, selecting it will now default to tensor split. Rocwmma has been removed, matching upstream behavior."
-        }
-      ]
-    },
-    {
       "date": "2026-08-03",
       "discoveries": [
         {

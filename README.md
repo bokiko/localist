@@ -95,7 +95,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-08-08*
+*Updated 2026-08-09*
 
 **🆕 New & active projects**
 - [leonickson1/Swiftlet](https://github.com/leonickson1/Swiftlet) — Swiftlet is a Swift and Metal runtime that runs large Qwen Mixture-of-Experts models locally on Apple devices by streaming expert weights from storage, enabling 35B and 80B models to run with low · ⭐ 447
@@ -105,7 +105,6 @@ Essentials table above if you want the trusted beginner picks.*
 - [sosoj92/jarvis-assistant-vocal](https://github.com/sosoj92/jarvis-assistant-vocal) — Assistant vocal local en francais : Claude ou Ollama (offline), domotique Hue, OBS, agenda, navigateur, appels Twilio, serveur MCP. Python. · ⭐ 33
 
 **📦 Tool releases**
-- [KoboldCpp v1.118.1](https://github.com/LostRuins/koboldcpp/releases/tag/v1.118.1) — Row Split has been removed, selecting it will now default to tensor split. Rocwmma has been removed, matching upstream behavior.
 - [ComfyUI v0.30.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.30.0) — Update comfy-kitchen package version to 0.2.23 Support int8 convrot embedding lookup (CORE-371)
 - [LM Studio 1.0.4](https://lmstudio.ai/changelog/bionic-v1.0.4)
 - [LM Studio 1.0.5](https://lmstudio.ai/changelog/bionic-v1.0.5)

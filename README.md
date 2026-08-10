@@ -95,17 +95,15 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-08-09*
+*Updated 2026-08-10*
 
 **🆕 New & active projects**
 - [leonickson1/Swiftlet](https://github.com/leonickson1/Swiftlet) — Swiftlet is a Swift and Metal runtime that runs large Qwen Mixture-of-Experts models locally on Apple devices by streaming expert weights from storage, enabling 35B and 80B models to run with low · ⭐ 447
 - [onetoken-oss/K3Flight](https://github.com/onetoken-oss/K3Flight) — Run Kimi K3 locally on CPU with ~55GB measured runtime RAM. A single-file Linux inference server powered by cPilot Runtime. · ⭐ 98
 - [david-g-3654/homebench](https://github.com/david-g-3654/homebench) — Benchmark your local LLMs: speed, memory, and quality, in one command. TUI leaderboard for Ollama, LM Studio, llama.cpp, and vLLM. · ⭐ 48
-- [AFan4724/clone-chat](https://github.com/AFan4724/clone-chat) — 用 AI 大模型复刻聊天对象的本地对话 Agent：导入真实聊天记录，LLM 学习 TA 的语气、表情和回复节奏并以人物身份延续对话，支持语音、主动联系与长期记忆，数据全在本地。 | Clone anyone's texting style from real chat history: a local-first LLM agent that learns their tone, · ⭐ 37
 - [sosoj92/jarvis-assistant-vocal](https://github.com/sosoj92/jarvis-assistant-vocal) — Assistant vocal local en francais : Claude ou Ollama (offline), domotique Hue, OBS, agenda, navigateur, appels Twilio, serveur MCP. Python. · ⭐ 33
 
 **📦 Tool releases**
-- [ComfyUI v0.30.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.30.0) — Update comfy-kitchen package version to 0.2.23 Support int8 convrot embedding lookup (CORE-371)
 - [LM Studio 1.0.4](https://lmstudio.ai/changelog/bionic-v1.0.4)
 - [LM Studio 1.0.5](https://lmstudio.ai/changelog/bionic-v1.0.5)
 - [Ollama v0.32.6](https://github.com/ollama/ollama/releases/tag/v0.32.6) — Qwen3.5 is faster on Apple GPUs: the MLX engine now uses the model's MTP head for speculative decoding automatically `/v1/chat/completions` streaming now matches OpenAI's wire format: `role` only on

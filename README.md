@@ -95,16 +95,14 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-08-12*
+*Updated 2026-08-13*
 
 **🆕 New & active projects**
 - [leonickson1/Swiftlet](https://github.com/leonickson1/Swiftlet) — Swiftlet is a Swift and Metal runtime that runs large Qwen Mixture-of-Experts models locally on Apple devices by streaming expert weights from storage, enabling 35B and 80B models to run with low · ⭐ 447
-- [david-g-3654/homebench](https://github.com/david-g-3654/homebench) — Benchmark your local LLMs: speed, memory, and quality, in one command. TUI leaderboard for Ollama, LM Studio, llama.cpp, and vLLM. · ⭐ 48
 - [Ouru77/ev-assistant](https://github.com/Ouru77/ev-assistant) — 🕸️ E.V. — Peter Parker's homemade AI from Spider-Man: Brand New Day, running locally on YOUR PC. Voice assistant + cyber HUD, real PC control, long-term memory. Whisper + Ollama, no cloud. TR/EN. · ⭐ 36
 - [sosoj92/jarvis-assistant-vocal](https://github.com/sosoj92/jarvis-assistant-vocal) — Assistant vocal local en francais : Claude ou Ollama (offline), domotique Hue, OBS, agenda, navigateur, appels Twilio, serveur MCP. Python. · ⭐ 33
 
 **📦 Tool releases**
-- [Ollama v0.32.6](https://github.com/ollama/ollama/releases/tag/v0.32.6) — Qwen3.5 is faster on Apple GPUs: the MLX engine now uses the model's MTP head for speculative decoding automatically `/v1/chat/completions` streaming now matches OpenAI's wire format: `role` only on
 - [ComfyUI v0.31.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.31.0) — Bump comfyui-frontend-package to 1.47.12 Don't pin too much memory on Linux systems with no swap partition.
 - [LM Studio 1.0.6](https://lmstudio.ai/changelog/bionic-v1.0.6)
 - [Ollama v0.32.8](https://github.com/ollama/ollama/releases/tag/v0.32.8) — Add Muse Glimmer support for NVIDIA, AMD, and additional platforms **Full Changelog**:

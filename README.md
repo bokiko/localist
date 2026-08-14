@@ -95,7 +95,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-08-13*
+*Updated 2026-08-14*
 
 **🆕 New & active projects**
 - [leonickson1/Swiftlet](https://github.com/leonickson1/Swiftlet) — Swiftlet is a Swift and Metal runtime that runs large Qwen Mixture-of-Experts models locally on Apple devices by streaming expert weights from storage, enabling 35B and 80B models to run with low · ⭐ 447
@@ -112,6 +112,8 @@ Essentials table above if you want the trusted beginner picks.*
 - [Ollama v0.32.9](https://github.com/ollama/ollama/releases/tag/v0.32.9) — NVIDIA Nemotron 3.5 Lightning NVIDIA Nemotron 3.5 Lightning model with 3B active parameters built for that execution layer of always-on agents. It is
 - [vLLM v0.27.1](https://github.com/vllm-project/vllm/releases/tag/v0.27.1) — This is a patch release on top of v0.27.0. Support quantized DSpark Markov heads (#50424)
 - [ComfyUI v0.32.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.32.0) — Make it easier to debug nested tensors. Update workflow templates to v0.11.37
+- [Ollama v0.32.11](https://github.com/ollama/ollama/releases/tag/v0.32.11) — `ollama launch dsh` now supports DeepSeek Harness, [DeepSeek's open-source agent harness]( `ollama launch muse` now supports [Muse Code]( Meta's agentic coding CLI
+- [ComfyUI v0.33.1](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.33.1) — Fix KSamplerAdvanced with add_noise disabled on nested latents Update workflow templates to v0.11.40
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

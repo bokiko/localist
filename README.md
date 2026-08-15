@@ -95,16 +95,12 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-08-14*
+*Updated 2026-08-15*
 
 **🆕 New & active projects**
-- [leonickson1/Swiftlet](https://github.com/leonickson1/Swiftlet) — Swiftlet is a Swift and Metal runtime that runs large Qwen Mixture-of-Experts models locally on Apple devices by streaming expert weights from storage, enabling 35B and 80B models to run with low · ⭐ 447
 - [Ouru77/ev-assistant](https://github.com/Ouru77/ev-assistant) — 🕸️ E.V. — Peter Parker's homemade AI from Spider-Man: Brand New Day, running locally on YOUR PC. Voice assistant + cyber HUD, real PC control, long-term memory. Whisper + Ollama, no cloud. TR/EN. · ⭐ 36
-- [sosoj92/jarvis-assistant-vocal](https://github.com/sosoj92/jarvis-assistant-vocal) — Assistant vocal local en francais : Claude ou Ollama (offline), domotique Hue, OBS, agenda, navigateur, appels Twilio, serveur MCP. Python. · ⭐ 33
 
 **📦 Tool releases**
-- [ComfyUI v0.31.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.31.0) — Bump comfyui-frontend-package to 1.47.12 Don't pin too much memory on Linux systems with no swap partition.
-- [LM Studio 1.0.6](https://lmstudio.ai/changelog/bionic-v1.0.6)
 - [Ollama v0.32.8](https://github.com/ollama/ollama/releases/tag/v0.32.8) — Add Muse Glimmer support for NVIDIA, AMD, and additional platforms **Full Changelog**:
 - [Ollama v0.32.7](https://github.com/ollama/ollama/releases/tag/v0.32.7) — Muse Glimmer > Note: Muse Glimmer is currently available via initial support via Ollama's MLX engine on Apple Silicon. Additional support and optimizations for Apple Silicon, NVIDIA, AMD, and other
 - [vLLM v0.27.0](https://github.com/vllm-project/vllm/releases/tag/v0.27.0) — vLLM v0.27.0 Release Notes This release features 561 commits from 242 contributors (64 new)!
@@ -114,6 +110,8 @@ Essentials table above if you want the trusted beginner picks.*
 - [ComfyUI v0.32.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.32.0) — Make it easier to debug nested tensors. Update workflow templates to v0.11.37
 - [Ollama v0.32.11](https://github.com/ollama/ollama/releases/tag/v0.32.11) — `ollama launch dsh` now supports DeepSeek Harness, [DeepSeek's open-source agent harness]( `ollama launch muse` now supports [Muse Code]( Meta's agentic coding CLI
 - [ComfyUI v0.33.1](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.33.1) — Fix KSamplerAdvanced with add_noise disabled on nested latents Update workflow templates to v0.11.40
+- [Ollama v0.32.13](https://github.com/ollama/ollama/releases/tag/v0.32.13) — qwen3.8: support developer instructions **Full Changelog**:
+- [Ollama v0.32.12](https://github.com/ollama/ollama/releases/tag/v0.32.12) — Qwen 3.8 27B This release adds the support of [Qwen 3.8 27B]( Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks.
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

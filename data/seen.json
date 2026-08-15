@@ -34,7 +34,9 @@
       "v0.32.8",
       "v0.32.7",
       "v0.32.9",
-      "v0.32.11"
+      "v0.32.11",
+      "v0.32.13",
+      "v0.32.12"
     ],
     "vllm-project/vllm": [
       "v0.25.1",
@@ -67,40 +69,6 @@
     "https://lmstudio.ai/changelog": "1.0.7"
   },
   "history": [
-    {
-      "date": "2026-08-08",
-      "discoveries": [
-        {
-          "name": "leonickson1/Swiftlet",
-          "url": "https://github.com/leonickson1/Swiftlet",
-          "description": "Swiftlet is a Swift and Metal runtime that runs large Qwen Mixture-of-Experts models locally on Apple devices by streaming expert weights from storage, enabling 35B and 80B models to run with low",
-          "stars": 447,
-          "created_at": "2026-08-03T13:03:37Z"
-        },
-        {
-          "name": "sosoj92/jarvis-assistant-vocal",
-          "url": "https://github.com/sosoj92/jarvis-assistant-vocal",
-          "description": "Assistant vocal local en francais : Claude ou Ollama (offline), domotique Hue, OBS, agenda, navigateur, appels Twilio, serveur MCP. Python.",
-          "stars": 33,
-          "created_at": "2026-08-07T15:30:20Z"
-        }
-      ],
-      "releases": [
-        {
-          "tool": "ComfyUI",
-          "repo": "Comfy-Org/ComfyUI",
-          "version": "v0.31.0",
-          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.31.0",
-          "notes": "Bump comfyui-frontend-package to 1.47.12 Don't pin too much memory on Linux systems with no swap partition."
-        },
-        {
-          "tool": "LM Studio",
-          "version": "1.0.6",
-          "url": "https://lmstudio.ai/changelog/bionic-v1.0.6",
-          "notes": ""
-        }
-      ]
-    },
     {
       "date": "2026-08-11",
       "discoveries": [],
@@ -186,6 +154,26 @@
           "version": "v0.33.1",
           "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.33.1",
           "notes": "Fix KSamplerAdvanced with add_noise disabled on nested latents Update workflow templates to v0.11.40"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-15",
+      "discoveries": [],
+      "releases": [
+        {
+          "tool": "Ollama",
+          "repo": "ollama/ollama",
+          "version": "v0.32.13",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.32.13",
+          "notes": "qwen3.8: support developer instructions **Full Changelog**:"
+        },
+        {
+          "tool": "Ollama",
+          "repo": "ollama/ollama",
+          "version": "v0.32.12",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.32.12",
+          "notes": "Qwen 3.8 27B This release adds the support of [Qwen 3.8 27B]( Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
         }
       ]
     }

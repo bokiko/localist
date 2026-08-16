@@ -95,10 +95,12 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-08-15*
+*Updated 2026-08-16*
 
 **🆕 New & active projects**
+- [notatestuser/ds4-control](https://github.com/notatestuser/ds4-control) — macOS menubar app for fast local DeepSeek V4 Pro/Flash, with 1M context. · ⭐ 769
 - [Ouru77/ev-assistant](https://github.com/Ouru77/ev-assistant) — 🕸️ E.V. — Peter Parker's homemade AI from Spider-Man: Brand New Day, running locally on YOUR PC. Voice assistant + cyber HUD, real PC control, long-term memory. Whisper + Ollama, no cloud. TR/EN. · ⭐ 36
+- [baker27727/ds4-8gb-cpu](https://github.com/baker27727/ds4-8gb-cpu) — DeepSeek V4 Flash CPU/NVMe research fork: 78.62 GiB GGUF validated on 7.7 GiB RAM, CPU-only, using demand paging. · ⭐ 31
 
 **📦 Tool releases**
 - [Ollama v0.32.8](https://github.com/ollama/ollama/releases/tag/v0.32.8) — Add Muse Glimmer support for NVIDIA, AMD, and additional platforms **Full Changelog**:

@@ -21,7 +21,9 @@
     "david-g-3654/homebench",
     "leonickson1/swiftlet",
     "sosoj92/jarvis-assistant-vocal",
-    "ouru77/ev-assistant"
+    "ouru77/ev-assistant",
+    "notatestuser/ds4-control",
+    "baker27727/ds4-8gb-cpu"
   ],
   "releases": {
     "ollama/ollama": [
@@ -176,6 +178,26 @@
           "notes": "Qwen 3.8 27B This release adds the support of [Qwen 3.8 27B]( Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
         }
       ]
+    },
+    {
+      "date": "2026-08-16",
+      "discoveries": [
+        {
+          "name": "notatestuser/ds4-control",
+          "url": "https://github.com/notatestuser/ds4-control",
+          "description": "macOS menubar app for fast local DeepSeek V4 Pro/Flash, with 1M context.",
+          "stars": 769,
+          "created_at": "2026-05-29T15:41:13Z"
+        },
+        {
+          "name": "baker27727/ds4-8gb-cpu",
+          "url": "https://github.com/baker27727/ds4-8gb-cpu",
+          "description": "DeepSeek V4 Flash CPU/NVMe research fork: 78.62 GiB GGUF validated on 7.7 GiB RAM, CPU-only, using demand paging.",
+          "stars": 31,
+          "created_at": "2026-08-10T20:27:49Z"
+        }
+      ],
+      "releases": []
     }
   ]
 }

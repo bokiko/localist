@@ -23,7 +23,8 @@
     "sosoj92/jarvis-assistant-vocal",
     "ouru77/ev-assistant",
     "notatestuser/ds4-control",
-    "baker27727/ds4-8gb-cpu"
+    "baker27727/ds4-8gb-cpu",
+    "greninja9257/labllm"
   ],
   "releases": {
     "ollama/ollama": [
@@ -38,7 +39,8 @@
       "v0.32.9",
       "v0.32.11",
       "v0.32.13",
-      "v0.32.12"
+      "v0.32.12",
+      "v0.32.14"
     ],
     "vllm-project/vllm": [
       "v0.25.1",
@@ -49,7 +51,8 @@
     ],
     "LostRuins/koboldcpp": [
       "v1.117.1",
-      "v1.118.1"
+      "v1.118.1",
+      "v1.119"
     ],
     "Comfy-Org/ComfyUI": [
       "v0.28.0",
@@ -198,6 +201,34 @@
         }
       ],
       "releases": []
+    },
+    {
+      "date": "2026-08-17",
+      "discoveries": [
+        {
+          "name": "Greninja9257/LabLLM",
+          "url": "https://github.com/Greninja9257/LabLLM",
+          "description": "A native macOS lab for teaching tiny language models to think \u2014 build the architecture, train the weights, and watch a small LLM emerge from scratch, locally on Apple Silicon with custom data,",
+          "stars": 33,
+          "created_at": "2026-08-15T22:16:40Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "Ollama",
+          "repo": "ollama/ollama",
+          "version": "v0.32.14",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.32.14",
+          "notes": "llm: transcode WebP images for llama-server renderers/qwen: tolerate non-leading system messages"
+        },
+        {
+          "tool": "KoboldCpp",
+          "repo": "LostRuins/koboldcpp",
+          "version": "v1.119",
+          "url": "https://github.com/LostRuins/koboldcpp/releases/tag/v1.119",
+          "notes": "**NEW**: Added support for Video generation and I2V with Minimax H3. Requires 4 files as described in [this docs]( For ease of use, you can download the [MiniMax H3 quick setup .kcppt template here]("
+        }
+      ]
     }
   ]
 }

@@ -71,42 +71,9 @@
     ]
   },
   "changelog_pages": {
-    "https://lmstudio.ai/changelog": "1.0.7"
+    "https://lmstudio.ai/changelog": "1.0.8"
   },
   "history": [
-    {
-      "date": "2026-08-11",
-      "discoveries": [],
-      "releases": [
-        {
-          "tool": "Ollama",
-          "repo": "ollama/ollama",
-          "version": "v0.32.8",
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.32.8",
-          "notes": "Add Muse Glimmer support for NVIDIA, AMD, and additional platforms **Full Changelog**:"
-        },
-        {
-          "tool": "Ollama",
-          "repo": "ollama/ollama",
-          "version": "v0.32.7",
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.32.7",
-          "notes": "Muse Glimmer > Note: Muse Glimmer is currently available via initial support via Ollama's MLX engine on Apple Silicon. Additional support and optimizations for Apple Silicon, NVIDIA, AMD, and other"
-        },
-        {
-          "tool": "vLLM",
-          "repo": "vllm-project/vllm",
-          "version": "v0.27.0",
-          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0",
-          "notes": "vLLM v0.27.0 Release Notes This release features 561 commits from 242 contributors (64 new)!"
-        },
-        {
-          "tool": "LM Studio",
-          "version": "1.0.7",
-          "url": "https://lmstudio.ai/changelog/bionic-v1.0.7",
-          "notes": ""
-        }
-      ]
-    },
     {
       "date": "2026-08-12",
       "discoveries": [
@@ -227,6 +194,18 @@
           "version": "v1.119",
           "url": "https://github.com/LostRuins/koboldcpp/releases/tag/v1.119",
           "notes": "**NEW**: Added support for Video generation and I2V with Minimax H3. Requires 4 files as described in [this docs]( For ease of use, you can download the [MiniMax H3 quick setup .kcppt template here]("
+        }
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "discoveries": [],
+      "releases": [
+        {
+          "tool": "LM Studio",
+          "version": "1.0.8",
+          "url": "https://lmstudio.ai/changelog/bionic-v1.0.8",
+          "notes": ""
         }
       ]
     }

@@ -95,7 +95,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-08-17*
+*Updated 2026-08-18*
 
 **🆕 New & active projects**
 - [notatestuser/ds4-control](https://github.com/notatestuser/ds4-control) — macOS menubar app for fast local DeepSeek V4 Pro/Flash, with 1M context. · ⭐ 769
@@ -104,10 +104,6 @@ Essentials table above if you want the trusted beginner picks.*
 - [baker27727/ds4-8gb-cpu](https://github.com/baker27727/ds4-8gb-cpu) — DeepSeek V4 Flash CPU/NVMe research fork: 78.62 GiB GGUF validated on 7.7 GiB RAM, CPU-only, using demand paging. · ⭐ 31
 
 **📦 Tool releases**
-- [Ollama v0.32.8](https://github.com/ollama/ollama/releases/tag/v0.32.8) — Add Muse Glimmer support for NVIDIA, AMD, and additional platforms **Full Changelog**:
-- [Ollama v0.32.7](https://github.com/ollama/ollama/releases/tag/v0.32.7) — Muse Glimmer > Note: Muse Glimmer is currently available via initial support via Ollama's MLX engine on Apple Silicon. Additional support and optimizations for Apple Silicon, NVIDIA, AMD, and other
-- [vLLM v0.27.0](https://github.com/vllm-project/vllm/releases/tag/v0.27.0) — vLLM v0.27.0 Release Notes This release features 561 commits from 242 contributors (64 new)!
-- [LM Studio 1.0.7](https://lmstudio.ai/changelog/bionic-v1.0.7)
 - [Ollama v0.32.9](https://github.com/ollama/ollama/releases/tag/v0.32.9) — NVIDIA Nemotron 3.5 Lightning NVIDIA Nemotron 3.5 Lightning model with 3B active parameters built for that execution layer of always-on agents. It is
 - [vLLM v0.27.1](https://github.com/vllm-project/vllm/releases/tag/v0.27.1) — This is a patch release on top of v0.27.0. Support quantized DSpark Markov heads (#50424)
 - [ComfyUI v0.32.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.32.0) — Make it easier to debug nested tensors. Update workflow templates to v0.11.37
@@ -117,6 +113,7 @@ Essentials table above if you want the trusted beginner picks.*
 - [Ollama v0.32.12](https://github.com/ollama/ollama/releases/tag/v0.32.12) — Qwen 3.8 27B This release adds the support of [Qwen 3.8 27B]( Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks.
 - [Ollama v0.32.14](https://github.com/ollama/ollama/releases/tag/v0.32.14) — llm: transcode WebP images for llama-server renderers/qwen: tolerate non-leading system messages
 - [KoboldCpp v1.119](https://github.com/LostRuins/koboldcpp/releases/tag/v1.119) — **NEW**: Added support for Video generation and I2V with Minimax H3. Requires 4 files as described in [this docs]( For ease of use, you can download the [MiniMax H3 quick setup .kcppt template here](
+- [LM Studio 1.0.8](https://lmstudio.ai/changelog/bionic-v1.0.8)
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

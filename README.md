@@ -95,18 +95,15 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-08-18*
+*Updated 2026-08-19*
 
 **🆕 New & active projects**
 - [notatestuser/ds4-control](https://github.com/notatestuser/ds4-control) — macOS menubar app for fast local DeepSeek V4 Pro/Flash, with 1M context. · ⭐ 769
-- [Ouru77/ev-assistant](https://github.com/Ouru77/ev-assistant) — 🕸️ E.V. — Peter Parker's homemade AI from Spider-Man: Brand New Day, running locally on YOUR PC. Voice assistant + cyber HUD, real PC control, long-term memory. Whisper + Ollama, no cloud. TR/EN. · ⭐ 36
+- [six-nut/PocketMen-with-you](https://github.com/six-nut/PocketMen-with-you) — Create high-fidelity Codex companions from 2+ photos with local open-weight neural editing and no OpenAI API key. · ⭐ 41
 - [Greninja9257/LabLLM](https://github.com/Greninja9257/LabLLM) — A native macOS lab for teaching tiny language models to think — build the architecture, train the weights, and watch a small LLM emerge from scratch, locally on Apple Silicon with custom data, · ⭐ 33
 - [baker27727/ds4-8gb-cpu](https://github.com/baker27727/ds4-8gb-cpu) — DeepSeek V4 Flash CPU/NVMe research fork: 78.62 GiB GGUF validated on 7.7 GiB RAM, CPU-only, using demand paging. · ⭐ 31
 
 **📦 Tool releases**
-- [Ollama v0.32.9](https://github.com/ollama/ollama/releases/tag/v0.32.9) — NVIDIA Nemotron 3.5 Lightning NVIDIA Nemotron 3.5 Lightning model with 3B active parameters built for that execution layer of always-on agents. It is
-- [vLLM v0.27.1](https://github.com/vllm-project/vllm/releases/tag/v0.27.1) — This is a patch release on top of v0.27.0. Support quantized DSpark Markov heads (#50424)
-- [ComfyUI v0.32.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.32.0) — Make it easier to debug nested tensors. Update workflow templates to v0.11.37
 - [Ollama v0.32.11](https://github.com/ollama/ollama/releases/tag/v0.32.11) — `ollama launch dsh` now supports DeepSeek Harness, [DeepSeek's open-source agent harness]( `ollama launch muse` now supports [Muse Code]( Meta's agentic coding CLI
 - [ComfyUI v0.33.1](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.33.1) — Fix KSamplerAdvanced with add_noise disabled on nested latents Update workflow templates to v0.11.40
 - [Ollama v0.32.13](https://github.com/ollama/ollama/releases/tag/v0.32.13) — qwen3.8: support developer instructions **Full Changelog**:
@@ -114,6 +111,7 @@ Essentials table above if you want the trusted beginner picks.*
 - [Ollama v0.32.14](https://github.com/ollama/ollama/releases/tag/v0.32.14) — llm: transcode WebP images for llama-server renderers/qwen: tolerate non-leading system messages
 - [KoboldCpp v1.119](https://github.com/LostRuins/koboldcpp/releases/tag/v1.119) — **NEW**: Added support for Video generation and I2V with Minimax H3. Requires 4 files as described in [this docs]( For ease of use, you can download the [MiniMax H3 quick setup .kcppt template here](
 - [LM Studio 1.0.8](https://lmstudio.ai/changelog/bionic-v1.0.8)
+- [LM Studio 1.0.9](https://lmstudio.ai/changelog/bionic-v1.0.9)
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

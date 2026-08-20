@@ -95,7 +95,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-08-19*
+*Updated 2026-08-20*
 
 **🆕 New & active projects**
 - [notatestuser/ds4-control](https://github.com/notatestuser/ds4-control) — macOS menubar app for fast local DeepSeek V4 Pro/Flash, with 1M context. · ⭐ 769

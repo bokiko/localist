@@ -25,7 +25,8 @@
     "notatestuser/ds4-control",
     "baker27727/ds4-8gb-cpu",
     "greninja9257/labllm",
-    "six-nut/pocketmen-with-you"
+    "six-nut/pocketmen-with-you",
+    "ai4charitypl/kancelaria-lex"
   ],
   "releases": {
     "ollama/ollama": [
@@ -70,32 +71,15 @@
     ],
     "open-webui/open-webui": [
       "v0.11.0"
+    ],
+    "ggml-org/llama.cpp": [
+      "v0.2.0"
     ]
   },
   "changelog_pages": {
     "https://lmstudio.ai/changelog": "1.0.9"
   },
   "history": [
-    {
-      "date": "2026-08-15",
-      "discoveries": [],
-      "releases": [
-        {
-          "tool": "Ollama",
-          "repo": "ollama/ollama",
-          "version": "v0.32.13",
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.32.13",
-          "notes": "qwen3.8: support developer instructions **Full Changelog**:"
-        },
-        {
-          "tool": "Ollama",
-          "repo": "ollama/ollama",
-          "version": "v0.32.12",
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.32.12",
-          "notes": "Qwen 3.8 27B This release adds the support of [Qwen 3.8 27B]( Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
-        }
-      ]
-    },
     {
       "date": "2026-08-16",
       "discoveries": [
@@ -186,6 +170,27 @@
           "version": "v0.32.15",
           "url": "https://github.com/ollama/ollama/releases/tag/v0.32.15",
           "notes": "New desktop onboarding flow on first launch Caches resolved model metadata between requests, cutting time-to-first-token by roughly half (TTFT dropped from ~995 ms to ~524 ms in benchmarks)"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-22",
+      "discoveries": [
+        {
+          "name": "AI4CharityPL/kancelaria-lex",
+          "url": "https://github.com/AI4CharityPL/kancelaria-lex",
+          "description": "Fully local AI for Polish legal case files - zero fabricated citations by construction. Free; please support a Wroclaw animal shelter instead.",
+          "stars": 40,
+          "created_at": "2026-08-17T09:27:27Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "llama.cpp",
+          "repo": "ggml-org/llama.cpp",
+          "version": "v0.2.0",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.2.0",
+          "notes": "Overview New version has been released."
         }
       ]
     }

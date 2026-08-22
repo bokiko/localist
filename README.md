@@ -95,22 +95,22 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-08-21*
+*Updated 2026-08-22*
 
 **🆕 New & active projects**
 - [notatestuser/ds4-control](https://github.com/notatestuser/ds4-control) — macOS menubar app for fast local DeepSeek V4 Pro/Flash, with 1M context. · ⭐ 769
 - [six-nut/PocketMen-with-you](https://github.com/six-nut/PocketMen-with-you) — Create high-fidelity Codex companions from 2+ photos with local open-weight neural editing and no OpenAI API key. · ⭐ 41
+- [AI4CharityPL/kancelaria-lex](https://github.com/AI4CharityPL/kancelaria-lex) — Fully local AI for Polish legal case files - zero fabricated citations by construction. Free; please support a Wroclaw animal shelter instead. · ⭐ 40
 - [Greninja9257/LabLLM](https://github.com/Greninja9257/LabLLM) — A native macOS lab for teaching tiny language models to think — build the architecture, train the weights, and watch a small LLM emerge from scratch, locally on Apple Silicon with custom data, · ⭐ 33
 - [baker27727/ds4-8gb-cpu](https://github.com/baker27727/ds4-8gb-cpu) — DeepSeek V4 Flash CPU/NVMe research fork: 78.62 GiB GGUF validated on 7.7 GiB RAM, CPU-only, using demand paging. · ⭐ 31
 
 **📦 Tool releases**
-- [Ollama v0.32.13](https://github.com/ollama/ollama/releases/tag/v0.32.13) — qwen3.8: support developer instructions **Full Changelog**:
-- [Ollama v0.32.12](https://github.com/ollama/ollama/releases/tag/v0.32.12) — Qwen 3.8 27B This release adds the support of [Qwen 3.8 27B]( Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks.
 - [Ollama v0.32.14](https://github.com/ollama/ollama/releases/tag/v0.32.14) — llm: transcode WebP images for llama-server renderers/qwen: tolerate non-leading system messages
 - [KoboldCpp v1.119](https://github.com/LostRuins/koboldcpp/releases/tag/v1.119) — **NEW**: Added support for Video generation and I2V with Minimax H3. Requires 4 files as described in [this docs]( For ease of use, you can download the [MiniMax H3 quick setup .kcppt template here](
 - [LM Studio 1.0.8](https://lmstudio.ai/changelog/bionic-v1.0.8)
 - [LM Studio 1.0.9](https://lmstudio.ai/changelog/bionic-v1.0.9)
 - [Ollama v0.32.15](https://github.com/ollama/ollama/releases/tag/v0.32.15) — New desktop onboarding flow on first launch Caches resolved model metadata between requests, cutting time-to-first-token by roughly half (TTFT dropped from ~995 ms to ~524 ms in benchmarks)
+- [llama.cpp v0.2.0](https://github.com/ggml-org/llama.cpp/releases/tag/v0.2.0) — Overview New version has been released.
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

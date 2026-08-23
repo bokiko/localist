@@ -95,14 +95,12 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-08-22*
+*Updated 2026-08-23*
 
 **🆕 New & active projects**
-- [notatestuser/ds4-control](https://github.com/notatestuser/ds4-control) — macOS menubar app for fast local DeepSeek V4 Pro/Flash, with 1M context. · ⭐ 769
 - [six-nut/PocketMen-with-you](https://github.com/six-nut/PocketMen-with-you) — Create high-fidelity Codex companions from 2+ photos with local open-weight neural editing and no OpenAI API key. · ⭐ 41
 - [AI4CharityPL/kancelaria-lex](https://github.com/AI4CharityPL/kancelaria-lex) — Fully local AI for Polish legal case files - zero fabricated citations by construction. Free; please support a Wroclaw animal shelter instead. · ⭐ 40
 - [Greninja9257/LabLLM](https://github.com/Greninja9257/LabLLM) — A native macOS lab for teaching tiny language models to think — build the architecture, train the weights, and watch a small LLM emerge from scratch, locally on Apple Silicon with custom data, · ⭐ 33
-- [baker27727/ds4-8gb-cpu](https://github.com/baker27727/ds4-8gb-cpu) — DeepSeek V4 Flash CPU/NVMe research fork: 78.62 GiB GGUF validated on 7.7 GiB RAM, CPU-only, using demand paging. · ⭐ 31
 
 **📦 Tool releases**
 - [Ollama v0.32.14](https://github.com/ollama/ollama/releases/tag/v0.32.14) — llm: transcode WebP images for llama-server renderers/qwen: tolerate non-leading system messages

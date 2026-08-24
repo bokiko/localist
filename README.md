@@ -95,16 +95,14 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-08-23*
+*Updated 2026-08-24*
 
 **🆕 New & active projects**
+- [ARahim3/mlx-dspark](https://github.com/ARahim3/mlx-dspark) — Up to 4× faster LLM decoding on Apple Silicon, lossless. Native MLX port of DeepSeek's DSpark & z-lab's DFlash speculative decoding — Gemma-4, Qwen3.8, Muse-Glimmer, Nemotron, LFM2.5, Ornith-1.0, · ⭐ 584
 - [six-nut/PocketMen-with-you](https://github.com/six-nut/PocketMen-with-you) — Create high-fidelity Codex companions from 2+ photos with local open-weight neural editing and no OpenAI API key. · ⭐ 41
 - [AI4CharityPL/kancelaria-lex](https://github.com/AI4CharityPL/kancelaria-lex) — Fully local AI for Polish legal case files - zero fabricated citations by construction. Free; please support a Wroclaw animal shelter instead. · ⭐ 40
-- [Greninja9257/LabLLM](https://github.com/Greninja9257/LabLLM) — A native macOS lab for teaching tiny language models to think — build the architecture, train the weights, and watch a small LLM emerge from scratch, locally on Apple Silicon with custom data, · ⭐ 33
 
 **📦 Tool releases**
-- [Ollama v0.32.14](https://github.com/ollama/ollama/releases/tag/v0.32.14) — llm: transcode WebP images for llama-server renderers/qwen: tolerate non-leading system messages
-- [KoboldCpp v1.119](https://github.com/LostRuins/koboldcpp/releases/tag/v1.119) — **NEW**: Added support for Video generation and I2V with Minimax H3. Requires 4 files as described in [this docs]( For ease of use, you can download the [MiniMax H3 quick setup .kcppt template here](
 - [LM Studio 1.0.8](https://lmstudio.ai/changelog/bionic-v1.0.8)
 - [LM Studio 1.0.9](https://lmstudio.ai/changelog/bionic-v1.0.9)
 - [Ollama v0.32.15](https://github.com/ollama/ollama/releases/tag/v0.32.15) — New desktop onboarding flow on first launch Caches resolved model metadata between requests, cutting time-to-first-token by roughly half (TTFT dropped from ~995 ms to ~524 ms in benchmarks)

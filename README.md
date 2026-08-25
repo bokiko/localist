@@ -95,7 +95,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-08-24*
+*Updated 2026-08-25*
 
 **🆕 New & active projects**
 - [ARahim3/mlx-dspark](https://github.com/ARahim3/mlx-dspark) — Up to 4× faster LLM decoding on Apple Silicon, lossless. Native MLX port of DeepSeek's DSpark & z-lab's DFlash speculative decoding — Gemma-4, Qwen3.8, Muse-Glimmer, Nemotron, LFM2.5, Ornith-1.0, · ⭐ 584
@@ -103,7 +103,6 @@ Essentials table above if you want the trusted beginner picks.*
 - [AI4CharityPL/kancelaria-lex](https://github.com/AI4CharityPL/kancelaria-lex) — Fully local AI for Polish legal case files - zero fabricated citations by construction. Free; please support a Wroclaw animal shelter instead. · ⭐ 40
 
 **📦 Tool releases**
-- [LM Studio 1.0.8](https://lmstudio.ai/changelog/bionic-v1.0.8)
 - [LM Studio 1.0.9](https://lmstudio.ai/changelog/bionic-v1.0.9)
 - [Ollama v0.32.15](https://github.com/ollama/ollama/releases/tag/v0.32.15) — New desktop onboarding flow on first launch Caches resolved model metadata between requests, cutting time-to-first-token by roughly half (TTFT dropped from ~995 ms to ~524 ms in benchmarks)
 - [llama.cpp v0.2.0](https://github.com/ggml-org/llama.cpp/releases/tag/v0.2.0) — Overview New version has been released.

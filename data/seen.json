@@ -44,7 +44,8 @@
       "v0.32.13",
       "v0.32.12",
       "v0.32.14",
-      "v0.32.15"
+      "v0.32.15",
+      "v0.33.0"
     ],
     "vllm-project/vllm": [
       "v0.25.1",
@@ -65,42 +66,25 @@
       "v0.30.0",
       "v0.31.0",
       "v0.32.0",
-      "v0.33.1"
+      "v0.33.1",
+      "v0.34.0"
     ],
     "janhq/jan": [
       "v0.8.4"
     ],
     "open-webui/open-webui": [
-      "v0.11.0"
+      "v0.11.0",
+      "v0.11.1"
     ],
     "ggml-org/llama.cpp": [
-      "v0.2.0"
+      "v0.2.0",
+      "v0.3.0"
     ]
   },
   "changelog_pages": {
     "https://lmstudio.ai/changelog": "1.0.9"
   },
   "history": [
-    {
-      "date": "2026-08-19",
-      "discoveries": [
-        {
-          "name": "six-nut/PocketMen-with-you",
-          "url": "https://github.com/six-nut/PocketMen-with-you",
-          "description": "Create high-fidelity Codex companions from 2+ photos with local open-weight neural editing and no OpenAI API key.",
-          "stars": 41,
-          "created_at": "2026-08-17T02:07:01Z"
-        }
-      ],
-      "releases": [
-        {
-          "tool": "LM Studio",
-          "version": "1.0.9",
-          "url": "https://lmstudio.ai/changelog/bionic-v1.0.9",
-          "notes": ""
-        }
-      ]
-    },
     {
       "date": "2026-08-21",
       "discoveries": [],
@@ -147,6 +131,40 @@
         }
       ],
       "releases": []
+    },
+    {
+      "date": "2026-08-26",
+      "discoveries": [],
+      "releases": [
+        {
+          "tool": "llama.cpp",
+          "repo": "ggml-org/llama.cpp",
+          "version": "v0.3.0",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.3.0",
+          "notes": "Overview llama.cpp 0.3.0 introduces the dots3-note multimodal model (with a new DSA-ISWA KV cache), MTP support for GLM-4.5-Air, and tensor-split (`-sm tensor`) plus multi-sequence rollback fixes for"
+        },
+        {
+          "tool": "Ollama",
+          "repo": "ollama/ollama",
+          "version": "v0.33.0",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.33.0",
+          "notes": "Claude Desktop Developers can now easily configure Claude Desktop to seamlessly work with Ollama as a third-party gateway provider."
+        },
+        {
+          "tool": "Open WebUI",
+          "repo": "open-webui/open-webui",
+          "version": "v0.11.1",
+          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.11.1",
+          "notes": "Added \ud83d\udea6 **Human in the loop tool approval.** Where an administrator has turned it on, you can switch a conversation from letting tools run freely to being asked first, so a model that wants to use a"
+        },
+        {
+          "tool": "ComfyUI",
+          "repo": "Comfy-Org/ComfyUI",
+          "version": "v0.34.0",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.34.0",
+          "notes": "Fix minimax music not working on non dynamic vram. Add MiniMaxH3AddGuide for anchoring image and audio guides at any frame"
+        }
+      ]
     }
   ]
 }

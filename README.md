@@ -95,11 +95,12 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-08-26*
+*Updated 2026-08-27*
 
 **🆕 New & active projects**
 - [ARahim3/mlx-dspark](https://github.com/ARahim3/mlx-dspark) — Up to 4× faster LLM decoding on Apple Silicon, lossless. Native MLX port of DeepSeek's DSpark & z-lab's DFlash speculative decoding — Gemma-4, Qwen3.8, Muse-Glimmer, Nemotron, LFM2.5, Ornith-1.0, · ⭐ 584
 - [AI4CharityPL/kancelaria-lex](https://github.com/AI4CharityPL/kancelaria-lex) — Fully local AI for Polish legal case files - zero fabricated citations by construction. Free; please support a Wroclaw animal shelter instead. · ⭐ 40
+- [Lucas-Xi/IntentRoute-AI](https://github.com/Lucas-Xi/IntentRoute-AI) — Open-source AI-assisted per-application routing for Windows with OpenAI/Ollama drafts and a sing-box TUN data plane. · ⭐ 37
 
 **📦 Tool releases**
 - [Ollama v0.32.15](https://github.com/ollama/ollama/releases/tag/v0.32.15) — New desktop onboarding flow on first launch Caches resolved model metadata between requests, cutting time-to-first-token by roughly half (TTFT dropped from ~995 ms to ~524 ms in benchmarks)
@@ -108,6 +109,8 @@ Essentials table above if you want the trusted beginner picks.*
 - [Ollama v0.33.0](https://github.com/ollama/ollama/releases/tag/v0.33.0) — Claude Desktop Developers can now easily configure Claude Desktop to seamlessly work with Ollama as a third-party gateway provider.
 - [Open WebUI v0.11.1](https://github.com/open-webui/open-webui/releases/tag/v0.11.1) — Added 🚦 **Human in the loop tool approval.** Where an administrator has turned it on, you can switch a conversation from letting tools run freely to being asked first, so a model that wants to use a
 - [ComfyUI v0.34.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.34.0) — Fix minimax music not working on non dynamic vram. Add MiniMaxH3AddGuide for anchoring image and audio guides at any frame
+- [Ollama v0.33.1](https://github.com/ollama/ollama/releases/tag/v0.33.1) — MLX: Qwen3.8 Flash Next support cmake: make external compat patches idempotent
+- [vLLM v0.28.0](https://github.com/vllm-project/vllm/releases/tag/v0.28.0) — This release features 584 commits from 270 contributors (76 new)! **Kimi-K3 performance push**: a major optimization effort for Kimi-K3 across the stack — Decode Context Parallel (DCP) support
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

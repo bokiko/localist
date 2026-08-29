@@ -48,7 +48,8 @@
       "v0.32.14",
       "v0.32.15",
       "v0.33.0",
-      "v0.33.1"
+      "v0.33.1",
+      "v0.33.2"
     ],
     "vllm-project/vllm": [
       "v0.25.1",
@@ -61,7 +62,8 @@
     "LostRuins/koboldcpp": [
       "v1.117.1",
       "v1.118.1",
-      "v1.119"
+      "v1.119",
+      "v1.120"
     ],
     "Comfy-Org/ComfyUI": [
       "v0.28.0",
@@ -89,27 +91,6 @@
     "https://lmstudio.ai/changelog": "1.1.0"
   },
   "history": [
-    {
-      "date": "2026-08-22",
-      "discoveries": [
-        {
-          "name": "AI4CharityPL/kancelaria-lex",
-          "url": "https://github.com/AI4CharityPL/kancelaria-lex",
-          "description": "Fully local AI for Polish legal case files - zero fabricated citations by construction. Free; please support a Wroclaw animal shelter instead.",
-          "stars": 40,
-          "created_at": "2026-08-17T09:27:27Z"
-        }
-      ],
-      "releases": [
-        {
-          "tool": "llama.cpp",
-          "repo": "ggml-org/llama.cpp",
-          "version": "v0.2.0",
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.2.0",
-          "notes": "Overview New version has been released."
-        }
-      ]
-    },
     {
       "date": "2026-08-24",
       "discoveries": [
@@ -202,6 +183,26 @@
           "version": "1.1.0",
           "url": "https://lmstudio.ai/changelog/bionic-v1.1.0",
           "notes": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-08-29",
+      "discoveries": [],
+      "releases": [
+        {
+          "tool": "Ollama",
+          "repo": "ollama/ollama",
+          "version": "v0.33.2",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.33.2",
+          "notes": "Ollama's app now follows the system appearance again, restoring dark mode support Fixed the macOS app to properly hand off to an already-running instance instead of starting a second one"
+        },
+        {
+          "tool": "KoboldCpp",
+          "repo": "LostRuins/koboldcpp",
+          "version": "v1.120",
+          "url": "https://github.com/LostRuins/koboldcpp/releases/tag/v1.120",
+          "notes": "Minor fix to assistant gen prefills being triggered incorrectly Fixed a bug where failsafe mode was incorrectly selected"
         }
       ]
     }

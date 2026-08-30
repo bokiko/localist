@@ -95,12 +95,14 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-08-29*
+*Updated 2026-08-30*
 
 **🆕 New & active projects**
 - [ARahim3/mlx-dspark](https://github.com/ARahim3/mlx-dspark) — Up to 4× faster LLM decoding on Apple Silicon, lossless. Native MLX port of DeepSeek's DSpark & z-lab's DFlash speculative decoding — Gemma-4, Qwen3.8, Muse-Glimmer, Nemotron, LFM2.5, Ornith-1.0, · ⭐ 584
+- [DDGTESTDEV-IONICS/ollama-gui-simple](https://github.com/DDGTESTDEV-IONICS/ollama-gui-simple) — 'ollama gui windows' — A minimal local-LLM chat front-end: pick model, chat, switch — nothing else. Free, open community project for Windows. · ⭐ 150
+- [nooour2/buzz-transcriber-alt](https://github.com/nooour2/buzz-transcriber-alt) — 'buzz transcriber download' — A guide to Buzz-class local transcribers plus a companion concept repo. Free, open community project for Windows. · ⭐ 150
+- [claudiosequeida81-maker/whisper-gui-windows](https://github.com/claudiosequeida81-maker/whisper-gui-windows) — 'whisper gui windows' — A local transcription front-end: audio in, subtitles out, nothing leaves the PC. Free, open community project for Windows. · ⭐ 150
 - [Vincent-Xi08/IntentRoute-AI](https://github.com/Vincent-Xi08/IntentRoute-AI) — Open-source AI-assisted per-application routing for Windows with OpenAI/Ollama drafts and a sing-box TUN data plane. · ⭐ 59
-- [Lucas-Xi/IntentRoute-AI](https://github.com/Lucas-Xi/IntentRoute-AI) — Open-source AI-assisted per-application routing for Windows with OpenAI/Ollama drafts and a sing-box TUN data plane. · ⭐ 37
 
 **📦 Tool releases**
 - [llama.cpp v0.3.0](https://github.com/ggml-org/llama.cpp/releases/tag/v0.3.0) — Overview llama.cpp 0.3.0 introduces the dots3-note multimodal model (with a new DSA-ISWA KV cache), MTP support for GLM-4.5-Air, and tensor-split (`-sm tensor`) plus multi-sequence rollback fixes for

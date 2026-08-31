@@ -95,14 +95,14 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-08-30*
+*Updated 2026-08-31*
 
 **🆕 New & active projects**
-- [ARahim3/mlx-dspark](https://github.com/ARahim3/mlx-dspark) — Up to 4× faster LLM decoding on Apple Silicon, lossless. Native MLX port of DeepSeek's DSpark & z-lab's DFlash speculative decoding — Gemma-4, Qwen3.8, Muse-Glimmer, Nemotron, LFM2.5, Ornith-1.0, · ⭐ 584
+- [EthanYoQ/AI-Novel-Writer](https://github.com/EthanYoQ/AI-Novel-Writer) — AI 小说创作软件：把灵感、角色、世界观、大纲、章节写作、审稿和修稿组织成可控流程；提供 Windows/macOS 桌面版、Ollama 与 DSH 插件预览。 · ⭐ 517
 - [DDGTESTDEV-IONICS/ollama-gui-simple](https://github.com/DDGTESTDEV-IONICS/ollama-gui-simple) — 'ollama gui windows' — A minimal local-LLM chat front-end: pick model, chat, switch — nothing else. Free, open community project for Windows. · ⭐ 150
 - [nooour2/buzz-transcriber-alt](https://github.com/nooour2/buzz-transcriber-alt) — 'buzz transcriber download' — A guide to Buzz-class local transcribers plus a companion concept repo. Free, open community project for Windows. · ⭐ 150
 - [claudiosequeida81-maker/whisper-gui-windows](https://github.com/claudiosequeida81-maker/whisper-gui-windows) — 'whisper gui windows' — A local transcription front-end: audio in, subtitles out, nothing leaves the PC. Free, open community project for Windows. · ⭐ 150
-- [Vincent-Xi08/IntentRoute-AI](https://github.com/Vincent-Xi08/IntentRoute-AI) — Open-source AI-assisted per-application routing for Windows with OpenAI/Ollama drafts and a sing-box TUN data plane. · ⭐ 59
+- [rokbenko/quackd](https://github.com/rokbenko/quackd) — 🦆🧠 Give your Microduck a brain. Tell a small robot with two legs what you want in plain language. An LLM (Claude, OpenAI, Gemini, Grok, or a local model via Ollama, vLLM or llama.cpp) uses the skills · ⭐ 74
 
 **📦 Tool releases**
 - [llama.cpp v0.3.0](https://github.com/ggml-org/llama.cpp/releases/tag/v0.3.0) — Overview llama.cpp 0.3.0 introduces the dots3-note multimodal model (with a new DSA-ISWA KV cache), MTP support for GLM-4.5-Air, and tensor-split (`-sm tensor`) plus multi-sequence rollback fixes for
@@ -114,6 +114,7 @@ Essentials table above if you want the trusted beginner picks.*
 - [LM Studio 1.1.0](https://lmstudio.ai/changelog/bionic-v1.1.0)
 - [Ollama v0.33.2](https://github.com/ollama/ollama/releases/tag/v0.33.2) — Ollama's app now follows the system appearance again, restoring dark mode support Fixed the macOS app to properly hand off to an already-running instance instead of starting a second one
 - [KoboldCpp v1.120](https://github.com/LostRuins/koboldcpp/releases/tag/v1.120) — Minor fix to assistant gen prefills being triggered incorrectly Fixed a bug where failsafe mode was incorrectly selected
+- [Open WebUI v0.11.2](https://github.com/open-webui/open-webui/releases/tag/v0.11.2) — Added 🖼️ **Richer previews for terminal files.** Word documents and slide decks produced in the terminal are now previewed as the finished document rather than an approximation, and every document
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

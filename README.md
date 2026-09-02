@@ -95,20 +95,16 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-09-01*
+*Updated 2026-09-02*
 
 **🆕 New & active projects**
 - [EthanYoQ/AI-Novel-Writer](https://github.com/EthanYoQ/AI-Novel-Writer) — AI 小说创作软件：把灵感、角色、世界观、大纲、章节写作、审稿和修稿组织成可控流程；提供 Windows/macOS 桌面版、Ollama 与 DSH 插件预览。 · ⭐ 517
+- [carloslfu/slotstream](https://github.com/carloslfu/slotstream) — Run Qwen3.8-Flash-Next (125B MoE, 104 GB at 4-bit) on Macs with a fraction of that RAM by streaming experts from SSD. MLX + Swift, Ollama-compatible API. · ⭐ 196
 - [DDGTESTDEV-IONICS/ollama-gui-simple](https://github.com/DDGTESTDEV-IONICS/ollama-gui-simple) — 'ollama gui windows' — A minimal local-LLM chat front-end: pick model, chat, switch — nothing else. Free, open community project for Windows. · ⭐ 150
 - [nooour2/buzz-transcriber-alt](https://github.com/nooour2/buzz-transcriber-alt) — 'buzz transcriber download' — A guide to Buzz-class local transcribers plus a companion concept repo. Free, open community project for Windows. · ⭐ 150
 - [claudiosequeida81-maker/whisper-gui-windows](https://github.com/claudiosequeida81-maker/whisper-gui-windows) — 'whisper gui windows' — A local transcription front-end: audio in, subtitles out, nothing leaves the PC. Free, open community project for Windows. · ⭐ 150
-- [rokbenko/quackd](https://github.com/rokbenko/quackd) — 🦆🧠 Give your Microduck a brain. Tell a small robot with two legs what you want in plain language. An LLM (Claude, OpenAI, Gemini, Grok, or a local model via Ollama, vLLM or llama.cpp) uses the skills · ⭐ 74
 
 **📦 Tool releases**
-- [llama.cpp v0.3.0](https://github.com/ggml-org/llama.cpp/releases/tag/v0.3.0) — Overview llama.cpp 0.3.0 introduces the dots3-note multimodal model (with a new DSA-ISWA KV cache), MTP support for GLM-4.5-Air, and tensor-split (`-sm tensor`) plus multi-sequence rollback fixes for
-- [Ollama v0.33.0](https://github.com/ollama/ollama/releases/tag/v0.33.0) — Claude Desktop Developers can now easily configure Claude Desktop to seamlessly work with Ollama as a third-party gateway provider.
-- [Open WebUI v0.11.1](https://github.com/open-webui/open-webui/releases/tag/v0.11.1) — Added 🚦 **Human in the loop tool approval.** Where an administrator has turned it on, you can switch a conversation from letting tools run freely to being asked first, so a model that wants to use a
-- [ComfyUI v0.34.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.34.0) — Fix minimax music not working on non dynamic vram. Add MiniMaxH3AddGuide for anchoring image and audio guides at any frame
 - [Ollama v0.33.1](https://github.com/ollama/ollama/releases/tag/v0.33.1) — MLX: Qwen3.8 Flash Next support cmake: make external compat patches idempotent
 - [vLLM v0.28.0](https://github.com/vllm-project/vllm/releases/tag/v0.28.0) — This release features 584 commits from 270 contributors (76 new)! **Kimi-K3 performance push**: a major optimization effort for Kimi-K3 across the stack — Decode Context Parallel (DCP) support
 - [LM Studio 1.1.0](https://lmstudio.ai/changelog/bionic-v1.1.0)

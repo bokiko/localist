@@ -95,7 +95,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-09-03*
+*Updated 2026-09-04*
 
 **🆕 New & active projects**
 - [EthanYoQ/AI-Novel-Writer](https://github.com/EthanYoQ/AI-Novel-Writer) — AI 小说创作软件：把灵感、角色、世界观、大纲、章节写作、审稿和修稿组织成可控流程；提供 Windows/macOS 桌面版、Ollama 与 DSH 插件预览。 · ⭐ 517
@@ -105,12 +105,12 @@ Essentials table above if you want the trusted beginner picks.*
 - [claudiosequeida81-maker/whisper-gui-windows](https://github.com/claudiosequeida81-maker/whisper-gui-windows) — 'whisper gui windows' — A local transcription front-end: audio in, subtitles out, nothing leaves the PC. Free, open community project for Windows. · ⭐ 150
 
 **📦 Tool releases**
-- [LM Studio 1.1.0](https://lmstudio.ai/changelog/bionic-v1.1.0)
 - [Ollama v0.33.2](https://github.com/ollama/ollama/releases/tag/v0.33.2) — Ollama's app now follows the system appearance again, restoring dark mode support Fixed the macOS app to properly hand off to an already-running instance instead of starting a second one
 - [KoboldCpp v1.120](https://github.com/LostRuins/koboldcpp/releases/tag/v1.120) — Minor fix to assistant gen prefills being triggered incorrectly Fixed a bug where failsafe mode was incorrectly selected
 - [Open WebUI v0.11.2](https://github.com/open-webui/open-webui/releases/tag/v0.11.2) — Added 🖼️ **Richer previews for terminal files.** Word documents and slide decks produced in the terminal are now previewed as the finished document rather than an approximation, and every document
 - [Open WebUI v0.11.3](https://github.com/open-webui/open-webui/releases/tag/v0.11.3) — Added ♿ **Accessibility mode reaches the menus.** Accessibility mode now marks the menu entry you are pointing at and the model already chosen with a stronger background, across the dropdown menus,
 - [LM Studio 1.1.1](https://lmstudio.ai/changelog/bionic-v1.1.1)
+- [Ollama v0.33.3](https://github.com/ollama/ollama/releases/tag/v0.33.3) — gemma4 now supports images and audio on MLX engine Report cached prompt tokens
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

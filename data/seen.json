@@ -38,7 +38,8 @@
     "rokbenko/quackd",
     "carloslfu/slotstream",
     "sharith45/atlas-assistant",
-    "stevibe/sparklingkit"
+    "stevibe/sparklingkit",
+    "programasweights/pii"
   ],
   "releases": {
     "ollama/ollama": [
@@ -96,33 +97,14 @@
     ],
     "ggml-org/llama.cpp": [
       "v0.2.0",
-      "v0.3.0"
+      "v0.3.0",
+      "v0.4.0"
     ]
   },
   "changelog_pages": {
     "https://lmstudio.ai/changelog": "1.1.1"
   },
   "history": [
-    {
-      "date": "2026-08-29",
-      "discoveries": [],
-      "releases": [
-        {
-          "tool": "Ollama",
-          "repo": "ollama/ollama",
-          "version": "v0.33.2",
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.33.2",
-          "notes": "Ollama's app now follows the system appearance again, restoring dark mode support Fixed the macOS app to properly hand off to an already-running instance instead of starting a second one"
-        },
-        {
-          "tool": "KoboldCpp",
-          "repo": "LostRuins/koboldcpp",
-          "version": "v1.120",
-          "url": "https://github.com/LostRuins/koboldcpp/releases/tag/v1.120",
-          "notes": "Minor fix to assistant gen prefills being triggered incorrectly Fixed a bug where failsafe mode was incorrectly selected"
-        }
-      ]
-    },
     {
       "date": "2026-08-30",
       "discoveries": [
@@ -247,6 +229,27 @@
           "version": "v0.33.3",
           "url": "https://github.com/ollama/ollama/releases/tag/v0.33.3",
           "notes": "gemma4 now supports images and audio on MLX engine Report cached prompt tokens"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-05",
+      "discoveries": [
+        {
+          "name": "programasweights/pii",
+          "url": "https://github.com/programasweights/pii",
+          "description": "Detect and type PII locally with one ProgramAsWeights neural program.",
+          "stars": 33,
+          "created_at": "2026-09-03T14:28:54Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "llama.cpp",
+          "repo": "ggml-org/llama.cpp",
+          "version": "v0.4.0",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.4.0",
+          "notes": "Overview llama.cpp 0.4.0 adds initial Qwen3.8-Flash-Next and Nemotron-3-Puzzle support, on-demand tensor reading, per-slot server context limits, video input options, and a ggml update to 0.23.0 with"
         }
       ]
     }

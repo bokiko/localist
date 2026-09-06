@@ -95,14 +95,14 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-09-05*
+*Updated 2026-09-06*
 
 **🆕 New & active projects**
 - [EthanYoQ/AI-Novel-Writer](https://github.com/EthanYoQ/AI-Novel-Writer) — AI 小说创作软件：把灵感、角色、世界观、大纲、章节写作、审稿和修稿组织成可控流程；提供 Windows/macOS 桌面版、Ollama 与 DSH 插件预览。 · ⭐ 517
 - [carloslfu/slotstream](https://github.com/carloslfu/slotstream) — Run Qwen3.8-Flash-Next (125B MoE, 104 GB at 4-bit) on Macs with a fraction of that RAM by streaming experts from SSD. MLX + Swift, Ollama-compatible API. · ⭐ 196
-- [DDGTESTDEV-IONICS/ollama-gui-simple](https://github.com/DDGTESTDEV-IONICS/ollama-gui-simple) — 'ollama gui windows' — A minimal local-LLM chat front-end: pick model, chat, switch — nothing else. Free, open community project for Windows. · ⭐ 150
-- [nooour2/buzz-transcriber-alt](https://github.com/nooour2/buzz-transcriber-alt) — 'buzz transcriber download' — A guide to Buzz-class local transcribers plus a companion concept repo. Free, open community project for Windows. · ⭐ 150
-- [claudiosequeida81-maker/whisper-gui-windows](https://github.com/claudiosequeida81-maker/whisper-gui-windows) — 'whisper gui windows' — A local transcription front-end: audio in, subtitles out, nothing leaves the PC. Free, open community project for Windows. · ⭐ 150
+- [rokbenko/quackd](https://github.com/rokbenko/quackd) — 🦆🧠 Give your Microduck a brain. Tell a small robot with two legs what you want in plain language. An LLM (Claude, OpenAI, Gemini, Grok, or a local model via Ollama, vLLM or llama.cpp) uses the skills · ⭐ 74
+- [stevibe/SparklingKit](https://github.com/stevibe/SparklingKit) — Local-first AI workbench for OCR, transcription, translation, image generation, mind maps and composable workflows. Built for DGX Spark. · ⭐ 52
+- [programasweights/pii](https://github.com/programasweights/pii) — Detect and type PII locally with one ProgramAsWeights neural program. · ⭐ 33
 
 **📦 Tool releases**
 - [Open WebUI v0.11.2](https://github.com/open-webui/open-webui/releases/tag/v0.11.2) — Added 🖼️ **Richer previews for terminal files.** Word documents and slide decks produced in the terminal are now previewed as the finished document rather than an approximation, and every document

@@ -106,25 +106,6 @@
   },
   "history": [
     {
-      "date": "2026-09-01",
-      "discoveries": [],
-      "releases": [
-        {
-          "tool": "Open WebUI",
-          "repo": "open-webui/open-webui",
-          "version": "v0.11.3",
-          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.11.3",
-          "notes": "Added \u267f **Accessibility mode reaches the menus.** Accessibility mode now marks the menu entry you are pointing at and the model already chosen with a stronger background, across the dropdown menus,"
-        },
-        {
-          "tool": "LM Studio",
-          "version": "1.1.1",
-          "url": "https://lmstudio.ai/changelog/bionic-v1.1.1",
-          "notes": ""
-        }
-      ]
-    },
-    {
       "date": "2026-09-02",
       "discoveries": [
         {

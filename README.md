@@ -95,7 +95,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-09-07*
+*Updated 2026-09-08*
 
 **🆕 New & active projects**
 - [carloslfu/slotstream](https://github.com/carloslfu/slotstream) — Run Qwen3.8-Flash-Next (125B MoE, 104 GB at 4-bit) on Macs with a fraction of that RAM by streaming experts from SSD. MLX + Swift, Ollama-compatible API. · ⭐ 196
@@ -103,8 +103,6 @@ Essentials table above if you want the trusted beginner picks.*
 - [programasweights/pii](https://github.com/programasweights/pii) — Detect and type PII locally with one ProgramAsWeights neural program. · ⭐ 33
 
 **📦 Tool releases**
-- [Open WebUI v0.11.3](https://github.com/open-webui/open-webui/releases/tag/v0.11.3) — Added ♿ **Accessibility mode reaches the menus.** Accessibility mode now marks the menu entry you are pointing at and the model already chosen with a stronger background, across the dropdown menus,
-- [LM Studio 1.1.1](https://lmstudio.ai/changelog/bionic-v1.1.1)
 - [Ollama v0.33.3](https://github.com/ollama/ollama/releases/tag/v0.33.3) — gemma4 now supports images and audio on MLX engine Report cached prompt tokens
 - [llama.cpp v0.4.0](https://github.com/ggml-org/llama.cpp/releases/tag/v0.4.0) — Overview llama.cpp 0.4.0 adds initial Qwen3.8-Flash-Next and Nemotron-3-Puzzle support, on-demand tensor reading, per-slot server context limits, video input options, and a ggml update to 0.23.0 with
 <!-- NEWS:END -->

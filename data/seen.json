@@ -39,7 +39,9 @@
     "carloslfu/slotstream",
     "sharith45/atlas-assistant",
     "stevibe/sparklingkit",
-    "programasweights/pii"
+    "programasweights/pii",
+    "blizaine/maestro",
+    "noskillish/bankmcp"
   ],
   "releases": {
     "ollama/ollama": [
@@ -68,7 +70,8 @@
       "v0.26.0",
       "v0.27.0",
       "v0.27.1",
-      "v0.28.0"
+      "v0.28.0",
+      "v0.29.0"
     ],
     "LostRuins/koboldcpp": [
       "v1.117.1",
@@ -102,29 +105,9 @@
     ]
   },
   "changelog_pages": {
-    "https://lmstudio.ai/changelog": "1.1.1"
+    "https://lmstudio.ai/changelog": "1.1.2"
   },
   "history": [
-    {
-      "date": "2026-09-02",
-      "discoveries": [
-        {
-          "name": "carloslfu/slotstream",
-          "url": "https://github.com/carloslfu/slotstream",
-          "description": "Run Qwen3.8-Flash-Next (125B MoE, 104 GB at 4-bit) on Macs with a fraction of that RAM by streaming experts from SSD. MLX + Swift, Ollama-compatible API.",
-          "stars": 196,
-          "created_at": "2026-08-28T06:42:21Z"
-        },
-        {
-          "name": "sharith45/atlas-Assistant",
-          "url": "https://github.com/sharith45/atlas-Assistant",
-          "description": "Tu asistente personal, directamente en tu ordenador. Habla contigo por voz, gestiona WhatsApp, atiende llamadas, consulta la web y recuerda lo importante. Una inteligencia artificial dise\u00f1ada para",
-          "stars": 51,
-          "created_at": "2026-08-30T20:17:29Z"
-        }
-      ],
-      "releases": []
-    },
     {
       "date": "2026-09-03",
       "discoveries": [
@@ -169,6 +152,40 @@
           "version": "v0.4.0",
           "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.4.0",
           "notes": "Overview llama.cpp 0.4.0 adds initial Qwen3.8-Flash-Next and Nemotron-3-Puzzle support, on-demand tensor reading, per-slot server context limits, video input options, and a ggml update to 0.23.0 with"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "discoveries": [
+        {
+          "name": "Blizaine/Maestro",
+          "url": "https://github.com/Blizaine/Maestro",
+          "description": "An all-in-one, 100% local AI video, image, and music studio. Director mode plans full music videos and short films from a single prompt. Built on the WanGP pipeline. Install via Pinokio.",
+          "stars": 519,
+          "created_at": "2026-07-08T12:02:05Z"
+        },
+        {
+          "name": "noskillish/bankmcp",
+          "url": "https://github.com/noskillish/bankmcp",
+          "description": "BankMCP\u2122: your AI can now read your bank. Self-hosted, read-only MCP server for your own bank accounts via open banking (Enable Banking). Standard MCP; tested with Claude and Ollama.",
+          "stars": 168,
+          "created_at": "2026-09-07T09:06:03Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "vLLM",
+          "repo": "vllm-project/vllm",
+          "version": "v0.29.0",
+          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0",
+          "notes": "This release features 594 commits from 277 contributors (91 new)! **Model Runner V2 is now the default for all models** (#53183), completing the rollout that began with pooling models (#48290). MRV2"
+        },
+        {
+          "tool": "LM Studio",
+          "version": "1.1.2",
+          "url": "https://lmstudio.ai/changelog/bionic-v1.1.2",
+          "notes": ""
         }
       ]
     }

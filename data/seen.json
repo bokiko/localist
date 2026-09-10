@@ -62,7 +62,8 @@
       "v0.33.0",
       "v0.33.1",
       "v0.33.2",
-      "v0.33.3"
+      "v0.33.3",
+      "v0.34.0"
     ],
     "vllm-project/vllm": [
       "v0.25.1",
@@ -87,7 +88,8 @@
       "v0.31.0",
       "v0.32.0",
       "v0.33.1",
-      "v0.34.0"
+      "v0.34.0",
+      "v0.35.0"
     ],
     "janhq/jan": [
       "v0.8.4"
@@ -108,19 +110,6 @@
     "https://lmstudio.ai/changelog": "1.1.2"
   },
   "history": [
-    {
-      "date": "2026-09-03",
-      "discoveries": [
-        {
-          "name": "stevibe/SparklingKit",
-          "url": "https://github.com/stevibe/SparklingKit",
-          "description": "Local-first AI workbench for OCR, transcription, translation, image generation, mind maps and composable workflows. Built for DGX Spark.",
-          "stars": 52,
-          "created_at": "2026-08-31T09:17:38Z"
-        }
-      ],
-      "releases": []
-    },
     {
       "date": "2026-09-04",
       "discoveries": [],
@@ -186,6 +175,26 @@
           "version": "1.1.2",
           "url": "https://lmstudio.ai/changelog/bionic-v1.1.2",
           "notes": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "discoveries": [],
+      "releases": [
+        {
+          "tool": "Ollama",
+          "repo": "ollama/ollama",
+          "version": "v0.34.0",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.34.0",
+          "notes": "Use Ollama models in ChatGPT Desktop Ollama models can now be used directly in ChatGPT Desktop, so you can keep your existing workflow while running open models. Setup is available from the Ollama"
+        },
+        {
+          "tool": "ComfyUI",
+          "repo": "Comfy-Org/ComfyUI",
+          "version": "v0.35.0",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.35.0",
+          "notes": "[Partner Nodes] chore(Google): drop retiring Veo 2 and Veo 3.0 models [Partner Nodes] feat(Recraft): add V4 Styles"
         }
       ]
     }

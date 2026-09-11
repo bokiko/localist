@@ -95,7 +95,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-09-10*
+*Updated 2026-09-11*
 
 **🆕 New & active projects**
 - [Blizaine/Maestro](https://github.com/Blizaine/Maestro) — An all-in-one, 100% local AI video, image, and music studio. Director mode plans full music videos and short films from a single prompt. Built on the WanGP pipeline. Install via Pinokio. · ⭐ 519
@@ -103,7 +103,6 @@ Essentials table above if you want the trusted beginner picks.*
 - [programasweights/pii](https://github.com/programasweights/pii) — Detect and type PII locally with one ProgramAsWeights neural program. · ⭐ 33
 
 **📦 Tool releases**
-- [Ollama v0.33.3](https://github.com/ollama/ollama/releases/tag/v0.33.3) — gemma4 now supports images and audio on MLX engine Report cached prompt tokens
 - [llama.cpp v0.4.0](https://github.com/ggml-org/llama.cpp/releases/tag/v0.4.0) — Overview llama.cpp 0.4.0 adds initial Qwen3.8-Flash-Next and Nemotron-3-Puzzle support, on-demand tensor reading, per-slot server context limits, video input options, and a ggml update to 0.23.0 with
 - [vLLM v0.29.0](https://github.com/vllm-project/vllm/releases/tag/v0.29.0) — This release features 594 commits from 277 contributors (91 new)! **Model Runner V2 is now the default for all models** (#53183), completing the rollout that began with pooling models (#48290). MRV2
 - [LM Studio 1.1.2](https://lmstudio.ai/changelog/bionic-v1.1.2)

@@ -111,19 +111,6 @@
   },
   "history": [
     {
-      "date": "2026-09-04",
-      "discoveries": [],
-      "releases": [
-        {
-          "tool": "Ollama",
-          "repo": "ollama/ollama",
-          "version": "v0.33.3",
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.33.3",
-          "notes": "gemma4 now supports images and audio on MLX engine Report cached prompt tokens"
-        }
-      ]
-    },
-    {
       "date": "2026-09-05",
       "discoveries": [
         {

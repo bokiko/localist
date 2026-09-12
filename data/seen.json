@@ -111,27 +111,6 @@
   },
   "history": [
     {
-      "date": "2026-09-05",
-      "discoveries": [
-        {
-          "name": "programasweights/pii",
-          "url": "https://github.com/programasweights/pii",
-          "description": "Detect and type PII locally with one ProgramAsWeights neural program.",
-          "stars": 33,
-          "created_at": "2026-09-03T14:28:54Z"
-        }
-      ],
-      "releases": [
-        {
-          "tool": "llama.cpp",
-          "repo": "ggml-org/llama.cpp",
-          "version": "v0.4.0",
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.4.0",
-          "notes": "Overview llama.cpp 0.4.0 adds initial Qwen3.8-Flash-Next and Nemotron-3-Puzzle support, on-demand tensor reading, per-slot server context limits, video input options, and a ggml update to 0.23.0 with"
-        }
-      ]
-    },
-    {
       "date": "2026-09-09",
       "discoveries": [
         {

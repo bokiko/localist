@@ -95,15 +95,13 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-09-11*
+*Updated 2026-09-12*
 
 **🆕 New & active projects**
 - [Blizaine/Maestro](https://github.com/Blizaine/Maestro) — An all-in-one, 100% local AI video, image, and music studio. Director mode plans full music videos and short films from a single prompt. Built on the WanGP pipeline. Install via Pinokio. · ⭐ 519
 - [noskillish/bankmcp](https://github.com/noskillish/bankmcp) — BankMCP™: your AI can now read your bank. Self-hosted, read-only MCP server for your own bank accounts via open banking (Enable Banking). Standard MCP; tested with Claude and Ollama. · ⭐ 168
-- [programasweights/pii](https://github.com/programasweights/pii) — Detect and type PII locally with one ProgramAsWeights neural program. · ⭐ 33
 
 **📦 Tool releases**
-- [llama.cpp v0.4.0](https://github.com/ggml-org/llama.cpp/releases/tag/v0.4.0) — Overview llama.cpp 0.4.0 adds initial Qwen3.8-Flash-Next and Nemotron-3-Puzzle support, on-demand tensor reading, per-slot server context limits, video input options, and a ggml update to 0.23.0 with
 - [vLLM v0.29.0](https://github.com/vllm-project/vllm/releases/tag/v0.29.0) — This release features 594 commits from 277 contributors (91 new)! **Model Runner V2 is now the default for all models** (#53183), completing the rollout that began with pooling models (#48290). MRV2
 - [LM Studio 1.1.2](https://lmstudio.ai/changelog/bionic-v1.1.2)
 - [Ollama v0.34.0](https://github.com/ollama/ollama/releases/tag/v0.34.0) — Use Ollama models in ChatGPT Desktop Ollama models can now be used directly in ChatGPT Desktop, so you can keep your existing workflow while running open models. Setup is available from the Ollama

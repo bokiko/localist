@@ -95,7 +95,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-09-12*
+*Updated 2026-09-13*
 
 **🆕 New & active projects**
 - [Blizaine/Maestro](https://github.com/Blizaine/Maestro) — An all-in-one, 100% local AI video, image, and music studio. Director mode plans full music videos and short films from a single prompt. Built on the WanGP pipeline. Install via Pinokio. · ⭐ 519

@@ -95,7 +95,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-09-14*
+*Updated 2026-09-15*
 
 **🆕 New & active projects**
 - [Blizaine/Maestro](https://github.com/Blizaine/Maestro) — An all-in-one, 100% local AI video, image, and music studio. Director mode plans full music videos and short films from a single prompt. Built on the WanGP pipeline. Install via Pinokio. · ⭐ 519
@@ -106,6 +106,8 @@ Essentials table above if you want the trusted beginner picks.*
 - [LM Studio 1.1.2](https://lmstudio.ai/changelog/bionic-v1.1.2)
 - [Ollama v0.34.0](https://github.com/ollama/ollama/releases/tag/v0.34.0) — Use Ollama models in ChatGPT Desktop Ollama models can now be used directly in ChatGPT Desktop, so you can keep your existing workflow while running open models. Setup is available from the Ollama
 - [ComfyUI v0.35.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.35.0) — [Partner Nodes] chore(Google): drop retiring Veo 2 and Veo 3.0 models [Partner Nodes] feat(Recraft): add V4 Styles
+- [llama.cpp v0.4.1](https://github.com/ggml-org/llama.cpp/releases/tag/v0.4.1) — Overview llama.cpp 0.4.1 adds Maple 20B-A1B, Tencent Hy 4, and Spark2.5 support, improves JSON schema handling, chat parsing, logging, and server child-process management, and updates ggml to v0.24.0.
+- [LM Studio 1.1.3](https://lmstudio.ai/changelog/bionic-v1.1.3)
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

@@ -41,7 +41,8 @@
     "stevibe/sparklingkit",
     "programasweights/pii",
     "blizaine/maestro",
-    "noskillish/bankmcp"
+    "noskillish/bankmcp",
+    "lepczynski-cloud/esp32-pc-control-deck"
   ],
   "releases": {
     "ollama/ollama": [
@@ -115,26 +116,6 @@
   },
   "history": [
     {
-      "date": "2026-09-10",
-      "discoveries": [],
-      "releases": [
-        {
-          "tool": "Ollama",
-          "repo": "ollama/ollama",
-          "version": "v0.34.0",
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.34.0",
-          "notes": "Use Ollama models in ChatGPT Desktop Ollama models can now be used directly in ChatGPT Desktop, so you can keep your existing workflow while running open models. Setup is available from the Ollama"
-        },
-        {
-          "tool": "ComfyUI",
-          "repo": "Comfy-Org/ComfyUI",
-          "version": "v0.35.0",
-          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.35.0",
-          "notes": "[Partner Nodes] chore(Google): drop retiring Veo 2 and Veo 3.0 models [Partner Nodes] feat(Recraft): add V4 Styles"
-        }
-      ]
-    },
-    {
       "date": "2026-09-15",
       "discoveries": [],
       "releases": [
@@ -179,6 +160,19 @@
           "notes": "Add new model blueprints and reorganize subgraph categories main: bump the AMD Windows VA quota to 4TB (CORE-409)"
         }
       ]
+    },
+    {
+      "date": "2026-09-17",
+      "discoveries": [
+        {
+          "name": "lepczynski-cloud/ESP32-PC-Control-Deck",
+          "url": "https://github.com/lepczynski-cloud/ESP32-PC-Control-Deck",
+          "description": "USB-connected ESP32 PC monitor and touch control deck for system telemetry, ChatGPT, Ollama, local voice services and configurable macros.",
+          "stars": 32,
+          "created_at": "2026-09-12T19:12:40Z"
+        }
+      ],
+      "releases": []
     }
   ]
 }

@@ -95,11 +95,12 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-09-16*
+*Updated 2026-09-17*
+
+**🆕 New & active projects**
+- [lepczynski-cloud/ESP32-PC-Control-Deck](https://github.com/lepczynski-cloud/ESP32-PC-Control-Deck) — USB-connected ESP32 PC monitor and touch control deck for system telemetry, ChatGPT, Ollama, local voice services and configurable macros. · ⭐ 32
 
 **📦 Tool releases**
-- [Ollama v0.34.0](https://github.com/ollama/ollama/releases/tag/v0.34.0) — Use Ollama models in ChatGPT Desktop Ollama models can now be used directly in ChatGPT Desktop, so you can keep your existing workflow while running open models. Setup is available from the Ollama
-- [ComfyUI v0.35.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.35.0) — [Partner Nodes] chore(Google): drop retiring Veo 2 and Veo 3.0 models [Partner Nodes] feat(Recraft): add V4 Styles
 - [llama.cpp v0.4.1](https://github.com/ggml-org/llama.cpp/releases/tag/v0.4.1) — Overview llama.cpp 0.4.1 adds Maple 20B-A1B, Tencent Hy 4, and Spark2.5 support, improves JSON schema handling, chat parsing, logging, and server child-process management, and updates ggml to v0.24.0.
 - [LM Studio 1.1.3](https://lmstudio.ai/changelog/bionic-v1.1.3)
 - [Ollama v0.34.1](https://github.com/ollama/ollama/releases/tag/v0.34.1) — MLX safetensors `ollama create` no longer experimental. GGUF model creation now requires using llama.cpp tooling for safetensor conversion and quantization. Improved MLX memory handling on Apple

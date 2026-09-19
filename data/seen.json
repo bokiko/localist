@@ -115,7 +115,7 @@
     ]
   },
   "changelog_pages": {
-    "https://lmstudio.ai/changelog": "1.1.4"
+    "https://lmstudio.ai/changelog": "1.1.5"
   },
   "history": [
     {
@@ -207,6 +207,18 @@
           "tool": "LM Studio",
           "version": "1.1.4",
           "url": "https://lmstudio.ai/changelog/bionic-v1.1.4",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "discoveries": [],
+      "releases": [
+        {
+          "tool": "LM Studio",
+          "version": "1.1.5",
+          "url": "https://lmstudio.ai/changelog/bionic-v1.1.5",
           "notes": ""
         }
       ]

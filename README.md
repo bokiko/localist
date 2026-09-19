@@ -95,7 +95,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-09-18*
+*Updated 2026-09-19*
 
 **🆕 New & active projects**
 - [inikolax/remiqora](https://github.com/inikolax/remiqora) — Local AI music studio unifying ACE-Step 1.5 and YuE2-3B in one Vue interface — text-to-music generation, stem separation, MIDI transcription, and LoRA fine-tuning, with a built-in multitrack DAW. · ⭐ 58
@@ -110,6 +110,7 @@ Essentials table above if you want the trusted beginner picks.*
 - [ComfyUI v0.36.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.36.0) — Add new model blueprints and reorganize subgraph categories main: bump the AMD Windows VA quota to 4TB (CORE-409)
 - [Ollama v0.34.2](https://github.com/ollama/ollama/releases/tag/v0.34.2) — Added first-run setup when running `ollama`, with options to sign in or continue locally. Setup completion is shared with the desktop app on macOS and Windows. Added `ollama://apps` to open the
 - [LM Studio 1.1.4](https://lmstudio.ai/changelog/bionic-v1.1.4)
+- [LM Studio 1.1.5](https://lmstudio.ai/changelog/bionic-v1.1.5)
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

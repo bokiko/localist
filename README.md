@@ -95,12 +95,14 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-09-19*
+*Updated 2026-09-20*
 
 **🆕 New & active projects**
+- [mizorewww/laya-mlx](https://github.com/mizorewww/laya-mlx) — Native MLX runtime for Laya typed decision models — 7–14 ms short decisions on M3 Max. No text generation, PyTorch, or cloud API. · ⭐ 447
+- [mizorewww/laya-coreml](https://github.com/mizorewww/laya-coreml) — Local Laya typed decisions on Apple Core ML and Neural Engine. Validated ports, ~5 ms short decisions on M3 Max, reproducible speed and energy benchmarks. · ⭐ 81
 - [inikolax/remiqora](https://github.com/inikolax/remiqora) — Local AI music studio unifying ACE-Step 1.5 and YuE2-3B in one Vue interface — text-to-music generation, stem separation, MIDI transcription, and LoRA fine-tuning, with a built-in multitrack DAW. · ⭐ 58
+- [bnsd55/jevmlx](https://github.com/bnsd55/jevmlx) — Jev-style parallel constrained decisions for any MLX model on Apple Silicon. Typed, schema-valid JSON in one forward pass. · ⭐ 40
 - [nirbhay41120003/EchoMind](https://github.com/nirbhay41120003/EchoMind) — Local-first voice memory assistant — capture speech, transcribe live, and ask a private RAG chatbot grounded in what you've actually said. No cloud required. · ⭐ 35
-- [lepczynski-cloud/ESP32-PC-Control-Deck](https://github.com/lepczynski-cloud/ESP32-PC-Control-Deck) — USB-connected ESP32 PC monitor and touch control deck for system telemetry, ChatGPT, Ollama, local voice services and configurable macros. · ⭐ 32
 
 **📦 Tool releases**
 - [llama.cpp v0.4.1](https://github.com/ggml-org/llama.cpp/releases/tag/v0.4.1) — Overview llama.cpp 0.4.1 adds Maple 20B-A1B, Tencent Hy 4, and Spark2.5 support, improves JSON schema handling, chat parsing, logging, and server child-process management, and updates ggml to v0.24.0.

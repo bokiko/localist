@@ -44,7 +44,10 @@
     "noskillish/bankmcp",
     "lepczynski-cloud/esp32-pc-control-deck",
     "inikolax/remiqora",
-    "nirbhay41120003/echomind"
+    "nirbhay41120003/echomind",
+    "mizorewww/laya-mlx",
+    "mizorewww/laya-coreml",
+    "bnsd55/jevmlx"
   ],
   "releases": {
     "ollama/ollama": [
@@ -222,6 +225,33 @@
           "notes": ""
         }
       ]
+    },
+    {
+      "date": "2026-09-20",
+      "discoveries": [
+        {
+          "name": "mizorewww/laya-mlx",
+          "url": "https://github.com/mizorewww/laya-mlx",
+          "description": "Native MLX runtime for Laya typed decision models \u2014 7\u201314 ms short decisions on M3 Max. No text generation, PyTorch, or cloud API.",
+          "stars": 447,
+          "created_at": "2026-09-19T13:50:26Z"
+        },
+        {
+          "name": "mizorewww/laya-coreml",
+          "url": "https://github.com/mizorewww/laya-coreml",
+          "description": "Local Laya typed decisions on Apple Core ML and Neural Engine. Validated ports, ~5 ms short decisions on M3 Max, reproducible speed and energy benchmarks.",
+          "stars": 81,
+          "created_at": "2026-09-19T23:14:13Z"
+        },
+        {
+          "name": "bnsd55/jevmlx",
+          "url": "https://github.com/bnsd55/jevmlx",
+          "description": "Jev-style parallel constrained decisions for any MLX model on Apple Silicon. Typed, schema-valid JSON in one forward pass.",
+          "stars": 40,
+          "created_at": "2026-09-17T10:20:12Z"
+        }
+      ],
+      "releases": []
     }
   ]
 }

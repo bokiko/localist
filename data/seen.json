@@ -99,7 +99,8 @@
       "v0.33.1",
       "v0.34.0",
       "v0.35.0",
-      "v0.36.0"
+      "v0.36.0",
+      "v0.37.0"
     ],
     "janhq/jan": [
       "v0.8.4"
@@ -252,6 +253,19 @@
         }
       ],
       "releases": []
+    },
+    {
+      "date": "2026-09-21",
+      "discoveries": [],
+      "releases": [
+        {
+          "tool": "ComfyUI",
+          "repo": "Comfy-Org/ComfyUI",
+          "version": "v0.37.0",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.37.0",
+          "notes": "Aimdo 0.5.5 + Auto-detect and enable --fast-disk when the disk is fast (CORE-440) [Partner Nodes] feat(OpenAI): add transparent background support for GPT Image 2"
+        }
+      ]
     }
   ]
 }

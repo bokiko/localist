@@ -95,7 +95,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-09-20*
+*Updated 2026-09-21*
 
 **🆕 New & active projects**
 - [mizorewww/laya-mlx](https://github.com/mizorewww/laya-mlx) — Native MLX runtime for Laya typed decision models — 7–14 ms short decisions on M3 Max. No text generation, PyTorch, or cloud API. · ⭐ 447
@@ -113,6 +113,7 @@ Essentials table above if you want the trusted beginner picks.*
 - [Ollama v0.34.2](https://github.com/ollama/ollama/releases/tag/v0.34.2) — Added first-run setup when running `ollama`, with options to sign in or continue locally. Setup completion is shared with the desktop app on macOS and Windows. Added `ollama://apps` to open the
 - [LM Studio 1.1.4](https://lmstudio.ai/changelog/bionic-v1.1.4)
 - [LM Studio 1.1.5](https://lmstudio.ai/changelog/bionic-v1.1.5)
+- [ComfyUI v0.37.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.37.0) — Aimdo 0.5.5 + Auto-detect and enable --fast-disk when the disk is fast (CORE-440) [Partner Nodes] feat(OpenAI): add transparent background support for GPT Image 2
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

@@ -80,7 +80,8 @@
       "v0.27.0",
       "v0.27.1",
       "v0.28.0",
-      "v0.29.0"
+      "v0.29.0",
+      "v0.30.0"
     ],
     "LostRuins/koboldcpp": [
       "v1.117.1",
@@ -109,7 +110,8 @@
       "v0.11.0",
       "v0.11.1",
       "v0.11.2",
-      "v0.11.3"
+      "v0.11.3",
+      "v0.11.4"
     ],
     "ggml-org/llama.cpp": [
       "v0.2.0",
@@ -122,25 +124,6 @@
     "https://lmstudio.ai/changelog": "1.1.5"
   },
   "history": [
-    {
-      "date": "2026-09-15",
-      "discoveries": [],
-      "releases": [
-        {
-          "tool": "llama.cpp",
-          "repo": "ggml-org/llama.cpp",
-          "version": "v0.4.1",
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.4.1",
-          "notes": "Overview llama.cpp 0.4.1 adds Maple 20B-A1B, Tencent Hy 4, and Spark2.5 support, improves JSON schema handling, chat parsing, logging, and server child-process management, and updates ggml to v0.24.0."
-        },
-        {
-          "tool": "LM Studio",
-          "version": "1.1.3",
-          "url": "https://lmstudio.ai/changelog/bionic-v1.1.3",
-          "notes": ""
-        }
-      ]
-    },
     {
       "date": "2026-09-16",
       "discoveries": [],
@@ -264,6 +247,26 @@
           "version": "v0.37.0",
           "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.37.0",
           "notes": "Aimdo 0.5.5 + Auto-detect and enable --fast-disk when the disk is fast (CORE-440) [Partner Nodes] feat(OpenAI): add transparent background support for GPT Image 2"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "discoveries": [],
+      "releases": [
+        {
+          "tool": "vLLM",
+          "repo": "vllm-project/vllm",
+          "version": "v0.30.0",
+          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.30.0",
+          "notes": "This release features 762 commits from 315 contributors (104 new)! **New models**: DeepSeek-V4.1-Flash (#56214, #56228, #56208) with the whole KV stored in MXFP8 through the FlashMLA V4.1 record on"
+        },
+        {
+          "tool": "Open WebUI",
+          "repo": "open-webui/open-webui",
+          "version": "v0.11.4",
+          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.11.4",
+          "notes": "Added \ud83d\udcc9 **Far smaller slim image.** A slim build now comes down at around 175 MB, near enough 89% smaller than the last release, the local models, the packages around them and the tools that"
         }
       ]
     }

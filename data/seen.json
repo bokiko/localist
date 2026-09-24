@@ -47,7 +47,10 @@
     "nirbhay41120003/echomind",
     "mizorewww/laya-mlx",
     "mizorewww/laya-coreml",
-    "bnsd55/jevmlx"
+    "bnsd55/jevmlx",
+    "georgeding/relate",
+    "timoncool/yue2-studio",
+    "joeynyc/spark-image-lab"
   ],
   "releases": {
     "ollama/ollama": [
@@ -72,7 +75,8 @@
       "v0.34.0",
       "v0.34.1",
       "v0.34.2",
-      "v0.34.3"
+      "v0.34.3",
+      "v0.34.4"
     ],
     "vllm-project/vllm": [
       "v0.25.1",
@@ -122,22 +126,9 @@
     ]
   },
   "changelog_pages": {
-    "https://lmstudio.ai/changelog": "1.1.5"
+    "https://lmstudio.ai/changelog": "1.1.6"
   },
   "history": [
-    {
-      "date": "2026-09-17",
-      "discoveries": [
-        {
-          "name": "lepczynski-cloud/ESP32-PC-Control-Deck",
-          "url": "https://github.com/lepczynski-cloud/ESP32-PC-Control-Deck",
-          "description": "USB-connected ESP32 PC monitor and touch control deck for system telemetry, ChatGPT, Ollama, local voice services and configurable macros.",
-          "stars": 32,
-          "created_at": "2026-09-12T19:12:40Z"
-        }
-      ],
-      "releases": []
-    },
     {
       "date": "2026-09-18",
       "discoveries": [
@@ -254,6 +245,47 @@
           "version": "v0.34.3",
           "url": "https://github.com/ollama/ollama/releases/tag/v0.34.3",
           "notes": "`GET /api/show` now advertises each model's thinking controls and default: Available in the CLI with:"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "discoveries": [
+        {
+          "name": "georgeding/Relate",
+          "url": "https://github.com/georgeding/Relate",
+          "description": "\u8bb0\u5f97\u5979\u8bf4\u8fc7\u7684\u6bcf\u4e00\u53e5\u8bdd\uff0c\u4e5f\u8bb0\u5f97\u4f60\u7b54\u5e94\u8fc7\u7684\u6bcf\u4e00\u4ef6\u4e8b\u3002A self-hosted AI chief of staff for your chats \u2014 remembers what they said and what you promised.",
+          "stars": 101,
+          "created_at": "2026-09-23T16:20:10Z"
+        },
+        {
+          "name": "timoncool/YuE2-Studio",
+          "url": "https://github.com/timoncool/YuE2-Studio",
+          "description": "Local AI song generator with an editable score \u2014 YuE2 on your GPU: full songs with vocals, sheet music, covers, exact replay. Native Windows app, no Python, installer with auto-update.",
+          "stars": 70,
+          "created_at": "2026-09-22T23:06:11Z"
+        },
+        {
+          "name": "joeynyc/spark-image-lab",
+          "url": "https://github.com/joeynyc/spark-image-lab",
+          "description": "Local image generation and editing for NVIDIA DGX Spark, powered by Qwen-Image-2.1 and Gradio.",
+          "stars": 31,
+          "created_at": "2026-09-20T16:30:59Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "Ollama",
+          "repo": "ollama/ollama",
+          "version": "v0.34.4",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.34.4",
+          "notes": "Structured outputs on thinking models now apply in a single pass, making them faster and more reliable. Fixed intermittent \"model not found\" errors with a large local library"
+        },
+        {
+          "tool": "LM Studio",
+          "version": "1.1.6",
+          "url": "https://lmstudio.ai/changelog/bionic-v1.1.6",
+          "notes": ""
         }
       ]
     }

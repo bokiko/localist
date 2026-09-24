@@ -95,14 +95,14 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-09-23*
+*Updated 2026-09-24*
 
 **🆕 New & active projects**
 - [mizorewww/laya-mlx](https://github.com/mizorewww/laya-mlx) — Native MLX runtime for Laya typed decision models — 7–14 ms short decisions on M3 Max. No text generation, PyTorch, or cloud API. · ⭐ 447
+- [georgeding/Relate](https://github.com/georgeding/Relate) — 记得她说过的每一句话，也记得你答应过的每一件事。A self-hosted AI chief of staff for your chats — remembers what they said and what you promised. · ⭐ 101
 - [mizorewww/laya-coreml](https://github.com/mizorewww/laya-coreml) — Local Laya typed decisions on Apple Core ML and Neural Engine. Validated ports, ~5 ms short decisions on M3 Max, reproducible speed and energy benchmarks. · ⭐ 81
+- [timoncool/YuE2-Studio](https://github.com/timoncool/YuE2-Studio) — Local AI song generator with an editable score — YuE2 on your GPU: full songs with vocals, sheet music, covers, exact replay. Native Windows app, no Python, installer with auto-update. · ⭐ 70
 - [inikolax/remiqora](https://github.com/inikolax/remiqora) — Local AI music studio unifying ACE-Step 1.5 and YuE2-3B in one Vue interface — text-to-music generation, stem separation, MIDI transcription, and LoRA fine-tuning, with a built-in multitrack DAW. · ⭐ 58
-- [bnsd55/jevmlx](https://github.com/bnsd55/jevmlx) — Jev-style parallel constrained decisions for any MLX model on Apple Silicon. Typed, schema-valid JSON in one forward pass. · ⭐ 40
-- [nirbhay41120003/EchoMind](https://github.com/nirbhay41120003/EchoMind) — Local-first voice memory assistant — capture speech, transcribe live, and ask a private RAG chatbot grounded in what you've actually said. No cloud required. · ⭐ 35
 
 **📦 Tool releases**
 - [Ollama v0.34.2](https://github.com/ollama/ollama/releases/tag/v0.34.2) — Added first-run setup when running `ollama`, with options to sign in or continue locally. Setup completion is shared with the desktop app on macOS and Windows. Added `ollama://apps` to open the
@@ -112,6 +112,8 @@ Essentials table above if you want the trusted beginner picks.*
 - [vLLM v0.30.0](https://github.com/vllm-project/vllm/releases/tag/v0.30.0) — This release features 762 commits from 315 contributors (104 new)! **New models**: DeepSeek-V4.1-Flash (#56214, #56228, #56208) with the whole KV stored in MXFP8 through the FlashMLA V4.1 record on
 - [Open WebUI v0.11.4](https://github.com/open-webui/open-webui/releases/tag/v0.11.4) — Added 📉 **Far smaller slim image.** A slim build now comes down at around 175 MB, near enough 89% smaller than the last release, the local models, the packages around them and the tools that
 - [Ollama v0.34.3](https://github.com/ollama/ollama/releases/tag/v0.34.3) — `GET /api/show` now advertises each model's thinking controls and default: Available in the CLI with:
+- [Ollama v0.34.4](https://github.com/ollama/ollama/releases/tag/v0.34.4) — Structured outputs on thinking models now apply in a single pass, making them faster and more reliable. Fixed intermittent "model not found" errors with a large local library
+- [LM Studio 1.1.6](https://lmstudio.ai/changelog/bionic-v1.1.6)
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

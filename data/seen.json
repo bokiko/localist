@@ -50,7 +50,8 @@
     "bnsd55/jevmlx",
     "georgeding/relate",
     "timoncool/yue2-studio",
-    "joeynyc/spark-image-lab"
+    "joeynyc/spark-image-lab",
+    "janishar/qwen-image-2.1-studio"
   ],
   "releases": {
     "ollama/ollama": [
@@ -129,40 +130,6 @@
     "https://lmstudio.ai/changelog": "1.1.6"
   },
   "history": [
-    {
-      "date": "2026-09-18",
-      "discoveries": [
-        {
-          "name": "inikolax/remiqora",
-          "url": "https://github.com/inikolax/remiqora",
-          "description": "Local AI music studio unifying ACE-Step 1.5 and YuE2-3B in one Vue interface \u2014 text-to-music generation, stem separation, MIDI transcription, and LoRA fine-tuning, with a built-in multitrack DAW.",
-          "stars": 58,
-          "created_at": "2026-09-17T13:09:15Z"
-        },
-        {
-          "name": "nirbhay41120003/EchoMind",
-          "url": "https://github.com/nirbhay41120003/EchoMind",
-          "description": "Local-first voice memory assistant \u2014 capture speech, transcribe live, and ask a private RAG chatbot grounded in what you've actually said. No cloud required.",
-          "stars": 35,
-          "created_at": "2026-09-16T17:16:52Z"
-        }
-      ],
-      "releases": [
-        {
-          "tool": "Ollama",
-          "repo": "ollama/ollama",
-          "version": "v0.34.2",
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.34.2",
-          "notes": "Added first-run setup when running `ollama`, with options to sign in or continue locally. Setup completion is shared with the desktop app on macOS and Windows. Added `ollama://apps` to open the"
-        },
-        {
-          "tool": "LM Studio",
-          "version": "1.1.4",
-          "url": "https://lmstudio.ai/changelog/bionic-v1.1.4",
-          "notes": ""
-        }
-      ]
-    },
     {
       "date": "2026-09-19",
       "discoveries": [],
@@ -288,6 +255,19 @@
           "notes": ""
         }
       ]
+    },
+    {
+      "date": "2026-09-25",
+      "discoveries": [
+        {
+          "name": "janishar/qwen-image-2.1-studio",
+          "url": "https://github.com/janishar/qwen-image-2.1-studio",
+          "description": "Local Qwen-Image-2.1 studio for Apple Silicon: text-to-image, multi-image editing and prompt enhancing, with a CLI and a helmstudio web UI.",
+          "stars": 42,
+          "created_at": "2026-09-23T00:47:22Z"
+        }
+      ],
+      "releases": []
     }
   ]
 }

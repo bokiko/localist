@@ -95,14 +95,14 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-09-26*
+*Updated 2026-09-27*
 
 **🆕 New & active projects**
-- [mizorewww/laya-mlx](https://github.com/mizorewww/laya-mlx) — Native MLX runtime for Laya typed decision models — 7–14 ms short decisions on M3 Max. No text generation, PyTorch, or cloud API. · ⭐ 447
 - [ollaya-dev/ollaya](https://github.com/ollaya-dev/ollaya) — Run open decision models locally: pull and serve Laya, decider, NLI and GLiClass behind a TypeSafe-compatible API. Ollama for decision models. · ⭐ 273
 - [georgeding/Relate](https://github.com/georgeding/Relate) — 记得她说过的每一句话，也记得你答应过的每一件事。A self-hosted AI chief of staff for your chats — remembers what they said and what you promised. · ⭐ 101
-- [mizorewww/laya-coreml](https://github.com/mizorewww/laya-coreml) — Local Laya typed decisions on Apple Core ML and Neural Engine. Validated ports, ~5 ms short decisions on M3 Max, reproducible speed and energy benchmarks. · ⭐ 81
 - [timoncool/YuE2-Studio](https://github.com/timoncool/YuE2-Studio) — Local AI song generator with an editable score — YuE2 on your GPU: full songs with vocals, sheet music, covers, exact replay. Native Windows app, no Python, installer with auto-update. · ⭐ 70
+- [janishar/qwen-image-2.1-studio](https://github.com/janishar/qwen-image-2.1-studio) — Local Qwen-Image-2.1 studio for Apple Silicon: text-to-image, multi-image editing and prompt enhancing, with a CLI and a helmstudio web UI. · ⭐ 42
+- [joeynyc/spark-image-lab](https://github.com/joeynyc/spark-image-lab) — Local image generation and editing for NVIDIA DGX Spark, powered by Qwen-Image-2.1 and Gradio. · ⭐ 31
 
 **📦 Tool releases**
 - [ComfyUI v0.37.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.37.0) — Aimdo 0.5.5 + Auto-detect and enable --fast-disk when the disk is fast (CORE-440) [Partner Nodes] feat(OpenAI): add transparent background support for GPT Image 2
@@ -112,6 +112,7 @@ Essentials table above if you want the trusted beginner picks.*
 - [Ollama v0.34.4](https://github.com/ollama/ollama/releases/tag/v0.34.4) — Structured outputs on thinking models now apply in a single pass, making them faster and more reliable. Fixed intermittent "model not found" errors with a large local library
 - [LM Studio 1.1.6](https://lmstudio.ai/changelog/bionic-v1.1.6)
 - [KoboldCpp v1.122](https://github.com/LostRuins/koboldcpp/releases/tag/v1.122) — ***[PSA: KoboldCpp needs YOUR help to fight a fake phishing site (click here for info)]( **NEW: Added an integrated KoboldCpp Agent** - KoboldCpp now ships with a bundled Agentic harness. This works
+- [KoboldCpp v1.122.1](https://github.com/LostRuins/koboldcpp/releases/tag/v1.122.1) — ***[PSA: KoboldCpp needs YOUR help to fight a fake phishing site (click here for info)]( **NEW: Added an integrated KoboldCpp Agent** - KoboldCpp now ships with a bundled Agentic harness. This works
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

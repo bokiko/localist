@@ -95,7 +95,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-09-27*
+*Updated 2026-09-28*
 
 **🆕 New & active projects**
 - [ollaya-dev/ollaya](https://github.com/ollaya-dev/ollaya) — Run open decision models locally: pull and serve Laya, decider, NLI and GLiClass behind a TypeSafe-compatible API. Ollama for decision models. · ⭐ 273
@@ -105,7 +105,6 @@ Essentials table above if you want the trusted beginner picks.*
 - [joeynyc/spark-image-lab](https://github.com/joeynyc/spark-image-lab) — Local image generation and editing for NVIDIA DGX Spark, powered by Qwen-Image-2.1 and Gradio. · ⭐ 31
 
 **📦 Tool releases**
-- [ComfyUI v0.37.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.37.0) — Aimdo 0.5.5 + Auto-detect and enable --fast-disk when the disk is fast (CORE-440) [Partner Nodes] feat(OpenAI): add transparent background support for GPT Image 2
 - [vLLM v0.30.0](https://github.com/vllm-project/vllm/releases/tag/v0.30.0) — This release features 762 commits from 315 contributors (104 new)! **New models**: DeepSeek-V4.1-Flash (#56214, #56228, #56208) with the whole KV stored in MXFP8 through the FlashMLA V4.1 record on
 - [Open WebUI v0.11.4](https://github.com/open-webui/open-webui/releases/tag/v0.11.4) — Added 📉 **Far smaller slim image.** A slim build now comes down at around 175 MB, near enough 89% smaller than the last release, the local models, the packages around them and the tools that
 - [Ollama v0.34.3](https://github.com/ollama/ollama/releases/tag/v0.34.3) — `GET /api/show` now advertises each model's thinking controls and default: Available in the CLI with:

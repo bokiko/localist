@@ -95,12 +95,11 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-10-01*
+*Updated 2026-10-02*
 
 **🆕 New & active projects**
 - [ollaya-dev/ollaya](https://github.com/ollaya-dev/ollaya) — Run open decision models locally: pull and serve Laya, decider, NLI and GLiClass behind a TypeSafe-compatible API. Ollama for decision models. · ⭐ 273
 - [VoltEmperorChaos/ai-agent-for-pc](https://github.com/VoltEmperorChaos/ai-agent-for-pc) — A simple Windows AI agent that runs locally with a single .exe file. No command line or complex setup required. · ⭐ 46
-- [janishar/qwen-image-2.1-studio](https://github.com/janishar/qwen-image-2.1-studio) — Local Qwen-Image-2.1 studio for Apple Silicon: text-to-image, multi-image editing and prompt enhancing, with a CLI and a helmstudio web UI. · ⭐ 42
 - [ArtificialAnalysis/aa-agentperf-local](https://github.com/ArtificialAnalysis/aa-agentperf-local) — Benchmark local LLM serving by replaying real agent trajectories · ⭐ 37
 
 **📦 Tool releases**

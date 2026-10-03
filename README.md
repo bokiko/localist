@@ -95,19 +95,18 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-10-02*
+*Updated 2026-10-03*
 
 **🆕 New & active projects**
-- [ollaya-dev/ollaya](https://github.com/ollaya-dev/ollaya) — Run open decision models locally: pull and serve Laya, decider, NLI and GLiClass behind a TypeSafe-compatible API. Ollama for decision models. · ⭐ 273
 - [VoltEmperorChaos/ai-agent-for-pc](https://github.com/VoltEmperorChaos/ai-agent-for-pc) — A simple Windows AI agent that runs locally with a single .exe file. No command line or complex setup required. · ⭐ 46
 - [ArtificialAnalysis/aa-agentperf-local](https://github.com/ArtificialAnalysis/aa-agentperf-local) — Benchmark local LLM serving by replaying real agent trajectories · ⭐ 37
 
 **📦 Tool releases**
-- [KoboldCpp v1.122](https://github.com/LostRuins/koboldcpp/releases/tag/v1.122) — ***[PSA: KoboldCpp needs YOUR help to fight a fake phishing site (click here for info)]( **NEW: Added an integrated KoboldCpp Agent** - KoboldCpp now ships with a bundled Agentic harness. This works
 - [KoboldCpp v1.122.1](https://github.com/LostRuins/koboldcpp/releases/tag/v1.122.1) — ***[PSA: KoboldCpp needs YOUR help to fight a fake phishing site (click here for info)]( **NEW: Added an integrated KoboldCpp Agent** - KoboldCpp now ships with a bundled Agentic harness. This works
 - [Ollama v0.35.0](https://github.com/ollama/ollama/releases/tag/v0.35.0) — Decision models Ollama now supports decision models through `/v1/systemone`, based on [TypeSafe’s Jev API](
 - [ComfyUI v0.38.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.38.0) — Improve qwen 2.1 KV cache location logic Compile Qwen Image 2.1 transformer blocks
 - [LM Studio 1.1.7](https://lmstudio.ai/changelog/bionic-v1.1.7)
+- [Ollama v0.35.1](https://github.com/ollama/ollama/releases/tag/v0.35.1) — Clef decision models Ollama now supports [Clef]( and [Clef Flash]( Cloudflare's new open-source decision models, through `/v1/systemone`.
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

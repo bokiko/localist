@@ -139,19 +139,6 @@
   },
   "history": [
     {
-      "date": "2026-09-27",
-      "discoveries": [],
-      "releases": [
-        {
-          "tool": "KoboldCpp",
-          "repo": "LostRuins/koboldcpp",
-          "version": "v1.122.1",
-          "url": "https://github.com/LostRuins/koboldcpp/releases/tag/v1.122.1",
-          "notes": "***[PSA: KoboldCpp needs YOUR help to fight a fake phishing site (click here for info)]( **NEW: Added an integrated KoboldCpp Agent** - KoboldCpp now ships with a bundled Agentic harness. This works"
-        }
-      ]
-    },
-    {
       "date": "2026-09-30",
       "discoveries": [
         {

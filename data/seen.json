@@ -92,7 +92,8 @@
       "v0.27.1",
       "v0.28.0",
       "v0.29.0",
-      "v0.30.0"
+      "v0.30.0",
+      "v0.31.0"
     ],
     "LostRuins/koboldcpp": [
       "v1.117.1",
@@ -196,6 +197,19 @@
           "version": "v0.35.1",
           "url": "https://github.com/ollama/ollama/releases/tag/v0.35.1",
           "notes": "Clef decision models Ollama now supports [Clef]( and [Clef Flash]( Cloudflare's new open-source decision models, through `/v1/systemone`."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "discoveries": [],
+      "releases": [
+        {
+          "tool": "vLLM",
+          "repo": "vllm-project/vllm",
+          "version": "v0.31.0",
+          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0",
+          "notes": "This release features 717 commits from 307 contributors (96 new)! **DeepSeek-V4.1-Flash performance**: FlashMLA mega attention with the V4.1 NVFP4 compressed KV cache is now the SM100 default"
         }
       ]
     }

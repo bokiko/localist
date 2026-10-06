@@ -54,7 +54,10 @@
     "janishar/qwen-image-2.1-studio",
     "ollaya-dev/ollaya",
     "artificialanalysis/aa-agentperf-local",
-    "voltemperorchaos/ai-agent-for-pc"
+    "voltemperorchaos/ai-agent-for-pc",
+    "budecosystem/bud-decision-studio",
+    "adityaagarw/pantheon",
+    "kouhxp/gutsy"
   ],
   "releases": {
     "ollama/ollama": [
@@ -116,7 +119,8 @@
       "v0.35.0",
       "v0.36.0",
       "v0.37.0",
-      "v0.38.0"
+      "v0.38.0",
+      "v0.39.0"
     ],
     "janhq/jan": [
       "v0.8.4"
@@ -132,7 +136,8 @@
       "v0.2.0",
       "v0.3.0",
       "v0.4.0",
-      "v0.4.1"
+      "v0.4.1",
+      "v0.6.0"
     ]
   },
   "changelog_pages": {
@@ -210,6 +215,48 @@
           "version": "v0.31.0",
           "url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0",
           "notes": "This release features 717 commits from 307 contributors (96 new)! **DeepSeek-V4.1-Flash performance**: FlashMLA mega attention with the V4.1 NVFP4 compressed KV cache is now the SM100 default"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "discoveries": [
+        {
+          "name": "BudEcosystem/Bud-Decision-Studio",
+          "url": "https://github.com/BudEcosystem/Bud-Decision-Studio",
+          "description": "Bud Decision studio is an easy to use cross platform desktop application & serving system for Jev like models locally.",
+          "stars": 99,
+          "created_at": "2026-09-30T13:44:19Z"
+        },
+        {
+          "name": "adityaagarw/Pantheon",
+          "url": "https://github.com/adityaagarw/Pantheon",
+          "description": "A 3D world where AI agents live, work and teach, and you can watch everything they do. Self-hosted, works with local models.",
+          "stars": 33,
+          "created_at": "2026-09-30T13:20:44Z"
+        },
+        {
+          "name": "kouhxp/gutsy",
+          "url": "https://github.com/kouhxp/gutsy",
+          "description": "Local decision model with calibrated probabilities: send a state and yes/no, choice or score questions, get a probability for every option. 0.8B GGUF on CPU, Jev-style API.",
+          "stars": 31,
+          "created_at": "2026-10-01T15:42:10Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "llama.cpp",
+          "repo": "ggml-org/llama.cpp",
+          "version": "v0.6.0",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.6.0",
+          "notes": "Overview llama.cpp v0.6.0 introduces the new `llama_batch_ext` extended batch API (with `llama_process`) for mixed token/embedding inputs and MTP/deepstack state embeddings, adds support for the"
+        },
+        {
+          "tool": "ComfyUI",
+          "repo": "Comfy-Org/ComfyUI",
+          "version": "v0.39.0",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.39.0",
+          "notes": "Support LynnReal light Minimax-H3 vae Update embedded docs to v0.5.13"
         }
       ]
     }

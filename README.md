@@ -95,18 +95,15 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-10-06*
+*Updated 2026-10-07*
 
 **🆕 New & active projects**
 - [BudEcosystem/Bud-Decision-Studio](https://github.com/BudEcosystem/Bud-Decision-Studio) — Bud Decision studio is an easy to use cross platform desktop application & serving system for Jev like models locally. · ⭐ 99
 - [VoltEmperorChaos/ai-agent-for-pc](https://github.com/VoltEmperorChaos/ai-agent-for-pc) — A simple Windows AI agent that runs locally with a single .exe file. No command line or complex setup required. · ⭐ 46
-- [ArtificialAnalysis/aa-agentperf-local](https://github.com/ArtificialAnalysis/aa-agentperf-local) — Benchmark local LLM serving by replaying real agent trajectories · ⭐ 37
 - [adityaagarw/Pantheon](https://github.com/adityaagarw/Pantheon) — A 3D world where AI agents live, work and teach, and you can watch everything they do. Self-hosted, works with local models. · ⭐ 33
 - [kouhxp/gutsy](https://github.com/kouhxp/gutsy) — Local decision model with calibrated probabilities: send a state and yes/no, choice or score questions, get a probability for every option. 0.8B GGUF on CPU, Jev-style API. · ⭐ 31
 
 **📦 Tool releases**
-- [Ollama v0.35.0](https://github.com/ollama/ollama/releases/tag/v0.35.0) — Decision models Ollama now supports decision models through `/v1/systemone`, based on [TypeSafe’s Jev API](
-- [ComfyUI v0.38.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.38.0) — Improve qwen 2.1 KV cache location logic Compile Qwen Image 2.1 transformer blocks
 - [LM Studio 1.1.7](https://lmstudio.ai/changelog/bionic-v1.1.7)
 - [Ollama v0.35.1](https://github.com/ollama/ollama/releases/tag/v0.35.1) — Clef decision models Ollama now supports [Clef]( and [Clef Flash]( Cloudflare's new open-source decision models, through `/v1/systemone`.
 - [vLLM v0.31.0](https://github.com/vllm-project/vllm/releases/tag/v0.31.0) — This release features 717 commits from 307 contributors (96 new)! **DeepSeek-V4.1-Flash performance**: FlashMLA mega attention with the V4.1 NVFP4 compressed KV cache is now the SM100 default

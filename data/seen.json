@@ -85,7 +85,8 @@
       "v0.34.3",
       "v0.34.4",
       "v0.35.0",
-      "v0.35.1"
+      "v0.35.1",
+      "v0.40.1"
     ],
     "vllm-project/vllm": [
       "v0.25.1",
@@ -123,7 +124,8 @@
       "v0.39.0"
     ],
     "janhq/jan": [
-      "v0.8.4"
+      "v0.8.4",
+      "v0.8.5"
     ],
     "open-webui/open-webui": [
       "v0.11.0",
@@ -144,26 +146,6 @@
     "https://lmstudio.ai/changelog": "1.1.7"
   },
   "history": [
-    {
-      "date": "2026-10-01",
-      "discoveries": [
-        {
-          "name": "VoltEmperorChaos/ai-agent-for-pc",
-          "url": "https://github.com/VoltEmperorChaos/ai-agent-for-pc",
-          "description": "A simple Windows AI agent that runs locally with a single .exe file. No command line or complex setup required.",
-          "stars": 46,
-          "created_at": "2026-09-30T18:42:11Z"
-        }
-      ],
-      "releases": [
-        {
-          "tool": "LM Studio",
-          "version": "1.1.7",
-          "url": "https://lmstudio.ai/changelog/bionic-v1.1.7",
-          "notes": ""
-        }
-      ]
-    },
     {
       "date": "2026-10-03",
       "discoveries": [],
@@ -229,6 +211,26 @@
           "version": "v0.39.0",
           "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.39.0",
           "notes": "Support LynnReal light Minimax-H3 vae Update embedded docs to v0.5.13"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "discoveries": [],
+      "releases": [
+        {
+          "tool": "Ollama",
+          "repo": "ollama/ollama",
+          "version": "v0.40.1",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.1",
+          "notes": "server: proxy cloud usage and balance APIs llama: fix clef head reads past 2GiB on windows"
+        },
+        {
+          "tool": "Jan",
+          "repo": "janhq/jan",
+          "version": "v0.8.5",
+          "url": "https://github.com/janhq/jan/releases/tag/v0.8.5",
+          "notes": "This release is fixes only No new features are announced in v0.8.5. Work in progress stays in the nightly channel: [Cowork]( and the current agent work ship there until they are announced, and a"
         }
       ]
     }

@@ -95,7 +95,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-10-09*
+*Updated 2026-10-10*
 
 **🆕 New & active projects**
 - [BudEcosystem/Bud-Decision-Studio](https://github.com/BudEcosystem/Bud-Decision-Studio) — Bud Decision studio is an easy to use cross platform desktop application & serving system for Jev like models locally. · ⭐ 99
@@ -103,7 +103,6 @@ Essentials table above if you want the trusted beginner picks.*
 - [kouhxp/gutsy](https://github.com/kouhxp/gutsy) — Local decision model with calibrated probabilities: send a state and yes/no, choice or score questions, get a probability for every option. 0.8B GGUF on CPU, Jev-style API. · ⭐ 31
 
 **📦 Tool releases**
-- [Ollama v0.35.1](https://github.com/ollama/ollama/releases/tag/v0.35.1) — Clef decision models Ollama now supports [Clef]( and [Clef Flash]( Cloudflare's new open-source decision models, through `/v1/systemone`.
 - [vLLM v0.31.0](https://github.com/vllm-project/vllm/releases/tag/v0.31.0) — This release features 717 commits from 307 contributors (96 new)! **DeepSeek-V4.1-Flash performance**: FlashMLA mega attention with the V4.1 NVFP4 compressed KV cache is now the SM100 default
 - [llama.cpp v0.6.0](https://github.com/ggml-org/llama.cpp/releases/tag/v0.6.0) — Overview llama.cpp v0.6.0 introduces the new `llama_batch_ext` extended batch API (with `llama_process`) for mixed token/embedding inputs and MTP/deepstack state embeddings, adds support for the
 - [ComfyUI v0.39.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.39.0) — Support LynnReal light Minimax-H3 vae Update embedded docs to v0.5.13
@@ -111,6 +110,7 @@ Essentials table above if you want the trusted beginner picks.*
 - [Jan v0.8.5](https://github.com/janhq/jan/releases/tag/v0.8.5) — This release is fixes only No new features are announced in v0.8.5. Work in progress stays in the nightly channel: [Cowork]( and the current agent work ship there until they are announced, and a
 - [Ollama v0.40.2](https://github.com/ollama/ollama/releases/tag/v0.40.2) — Model upgrades Models downloaded with earlier versions of Ollama are upgraded in the background the first time you run them, for better performance and compatibility when running on llama.cpp.
 - [Jan v0.8.6](https://github.com/janhq/jan/releases/tag/v0.8.6) — Jan v0.8.6: hotfix for v0.8.5 Fixes only. If you're on 0.8.5, updating is recommended, especially on Linux (AppImage) and on older NVIDIA GPUs.
+- [LM Studio 1.1.8](https://lmstudio.ai/changelog/bionic-v1.1.8)
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

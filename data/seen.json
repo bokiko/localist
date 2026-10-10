@@ -146,22 +146,9 @@
     ]
   },
   "changelog_pages": {
-    "https://lmstudio.ai/changelog": "1.1.7"
+    "https://lmstudio.ai/changelog": "1.1.8"
   },
   "history": [
-    {
-      "date": "2026-10-03",
-      "discoveries": [],
-      "releases": [
-        {
-          "tool": "Ollama",
-          "repo": "ollama/ollama",
-          "version": "v0.35.1",
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.35.1",
-          "notes": "Clef decision models Ollama now supports [Clef]( and [Clef Flash]( Cloudflare's new open-source decision models, through `/v1/systemone`."
-        }
-      ]
-    },
     {
       "date": "2026-10-05",
       "discoveries": [],
@@ -262,6 +249,18 @@
           "version": "v0.8.6",
           "url": "https://github.com/janhq/jan/releases/tag/v0.8.6",
           "notes": "Jan v0.8.6: hotfix for v0.8.5 Fixes only. If you're on 0.8.5, updating is recommended, especially on Linux (AppImage) and on older NVIDIA GPUs."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "discoveries": [],
+      "releases": [
+        {
+          "tool": "LM Studio",
+          "version": "1.1.8",
+          "url": "https://lmstudio.ai/changelog/bionic-v1.1.8",
+          "notes": ""
         }
       ]
     }

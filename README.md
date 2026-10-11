@@ -95,10 +95,11 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-10-10*
+*Updated 2026-10-11*
 
 **🆕 New & active projects**
 - [BudEcosystem/Bud-Decision-Studio](https://github.com/BudEcosystem/Bud-Decision-Studio) — Bud Decision studio is an easy to use cross platform desktop application & serving system for Jev like models locally. · ⭐ 99
+- [VecSzn/PolyStrata](https://github.com/VecSzn/PolyStrata) — Run large AI models on your own PC: Qwen3.8-Flash-Next, GLM 5.3 Flash, Qwen3.6, Ornith 1.5 and Gemma 4. One-click install for Windows and Linux, OpenAI/Anthropic API on localhost, image input. Built · ⭐ 64
 - [adityaagarw/Pantheon](https://github.com/adityaagarw/Pantheon) — A 3D world where AI agents live, work and teach, and you can watch everything they do. Self-hosted, works with local models. · ⭐ 33
 - [kouhxp/gutsy](https://github.com/kouhxp/gutsy) — Local decision model with calibrated probabilities: send a state and yes/no, choice or score questions, get a probability for every option. 0.8B GGUF on CPU, Jev-style API. · ⭐ 31
 
@@ -111,6 +112,8 @@ Essentials table above if you want the trusted beginner picks.*
 - [Ollama v0.40.2](https://github.com/ollama/ollama/releases/tag/v0.40.2) — Model upgrades Models downloaded with earlier versions of Ollama are upgraded in the background the first time you run them, for better performance and compatibility when running on llama.cpp.
 - [Jan v0.8.6](https://github.com/janhq/jan/releases/tag/v0.8.6) — Jan v0.8.6: hotfix for v0.8.5 Fixes only. If you're on 0.8.5, updating is recommended, especially on Linux (AppImage) and on older NVIDIA GPUs.
 - [LM Studio 1.1.8](https://lmstudio.ai/changelog/bionic-v1.1.8)
+- [Ollama v0.40.3](https://github.com/ollama/ollama/releases/tag/v0.40.3) — `ollama launch claude` no longer shows a warning about Claude connectors `ollama launch codex` no longer warns about service tiers
+- [Open WebUI v0.12.0](https://github.com/open-webui/open-webui/releases/tag/v0.12.0) — Added ☎️ **Realtime voice calls.** Administrators can now switch Call mode in the Voice calls section of Audio settings from Standard to Realtime, so Voice mode talks through an OpenAI Realtime voice
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

@@ -59,7 +59,8 @@
     "adityaagarw/pantheon",
     "kouhxp/gutsy",
     "oriveo/oriveo",
-    "vecszn/polystrata"
+    "vecszn/polystrata",
+    "0xcro3dile/answerui"
   ],
   "releases": {
     "ollama/ollama": [
@@ -152,19 +153,6 @@
     "https://lmstudio.ai/changelog": "1.1.8"
   },
   "history": [
-    {
-      "date": "2026-10-05",
-      "discoveries": [],
-      "releases": [
-        {
-          "tool": "vLLM",
-          "repo": "vllm-project/vllm",
-          "version": "v0.31.0",
-          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0",
-          "notes": "This release features 717 commits from 307 contributors (96 new)! **DeepSeek-V4.1-Flash performance**: FlashMLA mega attention with the V4.1 NVFP4 compressed KV cache is now the SM100 default"
-        }
-      ]
-    },
     {
       "date": "2026-10-06",
       "discoveries": [
@@ -294,6 +282,19 @@
           "notes": "Added \u260e\ufe0f **Realtime voice calls.** Administrators can now switch Call mode in the Voice calls section of Audio settings from Standard to Realtime, so Voice mode talks through an OpenAI Realtime voice"
         }
       ]
+    },
+    {
+      "date": "2026-10-12",
+      "discoveries": [
+        {
+          "name": "0xcro3dile/answerui",
+          "url": "https://github.com/0xcro3dile/answerui",
+          "description": "Open-source alternative to ChatGPT's Intelligent UI. Answers arrive as live charts, forms and calculators. Works with any OpenAI-compatible model, in the cloud or local.",
+          "stars": 31,
+          "created_at": "2026-10-07T22:17:36Z"
+        }
+      ],
+      "releases": []
     }
   ]
 }

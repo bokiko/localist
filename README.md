@@ -95,18 +95,14 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-10-12*
+*Updated 2026-10-13*
 
 **🆕 New & active projects**
-- [BudEcosystem/Bud-Decision-Studio](https://github.com/BudEcosystem/Bud-Decision-Studio) — Bud Decision studio is an easy to use cross platform desktop application & serving system for Jev like models locally. · ⭐ 99
+- [leemysw/yovoice](https://github.com/leemysw/yovoice) — Open-source local AI audio & music studio for macOS & Windows. TTS, voice cloning, songs with lyrics, and multi-track scores — 100% offline, zero API fees. · ⭐ 1247
 - [VecSzn/PolyStrata](https://github.com/VecSzn/PolyStrata) — Run large AI models on your own PC: Qwen3.8-Flash-Next, GLM 5.3 Flash, Qwen3.6, Ornith 1.5 and Gemma 4. One-click install for Windows and Linux, OpenAI/Anthropic API on localhost, image input. Built · ⭐ 64
-- [adityaagarw/Pantheon](https://github.com/adityaagarw/Pantheon) — A 3D world where AI agents live, work and teach, and you can watch everything they do. Self-hosted, works with local models. · ⭐ 33
-- [kouhxp/gutsy](https://github.com/kouhxp/gutsy) — Local decision model with calibrated probabilities: send a state and yes/no, choice or score questions, get a probability for every option. 0.8B GGUF on CPU, Jev-style API. · ⭐ 31
 - [0xcro3dile/answerui](https://github.com/0xcro3dile/answerui) — Open-source alternative to ChatGPT's Intelligent UI. Answers arrive as live charts, forms and calculators. Works with any OpenAI-compatible model, in the cloud or local. · ⭐ 31
 
 **📦 Tool releases**
-- [llama.cpp v0.6.0](https://github.com/ggml-org/llama.cpp/releases/tag/v0.6.0) — Overview llama.cpp v0.6.0 introduces the new `llama_batch_ext` extended batch API (with `llama_process`) for mixed token/embedding inputs and MTP/deepstack state embeddings, adds support for the
-- [ComfyUI v0.39.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.39.0) — Support LynnReal light Minimax-H3 vae Update embedded docs to v0.5.13
 - [Ollama v0.40.1](https://github.com/ollama/ollama/releases/tag/v0.40.1) — server: proxy cloud usage and balance APIs llama: fix clef head reads past 2GiB on windows
 - [Jan v0.8.5](https://github.com/janhq/jan/releases/tag/v0.8.5) — This release is fixes only No new features are announced in v0.8.5. Work in progress stays in the nightly channel: [Cowork]( and the current agent work ship there until they are announced, and a
 - [Ollama v0.40.2](https://github.com/ollama/ollama/releases/tag/v0.40.2) — Model upgrades Models downloaded with earlier versions of Ollama are upgraded in the background the first time you run them, for better performance and compatibility when running on llama.cpp.

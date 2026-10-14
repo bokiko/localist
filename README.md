@@ -95,7 +95,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-10-13*
+*Updated 2026-10-14*
 
 **🆕 New & active projects**
 - [leemysw/yovoice](https://github.com/leemysw/yovoice) — Open-source local AI audio & music studio for macOS & Windows. TTS, voice cloning, songs with lyrics, and multi-track scores — 100% offline, zero API fees. · ⭐ 1247
@@ -110,6 +110,9 @@ Essentials table above if you want the trusted beginner picks.*
 - [LM Studio 1.1.8](https://lmstudio.ai/changelog/bionic-v1.1.8)
 - [Ollama v0.40.3](https://github.com/ollama/ollama/releases/tag/v0.40.3) — `ollama launch claude` no longer shows a warning about Claude connectors `ollama launch codex` no longer warns about service tiers
 - [Open WebUI v0.12.0](https://github.com/open-webui/open-webui/releases/tag/v0.12.0) — Added ☎️ **Realtime voice calls.** Administrators can now switch Call mode in the Voice calls section of Audio settings from Standard to Realtime, so Voice mode talks through an OpenAI Realtime voice
+- [Ollama v0.40.4](https://github.com/ollama/ollama/releases/tag/v0.40.4) — Decision models in the CLI Decision models can now be used directly from the terminal with `ollama run` — ask yes/no questions, classify text into labels, or score against a rubric:
+- [KoboldCpp v1.123](https://github.com/LostRuins/koboldcpp/releases/tag/v1.123) — **NEW: [Introducing koboldcpp.net, our new community website]( - KoboldCpp now has an official **community website**! This is a legitimate community site put together with the help of @Autumnlight02
+- [ComfyUI v0.40.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.40.0) — [Server.py] Update CSP to allow `blob:` and `data:` Add comfy_attention and AttentionTensorContainer support to rest of models
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

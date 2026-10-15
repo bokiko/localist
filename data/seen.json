@@ -62,7 +62,9 @@
     "vecszn/polystrata",
     "0xcro3dile/answerui",
     "leemysw/yovoice",
-    "recepyagmur/englishpractice"
+    "recepyagmur/englishpractice",
+    "ryder-sun/meldwork",
+    "1nikitas/nika_desktop"
   ],
   "releases": {
     "ollama/ollama": [
@@ -144,7 +146,9 @@
       "v0.11.2",
       "v0.11.3",
       "v0.11.4",
-      "v0.12.0"
+      "v0.12.0",
+      "v0.12.2",
+      "v0.12.1"
     ],
     "ggml-org/llama.cpp": [
       "v0.2.0",
@@ -158,26 +162,6 @@
     "https://lmstudio.ai/changelog": "1.1.8"
   },
   "history": [
-    {
-      "date": "2026-10-08",
-      "discoveries": [],
-      "releases": [
-        {
-          "tool": "Ollama",
-          "repo": "ollama/ollama",
-          "version": "v0.40.1",
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.1",
-          "notes": "server: proxy cloud usage and balance APIs llama: fix clef head reads past 2GiB on windows"
-        },
-        {
-          "tool": "Jan",
-          "repo": "janhq/jan",
-          "version": "v0.8.5",
-          "url": "https://github.com/janhq/jan/releases/tag/v0.8.5",
-          "notes": "This release is fixes only No new features are announced in v0.8.5. Work in progress stays in the nightly channel: [Cowork]( and the current agent work ship there until they are announced, and a"
-        }
-      ]
-    },
     {
       "date": "2026-10-09",
       "discoveries": [
@@ -303,6 +287,41 @@
           "version": "v0.40.0",
           "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.40.0",
           "notes": "[Server.py] Update CSP to allow `blob:` and `data:` Add comfy_attention and AttentionTensorContainer support to rest of models"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "discoveries": [
+        {
+          "name": "Ryder-Sun/Meldwork",
+          "url": "https://github.com/Ryder-Sun/Meldwork",
+          "description": "Local-first AI agent workspace for multi-agent collaboration, agent orchestration, scoped permissions, evidence-aware runs, and human-in-the-loop decisions.",
+          "stars": 832,
+          "created_at": "2026-07-29T13:58:20Z"
+        },
+        {
+          "name": "1nikitas/NIKA_desktop",
+          "url": "https://github.com/1nikitas/NIKA_desktop",
+          "description": "Native AI assistant for macOS, built with SwiftUI and llama.cpp. Run local LLMs offline, work with PDFs, and create custom AI assistants. Optional NIKA cloud integration.",
+          "stars": 33,
+          "created_at": "2026-10-13T16:01:27Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "Open WebUI",
+          "repo": "open-webui/open-webui",
+          "version": "v0.12.2",
+          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.2",
+          "notes": "Added \ud83d\udcd1 **MinerU 4.x servers.** The MinerU document engine now works with self-hosted MinerU 4.x servers, where every document failed with a 404 because 4.x removed the old parsing interface; 3.x"
+        },
+        {
+          "tool": "Open WebUI",
+          "repo": "open-webui/open-webui",
+          "version": "v0.12.1",
+          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.1",
+          "notes": "Added \ud83e\uddf1 **External apps in channels.** Administrators can now turn on Apps in Admin Settings > General, or with \"ENABLE_APPS\", and connect external apps in the new Apps tab of Admin Settings by their"
         }
       ]
     }

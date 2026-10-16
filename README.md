@@ -95,18 +95,16 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-10-15*
+*Updated 2026-10-16*
 
 **🆕 New & active projects**
 - [leemysw/yovoice](https://github.com/leemysw/yovoice) — Open-source local AI audio & music studio for macOS & Windows. TTS, voice cloning, songs with lyrics, and multi-track scores — 100% offline, zero API fees. · ⭐ 1247
 - [Ryder-Sun/Meldwork](https://github.com/Ryder-Sun/Meldwork) — Local-first AI agent workspace for multi-agent collaboration, agent orchestration, scoped permissions, evidence-aware runs, and human-in-the-loop decisions. · ⭐ 832
+- [openbin-ai/binny](https://github.com/openbin-ai/binny) — BINNY: an open source agent harness for reverse engineering. Plug in any model, or a local one. · ⭐ 87
 - [VecSzn/PolyStrata](https://github.com/VecSzn/PolyStrata) — Run large AI models on your own PC: Qwen3.8-Flash-Next, GLM 5.3 Flash, Qwen3.6, Ornith 1.5 and Gemma 4. One-click install for Windows and Linux, OpenAI/Anthropic API on localhost, image input. Built · ⭐ 64
-- [1nikitas/NIKA_desktop](https://github.com/1nikitas/NIKA_desktop) — Native AI assistant for macOS, built with SwiftUI and llama.cpp. Run local LLMs offline, work with PDFs, and create custom AI assistants. Optional NIKA cloud integration. · ⭐ 33
-- [0xcro3dile/answerui](https://github.com/0xcro3dile/answerui) — Open-source alternative to ChatGPT's Intelligent UI. Answers arrive as live charts, forms and calculators. Works with any OpenAI-compatible model, in the cloud or local. · ⭐ 31
+- [anisayari/sparky](https://github.com/anisayari/sparky) — 🔒 Your private AI assistant, 100% local on Windows: chat, vision, documents (RAG), web search, images, videos with sound, voice, code projects, MCP tools — one-line install, models picked for your PC. · ⭐ 39
 
 **📦 Tool releases**
-- [Ollama v0.40.2](https://github.com/ollama/ollama/releases/tag/v0.40.2) — Model upgrades Models downloaded with earlier versions of Ollama are upgraded in the background the first time you run them, for better performance and compatibility when running on llama.cpp.
-- [Jan v0.8.6](https://github.com/janhq/jan/releases/tag/v0.8.6) — Jan v0.8.6: hotfix for v0.8.5 Fixes only. If you're on 0.8.5, updating is recommended, especially on Linux (AppImage) and on older NVIDIA GPUs.
 - [LM Studio 1.1.8](https://lmstudio.ai/changelog/bionic-v1.1.8)
 - [Ollama v0.40.3](https://github.com/ollama/ollama/releases/tag/v0.40.3) — `ollama launch claude` no longer shows a warning about Claude connectors `ollama launch codex` no longer warns about service tiers
 - [Open WebUI v0.12.0](https://github.com/open-webui/open-webui/releases/tag/v0.12.0) — Added ☎️ **Realtime voice calls.** Administrators can now switch Call mode in the Voice calls section of Audio settings from Standard to Realtime, so Voice mode talks through an OpenAI Realtime voice
@@ -115,6 +113,9 @@ Essentials table above if you want the trusted beginner picks.*
 - [ComfyUI v0.40.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.40.0) — [Server.py] Update CSP to allow `blob:` and `data:` Add comfy_attention and AttentionTensorContainer support to rest of models
 - [Open WebUI v0.12.2](https://github.com/open-webui/open-webui/releases/tag/v0.12.2) — Added 📑 **MinerU 4.x servers.** The MinerU document engine now works with self-hosted MinerU 4.x servers, where every document failed with a 404 because 4.x removed the old parsing interface; 3.x
 - [Open WebUI v0.12.1](https://github.com/open-webui/open-webui/releases/tag/v0.12.1) — Added 🧱 **External apps in channels.** Administrators can now turn on Apps in Admin Settings > General, or with "ENABLE_APPS", and connect external apps in the new Apps tab of Admin Settings by their
+- [Ollama v0.40.5](https://github.com/ollama/ollama/releases/tag/v0.40.5) — NVIDIA Nemotron 3.5 Super [NVIDIA Nemotron 3.5 Super]( is a vision-language model for coding, reasoning, tool use, and document understanding. It pairs a 120B-parameter hybrid Mamba-2/Transformer
+- [KoboldCpp v1.123.1](https://github.com/LostRuins/koboldcpp/releases/tag/v1.123.1) — **NEW: [Introducing koboldcpp.net, our new community website]( - KoboldCpp now has an official **community website**! This is a legitimate community site put together with the help of @Autumnlight02
+- [ComfyUI v0.41.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.41.0) — Add ImageSDRToHDR node. feat: Add a core route for the default workflow (CORE-340)
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

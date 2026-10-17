@@ -153,7 +153,8 @@
       "v0.11.4",
       "v0.12.0",
       "v0.12.2",
-      "v0.12.1"
+      "v0.12.1",
+      "v0.12.3"
     ],
     "ggml-org/llama.cpp": [
       "v0.2.0",
@@ -167,18 +168,6 @@
     "https://lmstudio.ai/changelog": "1.1.8"
   },
   "history": [
-    {
-      "date": "2026-10-10",
-      "discoveries": [],
-      "releases": [
-        {
-          "tool": "LM Studio",
-          "version": "1.1.8",
-          "url": "https://lmstudio.ai/changelog/bionic-v1.1.8",
-          "notes": ""
-        }
-      ]
-    },
     {
       "date": "2026-10-11",
       "discoveries": [
@@ -341,6 +330,19 @@
           "version": "v0.41.0",
           "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.41.0",
           "notes": "Add ImageSDRToHDR node. feat: Add a core route for the default workflow (CORE-340)"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "discoveries": [],
+      "releases": [
+        {
+          "tool": "Open WebUI",
+          "repo": "open-webui/open-webui",
+          "version": "v0.12.3",
+          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.3",
+          "notes": "Added \ud83d\udd10 **End-to-end encrypted chats.** Direct messages and private group channels can now hold a temporary end-to-end encrypted chat: a member picks Encrypted Chat in the channel menu, the other"
         }
       ]
     }

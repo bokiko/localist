@@ -66,7 +66,8 @@
     "ryder-sun/meldwork",
     "1nikitas/nika_desktop",
     "openbin-ai/binny",
-    "anisayari/sparky"
+    "anisayari/sparky",
+    "justxor/deepseek-local-guide-ru"
   ],
   "releases": {
     "ollama/ollama": [
@@ -99,7 +100,8 @@
       "v0.40.2",
       "v0.40.3",
       "v0.40.4",
-      "v0.40.5"
+      "v0.40.5",
+      "v0.40.6"
     ],
     "vllm-project/vllm": [
       "v0.25.1",
@@ -110,7 +112,8 @@
       "v0.28.0",
       "v0.29.0",
       "v0.30.0",
-      "v0.31.0"
+      "v0.31.0",
+      "v0.32.0"
     ],
     "LostRuins/koboldcpp": [
       "v1.117.1",
@@ -168,34 +171,6 @@
     "https://lmstudio.ai/changelog": "1.1.8"
   },
   "history": [
-    {
-      "date": "2026-10-11",
-      "discoveries": [
-        {
-          "name": "VecSzn/PolyStrata",
-          "url": "https://github.com/VecSzn/PolyStrata",
-          "description": "Run large AI models on your own PC: Qwen3.8-Flash-Next, GLM 5.3 Flash, Qwen3.6, Ornith 1.5 and Gemma 4. One-click install for Windows and Linux, OpenAI/Anthropic API on localhost, image input. Built",
-          "stars": 64,
-          "created_at": "2026-10-06T21:09:40Z"
-        }
-      ],
-      "releases": [
-        {
-          "tool": "Ollama",
-          "repo": "ollama/ollama",
-          "version": "v0.40.3",
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.3",
-          "notes": "`ollama launch claude` no longer shows a warning about Claude connectors `ollama launch codex` no longer warns about service tiers"
-        },
-        {
-          "tool": "Open WebUI",
-          "repo": "open-webui/open-webui",
-          "version": "v0.12.0",
-          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.0",
-          "notes": "Added \u260e\ufe0f **Realtime voice calls.** Administrators can now switch Call mode in the Voice calls section of Audio settings from Standard to Realtime, so Voice mode talks through an OpenAI Realtime voice"
-        }
-      ]
-    },
     {
       "date": "2026-10-12",
       "discoveries": [
@@ -343,6 +318,34 @@
           "version": "v0.12.3",
           "url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.3",
           "notes": "Added \ud83d\udd10 **End-to-end encrypted chats.** Direct messages and private group channels can now hold a temporary end-to-end encrypted chat: a member picks Encrypted Chat in the channel menu, the other"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-18",
+      "discoveries": [
+        {
+          "name": "justxor/deepseek-local-guide-ru",
+          "url": "https://github.com/justxor/deepseek-local-guide-ru",
+          "description": "\ud83d\udc0b \u041f\u043e\u043b\u043d\u044b\u0439 \u0433\u0430\u0439\u0434 \u043d\u0430 \u0440\u0443\u0441\u0441\u043a\u043e\u043c: \u043a\u0430\u043a \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c \u0438 \u0437\u0430\u043f\u0443\u0441\u0442\u0438\u0442\u044c DeepSeek \u043b\u043e\u043a\u0430\u043b\u044c\u043d\u043e (V4, R1) \u043d\u0430 \u041f\u041a, Mac \u0438 \u0441\u0435\u0440\u0432\u0435\u0440\u0435 \u2014 Ollama, llama.cpp, LM Studio, vLLM, Open WebUI, API, RAG, \u0430\u0433\u0435\u043d\u0442\u044b, fine-tuning, \u043b\u0443\u0447\u0448\u0438\u0435 \u0444\u0438\u0448\u043a\u0438",
+          "stars": 72,
+          "created_at": "2026-10-17T10:03:36Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "Ollama",
+          "repo": "ollama/ollama",
+          "version": "v0.40.6",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.6",
+          "notes": "win: prevent orphaned runners gguf: add the q2_0 tensor and file types"
+        },
+        {
+          "tool": "vLLM",
+          "repo": "vllm-project/vllm",
+          "version": "v0.32.0",
+          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0",
+          "notes": "This release features 814 commits from 363 contributors (121 new)! **Structured decisions and generic parsers**: the new `POST /v1/systemone` endpoint answers `choice`, `noul` and `score` questions"
         }
       ]
     }

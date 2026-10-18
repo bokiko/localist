@@ -95,18 +95,16 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-10-17*
+*Updated 2026-10-18*
 
 **🆕 New & active projects**
 - [leemysw/yovoice](https://github.com/leemysw/yovoice) — Open-source local AI audio & music studio for macOS & Windows. TTS, voice cloning, songs with lyrics, and multi-track scores — 100% offline, zero API fees. · ⭐ 1247
 - [Ryder-Sun/Meldwork](https://github.com/Ryder-Sun/Meldwork) — Local-first AI agent workspace for multi-agent collaboration, agent orchestration, scoped permissions, evidence-aware runs, and human-in-the-loop decisions. · ⭐ 832
 - [openbin-ai/binny](https://github.com/openbin-ai/binny) — BINNY: an open source agent harness for reverse engineering. Plug in any model, or a local one. · ⭐ 87
-- [VecSzn/PolyStrata](https://github.com/VecSzn/PolyStrata) — Run large AI models on your own PC: Qwen3.8-Flash-Next, GLM 5.3 Flash, Qwen3.6, Ornith 1.5 and Gemma 4. One-click install for Windows and Linux, OpenAI/Anthropic API on localhost, image input. Built · ⭐ 64
+- [justxor/deepseek-local-guide-ru](https://github.com/justxor/deepseek-local-guide-ru) — 🐋 Полный гайд на русском: как установить и запустить DeepSeek локально (V4, R1) на ПК, Mac и сервере — Ollama, llama.cpp, LM Studio, vLLM, Open WebUI, API, RAG, агенты, fine-tuning, лучшие фишки · ⭐ 72
 - [anisayari/sparky](https://github.com/anisayari/sparky) — 🔒 Your private AI assistant, 100% local on Windows: chat, vision, documents (RAG), web search, images, videos with sound, voice, code projects, MCP tools — one-line install, models picked for your PC. · ⭐ 39
 
 **📦 Tool releases**
-- [Ollama v0.40.3](https://github.com/ollama/ollama/releases/tag/v0.40.3) — `ollama launch claude` no longer shows a warning about Claude connectors `ollama launch codex` no longer warns about service tiers
-- [Open WebUI v0.12.0](https://github.com/open-webui/open-webui/releases/tag/v0.12.0) — Added ☎️ **Realtime voice calls.** Administrators can now switch Call mode in the Voice calls section of Audio settings from Standard to Realtime, so Voice mode talks through an OpenAI Realtime voice
 - [Ollama v0.40.4](https://github.com/ollama/ollama/releases/tag/v0.40.4) — Decision models in the CLI Decision models can now be used directly from the terminal with `ollama run` — ask yes/no questions, classify text into labels, or score against a rubric:
 - [KoboldCpp v1.123](https://github.com/LostRuins/koboldcpp/releases/tag/v1.123) — **NEW: [Introducing koboldcpp.net, our new community website]( - KoboldCpp now has an official **community website**! This is a legitimate community site put together with the help of @Autumnlight02
 - [ComfyUI v0.40.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.40.0) — [Server.py] Update CSP to allow `blob:` and `data:` Add comfy_attention and AttentionTensorContainer support to rest of models
@@ -116,6 +114,8 @@ Essentials table above if you want the trusted beginner picks.*
 - [KoboldCpp v1.123.1](https://github.com/LostRuins/koboldcpp/releases/tag/v1.123.1) — **NEW: [Introducing koboldcpp.net, our new community website]( - KoboldCpp now has an official **community website**! This is a legitimate community site put together with the help of @Autumnlight02
 - [ComfyUI v0.41.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.41.0) — Add ImageSDRToHDR node. feat: Add a core route for the default workflow (CORE-340)
 - [Open WebUI v0.12.3](https://github.com/open-webui/open-webui/releases/tag/v0.12.3) — Added 🔐 **End-to-end encrypted chats.** Direct messages and private group channels can now hold a temporary end-to-end encrypted chat: a member picks Encrypted Chat in the channel menu, the other
+- [Ollama v0.40.6](https://github.com/ollama/ollama/releases/tag/v0.40.6) — win: prevent orphaned runners gguf: add the q2_0 tensor and file types
+- [vLLM v0.32.0](https://github.com/vllm-project/vllm/releases/tag/v0.32.0) — This release features 814 commits from 363 contributors (121 new)! **Structured decisions and generic parsers**: the new `POST /v1/systemone` endpoint answers `choice`, `noul` and `score` questions
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

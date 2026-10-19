@@ -141,7 +141,9 @@
       "v0.38.0",
       "v0.39.0",
       "v0.40.0",
-      "v0.41.0"
+      "v0.41.0",
+      "v0.42.1",
+      "v0.42.0"
     ],
     "janhq/jan": [
       "v0.8.4",
@@ -171,19 +173,6 @@
     "https://lmstudio.ai/changelog": "1.1.8"
   },
   "history": [
-    {
-      "date": "2026-10-12",
-      "discoveries": [
-        {
-          "name": "0xcro3dile/answerui",
-          "url": "https://github.com/0xcro3dile/answerui",
-          "description": "Open-source alternative to ChatGPT's Intelligent UI. Answers arrive as live charts, forms and calculators. Works with any OpenAI-compatible model, in the cloud or local.",
-          "stars": 31,
-          "created_at": "2026-10-07T22:17:36Z"
-        }
-      ],
-      "releases": []
-    },
     {
       "date": "2026-10-13",
       "discoveries": [
@@ -346,6 +335,26 @@
           "version": "v0.32.0",
           "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0",
           "notes": "This release features 814 commits from 363 contributors (121 new)! **Structured decisions and generic parsers**: the new `POST /v1/systemone` endpoint answers `choice`, `noul` and `score` questions"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "discoveries": [],
+      "releases": [
+        {
+          "tool": "ComfyUI",
+          "repo": "Comfy-Org/ComfyUI",
+          "version": "v0.42.1",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.42.1",
+          "notes": "Fix some crashing issues a few users experienced when running the MOSS image template workflow."
+        },
+        {
+          "tool": "ComfyUI",
+          "repo": "Comfy-Org/ComfyUI",
+          "version": "v0.42.0",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.42.0",
+          "notes": "[Partner Nodes] feat(Krea): add Krea 3 Image node Update workflow templates to v0.11.85"
         }
       ]
     }

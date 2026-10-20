@@ -148,7 +148,8 @@
     "janhq/jan": [
       "v0.8.4",
       "v0.8.5",
-      "v0.8.6"
+      "v0.8.6",
+      "v0.8.7"
     ],
     "open-webui/open-webui": [
       "v0.11.0",
@@ -173,26 +174,6 @@
     "https://lmstudio.ai/changelog": "1.1.8"
   },
   "history": [
-    {
-      "date": "2026-10-13",
-      "discoveries": [
-        {
-          "name": "leemysw/yovoice",
-          "url": "https://github.com/leemysw/yovoice",
-          "description": "Open-source local AI audio & music studio for macOS & Windows. TTS, voice cloning, songs with lyrics, and multi-track scores \u2014 100% offline, zero API fees.",
-          "stars": 1247,
-          "created_at": "2026-09-15T15:18:35Z"
-        },
-        {
-          "name": "recepyagmur/EnglishPractice",
-          "url": "https://github.com/recepyagmur/EnglishPractice",
-          "description": "Yerel, \u00e7evrimd\u0131\u015f\u0131 ve ta\u015f\u0131nabilir \u0130ngilizce pratik uygulamas\u0131 (T\u00fcrk\u00e7e konu\u015fanlar i\u00e7in): yapay zek\u00e2yla sesli/yaz\u0131l\u0131 sohbet ve an\u0131nda d\u00fczeltme, A1\u2013C1 dersler ve s\u0131navlar, T\u00fcrk\u00e7e sesli \u00f6\u011fretmen, kelime",
-          "stars": 81,
-          "created_at": "2026-10-11T19:29:17Z"
-        }
-      ],
-      "releases": []
-    },
     {
       "date": "2026-10-14",
       "discoveries": [],
@@ -355,6 +336,19 @@
           "version": "v0.42.0",
           "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.42.0",
           "notes": "[Partner Nodes] feat(Krea): add Krea 3 Image node Update workflow templates to v0.11.85"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "discoveries": [],
+      "releases": [
+        {
+          "tool": "Jan",
+          "repo": "janhq/jan",
+          "version": "v0.8.7",
+          "url": "https://github.com/janhq/jan/releases/tag/v0.8.7",
+          "notes": "Jan v0.8.7: shell switch, image size limit, and fixes A minor update to v0.8.6. Your data and settings carry over; one MCP clean-up runs on first launch (below)."
         }
       ]
     }

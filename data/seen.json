@@ -67,7 +67,10 @@
     "1nikitas/nika_desktop",
     "openbin-ai/binny",
     "anisayari/sparky",
-    "justxor/deepseek-local-guide-ru"
+    "justxor/deepseek-local-guide-ru",
+    "xhtoken/spark-x2.6",
+    "juinwei7/shiyin",
+    "csunx233/qwen3.8-27b-ninfer-5070tilaptop-kvmem-local-agent"
   ],
   "releases": {
     "ollama/ollama": [
@@ -101,7 +104,8 @@
       "v0.40.3",
       "v0.40.4",
       "v0.40.5",
-      "v0.40.6"
+      "v0.40.6",
+      "v0.40.7"
     ],
     "vllm-project/vllm": [
       "v0.25.1",
@@ -174,33 +178,6 @@
     "https://lmstudio.ai/changelog": "1.1.8"
   },
   "history": [
-    {
-      "date": "2026-10-14",
-      "discoveries": [],
-      "releases": [
-        {
-          "tool": "Ollama",
-          "repo": "ollama/ollama",
-          "version": "v0.40.4",
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.4",
-          "notes": "Decision models in the CLI Decision models can now be used directly from the terminal with `ollama run` \u2014 ask yes/no questions, classify text into labels, or score against a rubric:"
-        },
-        {
-          "tool": "KoboldCpp",
-          "repo": "LostRuins/koboldcpp",
-          "version": "v1.123",
-          "url": "https://github.com/LostRuins/koboldcpp/releases/tag/v1.123",
-          "notes": "**NEW: [Introducing koboldcpp.net, our new community website]( - KoboldCpp now has an official **community website**! This is a legitimate community site put together with the help of @Autumnlight02"
-        },
-        {
-          "tool": "ComfyUI",
-          "repo": "Comfy-Org/ComfyUI",
-          "version": "v0.40.0",
-          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.40.0",
-          "notes": "[Server.py] Update CSP to allow `blob:` and `data:` Add comfy_attention and AttentionTensorContainer support to rest of models"
-        }
-      ]
-    },
     {
       "date": "2026-10-15",
       "discoveries": [
@@ -349,6 +326,41 @@
           "version": "v0.8.7",
           "url": "https://github.com/janhq/jan/releases/tag/v0.8.7",
           "notes": "Jan v0.8.7: shell switch, image size limit, and fixes A minor update to v0.8.6. Your data and settings carry over; one MCP clean-up runs on first launch (below)."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "discoveries": [
+        {
+          "name": "XHToken/Spark-X2.6",
+          "url": "https://github.com/XHToken/Spark-X2.6",
+          "description": "Spark-x2.5 open model series. Pushing the Limits of Agentic Capabilities in On-Device Models",
+          "stars": 821,
+          "created_at": "2026-08-24T06:36:40Z"
+        },
+        {
+          "name": "juinwei7/Shiyin",
+          "url": "https://github.com/juinwei7/Shiyin",
+          "description": "Free, open-source meeting notes app for Mac: records Zoom, Meet and Teams without a bot, transcribes on-device (whisper.cpp + Breeze ASR 25), identifies speakers, and writes timestamped notes with",
+          "stars": 62,
+          "created_at": "2026-10-15T14:33:40Z"
+        },
+        {
+          "name": "CSUNX233/qwen3.8-27b-ninfer-5070tilaptop-kvmem-local-agent",
+          "url": "https://github.com/CSUNX233/qwen3.8-27b-ninfer-5070tilaptop-kvmem-local-agent",
+          "description": "RTX 5070 Ti Laptop 12GB \u8dd1 Qwen3.8-27B\uff1aNInfer + KVMem\u3001256K \u903b\u8f91\u4e0a\u4e0b\u6587\u3001RAM KV\u3001MTP\u3001\u5feb\u901f\u7f13\u5b58\u7eed\u63a5\u4e0e dsh \u672c\u5730 Agent / \u641c\u7d22 / \u6d4f\u89c8\u5668\u3002\u542b\u6e90\u7801\u3001Windows \u90e8\u7f72\u53ca\u5b9e\u6d4b\u3002",
+          "stars": 33,
+          "created_at": "2026-10-15T07:46:20Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "Ollama",
+          "repo": "ollama/ollama",
+          "version": "v0.40.7",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.7",
+          "notes": "[pplx-decider]( is a 27B decision model from Perplexity, fine-tuned from Qwen3.8-27B"
         }
       ]
     }

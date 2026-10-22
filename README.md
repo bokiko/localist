@@ -95,18 +95,16 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-10-21*
+*Updated 2026-10-22*
 
 **🆕 New & active projects**
-- [Ryder-Sun/Meldwork](https://github.com/Ryder-Sun/Meldwork) — Local-first AI agent workspace for multi-agent collaboration, agent orchestration, scoped permissions, evidence-aware runs, and human-in-the-loop decisions. · ⭐ 832
 - [XHToken/Spark-X2.6](https://github.com/XHToken/Spark-X2.6) — Spark-x2.5 open model series. Pushing the Limits of Agentic Capabilities in On-Device Models · ⭐ 821
+- [sykyyds3739/laya-heart](https://github.com/sykyyds3739/laya-heart) — Local-first couple-chat copilot: Laya reads the room, Gemma drafts, you press send. · ⭐ 130
 - [openbin-ai/binny](https://github.com/openbin-ai/binny) — BINNY: an open source agent harness for reverse engineering. Plug in any model, or a local one. · ⭐ 87
 - [justxor/deepseek-local-guide-ru](https://github.com/justxor/deepseek-local-guide-ru) — 🐋 Полный гайд на русском: как установить и запустить DeepSeek локально (V4, R1) на ПК, Mac и сервере — Ollama, llama.cpp, LM Studio, vLLM, Open WebUI, API, RAG, агенты, fine-tuning, лучшие фишки · ⭐ 72
 - [juinwei7/Shiyin](https://github.com/juinwei7/Shiyin) — Free, open-source meeting notes app for Mac: records Zoom, Meet and Teams without a bot, transcribes on-device (whisper.cpp + Breeze ASR 25), identifies speakers, and writes timestamped notes with · ⭐ 62
 
 **📦 Tool releases**
-- [Open WebUI v0.12.2](https://github.com/open-webui/open-webui/releases/tag/v0.12.2) — Added 📑 **MinerU 4.x servers.** The MinerU document engine now works with self-hosted MinerU 4.x servers, where every document failed with a 404 because 4.x removed the old parsing interface; 3.x
-- [Open WebUI v0.12.1](https://github.com/open-webui/open-webui/releases/tag/v0.12.1) — Added 🧱 **External apps in channels.** Administrators can now turn on Apps in Admin Settings > General, or with "ENABLE_APPS", and connect external apps in the new Apps tab of Admin Settings by their
 - [Ollama v0.40.5](https://github.com/ollama/ollama/releases/tag/v0.40.5) — NVIDIA Nemotron 3.5 Super [NVIDIA Nemotron 3.5 Super]( is a vision-language model for coding, reasoning, tool use, and document understanding. It pairs a 120B-parameter hybrid Mamba-2/Transformer
 - [KoboldCpp v1.123.1](https://github.com/LostRuins/koboldcpp/releases/tag/v1.123.1) — **NEW: [Introducing koboldcpp.net, our new community website]( - KoboldCpp now has an official **community website**! This is a legitimate community site put together with the help of @Autumnlight02
 - [ComfyUI v0.41.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.41.0) — Add ImageSDRToHDR node. feat: Add a core route for the default workflow (CORE-340)
@@ -117,6 +115,8 @@ Essentials table above if you want the trusted beginner picks.*
 - [ComfyUI v0.42.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.42.0) — [Partner Nodes] feat(Krea): add Krea 3 Image node Update workflow templates to v0.11.85
 - [Jan v0.8.7](https://github.com/janhq/jan/releases/tag/v0.8.7) — Jan v0.8.7: shell switch, image size limit, and fixes A minor update to v0.8.6. Your data and settings carry over; one MCP clean-up runs on first launch (below).
 - [Ollama v0.40.7](https://github.com/ollama/ollama/releases/tag/v0.40.7) — [pplx-decider]( is a 27B decision model from Perplexity, fine-tuned from Qwen3.8-27B
+- [Ollama v0.40.8](https://github.com/ollama/ollama/releases/tag/v0.40.8) — Recursive Flint [Flint]( brings Recursive's coding model to Ollama. It is designed for the work coding agents do across a repository: understanding unfamiliar code, tracing bugs, implementing
+- [LM Studio 1.1.9](https://lmstudio.ai/changelog/bionic-v1.1.9)
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

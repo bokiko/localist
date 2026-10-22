@@ -70,7 +70,8 @@
     "justxor/deepseek-local-guide-ru",
     "xhtoken/spark-x2.6",
     "juinwei7/shiyin",
-    "csunx233/qwen3.8-27b-ninfer-5070tilaptop-kvmem-local-agent"
+    "csunx233/qwen3.8-27b-ninfer-5070tilaptop-kvmem-local-agent",
+    "sykyyds3739/laya-heart"
   ],
   "releases": {
     "ollama/ollama": [
@@ -105,7 +106,8 @@
       "v0.40.4",
       "v0.40.5",
       "v0.40.6",
-      "v0.40.7"
+      "v0.40.7",
+      "v0.40.8"
     ],
     "vllm-project/vllm": [
       "v0.25.1",
@@ -175,44 +177,9 @@
     ]
   },
   "changelog_pages": {
-    "https://lmstudio.ai/changelog": "1.1.8"
+    "https://lmstudio.ai/changelog": "1.1.9"
   },
   "history": [
-    {
-      "date": "2026-10-15",
-      "discoveries": [
-        {
-          "name": "Ryder-Sun/Meldwork",
-          "url": "https://github.com/Ryder-Sun/Meldwork",
-          "description": "Local-first AI agent workspace for multi-agent collaboration, agent orchestration, scoped permissions, evidence-aware runs, and human-in-the-loop decisions.",
-          "stars": 832,
-          "created_at": "2026-07-29T13:58:20Z"
-        },
-        {
-          "name": "1nikitas/NIKA_desktop",
-          "url": "https://github.com/1nikitas/NIKA_desktop",
-          "description": "Native AI assistant for macOS, built with SwiftUI and llama.cpp. Run local LLMs offline, work with PDFs, and create custom AI assistants. Optional NIKA cloud integration.",
-          "stars": 33,
-          "created_at": "2026-10-13T16:01:27Z"
-        }
-      ],
-      "releases": [
-        {
-          "tool": "Open WebUI",
-          "repo": "open-webui/open-webui",
-          "version": "v0.12.2",
-          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.2",
-          "notes": "Added \ud83d\udcd1 **MinerU 4.x servers.** The MinerU document engine now works with self-hosted MinerU 4.x servers, where every document failed with a 404 because 4.x removed the old parsing interface; 3.x"
-        },
-        {
-          "tool": "Open WebUI",
-          "repo": "open-webui/open-webui",
-          "version": "v0.12.1",
-          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.1",
-          "notes": "Added \ud83e\uddf1 **External apps in channels.** Administrators can now turn on Apps in Admin Settings > General, or with \"ENABLE_APPS\", and connect external apps in the new Apps tab of Admin Settings by their"
-        }
-      ]
-    },
     {
       "date": "2026-10-16",
       "discoveries": [
@@ -361,6 +328,33 @@
           "version": "v0.40.7",
           "url": "https://github.com/ollama/ollama/releases/tag/v0.40.7",
           "notes": "[pplx-decider]( is a 27B decision model from Perplexity, fine-tuned from Qwen3.8-27B"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "discoveries": [
+        {
+          "name": "sykyyds3739/laya-heart",
+          "url": "https://github.com/sykyyds3739/laya-heart",
+          "description": "Local-first couple-chat copilot: Laya reads the room, Gemma drafts, you press send.",
+          "stars": 130,
+          "created_at": "2026-10-18T03:31:38Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "Ollama",
+          "repo": "ollama/ollama",
+          "version": "v0.40.8",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.8",
+          "notes": "Recursive Flint [Flint]( brings Recursive's coding model to Ollama. It is designed for the work coding agents do across a repository: understanding unfamiliar code, tracing bugs, implementing"
+        },
+        {
+          "tool": "LM Studio",
+          "version": "1.1.9",
+          "url": "https://lmstudio.ai/changelog/bionic-v1.1.9",
+          "notes": ""
         }
       ]
     }

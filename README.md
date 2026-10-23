@@ -95,19 +95,16 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-10-22*
+*Updated 2026-10-23*
 
 **🆕 New & active projects**
 - [XHToken/Spark-X2.6](https://github.com/XHToken/Spark-X2.6) — Spark-x2.5 open model series. Pushing the Limits of Agentic Capabilities in On-Device Models · ⭐ 821
 - [sykyyds3739/laya-heart](https://github.com/sykyyds3739/laya-heart) — Local-first couple-chat copilot: Laya reads the room, Gemma drafts, you press send. · ⭐ 130
-- [openbin-ai/binny](https://github.com/openbin-ai/binny) — BINNY: an open source agent harness for reverse engineering. Plug in any model, or a local one. · ⭐ 87
+- [JMS1717/ming-voice](https://github.com/JMS1717/ming-voice) — Low-latency local speech-to-speech voice assistant with Ming-3.0-audio-tiny on AMD Radeon GPUs (ROCm on WSL2) · ⭐ 116
 - [justxor/deepseek-local-guide-ru](https://github.com/justxor/deepseek-local-guide-ru) — 🐋 Полный гайд на русском: как установить и запустить DeepSeek локально (V4, R1) на ПК, Mac и сервере — Ollama, llama.cpp, LM Studio, vLLM, Open WebUI, API, RAG, агенты, fine-tuning, лучшие фишки · ⭐ 72
 - [juinwei7/Shiyin](https://github.com/juinwei7/Shiyin) — Free, open-source meeting notes app for Mac: records Zoom, Meet and Teams without a bot, transcribes on-device (whisper.cpp + Breeze ASR 25), identifies speakers, and writes timestamped notes with · ⭐ 62
 
 **📦 Tool releases**
-- [Ollama v0.40.5](https://github.com/ollama/ollama/releases/tag/v0.40.5) — NVIDIA Nemotron 3.5 Super [NVIDIA Nemotron 3.5 Super]( is a vision-language model for coding, reasoning, tool use, and document understanding. It pairs a 120B-parameter hybrid Mamba-2/Transformer
-- [KoboldCpp v1.123.1](https://github.com/LostRuins/koboldcpp/releases/tag/v1.123.1) — **NEW: [Introducing koboldcpp.net, our new community website]( - KoboldCpp now has an official **community website**! This is a legitimate community site put together with the help of @Autumnlight02
-- [ComfyUI v0.41.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.41.0) — Add ImageSDRToHDR node. feat: Add a core route for the default workflow (CORE-340)
 - [Open WebUI v0.12.3](https://github.com/open-webui/open-webui/releases/tag/v0.12.3) — Added 🔐 **End-to-end encrypted chats.** Direct messages and private group channels can now hold a temporary end-to-end encrypted chat: a member picks Encrypted Chat in the channel menu, the other
 - [Ollama v0.40.6](https://github.com/ollama/ollama/releases/tag/v0.40.6) — win: prevent orphaned runners gguf: add the q2_0 tensor and file types
 - [vLLM v0.32.0](https://github.com/vllm-project/vllm/releases/tag/v0.32.0) — This release features 814 commits from 363 contributors (121 new)! **Structured decisions and generic parsers**: the new `POST /v1/systemone` endpoint answers `choice`, `noul` and `score` questions
@@ -117,6 +114,7 @@ Essentials table above if you want the trusted beginner picks.*
 - [Ollama v0.40.7](https://github.com/ollama/ollama/releases/tag/v0.40.7) — [pplx-decider]( is a 27B decision model from Perplexity, fine-tuned from Qwen3.8-27B
 - [Ollama v0.40.8](https://github.com/ollama/ollama/releases/tag/v0.40.8) — Recursive Flint [Flint]( brings Recursive's coding model to Ollama. It is designed for the work coding agents do across a repository: understanding unfamiliar code, tracing bugs, implementing
 - [LM Studio 1.1.9](https://lmstudio.ai/changelog/bionic-v1.1.9)
+- [Ollama v0.40.9](https://github.com/ollama/ollama/releases/tag/v0.40.9) — Speech Ollama can now generate [speech]( with Phonon on Apple Silicon. `ollama run` plays text or a chat model's reply aloud as the audio is generated, and apps can stream audio through the
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

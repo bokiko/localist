@@ -71,7 +71,10 @@
     "xhtoken/spark-x2.6",
     "juinwei7/shiyin",
     "csunx233/qwen3.8-27b-ninfer-5070tilaptop-kvmem-local-agent",
-    "sykyyds3739/laya-heart"
+    "sykyyds3739/laya-heart",
+    "jms1717/ming-voice",
+    "thelastoxygen/mafdet",
+    "ahtx/kindi"
   ],
   "releases": {
     "ollama/ollama": [
@@ -107,7 +110,8 @@
       "v0.40.5",
       "v0.40.6",
       "v0.40.7",
-      "v0.40.8"
+      "v0.40.8",
+      "v0.40.9"
     ],
     "vllm-project/vllm": [
       "v0.25.1",
@@ -180,48 +184,6 @@
     "https://lmstudio.ai/changelog": "1.1.9"
   },
   "history": [
-    {
-      "date": "2026-10-16",
-      "discoveries": [
-        {
-          "name": "openbin-ai/binny",
-          "url": "https://github.com/openbin-ai/binny",
-          "description": "BINNY: an open source agent harness for reverse engineering. Plug in any model, or a local one.",
-          "stars": 87,
-          "created_at": "2026-10-10T05:03:07Z"
-        },
-        {
-          "name": "anisayari/sparky",
-          "url": "https://github.com/anisayari/sparky",
-          "description": "\ud83d\udd12 Your private AI assistant, 100% local on Windows: chat, vision, documents (RAG), web search, images, videos with sound, voice, code projects, MCP tools \u2014 one-line install, models picked for your PC.",
-          "stars": 39,
-          "created_at": "2026-10-13T19:20:36Z"
-        }
-      ],
-      "releases": [
-        {
-          "tool": "Ollama",
-          "repo": "ollama/ollama",
-          "version": "v0.40.5",
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.5",
-          "notes": "NVIDIA Nemotron 3.5 Super [NVIDIA Nemotron 3.5 Super]( is a vision-language model for coding, reasoning, tool use, and document understanding. It pairs a 120B-parameter hybrid Mamba-2/Transformer"
-        },
-        {
-          "tool": "KoboldCpp",
-          "repo": "LostRuins/koboldcpp",
-          "version": "v1.123.1",
-          "url": "https://github.com/LostRuins/koboldcpp/releases/tag/v1.123.1",
-          "notes": "**NEW: [Introducing koboldcpp.net, our new community website]( - KoboldCpp now has an official **community website**! This is a legitimate community site put together with the help of @Autumnlight02"
-        },
-        {
-          "tool": "ComfyUI",
-          "repo": "Comfy-Org/ComfyUI",
-          "version": "v0.41.0",
-          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.41.0",
-          "notes": "Add ImageSDRToHDR node. feat: Add a core route for the default workflow (CORE-340)"
-        }
-      ]
-    },
     {
       "date": "2026-10-17",
       "discoveries": [],
@@ -355,6 +317,41 @@
           "version": "1.1.9",
           "url": "https://lmstudio.ai/changelog/bionic-v1.1.9",
           "notes": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "discoveries": [
+        {
+          "name": "JMS1717/ming-voice",
+          "url": "https://github.com/JMS1717/ming-voice",
+          "description": "Low-latency local speech-to-speech voice assistant with Ming-3.0-audio-tiny on AMD Radeon GPUs (ROCm on WSL2)",
+          "stars": 116,
+          "created_at": "2026-10-21T01:08:35Z"
+        },
+        {
+          "name": "TheLastOxygen/mafdet",
+          "url": "https://github.com/TheLastOxygen/mafdet",
+          "description": "You type. It already knows. Local LLMs that read and think while you type.",
+          "stars": 34,
+          "created_at": "2026-10-21T08:37:56Z"
+        },
+        {
+          "name": "ahtx/kindi",
+          "url": "https://github.com/ahtx/kindi",
+          "description": "A custom LLM inference engine for low-cost NVIDIA GPUs: Quadro K420 and K1200, two K1200s joined into one 8 GB card, GTX 1080 and RTX 3080. Runs Bonsai 2B, 4B, 9B and 27B models with an",
+          "stars": 34,
+          "created_at": "2026-10-20T00:25:56Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "Ollama",
+          "repo": "ollama/ollama",
+          "version": "v0.40.9",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.9",
+          "notes": "Speech Ollama can now generate [speech]( with Phonon on Apple Silicon. `ollama run` plays text or a chat model's reply aloud as the audio is generated, and apps can stream audio through the"
         }
       ]
     }

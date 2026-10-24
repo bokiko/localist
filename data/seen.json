@@ -111,7 +111,8 @@
       "v0.40.6",
       "v0.40.7",
       "v0.40.8",
-      "v0.40.9"
+      "v0.40.9",
+      "v0.40.10"
     ],
     "vllm-project/vllm": [
       "v0.25.1",
@@ -184,19 +185,6 @@
     "https://lmstudio.ai/changelog": "1.1.9"
   },
   "history": [
-    {
-      "date": "2026-10-17",
-      "discoveries": [],
-      "releases": [
-        {
-          "tool": "Open WebUI",
-          "repo": "open-webui/open-webui",
-          "version": "v0.12.3",
-          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.3",
-          "notes": "Added \ud83d\udd10 **End-to-end encrypted chats.** Direct messages and private group channels can now hold a temporary end-to-end encrypted chat: a member picks Encrypted Chat in the channel menu, the other"
-        }
-      ]
-    },
     {
       "date": "2026-10-18",
       "discoveries": [
@@ -352,6 +340,19 @@
           "version": "v0.40.9",
           "url": "https://github.com/ollama/ollama/releases/tag/v0.40.9",
           "notes": "Speech Ollama can now generate [speech]( with Phonon on Apple Silicon. `ollama run` plays text or a chat model's reply aloud as the audio is generated, and apps can stream audio through the"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "discoveries": [],
+      "releases": [
+        {
+          "tool": "Ollama",
+          "repo": "ollama/ollama",
+          "version": "v0.40.10",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.10",
+          "notes": "NVIDIA Nemotron 3.5 Bolt E4B [Nemotron 3.5 Bolt E4B]( is NVIDIA\u2019s smaller, Gemma 4-based vision-language model for fast local conversations, image understanding, and tool use. It supports a"
         }
       ]
     }

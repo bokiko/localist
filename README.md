@@ -95,7 +95,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-10-23*
+*Updated 2026-10-24*
 
 **🆕 New & active projects**
 - [XHToken/Spark-X2.6](https://github.com/XHToken/Spark-X2.6) — Spark-x2.5 open model series. Pushing the Limits of Agentic Capabilities in On-Device Models · ⭐ 821
@@ -105,7 +105,6 @@ Essentials table above if you want the trusted beginner picks.*
 - [juinwei7/Shiyin](https://github.com/juinwei7/Shiyin) — Free, open-source meeting notes app for Mac: records Zoom, Meet and Teams without a bot, transcribes on-device (whisper.cpp + Breeze ASR 25), identifies speakers, and writes timestamped notes with · ⭐ 62
 
 **📦 Tool releases**
-- [Open WebUI v0.12.3](https://github.com/open-webui/open-webui/releases/tag/v0.12.3) — Added 🔐 **End-to-end encrypted chats.** Direct messages and private group channels can now hold a temporary end-to-end encrypted chat: a member picks Encrypted Chat in the channel menu, the other
 - [Ollama v0.40.6](https://github.com/ollama/ollama/releases/tag/v0.40.6) — win: prevent orphaned runners gguf: add the q2_0 tensor and file types
 - [vLLM v0.32.0](https://github.com/vllm-project/vllm/releases/tag/v0.32.0) — This release features 814 commits from 363 contributors (121 new)! **Structured decisions and generic parsers**: the new `POST /v1/systemone` endpoint answers `choice`, `noul` and `score` questions
 - [ComfyUI v0.42.1](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.42.1) — Fix some crashing issues a few users experienced when running the MOSS image template workflow.
@@ -115,6 +114,7 @@ Essentials table above if you want the trusted beginner picks.*
 - [Ollama v0.40.8](https://github.com/ollama/ollama/releases/tag/v0.40.8) — Recursive Flint [Flint]( brings Recursive's coding model to Ollama. It is designed for the work coding agents do across a repository: understanding unfamiliar code, tracing bugs, implementing
 - [LM Studio 1.1.9](https://lmstudio.ai/changelog/bionic-v1.1.9)
 - [Ollama v0.40.9](https://github.com/ollama/ollama/releases/tag/v0.40.9) — Speech Ollama can now generate [speech]( with Phonon on Apple Silicon. `ollama run` plays text or a chat model's reply aloud as the audio is generated, and apps can stream audio through the
+- [Ollama v0.40.10](https://github.com/ollama/ollama/releases/tag/v0.40.10) — NVIDIA Nemotron 3.5 Bolt E4B [Nemotron 3.5 Bolt E4B]( is NVIDIA’s smaller, Gemma 4-based vision-language model for fast local conversations, image understanding, and tool use. It supports a
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

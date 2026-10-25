@@ -95,18 +95,16 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-10-24*
+*Updated 2026-10-25*
 
 **🆕 New & active projects**
 - [XHToken/Spark-X2.6](https://github.com/XHToken/Spark-X2.6) — Spark-x2.5 open model series. Pushing the Limits of Agentic Capabilities in On-Device Models · ⭐ 821
+- [midudev/runonweb.ai](https://github.com/midudev/runonweb.ai) — SDK to use local models on web easy · ⭐ 596
 - [sykyyds3739/laya-heart](https://github.com/sykyyds3739/laya-heart) — Local-first couple-chat copilot: Laya reads the room, Gemma drafts, you press send. · ⭐ 130
 - [JMS1717/ming-voice](https://github.com/JMS1717/ming-voice) — Low-latency local speech-to-speech voice assistant with Ming-3.0-audio-tiny on AMD Radeon GPUs (ROCm on WSL2) · ⭐ 116
-- [justxor/deepseek-local-guide-ru](https://github.com/justxor/deepseek-local-guide-ru) — 🐋 Полный гайд на русском: как установить и запустить DeepSeek локально (V4, R1) на ПК, Mac и сервере — Ollama, llama.cpp, LM Studio, vLLM, Open WebUI, API, RAG, агенты, fine-tuning, лучшие фишки · ⭐ 72
 - [juinwei7/Shiyin](https://github.com/juinwei7/Shiyin) — Free, open-source meeting notes app for Mac: records Zoom, Meet and Teams without a bot, transcribes on-device (whisper.cpp + Breeze ASR 25), identifies speakers, and writes timestamped notes with · ⭐ 62
 
 **📦 Tool releases**
-- [Ollama v0.40.6](https://github.com/ollama/ollama/releases/tag/v0.40.6) — win: prevent orphaned runners gguf: add the q2_0 tensor and file types
-- [vLLM v0.32.0](https://github.com/vllm-project/vllm/releases/tag/v0.32.0) — This release features 814 commits from 363 contributors (121 new)! **Structured decisions and generic parsers**: the new `POST /v1/systemone` endpoint answers `choice`, `noul` and `score` questions
 - [ComfyUI v0.42.1](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.42.1) — Fix some crashing issues a few users experienced when running the MOSS image template workflow.
 - [ComfyUI v0.42.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.42.0) — [Partner Nodes] feat(Krea): add Krea 3 Image node Update workflow templates to v0.11.85
 - [Jan v0.8.7](https://github.com/janhq/jan/releases/tag/v0.8.7) — Jan v0.8.7: shell switch, image size limit, and fixes A minor update to v0.8.6. Your data and settings carry over; one MCP clean-up runs on first launch (below).
@@ -115,6 +113,8 @@ Essentials table above if you want the trusted beginner picks.*
 - [LM Studio 1.1.9](https://lmstudio.ai/changelog/bionic-v1.1.9)
 - [Ollama v0.40.9](https://github.com/ollama/ollama/releases/tag/v0.40.9) — Speech Ollama can now generate [speech]( with Phonon on Apple Silicon. `ollama run` plays text or a chat model's reply aloud as the audio is generated, and apps can stream audio through the
 - [Ollama v0.40.10](https://github.com/ollama/ollama/releases/tag/v0.40.10) — NVIDIA Nemotron 3.5 Bolt E4B [Nemotron 3.5 Bolt E4B]( is NVIDIA’s smaller, Gemma 4-based vision-language model for fast local conversations, image understanding, and tool use. It supports a
+- [Ollama v0.40.11](https://github.com/ollama/ollama/releases/tag/v0.40.11) — Speech Ollama can now generate [speech]( on macOS. `ollama run` plays text or a chat model's reply aloud as the audio is generated, and apps can stream audio through the OpenAI-compatible
+- [Open WebUI v0.12.4](https://github.com/open-webui/open-webui/releases/tag/v0.12.4) — Added 🎯 **Load selected skills on demand.** Administrators can turn on "Load selected skills on demand" under Admin Settings > General or set "ENABLE_SKILL_LAZY_LOADING", so skills selected in the
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

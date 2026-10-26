@@ -95,7 +95,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-10-25*
+*Updated 2026-10-26*
 
 **🆕 New & active projects**
 - [XHToken/Spark-X2.6](https://github.com/XHToken/Spark-X2.6) — Spark-x2.5 open model series. Pushing the Limits of Agentic Capabilities in On-Device Models · ⭐ 821
@@ -105,8 +105,6 @@ Essentials table above if you want the trusted beginner picks.*
 - [juinwei7/Shiyin](https://github.com/juinwei7/Shiyin) — Free, open-source meeting notes app for Mac: records Zoom, Meet and Teams without a bot, transcribes on-device (whisper.cpp + Breeze ASR 25), identifies speakers, and writes timestamped notes with · ⭐ 62
 
 **📦 Tool releases**
-- [ComfyUI v0.42.1](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.42.1) — Fix some crashing issues a few users experienced when running the MOSS image template workflow.
-- [ComfyUI v0.42.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.42.0) — [Partner Nodes] feat(Krea): add Krea 3 Image node Update workflow templates to v0.11.85
 - [Jan v0.8.7](https://github.com/janhq/jan/releases/tag/v0.8.7) — Jan v0.8.7: shell switch, image size limit, and fixes A minor update to v0.8.6. Your data and settings carry over; one MCP clean-up runs on first launch (below).
 - [Ollama v0.40.7](https://github.com/ollama/ollama/releases/tag/v0.40.7) — [pplx-decider]( is a 27B decision model from Perplexity, fine-tuned from Qwen3.8-27B
 - [Ollama v0.40.8](https://github.com/ollama/ollama/releases/tag/v0.40.8) — Recursive Flint [Flint]( brings Recursive's coding model to Ollama. It is designed for the work coding agents do across a repository: understanding unfamiliar code, tracing bugs, implementing

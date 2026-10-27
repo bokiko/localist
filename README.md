@@ -95,17 +95,16 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-10-26*
+*Updated 2026-10-27*
 
 **🆕 New & active projects**
 - [XHToken/Spark-X2.6](https://github.com/XHToken/Spark-X2.6) — Spark-x2.5 open model series. Pushing the Limits of Agentic Capabilities in On-Device Models · ⭐ 821
 - [midudev/runonweb.ai](https://github.com/midudev/runonweb.ai) — SDK to use local models on web easy · ⭐ 596
+- [AienTech/dossier](https://github.com/AienTech/dossier) — A self-hosted job search app that writes tailored resumes and cover letters from your profile. · ⭐ 533
 - [sykyyds3739/laya-heart](https://github.com/sykyyds3739/laya-heart) — Local-first couple-chat copilot: Laya reads the room, Gemma drafts, you press send. · ⭐ 130
 - [JMS1717/ming-voice](https://github.com/JMS1717/ming-voice) — Low-latency local speech-to-speech voice assistant with Ming-3.0-audio-tiny on AMD Radeon GPUs (ROCm on WSL2) · ⭐ 116
-- [juinwei7/Shiyin](https://github.com/juinwei7/Shiyin) — Free, open-source meeting notes app for Mac: records Zoom, Meet and Teams without a bot, transcribes on-device (whisper.cpp + Breeze ASR 25), identifies speakers, and writes timestamped notes with · ⭐ 62
 
 **📦 Tool releases**
-- [Jan v0.8.7](https://github.com/janhq/jan/releases/tag/v0.8.7) — Jan v0.8.7: shell switch, image size limit, and fixes A minor update to v0.8.6. Your data and settings carry over; one MCP clean-up runs on first launch (below).
 - [Ollama v0.40.7](https://github.com/ollama/ollama/releases/tag/v0.40.7) — [pplx-decider]( is a 27B decision model from Perplexity, fine-tuned from Qwen3.8-27B
 - [Ollama v0.40.8](https://github.com/ollama/ollama/releases/tag/v0.40.8) — Recursive Flint [Flint]( brings Recursive's coding model to Ollama. It is designed for the work coding agents do across a repository: understanding unfamiliar code, tracing bugs, implementing
 - [LM Studio 1.1.9](https://lmstudio.ai/changelog/bionic-v1.1.9)
@@ -113,6 +112,7 @@ Essentials table above if you want the trusted beginner picks.*
 - [Ollama v0.40.10](https://github.com/ollama/ollama/releases/tag/v0.40.10) — NVIDIA Nemotron 3.5 Bolt E4B [Nemotron 3.5 Bolt E4B]( is NVIDIA’s smaller, Gemma 4-based vision-language model for fast local conversations, image understanding, and tool use. It supports a
 - [Ollama v0.40.11](https://github.com/ollama/ollama/releases/tag/v0.40.11) — Speech Ollama can now generate [speech]( on macOS. `ollama run` plays text or a chat model's reply aloud as the audio is generated, and apps can stream audio through the OpenAI-compatible
 - [Open WebUI v0.12.4](https://github.com/open-webui/open-webui/releases/tag/v0.12.4) — Added 🎯 **Load selected skills on demand.** Administrators can turn on "Load selected skills on demand" under Admin Settings > General or set "ENABLE_SKILL_LAZY_LOADING", so skills selected in the
+- [ComfyUI v0.43.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.43.0) — model_prefetch: syncrhonize all graph cleanups Add rope scaling support to MOSS-image
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

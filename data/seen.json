@@ -78,7 +78,8 @@
     "midudev/runonweb.ai",
     "multix0/ip-nas",
     "zeekk0/opensakura",
-    "aientech/dossier"
+    "aientech/dossier",
+    "peonist-ai/halogen-flash-server"
   ],
   "releases": {
     "ollama/ollama": [
@@ -117,7 +118,8 @@
       "v0.40.8",
       "v0.40.9",
       "v0.40.10",
-      "v0.40.11"
+      "v0.40.11",
+      "v0.40.12"
     ],
     "vllm-project/vllm": [
       "v0.25.1",
@@ -166,7 +168,8 @@
       "v0.8.4",
       "v0.8.5",
       "v0.8.6",
-      "v0.8.7"
+      "v0.8.7",
+      "v0.8.8"
     ],
     "open-webui/open-webui": [
       "v0.11.0",
@@ -192,41 +195,6 @@
     "https://lmstudio.ai/changelog": "1.1.9"
   },
   "history": [
-    {
-      "date": "2026-10-21",
-      "discoveries": [
-        {
-          "name": "XHToken/Spark-X2.6",
-          "url": "https://github.com/XHToken/Spark-X2.6",
-          "description": "Spark-x2.5 open model series. Pushing the Limits of Agentic Capabilities in On-Device Models",
-          "stars": 821,
-          "created_at": "2026-08-24T06:36:40Z"
-        },
-        {
-          "name": "juinwei7/Shiyin",
-          "url": "https://github.com/juinwei7/Shiyin",
-          "description": "Free, open-source meeting notes app for Mac: records Zoom, Meet and Teams without a bot, transcribes on-device (whisper.cpp + Breeze ASR 25), identifies speakers, and writes timestamped notes with",
-          "stars": 62,
-          "created_at": "2026-10-15T14:33:40Z"
-        },
-        {
-          "name": "CSUNX233/qwen3.8-27b-ninfer-5070tilaptop-kvmem-local-agent",
-          "url": "https://github.com/CSUNX233/qwen3.8-27b-ninfer-5070tilaptop-kvmem-local-agent",
-          "description": "RTX 5070 Ti Laptop 12GB \u8dd1 Qwen3.8-27B\uff1aNInfer + KVMem\u3001256K \u903b\u8f91\u4e0a\u4e0b\u6587\u3001RAM KV\u3001MTP\u3001\u5feb\u901f\u7f13\u5b58\u7eed\u63a5\u4e0e dsh \u672c\u5730 Agent / \u641c\u7d22 / \u6d4f\u89c8\u5668\u3002\u542b\u6e90\u7801\u3001Windows \u90e8\u7f72\u53ca\u5b9e\u6d4b\u3002",
-          "stars": 33,
-          "created_at": "2026-10-15T07:46:20Z"
-        }
-      ],
-      "releases": [
-        {
-          "tool": "Ollama",
-          "repo": "ollama/ollama",
-          "version": "v0.40.7",
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.7",
-          "notes": "[pplx-decider]( is a 27B decision model from Perplexity, fine-tuned from Qwen3.8-27B"
-        }
-      ]
-    },
     {
       "date": "2026-10-22",
       "discoveries": [
@@ -368,6 +336,34 @@
           "version": "v0.43.0",
           "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.43.0",
           "notes": "model_prefetch: syncrhonize all graph cleanups Add rope scaling support to MOSS-image"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "discoveries": [
+        {
+          "name": "peonist-ai/halogen-flash-server",
+          "url": "https://github.com/peonist-ai/halogen-flash-server",
+          "description": "Local inference that behaves like a frontier API: Qwen3.8-Flash-Next on AMD Strix Halo plus small NPU models, over the OpenAI and Anthropic APIs on one port.",
+          "stars": 1130,
+          "created_at": "2026-08-26T12:41:30Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "Ollama",
+          "repo": "ollama/ollama",
+          "version": "v0.40.12",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.12",
+          "notes": "Liquid AI LFM3 [LFM3]( is Liquid AI's new family of small models built for local agents, tool calling, and structured output, on Liquid's new tri-hybrid architecture. The family includes:"
+        },
+        {
+          "tool": "Jan",
+          "repo": "janhq/jan",
+          "version": "v0.8.8",
+          "url": "https://github.com/janhq/jan/releases/tag/v0.8.8",
+          "notes": "Jan v0.8.8: security fixes, llama.cpp 0.7.0, and Trusted Hosts for the local API A security update to v0.8.7. We recommend updating. Your data and settings carry over; a few behaviours change, listed"
         }
       ]
     }

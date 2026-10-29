@@ -95,18 +95,16 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-10-28*
+*Updated 2026-10-29*
 
 **🆕 New & active projects**
 - [peonist-ai/halogen-flash-server](https://github.com/peonist-ai/halogen-flash-server) — Local inference that behaves like a frontier API: Qwen3.8-Flash-Next on AMD Strix Halo plus small NPU models, over the OpenAI and Anthropic APIs on one port. · ⭐ 1130
 - [midudev/runonweb.ai](https://github.com/midudev/runonweb.ai) — SDK to use local models on web easy · ⭐ 596
 - [AienTech/dossier](https://github.com/AienTech/dossier) — A self-hosted job search app that writes tailored resumes and cover letters from your profile. · ⭐ 533
-- [sykyyds3739/laya-heart](https://github.com/sykyyds3739/laya-heart) — Local-first couple-chat copilot: Laya reads the room, Gemma drafts, you press send. · ⭐ 130
 - [JMS1717/ming-voice](https://github.com/JMS1717/ming-voice) — Low-latency local speech-to-speech voice assistant with Ming-3.0-audio-tiny on AMD Radeon GPUs (ROCm on WSL2) · ⭐ 116
+- [zeekk0/OpenSakura](https://github.com/zeekk0/OpenSakura) — OpenSakura: MekaHime's first AI companion, open source. 3D VRoid avatar, real-time voice, emotion state, OpenRouter or Ollama brain. · ⭐ 48
 
 **📦 Tool releases**
-- [Ollama v0.40.8](https://github.com/ollama/ollama/releases/tag/v0.40.8) — Recursive Flint [Flint]( brings Recursive's coding model to Ollama. It is designed for the work coding agents do across a repository: understanding unfamiliar code, tracing bugs, implementing
-- [LM Studio 1.1.9](https://lmstudio.ai/changelog/bionic-v1.1.9)
 - [Ollama v0.40.9](https://github.com/ollama/ollama/releases/tag/v0.40.9) — Speech Ollama can now generate [speech]( with Phonon on Apple Silicon. `ollama run` plays text or a chat model's reply aloud as the audio is generated, and apps can stream audio through the
 - [Ollama v0.40.10](https://github.com/ollama/ollama/releases/tag/v0.40.10) — NVIDIA Nemotron 3.5 Bolt E4B [Nemotron 3.5 Bolt E4B]( is NVIDIA’s smaller, Gemma 4-based vision-language model for fast local conversations, image understanding, and tool use. It supports a
 - [Ollama v0.40.11](https://github.com/ollama/ollama/releases/tag/v0.40.11) — Speech Ollama can now generate [speech]( on macOS. `ollama run` plays text or a chat model's reply aloud as the audio is generated, and apps can stream audio through the OpenAI-compatible
@@ -114,6 +112,8 @@ Essentials table above if you want the trusted beginner picks.*
 - [ComfyUI v0.43.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.43.0) — model_prefetch: syncrhonize all graph cleanups Add rope scaling support to MOSS-image
 - [Ollama v0.40.12](https://github.com/ollama/ollama/releases/tag/v0.40.12) — Liquid AI LFM3 [LFM3]( is Liquid AI's new family of small models built for local agents, tool calling, and structured output, on Liquid's new tri-hybrid architecture. The family includes:
 - [Jan v0.8.8](https://github.com/janhq/jan/releases/tag/v0.8.8) — Jan v0.8.8: security fixes, llama.cpp 0.7.0, and Trusted Hosts for the local API A security update to v0.8.7. We recommend updating. Your data and settings carry over; a few behaviours change, listed
+- [Ollama v0.40.13](https://github.com/ollama/ollama/releases/tag/v0.40.13) — LFM3 on Linux and Windows Liquid AI's [LFM3]( models, including text-to-speech in [lfm3-audio]( and [lfm3-omni]( now run on Linux and Windows as well as Apple silicon.
+- [Open WebUI v0.12.5](https://github.com/open-webui/open-webui/releases/tag/v0.12.5) — Added 🧭 **Analytics session explorer.** Administrators can now open a Sessions tab in Admin Analytics that lists each chat with its tokens, responses, errors and time span, filters them by search,
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

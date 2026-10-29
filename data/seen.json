@@ -79,7 +79,9 @@
     "multix0/ip-nas",
     "zeekk0/opensakura",
     "aientech/dossier",
-    "peonist-ai/halogen-flash-server"
+    "peonist-ai/halogen-flash-server",
+    "em4nu3i69dll/service-status-api",
+    "kalenhwei/paperduet"
   ],
   "releases": {
     "ollama/ollama": [
@@ -119,7 +121,8 @@
       "v0.40.9",
       "v0.40.10",
       "v0.40.11",
-      "v0.40.12"
+      "v0.40.12",
+      "v0.40.13"
     ],
     "vllm-project/vllm": [
       "v0.25.1",
@@ -181,7 +184,8 @@
       "v0.12.2",
       "v0.12.1",
       "v0.12.3",
-      "v0.12.4"
+      "v0.12.4",
+      "v0.12.5"
     ],
     "ggml-org/llama.cpp": [
       "v0.2.0",
@@ -195,33 +199,6 @@
     "https://lmstudio.ai/changelog": "1.1.9"
   },
   "history": [
-    {
-      "date": "2026-10-22",
-      "discoveries": [
-        {
-          "name": "sykyyds3739/laya-heart",
-          "url": "https://github.com/sykyyds3739/laya-heart",
-          "description": "Local-first couple-chat copilot: Laya reads the room, Gemma drafts, you press send.",
-          "stars": 130,
-          "created_at": "2026-10-18T03:31:38Z"
-        }
-      ],
-      "releases": [
-        {
-          "tool": "Ollama",
-          "repo": "ollama/ollama",
-          "version": "v0.40.8",
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.8",
-          "notes": "Recursive Flint [Flint]( brings Recursive's coding model to Ollama. It is designed for the work coding agents do across a repository: understanding unfamiliar code, tracing bugs, implementing"
-        },
-        {
-          "tool": "LM Studio",
-          "version": "1.1.9",
-          "url": "https://lmstudio.ai/changelog/bionic-v1.1.9",
-          "notes": ""
-        }
-      ]
-    },
     {
       "date": "2026-10-23",
       "discoveries": [
@@ -364,6 +341,41 @@
           "version": "v0.8.8",
           "url": "https://github.com/janhq/jan/releases/tag/v0.8.8",
           "notes": "Jan v0.8.8: security fixes, llama.cpp 0.7.0, and Trusted Hosts for the local API A security update to v0.8.7. We recommend updating. Your data and settings carry over; a few behaviours change, listed"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "discoveries": [
+        {
+          "name": "em4nu3i69dll/service-status-api",
+          "url": "https://github.com/em4nu3i69dll/service-status-api",
+          "description": "Telemetria cifrada con TypeScript, agente Go, analisis Python y Ollama, Cloudflare Tunnel y lectura mTLS.",
+          "stars": 33,
+          "created_at": "2026-10-28T11:55:17Z"
+        },
+        {
+          "name": "KalenHwei/PaperDuet",
+          "url": "https://github.com/KalenHwei/PaperDuet",
+          "description": "Mirror your translation! A lightweight AI paper translator for Mac and Windows. The original PDF and its translation sit side by side, page for page, with formulas, figures and tables in place.",
+          "stars": 32,
+          "created_at": "2026-10-23T05:00:27Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "Ollama",
+          "repo": "ollama/ollama",
+          "version": "v0.40.13",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.13",
+          "notes": "LFM3 on Linux and Windows Liquid AI's [LFM3]( models, including text-to-speech in [lfm3-audio]( and [lfm3-omni]( now run on Linux and Windows as well as Apple silicon."
+        },
+        {
+          "tool": "Open WebUI",
+          "repo": "open-webui/open-webui",
+          "version": "v0.12.5",
+          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.5",
+          "notes": "Added \ud83e\udded **Analytics session explorer.** Administrators can now open a Sessions tab in Admin Analytics that lists each chat with its tokens, responses, errors and time span, filters them by search,"
         }
       ]
     }

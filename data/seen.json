@@ -81,7 +81,11 @@
     "aientech/dossier",
     "peonist-ai/halogen-flash-server",
     "em4nu3i69dll/service-status-api",
-    "kalenhwei/paperduet"
+    "kalenhwei/paperduet",
+    "nomily-ai/nomily-app",
+    "lordcaster/resocket-wow-lk",
+    "wavealfield/local-ai-resocket-telegram",
+    "phantomduke375846-alt/clinic_rag_rpocket_bot"
   ],
   "releases": {
     "ollama/ollama": [
@@ -196,44 +200,9 @@
     ]
   },
   "changelog_pages": {
-    "https://lmstudio.ai/changelog": "1.1.9"
+    "https://lmstudio.ai/changelog": "1.1.10"
   },
   "history": [
-    {
-      "date": "2026-10-23",
-      "discoveries": [
-        {
-          "name": "JMS1717/ming-voice",
-          "url": "https://github.com/JMS1717/ming-voice",
-          "description": "Low-latency local speech-to-speech voice assistant with Ming-3.0-audio-tiny on AMD Radeon GPUs (ROCm on WSL2)",
-          "stars": 116,
-          "created_at": "2026-10-21T01:08:35Z"
-        },
-        {
-          "name": "TheLastOxygen/mafdet",
-          "url": "https://github.com/TheLastOxygen/mafdet",
-          "description": "You type. It already knows. Local LLMs that read and think while you type.",
-          "stars": 34,
-          "created_at": "2026-10-21T08:37:56Z"
-        },
-        {
-          "name": "ahtx/kindi",
-          "url": "https://github.com/ahtx/kindi",
-          "description": "A custom LLM inference engine for low-cost NVIDIA GPUs: Quadro K420 and K1200, two K1200s joined into one 8 GB card, GTX 1080 and RTX 3080. Runs Bonsai 2B, 4B, 9B and 27B models with an",
-          "stars": 34,
-          "created_at": "2026-10-20T00:25:56Z"
-        }
-      ],
-      "releases": [
-        {
-          "tool": "Ollama",
-          "repo": "ollama/ollama",
-          "version": "v0.40.9",
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.9",
-          "notes": "Speech Ollama can now generate [speech]( with Phonon on Apple Silicon. `ollama run` plays text or a chat model's reply aloud as the audio is generated, and apps can stream audio through the"
-        }
-      ]
-    },
     {
       "date": "2026-10-24",
       "discoveries": [],
@@ -376,6 +345,47 @@
           "version": "v0.12.5",
           "url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.5",
           "notes": "Added \ud83e\udded **Analytics session explorer.** Administrators can now open a Sessions tab in Admin Analytics that lists each chat with its tokens, responses, errors and time span, filters them by search,"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "discoveries": [
+        {
+          "name": "Nomily-Ai/nomily-app",
+          "url": "https://github.com/Nomily-Ai/nomily-app",
+          "description": "BYOK voice recording companion with ASR transcription, speaker diarization, AI summaries, and local ASR endpoint support.",
+          "stars": 1018,
+          "created_at": "2026-08-05T03:19:40Z"
+        },
+        {
+          "name": "Lordcaster/resocket-wow-lk",
+          "url": "https://github.com/Lordcaster/resocket-wow-lk",
+          "description": "Local home WoW WotLK 3.3.5a server based on AzerothCore Playerbot, packaged with Docker Compose. Includes playerbots, auction bot, transmogrification, and pinned gameplay modules for a reproducible",
+          "stars": 32,
+          "created_at": "2026-10-28T16:19:06Z"
+        },
+        {
+          "name": "wavealfield/local-ai-resocket-telegram",
+          "url": "https://github.com/wavealfield/local-ai-resocket-telegram",
+          "description": "An Autonomous Dual-Model Private AI Assistant with Telegram Voice/Chat interface, ComfyUI 720p HD Video Generation, Dynamic Scheduling, Real-Time Web Browsing & Self-Evolving Markdown Skill Memory.",
+          "stars": 32,
+          "created_at": "2026-10-28T16:17:31Z"
+        },
+        {
+          "name": "Phantomduke375846-alt/clinic_rag_rpocket_bot",
+          "url": "https://github.com/Phantomduke375846-alt/clinic_rag_rpocket_bot",
+          "description": "A domain-specific medical Retrieval-Augmented Generation (RAG) system that answers health-related questions strictly based on retrieved evidence from a local vector database.",
+          "stars": 32,
+          "created_at": "2026-10-28T16:15:36Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "LM Studio",
+          "version": "1.1.10",
+          "url": "https://lmstudio.ai/changelog/bionic-v1.1.10",
+          "notes": ""
         }
       ]
     }

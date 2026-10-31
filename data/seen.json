@@ -85,7 +85,11 @@
     "nomily-ai/nomily-app",
     "lordcaster/resocket-wow-lk",
     "wavealfield/local-ai-resocket-telegram",
-    "phantomduke375846-alt/clinic_rag_rpocket_bot"
+    "phantomduke375846-alt/clinic_rag_rpocket_bot",
+    "prabanta-dev/janas",
+    "dragonked2/alphacode",
+    "balanov/baiagent-director",
+    "balanov/svoi"
   ],
   "releases": {
     "ollama/ollama": [
@@ -149,7 +153,8 @@
       "v1.122",
       "v1.122.1",
       "v1.123",
-      "v1.123.1"
+      "v1.123.1",
+      "v1.124"
     ],
     "Comfy-Org/ComfyUI": [
       "v0.28.0",
@@ -203,19 +208,6 @@
     "https://lmstudio.ai/changelog": "1.1.10"
   },
   "history": [
-    {
-      "date": "2026-10-24",
-      "discoveries": [],
-      "releases": [
-        {
-          "tool": "Ollama",
-          "repo": "ollama/ollama",
-          "version": "v0.40.10",
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.10",
-          "notes": "NVIDIA Nemotron 3.5 Bolt E4B [Nemotron 3.5 Bolt E4B]( is NVIDIA\u2019s smaller, Gemma 4-based vision-language model for fast local conversations, image understanding, and tool use. It supports a"
-        }
-      ]
-    },
     {
       "date": "2026-10-25",
       "discoveries": [
@@ -386,6 +378,48 @@
           "version": "1.1.10",
           "url": "https://lmstudio.ai/changelog/bionic-v1.1.10",
           "notes": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-10-31",
+      "discoveries": [
+        {
+          "name": "prabanta-dev/janas",
+          "url": "https://github.com/prabanta-dev/janas",
+          "description": "37 tok/s from Qwen3-Next-80B (48 GB) on a 32 GB laptop, 24 without drafts vs 2.8 for llama.cpp; reading 62 vs 16 tok/s. Faster than llama.cpp on all 13 models compared in Q4_K_M. LLMs bigger than",
+          "stars": 533,
+          "created_at": "2026-09-20T09:55:09Z"
+        },
+        {
+          "name": "dragonked2/alphacode",
+          "url": "https://github.com/dragonked2/alphacode",
+          "description": "Free MIT AI coding agent \u2014 no API key needed. Built-in free model, or bring Claude, GPT, Gemini, DeepSeek, Ollama +50 more. Swarm mode, 40+ tools, browser & desktop automation, built in Rust.",
+          "stars": 516,
+          "created_at": "2026-09-01T09:57:03Z"
+        },
+        {
+          "name": "Balanov/baiagent-director",
+          "url": "https://github.com/Balanov/baiagent-director",
+          "description": "Free local-first AI business advisor with evidence-linked research and verifiable pilot plans.",
+          "stars": 170,
+          "created_at": "2026-10-28T20:52:16Z"
+        },
+        {
+          "name": "Balanov/svoi",
+          "url": "https://github.com/Balanov/svoi",
+          "description": "Free local-first Windows companion for job search and everyday work, with editable responses.",
+          "stars": 160,
+          "created_at": "2026-10-28T20:54:15Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "KoboldCpp",
+          "repo": "LostRuins/koboldcpp",
+          "version": "v1.124",
+          "url": "https://github.com/LostRuins/koboldcpp/releases/tag/v1.124",
+          "notes": "`[ a e s t h e t i c . e d i t i o n ]` **NEW!** - KoboldCpp has now integrated a small subset of popular models from [audio.cpp]( by @0xShug0! This greatly enhances the available built-in Music Gen"
         }
       ]
     }

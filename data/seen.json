@@ -92,7 +92,8 @@
     "balanov/svoi",
     "glincker/awesome-selfhosted-ai",
     "heroquantumking/coclico-resocket",
-    "machatter1/containerdesk"
+    "machatter1/containerdesk",
+    "morriszdweck/liquid-agent"
   ],
   "releases": {
     "ollama/ollama": [
@@ -145,7 +146,8 @@
       "v0.29.0",
       "v0.30.0",
       "v0.31.0",
-      "v0.32.0"
+      "v0.32.0",
+      "v0.33.0rc3"
     ],
     "LostRuins/koboldcpp": [
       "v1.117.1",
@@ -158,7 +160,8 @@
       "v1.123",
       "v1.123.1",
       "v1.124",
-      "v1.124.1"
+      "v1.124.1",
+      "v1.124.2"
     ],
     "Comfy-Org/ComfyUI": [
       "v0.28.0",
@@ -212,19 +215,6 @@
     "https://lmstudio.ai/changelog": "1.1.10"
   },
   "history": [
-    {
-      "date": "2026-10-26",
-      "discoveries": [
-        {
-          "name": "zeekk0/OpenSakura",
-          "url": "https://github.com/zeekk0/OpenSakura",
-          "description": "OpenSakura: MekaHime's first AI companion, open source. 3D VRoid avatar, real-time voice, emotion state, OpenRouter or Ollama brain.",
-          "stars": 48,
-          "created_at": "2026-10-25T10:17:41Z"
-        }
-      ],
-      "releases": []
-    },
     {
       "date": "2026-10-27",
       "discoveries": [
@@ -423,6 +413,34 @@
           "repo": "LostRuins/koboldcpp",
           "version": "v1.124.1",
           "url": "https://github.com/LostRuins/koboldcpp/releases/tag/v1.124.1",
+          "notes": "`[ a e s t h e t i c . e d i t i o n ]` **NEW!** - KoboldCpp has now integrated a small subset of popular models from [audio.cpp]( by @0xShug0! This greatly enhances the available built-in Music Gen"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "discoveries": [
+        {
+          "name": "morriszdweck/liquid-agent",
+          "url": "https://github.com/morriszdweck/liquid-agent",
+          "description": "Local-only agent for macOS and Linux: LFM3 1.7B / 2B Omni with Auto 200M approvals, Betterwright browser, and voice chat",
+          "stars": 35,
+          "created_at": "2026-10-28T23:57:20Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "vLLM",
+          "repo": "vllm-project/vllm",
+          "version": "v0.33.0rc3",
+          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3",
+          "notes": "v0.33.0 This release features 927 commits from 389 contributors (122 new)!"
+        },
+        {
+          "tool": "KoboldCpp",
+          "repo": "LostRuins/koboldcpp",
+          "version": "v1.124.2",
+          "url": "https://github.com/LostRuins/koboldcpp/releases/tag/v1.124.2",
           "notes": "`[ a e s t h e t i c . e d i t i o n ]` **NEW!** - KoboldCpp has now integrated a small subset of popular models from [audio.cpp]( by @0xShug0! This greatly enhances the available built-in Music Gen"
         }
       ]

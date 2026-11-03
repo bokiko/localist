@@ -95,17 +95,16 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-11-02*
+*Updated 2026-11-03*
 
 **🆕 New & active projects**
 - [peonist-ai/halogen-flash-server](https://github.com/peonist-ai/halogen-flash-server) — Local inference that behaves like a frontier API: Qwen3.8-Flash-Next on AMD Strix Halo plus small NPU models, over the OpenAI and Anthropic APIs on one port. · ⭐ 1130
 - [Nomily-Ai/nomily-app](https://github.com/Nomily-Ai/nomily-app) — BYOK voice recording companion with ASR transcription, speaker diarization, AI summaries, and local ASR endpoint support. · ⭐ 1018
-- [AienTech/dossier](https://github.com/AienTech/dossier) — A self-hosted job search app that writes tailored resumes and cover letters from your profile. · ⭐ 533
 - [prabanta-dev/janas](https://github.com/prabanta-dev/janas) — 37 tok/s from Qwen3-Next-80B (48 GB) on a 32 GB laptop, 24 without drafts vs 2.8 for llama.cpp; reading 62 vs 16 tok/s. Faster than llama.cpp on all 13 models compared in Q4_K_M. LLMs bigger than · ⭐ 533
 - [dragonked2/alphacode](https://github.com/dragonked2/alphacode) — Free MIT AI coding agent — no API key needed. Built-in free model, or bring Claude, GPT, Gemini, DeepSeek, Ollama +50 more. Swarm mode, 40+ tools, browser & desktop automation, built in Rust. · ⭐ 516
+- [Balanov/baiagent-director](https://github.com/Balanov/baiagent-director) — Free local-first AI business advisor with evidence-linked research and verifiable pilot plans. · ⭐ 170
 
 **📦 Tool releases**
-- [ComfyUI v0.43.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.43.0) — model_prefetch: syncrhonize all graph cleanups Add rope scaling support to MOSS-image
 - [Ollama v0.40.12](https://github.com/ollama/ollama/releases/tag/v0.40.12) — Liquid AI LFM3 [LFM3]( is Liquid AI's new family of small models built for local agents, tool calling, and structured output, on Liquid's new tri-hybrid architecture. The family includes:
 - [Jan v0.8.8](https://github.com/janhq/jan/releases/tag/v0.8.8) — Jan v0.8.8: security fixes, llama.cpp 0.7.0, and Trusted Hosts for the local API A security update to v0.8.7. We recommend updating. Your data and settings carry over; a few behaviours change, listed
 - [Ollama v0.40.13](https://github.com/ollama/ollama/releases/tag/v0.40.13) — LFM3 on Linux and Windows Liquid AI's [LFM3]( models, including text-to-speech in [lfm3-audio]( and [lfm3-omni]( now run on Linux and Windows as well as Apple silicon.
@@ -115,6 +114,8 @@ Essentials table above if you want the trusted beginner picks.*
 - [KoboldCpp v1.124.1](https://github.com/LostRuins/koboldcpp/releases/tag/v1.124.1) — `[ a e s t h e t i c . e d i t i o n ]` **NEW!** - KoboldCpp has now integrated a small subset of popular models from [audio.cpp]( by @0xShug0! This greatly enhances the available built-in Music Gen
 - [vLLM v0.33.0rc3](https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3) — v0.33.0 This release features 927 commits from 389 contributors (122 new)!
 - [KoboldCpp v1.124.2](https://github.com/LostRuins/koboldcpp/releases/tag/v1.124.2) — `[ a e s t h e t i c . e d i t i o n ]` **NEW!** - KoboldCpp has now integrated a small subset of popular models from [audio.cpp]( by @0xShug0! This greatly enhances the available built-in Music Gen
+- [Ollama v0.40.14](https://github.com/ollama/ollama/releases/tag/v0.40.14) — `ollama launch claude` now applies the model's output token limit for Claude Code, so cloud models no longer run into the 128k default cap Cloud web search responses on `/api/chat` are now decoded
+- [Open WebUI v0.13.0](https://github.com/open-webui/open-webui/releases/tag/v0.13.0) — Added 📑 **Tabbed workspace.** The Tabs button at the top of a chat now opens a workspace for files, multiple terminal sessions, artifacts, previews, voice calls and comments. Add tabs from the +
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

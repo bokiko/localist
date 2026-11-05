@@ -95,7 +95,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-11-04*
+*Updated 2026-11-05*
 
 **🆕 New & active projects**
 - [Nomily-Ai/nomily-app](https://github.com/Nomily-Ai/nomily-app) — BYOK voice recording companion with ASR transcription, speaker diarization, AI summaries, and local ASR endpoint support. · ⭐ 1018
@@ -105,8 +105,6 @@ Essentials table above if you want the trusted beginner picks.*
 - [Balanov/svoi](https://github.com/Balanov/svoi) — Free local-first Windows companion for job search and everyday work, with editable responses. · ⭐ 160
 
 **📦 Tool releases**
-- [Ollama v0.40.13](https://github.com/ollama/ollama/releases/tag/v0.40.13) — LFM3 on Linux and Windows Liquid AI's [LFM3]( models, including text-to-speech in [lfm3-audio]( and [lfm3-omni]( now run on Linux and Windows as well as Apple silicon.
-- [Open WebUI v0.12.5](https://github.com/open-webui/open-webui/releases/tag/v0.12.5) — Added 🧭 **Analytics session explorer.** Administrators can now open a Sessions tab in Admin Analytics that lists each chat with its tokens, responses, errors and time span, filters them by search,
 - [LM Studio 1.1.10](https://lmstudio.ai/changelog/bionic-v1.1.10)
 - [KoboldCpp v1.124](https://github.com/LostRuins/koboldcpp/releases/tag/v1.124) — `[ a e s t h e t i c . e d i t i o n ]` **NEW!** - KoboldCpp has now integrated a small subset of popular models from [audio.cpp]( by @0xShug0! This greatly enhances the available built-in Music Gen
 - [KoboldCpp v1.124.1](https://github.com/LostRuins/koboldcpp/releases/tag/v1.124.1) — `[ a e s t h e t i c . e d i t i o n ]` **NEW!** - KoboldCpp has now integrated a small subset of popular models from [audio.cpp]( by @0xShug0! This greatly enhances the available built-in Music Gen
@@ -115,6 +113,7 @@ Essentials table above if you want the trusted beginner picks.*
 - [Ollama v0.40.14](https://github.com/ollama/ollama/releases/tag/v0.40.14) — `ollama launch claude` now applies the model's output token limit for Claude Code, so cloud models no longer run into the 128k default cap Cloud web search responses on `/api/chat` are now decoded
 - [Open WebUI v0.13.0](https://github.com/open-webui/open-webui/releases/tag/v0.13.0) — Added 📑 **Tabbed workspace.** The Tabs button at the top of a chat now opens a workspace for files, multiple terminal sessions, artifacts, previews, voice calls and comments. Add tabs from the +
 - [ComfyUI v0.44.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.44.0) — [Partner Nodes] feat(Patina): add Patina texture nodes [Partner Nodes] feat(VEED): add VEED Dubbing node
+- [LM Studio 1.2.0](https://lmstudio.ai/changelog/bionic-v1.2.0)
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

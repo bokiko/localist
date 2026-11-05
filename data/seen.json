@@ -94,7 +94,11 @@
     "heroquantumking/coclico-resocket",
     "machatter1/containerdesk",
     "morriszdweck/liquid-agent",
-    "simplexai-labs/polystrata"
+    "simplexai-labs/polystrata",
+    "silverdugongenhance/promptreel",
+    "tancheng33/tingo",
+    "johnpsasser/lifeboat",
+    "dxn111/evolv"
   ],
   "releases": {
     "ollama/ollama": [
@@ -216,44 +220,9 @@
     ]
   },
   "changelog_pages": {
-    "https://lmstudio.ai/changelog": "1.1.10"
+    "https://lmstudio.ai/changelog": "1.2.0"
   },
   "history": [
-    {
-      "date": "2026-10-29",
-      "discoveries": [
-        {
-          "name": "em4nu3i69dll/service-status-api",
-          "url": "https://github.com/em4nu3i69dll/service-status-api",
-          "description": "Telemetria cifrada con TypeScript, agente Go, analisis Python y Ollama, Cloudflare Tunnel y lectura mTLS.",
-          "stars": 33,
-          "created_at": "2026-10-28T11:55:17Z"
-        },
-        {
-          "name": "KalenHwei/PaperDuet",
-          "url": "https://github.com/KalenHwei/PaperDuet",
-          "description": "Mirror your translation! A lightweight AI paper translator for Mac and Windows. The original PDF and its translation sit side by side, page for page, with formulas, figures and tables in place.",
-          "stars": 32,
-          "created_at": "2026-10-23T05:00:27Z"
-        }
-      ],
-      "releases": [
-        {
-          "tool": "Ollama",
-          "repo": "ollama/ollama",
-          "version": "v0.40.13",
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.13",
-          "notes": "LFM3 on Linux and Windows Liquid AI's [LFM3]( models, including text-to-speech in [lfm3-audio]( and [lfm3-omni]( now run on Linux and Windows as well as Apple silicon."
-        },
-        {
-          "tool": "Open WebUI",
-          "repo": "open-webui/open-webui",
-          "version": "v0.12.5",
-          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.5",
-          "notes": "Added \ud83e\udded **Analytics session explorer.** Administrators can now open a Sessions tab in Admin Analytics that lists each chat with its tokens, responses, errors and time span, filters them by search,"
-        }
-      ]
-    },
     {
       "date": "2026-10-30",
       "discoveries": [
@@ -438,6 +407,47 @@
           "version": "v0.44.0",
           "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.44.0",
           "notes": "[Partner Nodes] feat(Patina): add Patina texture nodes [Partner Nodes] feat(VEED): add VEED Dubbing node"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "discoveries": [
+        {
+          "name": "silverdugongenhance/PromptReel",
+          "url": "https://github.com/silverdugongenhance/PromptReel",
+          "description": "Free desktop app that turns a text prompt into a short video clip on your own PC. Local AI text-to-video with Wan 2.2: type a scene, pick wide, vertical or square, get an MP4. No credits, no",
+          "stars": 107,
+          "created_at": "2026-11-04T15:29:54Z"
+        },
+        {
+          "name": "tancheng33/tingo",
+          "url": "https://github.com/tancheng33/tingo",
+          "description": "\u5f00\u8fc7\u7684\u4f1a\uff0c\u90fd\u542c\u8fc7\u3002\u672c\u5730 AI \u4f1a\u8bae\u7eaa\u8981\uff1a\u4f1a\u8bae\u5f55\u97f3\u8f6c\u6587\u5b57\u3001\u533a\u5206\u8bf4\u8bdd\u4eba\u3001\u81ea\u52a8\u751f\u6210\u7eaa\u8981\u548c\u5f85\u529e\uff0c\u652f\u6301\u817e\u8baf\u4f1a\u8bae/\u98de\u4e66/Zoom\uff0c\u5f55\u97f3\u4e0d\u4e0a\u4f20 \u00b7 Local-first AI meeting notes for Mac: on-device transcription, speaker diarization, minutes linked to quotes. Open-source",
+          "stars": 38,
+          "created_at": "2026-11-03T03:09:06Z"
+        },
+        {
+          "name": "johnpsasser/lifeboat",
+          "url": "https://github.com/johnpsasser/lifeboat",
+          "description": "Offline emergency assistant: a local LLM and a 200 GB offline library on one Mac, with cited answers and no internet.",
+          "stars": 37,
+          "created_at": "2026-11-03T05:03:25Z"
+        },
+        {
+          "name": "dxn111/EVOLV",
+          "url": "https://github.com/dxn111/EVOLV",
+          "description": "Self-evolving AI workspace \u2014 it rewrites its own UI, tools, skills and plugins while it runs, live on screen. Local-first, one Go binary, no API key needed to try.",
+          "stars": 32,
+          "created_at": "2026-10-31T08:36:59Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "LM Studio",
+          "version": "1.2.0",
+          "url": "https://lmstudio.ai/changelog/bionic-v1.2.0",
+          "notes": ""
         }
       ]
     }

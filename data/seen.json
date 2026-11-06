@@ -98,7 +98,9 @@
     "silverdugongenhance/promptreel",
     "tancheng33/tingo",
     "johnpsasser/lifeboat",
-    "dxn111/evolv"
+    "dxn111/evolv",
+    "zeekk0/openamika",
+    "edgeuaquartzsamurai/coclico-resocket"
   ],
   "releases": {
     "ollama/ollama": [
@@ -140,7 +142,8 @@
       "v0.40.11",
       "v0.40.12",
       "v0.40.13",
-      "v0.40.14"
+      "v0.40.14",
+      "v0.40.15"
     ],
     "vllm-project/vllm": [
       "v0.25.1",
@@ -223,47 +226,6 @@
     "https://lmstudio.ai/changelog": "1.2.0"
   },
   "history": [
-    {
-      "date": "2026-10-30",
-      "discoveries": [
-        {
-          "name": "Nomily-Ai/nomily-app",
-          "url": "https://github.com/Nomily-Ai/nomily-app",
-          "description": "BYOK voice recording companion with ASR transcription, speaker diarization, AI summaries, and local ASR endpoint support.",
-          "stars": 1018,
-          "created_at": "2026-08-05T03:19:40Z"
-        },
-        {
-          "name": "Lordcaster/resocket-wow-lk",
-          "url": "https://github.com/Lordcaster/resocket-wow-lk",
-          "description": "Local home WoW WotLK 3.3.5a server based on AzerothCore Playerbot, packaged with Docker Compose. Includes playerbots, auction bot, transmogrification, and pinned gameplay modules for a reproducible",
-          "stars": 32,
-          "created_at": "2026-10-28T16:19:06Z"
-        },
-        {
-          "name": "wavealfield/local-ai-resocket-telegram",
-          "url": "https://github.com/wavealfield/local-ai-resocket-telegram",
-          "description": "An Autonomous Dual-Model Private AI Assistant with Telegram Voice/Chat interface, ComfyUI 720p HD Video Generation, Dynamic Scheduling, Real-Time Web Browsing & Self-Evolving Markdown Skill Memory.",
-          "stars": 32,
-          "created_at": "2026-10-28T16:17:31Z"
-        },
-        {
-          "name": "Phantomduke375846-alt/clinic_rag_rpocket_bot",
-          "url": "https://github.com/Phantomduke375846-alt/clinic_rag_rpocket_bot",
-          "description": "A domain-specific medical Retrieval-Augmented Generation (RAG) system that answers health-related questions strictly based on retrieved evidence from a local vector database.",
-          "stars": 32,
-          "created_at": "2026-10-28T16:15:36Z"
-        }
-      ],
-      "releases": [
-        {
-          "tool": "LM Studio",
-          "version": "1.1.10",
-          "url": "https://lmstudio.ai/changelog/bionic-v1.1.10",
-          "notes": ""
-        }
-      ]
-    },
     {
       "date": "2026-10-31",
       "discoveries": [
@@ -448,6 +410,34 @@
           "version": "1.2.0",
           "url": "https://lmstudio.ai/changelog/bionic-v1.2.0",
           "notes": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "discoveries": [
+        {
+          "name": "zeekk0/OpenAmika",
+          "url": "https://github.com/zeekk0/OpenAmika",
+          "description": "OpenAmika: MekaHime's AI companion Amika, open source. Live2D avatar, real-time voice, long-term memory, OpenRouter or Ollama brain.",
+          "stars": 378,
+          "created_at": "2026-11-03T17:47:08Z"
+        },
+        {
+          "name": "EdgeuaquartzSamurai/Coclico-resocket",
+          "url": "https://github.com/EdgeuaquartzSamurai/Coclico-resocket",
+          "description": "The honest Windows companion: cleaning, repair, network & power tuning, disk analysis, app installer and a 100% local AI assistant. No placebo tweaks. \u00b7 Le compagnon Windows honn\u00eate : nettoyage,",
+          "stars": 40,
+          "created_at": "2026-11-05T11:54:20Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "Ollama",
+          "repo": "ollama/ollama",
+          "version": "v0.40.15",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.15",
+          "notes": "MiMo V2.6 Xiaomi MiMo's [mimo-v2.6]( a 9B model built for code and agent workflows, is now supported in Ollama."
         }
       ]
     }

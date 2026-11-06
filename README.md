@@ -95,17 +95,16 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-11-05*
+*Updated 2026-11-06*
 
 **🆕 New & active projects**
-- [Nomily-Ai/nomily-app](https://github.com/Nomily-Ai/nomily-app) — BYOK voice recording companion with ASR transcription, speaker diarization, AI summaries, and local ASR endpoint support. · ⭐ 1018
 - [prabanta-dev/janas](https://github.com/prabanta-dev/janas) — 37 tok/s from Qwen3-Next-80B (48 GB) on a 32 GB laptop, 24 without drafts vs 2.8 for llama.cpp; reading 62 vs 16 tok/s. Faster than llama.cpp on all 13 models compared in Q4_K_M. LLMs bigger than · ⭐ 533
 - [dragonked2/alphacode](https://github.com/dragonked2/alphacode) — Free MIT AI coding agent — no API key needed. Built-in free model, or bring Claude, GPT, Gemini, DeepSeek, Ollama +50 more. Swarm mode, 40+ tools, browser & desktop automation, built in Rust. · ⭐ 516
+- [zeekk0/OpenAmika](https://github.com/zeekk0/OpenAmika) — OpenAmika: MekaHime's AI companion Amika, open source. Live2D avatar, real-time voice, long-term memory, OpenRouter or Ollama brain. · ⭐ 378
 - [Balanov/baiagent-director](https://github.com/Balanov/baiagent-director) — Free local-first AI business advisor with evidence-linked research and verifiable pilot plans. · ⭐ 170
 - [Balanov/svoi](https://github.com/Balanov/svoi) — Free local-first Windows companion for job search and everyday work, with editable responses. · ⭐ 160
 
 **📦 Tool releases**
-- [LM Studio 1.1.10](https://lmstudio.ai/changelog/bionic-v1.1.10)
 - [KoboldCpp v1.124](https://github.com/LostRuins/koboldcpp/releases/tag/v1.124) — `[ a e s t h e t i c . e d i t i o n ]` **NEW!** - KoboldCpp has now integrated a small subset of popular models from [audio.cpp]( by @0xShug0! This greatly enhances the available built-in Music Gen
 - [KoboldCpp v1.124.1](https://github.com/LostRuins/koboldcpp/releases/tag/v1.124.1) — `[ a e s t h e t i c . e d i t i o n ]` **NEW!** - KoboldCpp has now integrated a small subset of popular models from [audio.cpp]( by @0xShug0! This greatly enhances the available built-in Music Gen
 - [vLLM v0.33.0rc3](https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3) — v0.33.0 This release features 927 commits from 389 contributors (122 new)!
@@ -114,6 +113,7 @@ Essentials table above if you want the trusted beginner picks.*
 - [Open WebUI v0.13.0](https://github.com/open-webui/open-webui/releases/tag/v0.13.0) — Added 📑 **Tabbed workspace.** The Tabs button at the top of a chat now opens a workspace for files, multiple terminal sessions, artifacts, previews, voice calls and comments. Add tabs from the +
 - [ComfyUI v0.44.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.44.0) — [Partner Nodes] feat(Patina): add Patina texture nodes [Partner Nodes] feat(VEED): add VEED Dubbing node
 - [LM Studio 1.2.0](https://lmstudio.ai/changelog/bionic-v1.2.0)
+- [Ollama v0.40.15](https://github.com/ollama/ollama/releases/tag/v0.40.15) — MiMo V2.6 Xiaomi MiMo's [mimo-v2.6]( a 9B model built for code and agent workflows, is now supported in Ollama.
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

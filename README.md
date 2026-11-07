@@ -95,17 +95,16 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-11-06*
+*Updated 2026-11-07*
 
 **🆕 New & active projects**
-- [prabanta-dev/janas](https://github.com/prabanta-dev/janas) — 37 tok/s from Qwen3-Next-80B (48 GB) on a 32 GB laptop, 24 without drafts vs 2.8 for llama.cpp; reading 62 vs 16 tok/s. Faster than llama.cpp on all 13 models compared in Q4_K_M. LLMs bigger than · ⭐ 533
-- [dragonked2/alphacode](https://github.com/dragonked2/alphacode) — Free MIT AI coding agent — no API key needed. Built-in free model, or bring Claude, GPT, Gemini, DeepSeek, Ollama +50 more. Swarm mode, 40+ tools, browser & desktop automation, built in Rust. · ⭐ 516
 - [zeekk0/OpenAmika](https://github.com/zeekk0/OpenAmika) — OpenAmika: MekaHime's AI companion Amika, open source. Live2D avatar, real-time voice, long-term memory, OpenRouter or Ollama brain. · ⭐ 378
-- [Balanov/baiagent-director](https://github.com/Balanov/baiagent-director) — Free local-first AI business advisor with evidence-linked research and verifiable pilot plans. · ⭐ 170
-- [Balanov/svoi](https://github.com/Balanov/svoi) — Free local-first Windows companion for job search and everyday work, with editable responses. · ⭐ 160
+- [silverdugongenhance/PromptReel](https://github.com/silverdugongenhance/PromptReel) — Free desktop app that turns a text prompt into a short video clip on your own PC. Local AI text-to-video with Wan 2.2: type a scene, pick wide, vertical or square, get an MP4. No credits, no · ⭐ 107
+- [glincker/awesome-selfhosted-ai](https://github.com/glincker/awesome-selfhosted-ai) — Curated list of self-hosted open-source AI: local LLMs, chat UIs, agents, MCP servers, RAG, speech and image generation. Health-checked weekly, dead projects removed automatically. · ⭐ 56
+- [BrawlerForge/roblox-studio-ai](https://github.com/BrawlerForge/roblox-studio-ai) — Local Claude AI assistant for Roblox Studio. Describe what you want to build, and it writes Luau, adds it to your game and checks for errors. Just install the app and Roblox Studio. · ⭐ 53
+- [AbuZar-Ansarii/Jarvis](https://github.com/AbuZar-Ansarii/Jarvis) — An autonomous, local-first on-device AI agent and Android OS automation framework featuring full accessibility control, │ continuous voice intelligence, and self-evolving workflow execution. · ⭐ 48
 
 **📦 Tool releases**
-- [KoboldCpp v1.124](https://github.com/LostRuins/koboldcpp/releases/tag/v1.124) — `[ a e s t h e t i c . e d i t i o n ]` **NEW!** - KoboldCpp has now integrated a small subset of popular models from [audio.cpp]( by @0xShug0! This greatly enhances the available built-in Music Gen
 - [KoboldCpp v1.124.1](https://github.com/LostRuins/koboldcpp/releases/tag/v1.124.1) — `[ a e s t h e t i c . e d i t i o n ]` **NEW!** - KoboldCpp has now integrated a small subset of popular models from [audio.cpp]( by @0xShug0! This greatly enhances the available built-in Music Gen
 - [vLLM v0.33.0rc3](https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3) — v0.33.0 This release features 927 commits from 389 contributors (122 new)!
 - [KoboldCpp v1.124.2](https://github.com/LostRuins/koboldcpp/releases/tag/v1.124.2) — `[ a e s t h e t i c . e d i t i o n ]` **NEW!** - KoboldCpp has now integrated a small subset of popular models from [audio.cpp]( by @0xShug0! This greatly enhances the available built-in Music Gen

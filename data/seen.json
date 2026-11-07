@@ -100,7 +100,9 @@
     "johnpsasser/lifeboat",
     "dxn111/evolv",
     "zeekk0/openamika",
-    "edgeuaquartzsamurai/coclico-resocket"
+    "edgeuaquartzsamurai/coclico-resocket",
+    "brawlerforge/roblox-studio-ai",
+    "abuzar-ansarii/jarvis"
   ],
   "releases": {
     "ollama/ollama": [
@@ -226,48 +228,6 @@
     "https://lmstudio.ai/changelog": "1.2.0"
   },
   "history": [
-    {
-      "date": "2026-10-31",
-      "discoveries": [
-        {
-          "name": "prabanta-dev/janas",
-          "url": "https://github.com/prabanta-dev/janas",
-          "description": "37 tok/s from Qwen3-Next-80B (48 GB) on a 32 GB laptop, 24 without drafts vs 2.8 for llama.cpp; reading 62 vs 16 tok/s. Faster than llama.cpp on all 13 models compared in Q4_K_M. LLMs bigger than",
-          "stars": 533,
-          "created_at": "2026-09-20T09:55:09Z"
-        },
-        {
-          "name": "dragonked2/alphacode",
-          "url": "https://github.com/dragonked2/alphacode",
-          "description": "Free MIT AI coding agent \u2014 no API key needed. Built-in free model, or bring Claude, GPT, Gemini, DeepSeek, Ollama +50 more. Swarm mode, 40+ tools, browser & desktop automation, built in Rust.",
-          "stars": 516,
-          "created_at": "2026-09-01T09:57:03Z"
-        },
-        {
-          "name": "Balanov/baiagent-director",
-          "url": "https://github.com/Balanov/baiagent-director",
-          "description": "Free local-first AI business advisor with evidence-linked research and verifiable pilot plans.",
-          "stars": 170,
-          "created_at": "2026-10-28T20:52:16Z"
-        },
-        {
-          "name": "Balanov/svoi",
-          "url": "https://github.com/Balanov/svoi",
-          "description": "Free local-first Windows companion for job search and everyday work, with editable responses.",
-          "stars": 160,
-          "created_at": "2026-10-28T20:54:15Z"
-        }
-      ],
-      "releases": [
-        {
-          "tool": "KoboldCpp",
-          "repo": "LostRuins/koboldcpp",
-          "version": "v1.124",
-          "url": "https://github.com/LostRuins/koboldcpp/releases/tag/v1.124",
-          "notes": "`[ a e s t h e t i c . e d i t i o n ]` **NEW!** - KoboldCpp has now integrated a small subset of popular models from [audio.cpp]( by @0xShug0! This greatly enhances the available built-in Music Gen"
-        }
-      ]
-    },
     {
       "date": "2026-11-01",
       "discoveries": [
@@ -440,6 +400,26 @@
           "notes": "MiMo V2.6 Xiaomi MiMo's [mimo-v2.6]( a 9B model built for code and agent workflows, is now supported in Ollama."
         }
       ]
+    },
+    {
+      "date": "2026-11-07",
+      "discoveries": [
+        {
+          "name": "BrawlerForge/roblox-studio-ai",
+          "url": "https://github.com/BrawlerForge/roblox-studio-ai",
+          "description": "Local Claude AI assistant for Roblox Studio. Describe what you want to build, and it writes Luau, adds it to your game and checks for errors. Just install the app and Roblox Studio.",
+          "stars": 53,
+          "created_at": "2026-11-05T21:57:57Z"
+        },
+        {
+          "name": "AbuZar-Ansarii/Jarvis",
+          "url": "https://github.com/AbuZar-Ansarii/Jarvis",
+          "description": "An autonomous, local-first on-device AI agent and Android OS automation framework featuring full accessibility control, \u2502 continuous voice intelligence, and self-evolving workflow execution.",
+          "stars": 48,
+          "created_at": "2026-11-03T14:08:15Z"
+        }
+      ],
+      "releases": []
     }
   ]
 }

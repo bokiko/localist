@@ -95,17 +95,16 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-11-07*
+*Updated 2026-11-08*
 
 **🆕 New & active projects**
+- [nace-ai/kapitsa](https://github.com/nace-ai/kapitsa) — Blazing fast Apple Silicon inference engine optimized for Qwen & Nemotron. OpenAI + Anthropic API compatible. Built by folks from nace.ai · ⭐ 698
 - [zeekk0/OpenAmika](https://github.com/zeekk0/OpenAmika) — OpenAmika: MekaHime's AI companion Amika, open source. Live2D avatar, real-time voice, long-term memory, OpenRouter or Ollama brain. · ⭐ 378
 - [silverdugongenhance/PromptReel](https://github.com/silverdugongenhance/PromptReel) — Free desktop app that turns a text prompt into a short video clip on your own PC. Local AI text-to-video with Wan 2.2: type a scene, pick wide, vertical or square, get an MP4. No credits, no · ⭐ 107
-- [glincker/awesome-selfhosted-ai](https://github.com/glincker/awesome-selfhosted-ai) — Curated list of self-hosted open-source AI: local LLMs, chat UIs, agents, MCP servers, RAG, speech and image generation. Health-checked weekly, dead projects removed automatically. · ⭐ 56
 - [BrawlerForge/roblox-studio-ai](https://github.com/BrawlerForge/roblox-studio-ai) — Local Claude AI assistant for Roblox Studio. Describe what you want to build, and it writes Luau, adds it to your game and checks for errors. Just install the app and Roblox Studio. · ⭐ 53
 - [AbuZar-Ansarii/Jarvis](https://github.com/AbuZar-Ansarii/Jarvis) — An autonomous, local-first on-device AI agent and Android OS automation framework featuring full accessibility control, │ continuous voice intelligence, and self-evolving workflow execution. · ⭐ 48
 
 **📦 Tool releases**
-- [KoboldCpp v1.124.1](https://github.com/LostRuins/koboldcpp/releases/tag/v1.124.1) — `[ a e s t h e t i c . e d i t i o n ]` **NEW!** - KoboldCpp has now integrated a small subset of popular models from [audio.cpp]( by @0xShug0! This greatly enhances the available built-in Music Gen
 - [vLLM v0.33.0rc3](https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3) — v0.33.0 This release features 927 commits from 389 contributors (122 new)!
 - [KoboldCpp v1.124.2](https://github.com/LostRuins/koboldcpp/releases/tag/v1.124.2) — `[ a e s t h e t i c . e d i t i o n ]` **NEW!** - KoboldCpp has now integrated a small subset of popular models from [audio.cpp]( by @0xShug0! This greatly enhances the available built-in Music Gen
 - [Ollama v0.40.14](https://github.com/ollama/ollama/releases/tag/v0.40.14) — `ollama launch claude` now applies the model's output token limit for Claude Code, so cloud models no longer run into the 128k default cap Cloud web search responses on `/api/chat` are now decoded
@@ -113,6 +112,8 @@ Essentials table above if you want the trusted beginner picks.*
 - [ComfyUI v0.44.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.44.0) — [Partner Nodes] feat(Patina): add Patina texture nodes [Partner Nodes] feat(VEED): add VEED Dubbing node
 - [LM Studio 1.2.0](https://lmstudio.ai/changelog/bionic-v1.2.0)
 - [Ollama v0.40.15](https://github.com/ollama/ollama/releases/tag/v0.40.15) — MiMo V2.6 Xiaomi MiMo's [mimo-v2.6]( a 9B model built for code and agent workflows, is now supported in Ollama.
+- [Open WebUI v0.13.2](https://github.com/open-webui/open-webui/releases/tag/v0.13.2) — Fixed 🔓 **Chat over plain HTTP.** Opening Open WebUI over plain HTTP at a LAN or Docker address now loads new and existing chats instead of staying on a spinner with "crypto.randomUUID is not a
+- [Open WebUI v0.13.1](https://github.com/open-webui/open-webui/releases/tag/v0.13.1) — Added 🦾 **Coding agents as models.** On an Open Terminal that offers agents, coding agents such as Claude Code, Codex and Pi now appear in the model picker. You can chat with them or call them by
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

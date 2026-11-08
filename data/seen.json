@@ -102,7 +102,8 @@
     "zeekk0/openamika",
     "edgeuaquartzsamurai/coclico-resocket",
     "brawlerforge/roblox-studio-ai",
-    "abuzar-ansarii/jarvis"
+    "abuzar-ansarii/jarvis",
+    "nace-ai/kapitsa"
   ],
   "releases": {
     "ollama/ollama": [
@@ -214,7 +215,9 @@
       "v0.12.3",
       "v0.12.4",
       "v0.12.5",
-      "v0.13.0"
+      "v0.13.0",
+      "v0.13.2",
+      "v0.13.1"
     ],
     "ggml-org/llama.cpp": [
       "v0.2.0",
@@ -228,41 +231,6 @@
     "https://lmstudio.ai/changelog": "1.2.0"
   },
   "history": [
-    {
-      "date": "2026-11-01",
-      "discoveries": [
-        {
-          "name": "glincker/awesome-selfhosted-ai",
-          "url": "https://github.com/glincker/awesome-selfhosted-ai",
-          "description": "Curated list of self-hosted open-source AI: local LLMs, chat UIs, agents, MCP servers, RAG, speech and image generation. Health-checked weekly, dead projects removed automatically.",
-          "stars": 56,
-          "created_at": "2026-10-31T05:50:40Z"
-        },
-        {
-          "name": "HeroQuantumking/Coclico-resocket",
-          "url": "https://github.com/HeroQuantumking/Coclico-resocket",
-          "description": "The honest Windows companion: cleaning, repair, network & power tuning, disk analysis, app installer and a 100% local AI assistant. No placebo tweaks. \u00b7 Le compagnon Windows honn\u00eate : nettoyage,",
-          "stars": 40,
-          "created_at": "2026-10-31T13:28:00Z"
-        },
-        {
-          "name": "MacHatter1/ContainerDesk",
-          "url": "https://github.com/MacHatter1/ContainerDesk",
-          "description": "Native macOS workspace for Apple's container runtime. Browse, run, build and clean up Linux containers with live resource gauges, a built-in terminal and a local MLX chat playground.",
-          "stars": 32,
-          "created_at": "2026-10-29T20:12:56Z"
-        }
-      ],
-      "releases": [
-        {
-          "tool": "KoboldCpp",
-          "repo": "LostRuins/koboldcpp",
-          "version": "v1.124.1",
-          "url": "https://github.com/LostRuins/koboldcpp/releases/tag/v1.124.1",
-          "notes": "`[ a e s t h e t i c . e d i t i o n ]` **NEW!** - KoboldCpp has now integrated a small subset of popular models from [audio.cpp]( by @0xShug0! This greatly enhances the available built-in Music Gen"
-        }
-      ]
-    },
     {
       "date": "2026-11-02",
       "discoveries": [
@@ -420,6 +388,34 @@
         }
       ],
       "releases": []
+    },
+    {
+      "date": "2026-11-08",
+      "discoveries": [
+        {
+          "name": "nace-ai/kapitsa",
+          "url": "https://github.com/nace-ai/kapitsa",
+          "description": "Blazing fast Apple Silicon inference engine optimized for Qwen & Nemotron. OpenAI + Anthropic API compatible. Built by folks from nace.ai",
+          "stars": 698,
+          "created_at": "2026-10-16T00:41:59Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "Open WebUI",
+          "repo": "open-webui/open-webui",
+          "version": "v0.13.2",
+          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.2",
+          "notes": "Fixed \ud83d\udd13 **Chat over plain HTTP.** Opening Open WebUI over plain HTTP at a LAN or Docker address now loads new and existing chats instead of staying on a spinner with \"crypto.randomUUID is not a"
+        },
+        {
+          "tool": "Open WebUI",
+          "repo": "open-webui/open-webui",
+          "version": "v0.13.1",
+          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.1",
+          "notes": "Added \ud83e\uddbe **Coding agents as models.** On an Open Terminal that offers agents, coding agents such as Claude Code, Codex and Pi now appear in the model picker. You can chat with them or call them by"
+        }
+      ]
     }
   ]
 }

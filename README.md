@@ -95,7 +95,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-11-08*
+*Updated 2026-11-09*
 
 **🆕 New & active projects**
 - [nace-ai/kapitsa](https://github.com/nace-ai/kapitsa) — Blazing fast Apple Silicon inference engine optimized for Qwen & Nemotron. OpenAI + Anthropic API compatible. Built by folks from nace.ai · ⭐ 698
@@ -105,8 +105,6 @@ Essentials table above if you want the trusted beginner picks.*
 - [AbuZar-Ansarii/Jarvis](https://github.com/AbuZar-Ansarii/Jarvis) — An autonomous, local-first on-device AI agent and Android OS automation framework featuring full accessibility control, │ continuous voice intelligence, and self-evolving workflow execution. · ⭐ 48
 
 **📦 Tool releases**
-- [vLLM v0.33.0rc3](https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3) — v0.33.0 This release features 927 commits from 389 contributors (122 new)!
-- [KoboldCpp v1.124.2](https://github.com/LostRuins/koboldcpp/releases/tag/v1.124.2) — `[ a e s t h e t i c . e d i t i o n ]` **NEW!** - KoboldCpp has now integrated a small subset of popular models from [audio.cpp]( by @0xShug0! This greatly enhances the available built-in Music Gen
 - [Ollama v0.40.14](https://github.com/ollama/ollama/releases/tag/v0.40.14) — `ollama launch claude` now applies the model's output token limit for Claude Code, so cloud models no longer run into the 128k default cap Cloud web search responses on `/api/chat` are now decoded
 - [Open WebUI v0.13.0](https://github.com/open-webui/open-webui/releases/tag/v0.13.0) — Added 📑 **Tabbed workspace.** The Tabs button at the top of a chat now opens a workspace for files, multiple terminal sessions, artifacts, previews, voice calls and comments. Add tabs from the +
 - [ComfyUI v0.44.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.44.0) — [Partner Nodes] feat(Patina): add Patina texture nodes [Partner Nodes] feat(VEED): add VEED Dubbing node
@@ -114,6 +112,7 @@ Essentials table above if you want the trusted beginner picks.*
 - [Ollama v0.40.15](https://github.com/ollama/ollama/releases/tag/v0.40.15) — MiMo V2.6 Xiaomi MiMo's [mimo-v2.6]( a 9B model built for code and agent workflows, is now supported in Ollama.
 - [Open WebUI v0.13.2](https://github.com/open-webui/open-webui/releases/tag/v0.13.2) — Fixed 🔓 **Chat over plain HTTP.** Opening Open WebUI over plain HTTP at a LAN or Docker address now loads new and existing chats instead of staying on a spinner with "crypto.randomUUID is not a
 - [Open WebUI v0.13.1](https://github.com/open-webui/open-webui/releases/tag/v0.13.1) — Added 🦾 **Coding agents as models.** On an Open Terminal that offers agents, coding agents such as Claude Code, Codex and Pi now appear in the model picker. You can chat with them or call them by
+- [Open WebUI v0.13.3](https://github.com/open-webui/open-webui/releases/tag/v0.13.3) — Added 🦾 **Agents in automations.** The automation editor now lets you choose a terminal and working folder, then select a coding agent available there. Scheduled runs use that saved terminal and
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

@@ -217,7 +217,8 @@
       "v0.12.5",
       "v0.13.0",
       "v0.13.2",
-      "v0.13.1"
+      "v0.13.1",
+      "v0.13.3"
     ],
     "ggml-org/llama.cpp": [
       "v0.2.0",
@@ -231,34 +232,6 @@
     "https://lmstudio.ai/changelog": "1.2.0"
   },
   "history": [
-    {
-      "date": "2026-11-02",
-      "discoveries": [
-        {
-          "name": "morriszdweck/liquid-agent",
-          "url": "https://github.com/morriszdweck/liquid-agent",
-          "description": "Local-only agent for macOS and Linux: LFM3 1.7B / 2B Omni with Auto 200M approvals, Betterwright browser, and voice chat",
-          "stars": 35,
-          "created_at": "2026-10-28T23:57:20Z"
-        }
-      ],
-      "releases": [
-        {
-          "tool": "vLLM",
-          "repo": "vllm-project/vllm",
-          "version": "v0.33.0rc3",
-          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3",
-          "notes": "v0.33.0 This release features 927 commits from 389 contributors (122 new)!"
-        },
-        {
-          "tool": "KoboldCpp",
-          "repo": "LostRuins/koboldcpp",
-          "version": "v1.124.2",
-          "url": "https://github.com/LostRuins/koboldcpp/releases/tag/v1.124.2",
-          "notes": "`[ a e s t h e t i c . e d i t i o n ]` **NEW!** - KoboldCpp has now integrated a small subset of popular models from [audio.cpp]( by @0xShug0! This greatly enhances the available built-in Music Gen"
-        }
-      ]
-    },
     {
       "date": "2026-11-03",
       "discoveries": [],
@@ -414,6 +387,19 @@
           "version": "v0.13.1",
           "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.1",
           "notes": "Added \ud83e\uddbe **Coding agents as models.** On an Open Terminal that offers agents, coding agents such as Claude Code, Codex and Pi now appear in the model picker. You can chat with them or call them by"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "discoveries": [],
+      "releases": [
+        {
+          "tool": "Open WebUI",
+          "repo": "open-webui/open-webui",
+          "version": "v0.13.3",
+          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.3",
+          "notes": "Added \ud83e\uddbe **Agents in automations.** The automation editor now lets you choose a terminal and working folder, then select a coding agent available there. Scheduled runs use that saved terminal and"
         }
       ]
     }

@@ -106,7 +106,9 @@
     "nace-ai/kapitsa",
     "potterremember37/capri-ai-desktop",
     "soodok/deepseek-harness-local-android",
-    "jammaru/sakutto"
+    "jammaru/sakutto",
+    "indras-mirror/xolotl",
+    "simplexai-labs/linger"
   ],
   "releases": {
     "ollama/ollama": [
@@ -198,7 +200,8 @@
       "v0.42.1",
       "v0.42.0",
       "v0.43.0",
-      "v0.44.0"
+      "v0.44.0",
+      "v0.45.0"
     ],
     "janhq/jan": [
       "v0.8.4",
@@ -236,27 +239,6 @@
     "https://lmstudio.ai/changelog": "1.2.0"
   },
   "history": [
-    {
-      "date": "2026-11-04",
-      "discoveries": [
-        {
-          "name": "simplexai-labs/PolyStrata",
-          "url": "https://github.com/simplexai-labs/PolyStrata",
-          "description": "Run large AI models on your own PC: Qwen3.8-Flash-Next on Strata's engine, and GLM 5.3 Flash, DeepSeek V4 Flash, LFM2.5, Qwen3.6, Ornith 1.5, Gemma 4, Tiel Coder and MiniCPM-V on a second engine",
-          "stars": 824,
-          "created_at": "2026-10-06T21:09:40Z"
-        }
-      ],
-      "releases": [
-        {
-          "tool": "ComfyUI",
-          "repo": "Comfy-Org/ComfyUI",
-          "version": "v0.44.0",
-          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.44.0",
-          "notes": "[Partner Nodes] feat(Patina): add Patina texture nodes [Partner Nodes] feat(VEED): add VEED Dubbing node"
-        }
-      ]
-    },
     {
       "date": "2026-11-05",
       "discoveries": [
@@ -419,6 +401,34 @@
           "version": "v0.40.16",
           "url": "https://github.com/ollama/ollama/releases/tag/v0.40.16",
           "notes": "Ripple Preview [Ripple Preview]( from Ricursive Intelligence is a 65B dense model built for agentic coding."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "discoveries": [
+        {
+          "name": "Indras-Mirror/Xolotl",
+          "url": "https://github.com/Indras-Mirror/Xolotl",
+          "description": "Xolotl: run DeepSeek-V4.1-Flash, all 552B, as a local coding agent on one gaming PC (RTX 4090 + 110 GB RAM): ~33 tok/s on agent tasks, ~41 in fast mode, 512K context. Plus GLM-5.3-Flash, Qwen3.8 and",
+          "stars": 506,
+          "created_at": "2026-10-06T18:04:23Z"
+        },
+        {
+          "name": "simplexai-labs/linger",
+          "url": "https://github.com/simplexai-labs/linger",
+          "description": "Linger is An Open-Source Personal Agent That Runs Fully on Your PC. We aim to break Big Tech\u2019s grip on AI by bringing powerful local AI to everyday computers through efficient model\u2013harness",
+          "stars": 51,
+          "created_at": "2026-11-10T03:50:38Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "ComfyUI",
+          "repo": "Comfy-Org/ComfyUI",
+          "version": "v0.45.0",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.45.0",
+          "notes": "Bump comfyui-frontend-package to 1.58.5 Add better error for when pixel_space VAE wrongly selected."
         }
       ]
     }

@@ -108,7 +108,9 @@
     "soodok/deepseek-harness-local-android",
     "jammaru/sakutto",
     "indras-mirror/xolotl",
-    "simplexai-labs/linger"
+    "simplexai-labs/linger",
+    "huawei-csl/macaq",
+    "caprichooms/capricore"
   ],
   "releases": {
     "ollama/ollama": [
@@ -239,47 +241,6 @@
     "https://lmstudio.ai/changelog": "1.2.0"
   },
   "history": [
-    {
-      "date": "2026-11-05",
-      "discoveries": [
-        {
-          "name": "silverdugongenhance/PromptReel",
-          "url": "https://github.com/silverdugongenhance/PromptReel",
-          "description": "Free desktop app that turns a text prompt into a short video clip on your own PC. Local AI text-to-video with Wan 2.2: type a scene, pick wide, vertical or square, get an MP4. No credits, no",
-          "stars": 107,
-          "created_at": "2026-11-04T15:29:54Z"
-        },
-        {
-          "name": "tancheng33/tingo",
-          "url": "https://github.com/tancheng33/tingo",
-          "description": "\u5f00\u8fc7\u7684\u4f1a\uff0c\u90fd\u542c\u8fc7\u3002\u672c\u5730 AI \u4f1a\u8bae\u7eaa\u8981\uff1a\u4f1a\u8bae\u5f55\u97f3\u8f6c\u6587\u5b57\u3001\u533a\u5206\u8bf4\u8bdd\u4eba\u3001\u81ea\u52a8\u751f\u6210\u7eaa\u8981\u548c\u5f85\u529e\uff0c\u652f\u6301\u817e\u8baf\u4f1a\u8bae/\u98de\u4e66/Zoom\uff0c\u5f55\u97f3\u4e0d\u4e0a\u4f20 \u00b7 Local-first AI meeting notes for Mac: on-device transcription, speaker diarization, minutes linked to quotes. Open-source",
-          "stars": 38,
-          "created_at": "2026-11-03T03:09:06Z"
-        },
-        {
-          "name": "johnpsasser/lifeboat",
-          "url": "https://github.com/johnpsasser/lifeboat",
-          "description": "Offline emergency assistant: a local LLM and a 200 GB offline library on one Mac, with cited answers and no internet.",
-          "stars": 37,
-          "created_at": "2026-11-03T05:03:25Z"
-        },
-        {
-          "name": "dxn111/EVOLV",
-          "url": "https://github.com/dxn111/EVOLV",
-          "description": "Self-evolving AI workspace \u2014 it rewrites its own UI, tools, skills and plugins while it runs, live on screen. Local-first, one Go binary, no API key needed to try.",
-          "stars": 32,
-          "created_at": "2026-10-31T08:36:59Z"
-        }
-      ],
-      "releases": [
-        {
-          "tool": "LM Studio",
-          "version": "1.2.0",
-          "url": "https://lmstudio.ai/changelog/bionic-v1.2.0",
-          "notes": ""
-        }
-      ]
-    },
     {
       "date": "2026-11-06",
       "discoveries": [
@@ -431,6 +392,26 @@
           "notes": "Bump comfyui-frontend-package to 1.58.5 Add better error for when pixel_space VAE wrongly selected."
         }
       ]
+    },
+    {
+      "date": "2026-11-12",
+      "discoveries": [
+        {
+          "name": "huawei-csl/MACaQ",
+          "url": "https://github.com/huawei-csl/MACaQ",
+          "description": "SOTA model-agnostic quantization for GGUF, local inference and beyond. Quantize and run text, image, video and audio models with llama.cpp, vLLM, Diffusers and PyTorch.",
+          "stars": 171,
+          "created_at": "2026-11-10T08:52:22Z"
+        },
+        {
+          "name": "CapriChooms/CapriCore",
+          "url": "https://github.com/CapriChooms/CapriCore",
+          "description": "Capri \u2014 an AI desktop companion for Windows with local/API models, Hugging Face, optional voice, memory and permission-based desktop tools.",
+          "stars": 51,
+          "created_at": "2026-11-08T17:17:24Z"
+        }
+      ],
+      "releases": []
     }
   ]
 }

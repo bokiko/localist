@@ -95,7 +95,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-11-11*
+*Updated 2026-11-12*
 
 **🆕 New & active projects**
 - [PotterRemember37/Capri-AI-Desktop](https://github.com/PotterRemember37/Capri-AI-Desktop) — Capri — Edgerunners-inspired AI agent for your desktop. Supports Claude 3.7, Claude Code, OpenAI, and local Ollama/LLaMA. Custom AI Waifu Companion with voice chat. · ⭐ 1030
@@ -105,7 +105,6 @@ Essentials table above if you want the trusted beginner picks.*
 - [zeekk0/OpenAmika](https://github.com/zeekk0/OpenAmika) — OpenAmika: MekaHime's AI companion Amika, open source. Live2D avatar, real-time voice, long-term memory, OpenRouter or Ollama brain. · ⭐ 378
 
 **📦 Tool releases**
-- [LM Studio 1.2.0](https://lmstudio.ai/changelog/bionic-v1.2.0)
 - [Ollama v0.40.15](https://github.com/ollama/ollama/releases/tag/v0.40.15) — MiMo V2.6 Xiaomi MiMo's [mimo-v2.6]( a 9B model built for code and agent workflows, is now supported in Ollama.
 - [Open WebUI v0.13.2](https://github.com/open-webui/open-webui/releases/tag/v0.13.2) — Fixed 🔓 **Chat over plain HTTP.** Opening Open WebUI over plain HTTP at a LAN or Docker address now loads new and existing chats instead of staying on a spinner with "crypto.randomUUID is not a
 - [Open WebUI v0.13.1](https://github.com/open-webui/open-webui/releases/tag/v0.13.1) — Added 🦾 **Coding agents as models.** On an Open Terminal that offers agents, coding agents such as Claude Code, Codex and Pi now appear in the model picker. You can chat with them or call them by

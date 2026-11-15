@@ -113,7 +113,8 @@
     "caprichooms/capricore",
     "hitkeeen/blender-ai-mcp-addon",
     "statecraft-labs/isometric-cities",
-    "digitalhobbit/assetcat"
+    "digitalhobbit/assetcat",
+    "timaga/noda-local-ai-notes"
   ],
   "releases": {
     "ollama/ollama": [
@@ -245,34 +246,6 @@
     "https://lmstudio.ai/changelog": "1.2.0"
   },
   "history": [
-    {
-      "date": "2026-11-08",
-      "discoveries": [
-        {
-          "name": "nace-ai/kapitsa",
-          "url": "https://github.com/nace-ai/kapitsa",
-          "description": "Blazing fast Apple Silicon inference engine optimized for Qwen & Nemotron. OpenAI + Anthropic API compatible. Built by folks from nace.ai",
-          "stars": 698,
-          "created_at": "2026-10-16T00:41:59Z"
-        }
-      ],
-      "releases": [
-        {
-          "tool": "Open WebUI",
-          "repo": "open-webui/open-webui",
-          "version": "v0.13.2",
-          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.2",
-          "notes": "Fixed \ud83d\udd13 **Chat over plain HTTP.** Opening Open WebUI over plain HTTP at a LAN or Docker address now loads new and existing chats instead of staying on a spinner with \"crypto.randomUUID is not a"
-        },
-        {
-          "tool": "Open WebUI",
-          "repo": "open-webui/open-webui",
-          "version": "v0.13.1",
-          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.1",
-          "notes": "Added \ud83e\uddbe **Coding agents as models.** On an Open Terminal that offers agents, coding agents such as Claude Code, Codex and Pi now appear in the model picker. You can chat with them or call them by"
-        }
-      ]
-    },
     {
       "date": "2026-11-09",
       "discoveries": [],
@@ -406,6 +379,19 @@
           "description": "Index, search and browse your game asset library: a local web UI and CLI that keeps licenses and AI provenance in plain files.",
           "stars": 43,
           "created_at": "2026-11-08T02:42:40Z"
+        }
+      ],
+      "releases": []
+    },
+    {
+      "date": "2026-11-15",
+      "discoveries": [
+        {
+          "name": "Timaga/noda-local-ai-notes",
+          "url": "https://github.com/Timaga/noda-local-ai-notes",
+          "description": "Local-first AI note-taking app for Windows: Markdown notes, a personal knowledge base, knowledge graph, semantic search and chat with cited sources.",
+          "stars": 99,
+          "created_at": "2026-11-13T17:28:15Z"
         }
       ],
       "releases": []

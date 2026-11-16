@@ -114,7 +114,9 @@
     "hitkeeen/blender-ai-mcp-addon",
     "statecraft-labs/isometric-cities",
     "digitalhobbit/assetcat",
-    "timaga/noda-local-ai-notes"
+    "timaga/noda-local-ai-notes",
+    "manuelgscom/inside-llm",
+    "punit2911/hirepanel"
   ],
   "releases": {
     "ollama/ollama": [
@@ -246,19 +248,6 @@
     "https://lmstudio.ai/changelog": "1.2.0"
   },
   "history": [
-    {
-      "date": "2026-11-09",
-      "discoveries": [],
-      "releases": [
-        {
-          "tool": "Open WebUI",
-          "repo": "open-webui/open-webui",
-          "version": "v0.13.3",
-          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.3",
-          "notes": "Added \ud83e\uddbe **Agents in automations.** The automation editor now lets you choose a terminal and working folder, then select a coding agent available there. Scheduled runs use that saved terminal and"
-        }
-      ]
-    },
     {
       "date": "2026-11-10",
       "discoveries": [
@@ -392,6 +381,26 @@
           "description": "Local-first AI note-taking app for Windows: Markdown notes, a personal knowledge base, knowledge graph, semantic search and chat with cited sources.",
           "stars": 99,
           "created_at": "2026-11-13T17:28:15Z"
+        }
+      ],
+      "releases": []
+    },
+    {
+      "date": "2026-11-16",
+      "discoveries": [
+        {
+          "name": "manuelgscom/inside-llm",
+          "url": "https://github.com/manuelgscom/inside-llm",
+          "description": "See inside any GGUF: where two quantizations part ways, token by token, and what each sampler cuts. Live in your browser, powered by llama.cpp (CUDA or Vulkan).",
+          "stars": 70,
+          "created_at": "2026-11-15T18:46:30Z"
+        },
+        {
+          "name": "punit2911/Hirepanel",
+          "url": "https://github.com/punit2911/Hirepanel",
+          "description": "Multi-agent resume screener where every score needs a verified quote from the resume. Runs on local open-source models (Ollama). Prompt-injection shield, blind redaction, human approval, n8n +",
+          "stars": 58,
+          "created_at": "2026-11-12T17:56:19Z"
         }
       ],
       "releases": []

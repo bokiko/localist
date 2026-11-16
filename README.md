@@ -95,7 +95,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-11-15*
+*Updated 2026-11-16*
 
 **🆕 New & active projects**
 - [PotterRemember37/Capri-AI-Desktop](https://github.com/PotterRemember37/Capri-AI-Desktop) — Capri — Edgerunners-inspired AI agent for your desktop. Supports Claude 3.7, Claude Code, OpenAI, and local Ollama/LLaMA. Custom AI Waifu Companion with voice chat. · ⭐ 1030
@@ -105,7 +105,6 @@ Essentials table above if you want the trusted beginner picks.*
 - [huawei-csl/MACaQ](https://github.com/huawei-csl/MACaQ) — SOTA model-agnostic quantization for GGUF, local inference and beyond. Quantize and run text, image, video and audio models with llama.cpp, vLLM, Diffusers and PyTorch. · ⭐ 171
 
 **📦 Tool releases**
-- [Open WebUI v0.13.3](https://github.com/open-webui/open-webui/releases/tag/v0.13.3) — Added 🦾 **Agents in automations.** The automation editor now lets you choose a terminal and working folder, then select a coding agent available there. Scheduled runs use that saved terminal and
 - [Ollama v0.40.16](https://github.com/ollama/ollama/releases/tag/v0.40.16) — Ripple Preview [Ripple Preview]( from Ricursive Intelligence is a 65B dense model built for agentic coding.
 - [ComfyUI v0.45.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.45.0) — Bump comfyui-frontend-package to 1.58.5 Add better error for when pixel_space VAE wrongly selected.
 - [llama.cpp v1.0.0](https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0) — Overview New version has been released.

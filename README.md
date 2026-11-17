@@ -95,19 +95,20 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-11-16*
+*Updated 2026-11-17*
 
 **🆕 New & active projects**
-- [PotterRemember37/Capri-AI-Desktop](https://github.com/PotterRemember37/Capri-AI-Desktop) — Capri — Edgerunners-inspired AI agent for your desktop. Supports Claude 3.7, Claude Code, OpenAI, and local Ollama/LLaMA. Custom AI Waifu Companion with voice chat. · ⭐ 1030
-- [Soodok/Deepseek-Harness-Local-Android](https://github.com/Soodok/Deepseek-Harness-Local-Android) — Run the DeepSeek Harness AI agent natively on Android — no root, no Termux, extension center included | 手机本地运行 DeepSeek Agent，免 Root 免 Termux · ⭐ 507
 - [Indras-Mirror/Xolotl](https://github.com/Indras-Mirror/Xolotl) — Xolotl: run DeepSeek-V4.1-Flash, all 552B, as a local coding agent on one gaming PC (RTX 4090 + 110 GB RAM): ~33 tok/s on agent tasks, ~41 in fast mode, 512K context. Plus GLM-5.3-Flash, Qwen3.8 and · ⭐ 506
-- [jammaru/sakutto](https://github.com/jammaru/sakutto) — A browser extension for easy on-device translation with a local LLM (PLaMo). Private, free, no server needed. · ⭐ 175
+- [ysunyang4/Nexus](https://github.com/ysunyang4/Nexus) — Web AI for local work：让网页版 AI 直接操作你的本地文件和电脑，配套浏览器插件 webagent · ⭐ 364
 - [huawei-csl/MACaQ](https://github.com/huawei-csl/MACaQ) — SOTA model-agnostic quantization for GGUF, local inference and beyond. Quantize and run text, image, video and audio models with llama.cpp, vLLM, Diffusers and PyTorch. · ⭐ 171
+- [hitkeeen/blender-ai-mcp-addon](https://github.com/hitkeeen/blender-ai-mcp-addon) — AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python · ⭐ 105
+- [Timaga/noda-local-ai-notes](https://github.com/Timaga/noda-local-ai-notes) — Local-first AI note-taking app for Windows: Markdown notes, a personal knowledge base, knowledge graph, semantic search and chat with cited sources. · ⭐ 99
 
 **📦 Tool releases**
-- [Ollama v0.40.16](https://github.com/ollama/ollama/releases/tag/v0.40.16) — Ripple Preview [Ripple Preview]( from Ricursive Intelligence is a 65B dense model built for agentic coding.
 - [ComfyUI v0.45.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.45.0) — Bump comfyui-frontend-package to 1.58.5 Add better error for when pixel_space VAE wrongly selected.
 - [llama.cpp v1.0.0](https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0) — Overview New version has been released.
+- [vLLM v0.34.0](https://github.com/vllm-project/vllm/releases/tag/v0.34.0) — **1,061 commits from 412 contributors (120 new).** Thank you! TL;DR
+- [LM Studio 1.2.1](https://lmstudio.ai/changelog/bionic-v1.2.1)
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

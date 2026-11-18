@@ -237,7 +237,8 @@
       "v0.13.0",
       "v0.13.2",
       "v0.13.1",
-      "v0.13.3"
+      "v0.13.3",
+      "v0.13.4"
     ],
     "ggml-org/llama.cpp": [
       "v0.2.0",
@@ -252,34 +253,6 @@
     "https://lmstudio.ai/changelog": "1.2.1"
   },
   "history": [
-    {
-      "date": "2026-11-11",
-      "discoveries": [
-        {
-          "name": "Indras-Mirror/Xolotl",
-          "url": "https://github.com/Indras-Mirror/Xolotl",
-          "description": "Xolotl: run DeepSeek-V4.1-Flash, all 552B, as a local coding agent on one gaming PC (RTX 4090 + 110 GB RAM): ~33 tok/s on agent tasks, ~41 in fast mode, 512K context. Plus GLM-5.3-Flash, Qwen3.8 and",
-          "stars": 506,
-          "created_at": "2026-10-06T18:04:23Z"
-        },
-        {
-          "name": "simplexai-labs/linger",
-          "url": "https://github.com/simplexai-labs/linger",
-          "description": "Linger is An Open-Source Personal Agent That Runs Fully on Your PC. We aim to break Big Tech\u2019s grip on AI by bringing powerful local AI to everyday computers through efficient model\u2013harness",
-          "stars": 51,
-          "created_at": "2026-11-10T03:50:38Z"
-        }
-      ],
-      "releases": [
-        {
-          "tool": "ComfyUI",
-          "repo": "Comfy-Org/ComfyUI",
-          "version": "v0.45.0",
-          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.45.0",
-          "notes": "Bump comfyui-frontend-package to 1.58.5 Add better error for when pixel_space VAE wrongly selected."
-        }
-      ]
-    },
     {
       "date": "2026-11-12",
       "discoveries": [
@@ -412,6 +385,19 @@
           "version": "1.2.1",
           "url": "https://lmstudio.ai/changelog/bionic-v1.2.1",
           "notes": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "discoveries": [],
+      "releases": [
+        {
+          "tool": "Open WebUI",
+          "repo": "open-webui/open-webui",
+          "version": "v0.13.4",
+          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.4",
+          "notes": "Added **Bring your own computer with Tether.** Tether turns your own computer into part of Open WebUI: models from Ollama, LM Studio or any OpenAI-compatible server, OpenAPI and MCP tool servers and"
         }
       ]
     }

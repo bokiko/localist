@@ -122,7 +122,12 @@
     "hajdu-patrik/clippy",
     "wici-ai/inferssd",
     "genex-games/genex-desktop",
-    "hiruhiru2005/sync-strata"
+    "hiruhiru2005/sync-strata",
+    "bookwjitchieni1986/blender-ai-mcp-addon",
+    "thejarasal780-ship-it/ollama-local-ai-offline",
+    "senickimoro-art/pinokio-olvara-ai-workspace",
+    "zadazddq/lm-studio-private-ai",
+    "mgolcu00/freeimage-local"
   ],
   "releases": {
     "ollama/ollama": [
@@ -258,34 +263,6 @@
   },
   "history": [
     {
-      "date": "2026-11-13",
-      "discoveries": [
-        {
-          "name": "hitkeeen/blender-ai-mcp-addon",
-          "url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
-          "description": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python",
-          "stars": 105,
-          "created_at": "2026-11-12T14:32:15Z"
-        },
-        {
-          "name": "Statecraft-Labs/isometric-cities",
-          "url": "https://github.com/Statecraft-Labs/isometric-cities",
-          "description": "Make isometric city maps on Apple Silicon with your coding agent. DC and Edinburgh examples, local models, interactive explorers and films.",
-          "stars": 32,
-          "created_at": "2026-11-12T19:09:46Z"
-        }
-      ],
-      "releases": [
-        {
-          "tool": "llama.cpp",
-          "repo": "ggml-org/llama.cpp",
-          "version": "v1.0.0",
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0",
-          "notes": "Overview New version has been released."
-        }
-      ]
-    },
-    {
       "date": "2026-11-14",
       "discoveries": [
         {
@@ -419,6 +396,47 @@
           "notes": "[Partner Nodes] feat(LTX): add AlphaGen, SDR to HDR, Reframe and Upscale nodes [Partner Nodes] feat(MiniMax): add MiniMax H3 Image node"
         }
       ]
+    },
+    {
+      "date": "2026-11-20",
+      "discoveries": [
+        {
+          "name": "bookwjitchieni1986/blender-ai-mcp-addon",
+          "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
+          "description": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python",
+          "stars": 1015,
+          "created_at": "2026-11-19T14:43:10Z"
+        },
+        {
+          "name": "thejarasal780-ship-it/ollama-local-ai-offline",
+          "url": "https://github.com/thejarasal780-ship-it/ollama-local-ai-offline",
+          "description": "Ollama Local AI Offline: Run Local LLMs Fully Offline on Desktop",
+          "stars": 94,
+          "created_at": "2026-11-17T23:15:50Z"
+        },
+        {
+          "name": "senickimoro-art/pinokio-olvara-ai-workspace",
+          "url": "https://github.com/senickimoro-art/pinokio-olvara-ai-workspace",
+          "description": "A modular desktop workspace for configuring and running local AI models.",
+          "stars": 93,
+          "created_at": "2026-11-18T14:19:25Z"
+        },
+        {
+          "name": "zadazddq/lm-studio-private-ai",
+          "url": "https://github.com/zadazddq/lm-studio-private-ai",
+          "description": "LM Studio: Local LLM Desktop Runtime with Offline Inference and Model Management",
+          "stars": 93,
+          "created_at": "2026-11-17T22:05:16Z"
+        },
+        {
+          "name": "mgolcu00/freeimage-local",
+          "url": "https://github.com/mgolcu00/freeimage-local",
+          "description": "Z-Image Turbo at full speed on a 6 GB laptop GPU. int8 + SageAttention on stable-diffusion.cpp, the engine behind freeimage.dev.",
+          "stars": 50,
+          "created_at": "2026-11-19T21:03:12Z"
+        }
+      ],
+      "releases": []
     }
   ]
 }

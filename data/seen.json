@@ -127,7 +127,11 @@
     "thejarasal780-ship-it/ollama-local-ai-offline",
     "senickimoro-art/pinokio-olvara-ai-workspace",
     "zadazddq/lm-studio-private-ai",
-    "mgolcu00/freeimage-local"
+    "mgolcu00/freeimage-local",
+    "iamajmeena/neonclipping",
+    "synchopate/llama-modchip",
+    "han938/open-webui-private-ai-desk",
+    "sous-labs/songe"
   ],
   "releases": {
     "ollama/ollama": [
@@ -259,22 +263,9 @@
     ]
   },
   "changelog_pages": {
-    "https://lmstudio.ai/changelog": "1.2.1"
+    "https://lmstudio.ai/changelog": "1.2.2"
   },
   "history": [
-    {
-      "date": "2026-11-14",
-      "discoveries": [
-        {
-          "name": "digitalhobbit/assetcat",
-          "url": "https://github.com/digitalhobbit/assetcat",
-          "description": "Index, search and browse your game asset library: a local web UI and CLI that keeps licenses and AI provenance in plain files.",
-          "stars": 43,
-          "created_at": "2026-11-08T02:42:40Z"
-        }
-      ],
-      "releases": []
-    },
     {
       "date": "2026-11-15",
       "discoveries": [
@@ -437,6 +428,47 @@
         }
       ],
       "releases": []
+    },
+    {
+      "date": "2026-11-21",
+      "discoveries": [
+        {
+          "name": "iamajmeena/neonclipping",
+          "url": "https://github.com/iamajmeena/neonclipping",
+          "description": "Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).",
+          "stars": 1554,
+          "created_at": "2026-11-19T10:00:43Z"
+        },
+        {
+          "name": "synchopate/llama-modchip",
+          "url": "https://github.com/synchopate/llama-modchip",
+          "description": "Zero-GPU CPU inference for 30B-284B MoE models (Qwen3.8 176.5B cold-cache certified in 28.26/48.35 GiB Cgroup v2, DeepSeek-V4 284B, Nemotron-30B) + RouteCrack 2.0.",
+          "stars": 1398,
+          "created_at": "2026-10-29T10:17:33Z"
+        },
+        {
+          "name": "han938/open-webui-private-ai-desk",
+          "url": "https://github.com/han938/open-webui-private-ai-desk",
+          "description": "Chat with private AI models locally, powered by Open Webui Private Ai Desk.",
+          "stars": 153,
+          "created_at": "2026-11-20T14:25:27Z"
+        },
+        {
+          "name": "sous-labs/songe",
+          "url": "https://github.com/sous-labs/songe",
+          "description": "A training engine for your local model, using your idle compute",
+          "stars": 94,
+          "created_at": "2026-11-20T11:01:20Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "LM Studio",
+          "version": "1.2.2",
+          "url": "https://lmstudio.ai/changelog/bionic-v1.2.2",
+          "notes": ""
+        }
+      ]
     }
   ]
 }

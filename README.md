@@ -95,20 +95,21 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-11-20*
+*Updated 2026-11-21*
 
 **🆕 New & active projects**
+- [iamajmeena/neonclipping](https://github.com/iamajmeena/neonclipping) — Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM). · ⭐ 1554
+- [synchopate/llama-modchip](https://github.com/synchopate/llama-modchip) — Zero-GPU CPU inference for 30B-284B MoE models (Qwen3.8 176.5B cold-cache certified in 28.26/48.35 GiB Cgroup v2, DeepSeek-V4 284B, Nemotron-30B) + RouteCrack 2.0. · ⭐ 1398
 - [wici-ai/inferssd](https://github.com/wici-ai/inferssd) — Run models larger than your RAM or VRAM by streaming MoE experts from SSD. Built on llama.cpp. · ⭐ 1247
 - [bookwjitchieni1986/blender-ai-mcp-addon](https://github.com/bookwjitchieni1986/blender-ai-mcp-addon) — AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python · ⭐ 1015
 - [genex-games/genex-desktop](https://github.com/genex-games/genex-desktop) — Open-source desktop app for AI-native game dev. Build in Unreal Engine, Unity, Godot, Roblox or Three.js with any AI, including local models. · ⭐ 894
-- [ysunyang4/Nexus](https://github.com/ysunyang4/Nexus) — Web AI for local work：让网页版 AI 直接操作你的本地文件和电脑，配套浏览器插件 webagent · ⭐ 364
-- [Timaga/noda-local-ai-notes](https://github.com/Timaga/noda-local-ai-notes) — Local-first AI note-taking app for Windows: Markdown notes, a personal knowledge base, knowledge graph, semantic search and chat with cited sources. · ⭐ 99
 
 **📦 Tool releases**
 - [vLLM v0.34.0](https://github.com/vllm-project/vllm/releases/tag/v0.34.0) — **1,061 commits from 412 contributors (120 new).** Thank you! TL;DR
 - [LM Studio 1.2.1](https://lmstudio.ai/changelog/bionic-v1.2.1)
 - [Open WebUI v0.13.4](https://github.com/open-webui/open-webui/releases/tag/v0.13.4) — Added **Bring your own computer with Tether.** Tether turns your own computer into part of Open WebUI: models from Ollama, LM Studio or any OpenAI-compatible server, OpenAPI and MCP tool servers and
 - [ComfyUI v0.46.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.46.0) — [Partner Nodes] feat(LTX): add AlphaGen, SDR to HDR, Reframe and Upscale nodes [Partner Nodes] feat(MiniMax): add MiniMax H3 Image node
+- [LM Studio 1.2.2](https://lmstudio.ai/changelog/bionic-v1.2.2)
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

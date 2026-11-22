@@ -131,7 +131,9 @@
     "iamajmeena/neonclipping",
     "synchopate/llama-modchip",
     "han938/open-webui-private-ai-desk",
-    "sous-labs/songe"
+    "sous-labs/songe",
+    "w01fb0ss/pibot",
+    "aether-aiagent/aether"
   ],
   "releases": {
     "ollama/ollama": [
@@ -203,7 +205,8 @@
       "v1.123.1",
       "v1.124",
       "v1.124.1",
-      "v1.124.2"
+      "v1.124.2",
+      "v1.125"
     ],
     "Comfy-Org/ComfyUI": [
       "v0.28.0",
@@ -266,19 +269,6 @@
     "https://lmstudio.ai/changelog": "1.2.2"
   },
   "history": [
-    {
-      "date": "2026-11-15",
-      "discoveries": [
-        {
-          "name": "Timaga/noda-local-ai-notes",
-          "url": "https://github.com/Timaga/noda-local-ai-notes",
-          "description": "Local-first AI note-taking app for Windows: Markdown notes, a personal knowledge base, knowledge graph, semantic search and chat with cited sources.",
-          "stars": 99,
-          "created_at": "2026-11-13T17:28:15Z"
-        }
-      ],
-      "releases": []
-    },
     {
       "date": "2026-11-16",
       "discoveries": [
@@ -467,6 +457,34 @@
           "version": "1.2.2",
           "url": "https://lmstudio.ai/changelog/bionic-v1.2.2",
           "notes": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-11-22",
+      "discoveries": [
+        {
+          "name": "w01fb0ss/PiBot",
+          "url": "https://github.com/w01fb0ss/PiBot",
+          "description": "Open-source, local-first AI agent team for your desktop: multi-agent group chats, computer use, browser, MCP, routines and approvals. macOS, Windows, Linux + Android. Built on pi.",
+          "stars": 295,
+          "created_at": "2026-11-21T06:54:24Z"
+        },
+        {
+          "name": "aether-aiagent/aether",
+          "url": "https://github.com/aether-aiagent/aether",
+          "description": "Aether \u2014 open-source AI agent for Android (Kotlin, Jetpack Compose). Local LLM chat app with bash, file and MCP tools, subagents, offline Alpine/Proot runtime, Termux and Shizuku support. Signed APK",
+          "stars": 41,
+          "created_at": "2026-11-19T15:41:33Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "KoboldCpp",
+          "repo": "LostRuins/koboldcpp",
+          "version": "v1.125",
+          "url": "https://github.com/LostRuins/koboldcpp/releases/tag/v1.125",
+          "notes": "NEW: Added support from upstream for various new textgen models, including [Inkling 2 Mini]( and [Xing 4.0 29BA4B]( and more Note: The Unsloth quants of inkling currently don't work correctly. Use"
         }
       ]
     }

@@ -95,7 +95,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-11-21*
+*Updated 2026-11-22*
 
 **🆕 New & active projects**
 - [iamajmeena/neonclipping](https://github.com/iamajmeena/neonclipping) — Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM). · ⭐ 1554
@@ -110,6 +110,7 @@ Essentials table above if you want the trusted beginner picks.*
 - [Open WebUI v0.13.4](https://github.com/open-webui/open-webui/releases/tag/v0.13.4) — Added **Bring your own computer with Tether.** Tether turns your own computer into part of Open WebUI: models from Ollama, LM Studio or any OpenAI-compatible server, OpenAPI and MCP tool servers and
 - [ComfyUI v0.46.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.46.0) — [Partner Nodes] feat(LTX): add AlphaGen, SDR to HDR, Reframe and Upscale nodes [Partner Nodes] feat(MiniMax): add MiniMax H3 Image node
 - [LM Studio 1.2.2](https://lmstudio.ai/changelog/bionic-v1.2.2)
+- [KoboldCpp v1.125](https://github.com/LostRuins/koboldcpp/releases/tag/v1.125) — NEW: Added support from upstream for various new textgen models, including [Inkling 2 Mini]( and [Xing 4.0 29BA4B]( and more Note: The Unsloth quants of inkling currently don't work correctly. Use
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

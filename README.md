@@ -95,14 +95,14 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-11-22*
+*Updated 2026-11-23*
 
 **🆕 New & active projects**
+- [AhmadHassan-BTed/Jantt](https://github.com/AhmadHassan-BTed/Jantt) — Create interactive Gantt charts with AI — no code required, free forever. Built-in BYOK AI Copilot (10 providers + Ollama), free cloud rooms, working-calendar CPM, 6 views, · ⭐ 6240
 - [iamajmeena/neonclipping](https://github.com/iamajmeena/neonclipping) — Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM). · ⭐ 1554
 - [synchopate/llama-modchip](https://github.com/synchopate/llama-modchip) — Zero-GPU CPU inference for 30B-284B MoE models (Qwen3.8 176.5B cold-cache certified in 28.26/48.35 GiB Cgroup v2, DeepSeek-V4 284B, Nemotron-30B) + RouteCrack 2.0. · ⭐ 1398
 - [wici-ai/inferssd](https://github.com/wici-ai/inferssd) — Run models larger than your RAM or VRAM by streaming MoE experts from SSD. Built on llama.cpp. · ⭐ 1247
 - [bookwjitchieni1986/blender-ai-mcp-addon](https://github.com/bookwjitchieni1986/blender-ai-mcp-addon) — AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python · ⭐ 1015
-- [genex-games/genex-desktop](https://github.com/genex-games/genex-desktop) — Open-source desktop app for AI-native game dev. Build in Unreal Engine, Unity, Godot, Roblox or Three.js with any AI, including local models. · ⭐ 894
 
 **📦 Tool releases**
 - [vLLM v0.34.0](https://github.com/vllm-project/vllm/releases/tag/v0.34.0) — **1,061 commits from 412 contributors (120 new).** Thank you! TL;DR
@@ -111,6 +111,7 @@ Essentials table above if you want the trusted beginner picks.*
 - [ComfyUI v0.46.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.46.0) — [Partner Nodes] feat(LTX): add AlphaGen, SDR to HDR, Reframe and Upscale nodes [Partner Nodes] feat(MiniMax): add MiniMax H3 Image node
 - [LM Studio 1.2.2](https://lmstudio.ai/changelog/bionic-v1.2.2)
 - [KoboldCpp v1.125](https://github.com/LostRuins/koboldcpp/releases/tag/v1.125) — NEW: Added support from upstream for various new textgen models, including [Inkling 2 Mini]( and [Xing 4.0 29BA4B]( and more Note: The Unsloth quants of inkling currently don't work correctly. Use
+- [KoboldCpp v1.125.1](https://github.com/LostRuins/koboldcpp/releases/tag/v1.125.1) — **NEW:** Added support from upstream for various new textgen models, including [Inkling 2 Mini]( and [Xing 4.0 29BA4B]( and more Note: The Unsloth quants of inkling currently don't work correctly.
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

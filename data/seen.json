@@ -133,7 +133,10 @@
     "han938/open-webui-private-ai-desk",
     "sous-labs/songe",
     "w01fb0ss/pibot",
-    "aether-aiagent/aether"
+    "aether-aiagent/aether",
+    "ahmadhassan-bted/jantt",
+    "yes999zc/home-mate",
+    "powerdaalembic/localai-vramreadycheck"
   ],
   "releases": {
     "ollama/ollama": [
@@ -206,7 +209,8 @@
       "v1.124",
       "v1.124.1",
       "v1.124.2",
-      "v1.125"
+      "v1.125",
+      "v1.125.1"
     ],
     "Comfy-Org/ComfyUI": [
       "v0.28.0",
@@ -269,26 +273,6 @@
     "https://lmstudio.ai/changelog": "1.2.2"
   },
   "history": [
-    {
-      "date": "2026-11-16",
-      "discoveries": [
-        {
-          "name": "manuelgscom/inside-llm",
-          "url": "https://github.com/manuelgscom/inside-llm",
-          "description": "See inside any GGUF: where two quantizations part ways, token by token, and what each sampler cuts. Live in your browser, powered by llama.cpp (CUDA or Vulkan).",
-          "stars": 70,
-          "created_at": "2026-11-15T18:46:30Z"
-        },
-        {
-          "name": "punit2911/Hirepanel",
-          "url": "https://github.com/punit2911/Hirepanel",
-          "description": "Multi-agent resume screener where every score needs a verified quote from the resume. Runs on local open-source models (Ollama). Prompt-injection shield, blind redaction, human approval, n8n +",
-          "stars": 58,
-          "created_at": "2026-11-12T17:56:19Z"
-        }
-      ],
-      "releases": []
-    },
     {
       "date": "2026-11-17",
       "discoveries": [
@@ -485,6 +469,41 @@
           "version": "v1.125",
           "url": "https://github.com/LostRuins/koboldcpp/releases/tag/v1.125",
           "notes": "NEW: Added support from upstream for various new textgen models, including [Inkling 2 Mini]( and [Xing 4.0 29BA4B]( and more Note: The Unsloth quants of inkling currently don't work correctly. Use"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "discoveries": [
+        {
+          "name": "AhmadHassan-BTed/Jantt",
+          "url": "https://github.com/AhmadHassan-BTed/Jantt",
+          "description": "Create interactive Gantt charts with AI \u2014 no code required, free forever. Built-in BYOK AI Copilot (10 providers + Ollama), free cloud rooms, working-calendar CPM, 6 views,",
+          "stars": 6240,
+          "created_at": "2026-08-28T07:32:35Z"
+        },
+        {
+          "name": "yes999zc/home-mate",
+          "url": "https://github.com/yes999zc/home-mate",
+          "description": "Home Mate \u2014 Sovereign, local-first AI voice runtime, multi-room acoustic mesh arbiter, and Vue 3 console for smart speakers (Xiaomi LX06 & Echo Dot 2)",
+          "stars": 44,
+          "created_at": "2026-11-22T11:47:22Z"
+        },
+        {
+          "name": "Powerdaalembic/LocalAI-VRAMReadyCheck",
+          "url": "https://github.com/Powerdaalembic/LocalAI-VRAMReadyCheck",
+          "description": "Check if your Windows PC can run Ollama, LM Studio, or ComfyUI locally: audit GPU VRAM, CUDA/Vulkan support, RAM, and get exact GGUF/Flux model recommendations.",
+          "stars": 33,
+          "created_at": "2026-11-23T11:36:39Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "KoboldCpp",
+          "repo": "LostRuins/koboldcpp",
+          "version": "v1.125.1",
+          "url": "https://github.com/LostRuins/koboldcpp/releases/tag/v1.125.1",
+          "notes": "**NEW:** Added support from upstream for various new textgen models, including [Inkling 2 Mini]( and [Xing 4.0 29BA4B]( and more Note: The Unsloth quants of inkling currently don't work correctly."
         }
       ]
     }

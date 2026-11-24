@@ -180,7 +180,8 @@
       "v0.40.13",
       "v0.40.14",
       "v0.40.15",
-      "v0.40.16"
+      "v0.40.16",
+      "v0.40.18"
     ],
     "vllm-project/vllm": [
       "v0.25.1",
@@ -273,47 +274,6 @@
     "https://lmstudio.ai/changelog": "1.2.2"
   },
   "history": [
-    {
-      "date": "2026-11-17",
-      "discoveries": [
-        {
-          "name": "ysunyang4/Nexus",
-          "url": "https://github.com/ysunyang4/Nexus",
-          "description": "Web AI for local work\uff1a\u8ba9\u7f51\u9875\u7248 AI \u76f4\u63a5\u64cd\u4f5c\u4f60\u7684\u672c\u5730\u6587\u4ef6\u548c\u7535\u8111\uff0c\u914d\u5957\u6d4f\u89c8\u5668\u63d2\u4ef6 webagent",
-          "stars": 364,
-          "created_at": "2026-11-13T13:46:21Z"
-        },
-        {
-          "name": "baney75/smoothstone",
-          "url": "https://github.com/baney75/smoothstone",
-          "description": "A skill and CLI that lets small local models like LFM3-1.7B make 3D printable parts, from words or a picture, even through context compaction.",
-          "stars": 56,
-          "created_at": "2026-11-15T02:41:10Z"
-        },
-        {
-          "name": "hajdu-patrik/clippy",
-          "url": "https://github.com/hajdu-patrik/clippy",
-          "description": "Local AI clipper: long videos, podcasts and streams in, vertical 9:16 clips with captions out. Chat app + CLI, Hungarian and English.",
-          "stars": 40,
-          "created_at": "2026-11-15T16:24:40Z"
-        }
-      ],
-      "releases": [
-        {
-          "tool": "vLLM",
-          "repo": "vllm-project/vllm",
-          "version": "v0.34.0",
-          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0",
-          "notes": "**1,061 commits from 412 contributors (120 new).** Thank you! TL;DR"
-        },
-        {
-          "tool": "LM Studio",
-          "version": "1.2.1",
-          "url": "https://lmstudio.ai/changelog/bionic-v1.2.1",
-          "notes": ""
-        }
-      ]
-    },
     {
       "date": "2026-11-18",
       "discoveries": [],
@@ -504,6 +464,19 @@
           "version": "v1.125.1",
           "url": "https://github.com/LostRuins/koboldcpp/releases/tag/v1.125.1",
           "notes": "**NEW:** Added support from upstream for various new textgen models, including [Inkling 2 Mini]( and [Xing 4.0 29BA4B]( and more Note: The Unsloth quants of inkling currently don't work correctly."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "discoveries": [],
+      "releases": [
+        {
+          "tool": "Ollama",
+          "repo": "ollama/ollama",
+          "version": "v0.40.18",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.18",
+          "notes": "mlx: fuse Inkling residual mixing on Metal mlxrunner: share tensor helpers and model setup across architectures"
         }
       ]
     }

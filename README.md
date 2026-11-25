@@ -95,7 +95,7 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-11-24*
+*Updated 2026-11-25*
 
 **🆕 New & active projects**
 - [AhmadHassan-BTed/Jantt](https://github.com/AhmadHassan-BTed/Jantt) — Create interactive Gantt charts with AI — no code required, free forever. Built-in BYOK AI Copilot (10 providers + Ollama), free cloud rooms, working-calendar CPM, 6 views, · ⭐ 6240
@@ -105,12 +105,12 @@ Essentials table above if you want the trusted beginner picks.*
 - [bookwjitchieni1986/blender-ai-mcp-addon](https://github.com/bookwjitchieni1986/blender-ai-mcp-addon) — AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python · ⭐ 1015
 
 **📦 Tool releases**
-- [Open WebUI v0.13.4](https://github.com/open-webui/open-webui/releases/tag/v0.13.4) — Added **Bring your own computer with Tether.** Tether turns your own computer into part of Open WebUI: models from Ollama, LM Studio or any OpenAI-compatible server, OpenAPI and MCP tool servers and
 - [ComfyUI v0.46.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.46.0) — [Partner Nodes] feat(LTX): add AlphaGen, SDR to HDR, Reframe and Upscale nodes [Partner Nodes] feat(MiniMax): add MiniMax H3 Image node
 - [LM Studio 1.2.2](https://lmstudio.ai/changelog/bionic-v1.2.2)
 - [KoboldCpp v1.125](https://github.com/LostRuins/koboldcpp/releases/tag/v1.125) — NEW: Added support from upstream for various new textgen models, including [Inkling 2 Mini]( and [Xing 4.0 29BA4B]( and more Note: The Unsloth quants of inkling currently don't work correctly. Use
 - [KoboldCpp v1.125.1](https://github.com/LostRuins/koboldcpp/releases/tag/v1.125.1) — **NEW:** Added support from upstream for various new textgen models, including [Inkling 2 Mini]( and [Xing 4.0 29BA4B]( and more Note: The Unsloth quants of inkling currently don't work correctly.
 - [Ollama v0.40.18](https://github.com/ollama/ollama/releases/tag/v0.40.18) — mlx: fuse Inkling residual mixing on Metal mlxrunner: share tensor helpers and model setup across architectures
+- [Open WebUI v0.13.5](https://github.com/open-webui/open-webui/releases/tag/v0.13.5) — Added **Folder workspaces.** Run your project’s tests in a terminal and try the app in a browser while your chat stays open beside them. Choose the computer and project directory once for the folder.
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

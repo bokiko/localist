@@ -136,7 +136,9 @@
     "aether-aiagent/aether",
     "ahmadhassan-bted/jantt",
     "yes999zc/home-mate",
-    "powerdaalembic/localai-vramreadycheck"
+    "powerdaalembic/localai-vramreadycheck",
+    "manuelgscom/rumor-village",
+    "enwove/flyx"
   ],
   "releases": {
     "ollama/ollama": [
@@ -259,7 +261,8 @@
       "v0.13.2",
       "v0.13.1",
       "v0.13.3",
-      "v0.13.4"
+      "v0.13.4",
+      "v0.13.5"
     ],
     "ggml-org/llama.cpp": [
       "v0.2.0",
@@ -274,19 +277,6 @@
     "https://lmstudio.ai/changelog": "1.2.2"
   },
   "history": [
-    {
-      "date": "2026-11-18",
-      "discoveries": [],
-      "releases": [
-        {
-          "tool": "Open WebUI",
-          "repo": "open-webui/open-webui",
-          "version": "v0.13.4",
-          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.4",
-          "notes": "Added **Bring your own computer with Tether.** Tether turns your own computer into part of Open WebUI: models from Ollama, LM Studio or any OpenAI-compatible server, OpenAPI and MCP tool servers and"
-        }
-      ]
-    },
     {
       "date": "2026-11-19",
       "discoveries": [
@@ -477,6 +467,34 @@
           "version": "v0.40.18",
           "url": "https://github.com/ollama/ollama/releases/tag/v0.40.18",
           "notes": "mlx: fuse Inkling residual mixing on Metal mlxrunner: share tensor helpers and model setup across architectures"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "discoveries": [
+        {
+          "name": "manuelgscom/rumor-village",
+          "url": "https://github.com/manuelgscom/rumor-village",
+          "description": "A rumor simulation game with an AI trained for it: 100 villagers driven by a fine-tuned local LLM, in real time on one consumer GPU (llama.cpp, CUDA or Vulkan). Offline, no accounts. Linux and",
+          "stars": 33,
+          "created_at": "2026-11-22T18:48:58Z"
+        },
+        {
+          "name": "enwove/flyx",
+          "url": "https://github.com/enwove/flyx",
+          "description": "Zero-dependency local LLM inference engine in a ~50 MB binary \u2014 native long context, tuned per GPU, built-in speculative decoding and web dashboard.",
+          "stars": 32,
+          "created_at": "2026-11-23T08:48:17Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "Open WebUI",
+          "repo": "open-webui/open-webui",
+          "version": "v0.13.5",
+          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.5",
+          "notes": "Added **Folder workspaces.** Run your project\u2019s tests in a terminal and try the app in a browser while your chat stays open beside them. Choose the computer and project directory once for the folder."
         }
       ]
     }

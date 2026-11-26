@@ -95,22 +95,23 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-11-25*
+*Updated 2026-11-26*
 
 **🆕 New & active projects**
 - [AhmadHassan-BTed/Jantt](https://github.com/AhmadHassan-BTed/Jantt) — Create interactive Gantt charts with AI — no code required, free forever. Built-in BYOK AI Copilot (10 providers + Ollama), free cloud rooms, working-calendar CPM, 6 views, · ⭐ 6240
 - [iamajmeena/neonclipping](https://github.com/iamajmeena/neonclipping) — Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM). · ⭐ 1554
+- [opensetlabs/openset-llm](https://github.com/opensetlabs/openset-llm) — Fast local LLM inference on plain CPUs. No GPU, 8 GB of RAM. OpenAI-compatible server. · ⭐ 1442
 - [synchopate/llama-modchip](https://github.com/synchopate/llama-modchip) — Zero-GPU CPU inference for 30B-284B MoE models (Qwen3.8 176.5B cold-cache certified in 28.26/48.35 GiB Cgroup v2, DeepSeek-V4 284B, Nemotron-30B) + RouteCrack 2.0. · ⭐ 1398
-- [wici-ai/inferssd](https://github.com/wici-ai/inferssd) — Run models larger than your RAM or VRAM by streaming MoE experts from SSD. Built on llama.cpp. · ⭐ 1247
 - [bookwjitchieni1986/blender-ai-mcp-addon](https://github.com/bookwjitchieni1986/blender-ai-mcp-addon) — AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python · ⭐ 1015
 
 **📦 Tool releases**
-- [ComfyUI v0.46.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.46.0) — [Partner Nodes] feat(LTX): add AlphaGen, SDR to HDR, Reframe and Upscale nodes [Partner Nodes] feat(MiniMax): add MiniMax H3 Image node
 - [LM Studio 1.2.2](https://lmstudio.ai/changelog/bionic-v1.2.2)
 - [KoboldCpp v1.125](https://github.com/LostRuins/koboldcpp/releases/tag/v1.125) — NEW: Added support from upstream for various new textgen models, including [Inkling 2 Mini]( and [Xing 4.0 29BA4B]( and more Note: The Unsloth quants of inkling currently don't work correctly. Use
 - [KoboldCpp v1.125.1](https://github.com/LostRuins/koboldcpp/releases/tag/v1.125.1) — **NEW:** Added support from upstream for various new textgen models, including [Inkling 2 Mini]( and [Xing 4.0 29BA4B]( and more Note: The Unsloth quants of inkling currently don't work correctly.
 - [Ollama v0.40.18](https://github.com/ollama/ollama/releases/tag/v0.40.18) — mlx: fuse Inkling residual mixing on Metal mlxrunner: share tensor helpers and model setup across architectures
 - [Open WebUI v0.13.5](https://github.com/open-webui/open-webui/releases/tag/v0.13.5) — Added **Folder workspaces.** Run your project’s tests in a terminal and try the app in a browser while your chat stays open beside them. Choose the computer and project directory once for the folder.
+- [llama.cpp v1.1.0](https://github.com/ggml-org/llama.cpp/releases/tag/v1.1.0) — Overview llama.cpp v1.1.0 adds the Inkling 2 family (base, Mini and DSpark), Domyn Edge 4B, Zaya1 8B, RAON-1-mini and Hy4 flash, splits DFlash speculative decoding into separate draft methods, and
+- [LM Studio 1.2.3](https://lmstudio.ai/changelog/bionic-v1.2.3)
 <!-- NEWS:END -->
 
 [Full news archive →](news/)

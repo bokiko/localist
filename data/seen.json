@@ -138,7 +138,8 @@
     "yes999zc/home-mate",
     "powerdaalembic/localai-vramreadycheck",
     "manuelgscom/rumor-village",
-    "enwove/flyx"
+    "enwove/flyx",
+    "opensetlabs/openset-llm"
   ],
   "releases": {
     "ollama/ollama": [
@@ -270,48 +271,14 @@
       "v0.4.0",
       "v0.4.1",
       "v0.6.0",
-      "v1.0.0"
+      "v1.0.0",
+      "v1.1.0"
     ]
   },
   "changelog_pages": {
-    "https://lmstudio.ai/changelog": "1.2.2"
+    "https://lmstudio.ai/changelog": "1.2.3"
   },
   "history": [
-    {
-      "date": "2026-11-19",
-      "discoveries": [
-        {
-          "name": "wici-ai/inferssd",
-          "url": "https://github.com/wici-ai/inferssd",
-          "description": "Run models larger than your RAM or VRAM by streaming MoE experts from SSD. Built on llama.cpp.",
-          "stars": 1247,
-          "created_at": "2026-10-22T10:40:45Z"
-        },
-        {
-          "name": "genex-games/genex-desktop",
-          "url": "https://github.com/genex-games/genex-desktop",
-          "description": "Open-source desktop app for AI-native game dev. Build in Unreal Engine, Unity, Godot, Roblox or Three.js with any AI, including local models.",
-          "stars": 894,
-          "created_at": "2026-10-02T17:17:59Z"
-        },
-        {
-          "name": "hiruhiru2005/sync-strata",
-          "url": "https://github.com/hiruhiru2005/sync-strata",
-          "description": "A one-click local LLM app for Windows and Linux: Qwen3.8-Flash-Next with the Sync quantizations (XS, S, M), based on Strata.",
-          "stars": 56,
-          "created_at": "2026-11-16T13:05:32Z"
-        }
-      ],
-      "releases": [
-        {
-          "tool": "ComfyUI",
-          "repo": "Comfy-Org/ComfyUI",
-          "version": "v0.46.0",
-          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.46.0",
-          "notes": "[Partner Nodes] feat(LTX): add AlphaGen, SDR to HDR, Reframe and Upscale nodes [Partner Nodes] feat(MiniMax): add MiniMax H3 Image node"
-        }
-      ]
-    },
     {
       "date": "2026-11-20",
       "discoveries": [
@@ -495,6 +462,33 @@
           "version": "v0.13.5",
           "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.5",
           "notes": "Added **Folder workspaces.** Run your project\u2019s tests in a terminal and try the app in a browser while your chat stays open beside them. Choose the computer and project directory once for the folder."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "discoveries": [
+        {
+          "name": "opensetlabs/openset-llm",
+          "url": "https://github.com/opensetlabs/openset-llm",
+          "description": "Fast local LLM inference on plain CPUs. No GPU, 8 GB of RAM. OpenAI-compatible server.",
+          "stars": 1442,
+          "created_at": "2026-11-13T12:45:59Z"
+        }
+      ],
+      "releases": [
+        {
+          "tool": "llama.cpp",
+          "repo": "ggml-org/llama.cpp",
+          "version": "v1.1.0",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v1.1.0",
+          "notes": "Overview llama.cpp v1.1.0 adds the Inkling 2 family (base, Mini and DSpark), Domyn Edge 4B, Zaya1 8B, RAON-1-mini and Hy4 flash, splits DFlash speculative decoding into separate draft methods, and"
+        },
+        {
+          "tool": "LM Studio",
+          "version": "1.2.3",
+          "url": "https://lmstudio.ai/changelog/bionic-v1.2.3",
+          "notes": ""
         }
       ]
     }

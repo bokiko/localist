@@ -139,7 +139,9 @@
     "powerdaalembic/localai-vramreadycheck",
     "manuelgscom/rumor-village",
     "enwove/flyx",
-    "opensetlabs/openset-llm"
+    "opensetlabs/openset-llm",
+    "rustingstudio/rustingstrata",
+    "animede/h3-creator-studio"
   ],
   "releases": {
     "ollama/ollama": [
@@ -279,47 +281,6 @@
     "https://lmstudio.ai/changelog": "1.2.3"
   },
   "history": [
-    {
-      "date": "2026-11-20",
-      "discoveries": [
-        {
-          "name": "bookwjitchieni1986/blender-ai-mcp-addon",
-          "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
-          "description": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python",
-          "stars": 1015,
-          "created_at": "2026-11-19T14:43:10Z"
-        },
-        {
-          "name": "thejarasal780-ship-it/ollama-local-ai-offline",
-          "url": "https://github.com/thejarasal780-ship-it/ollama-local-ai-offline",
-          "description": "Ollama Local AI Offline: Run Local LLMs Fully Offline on Desktop",
-          "stars": 94,
-          "created_at": "2026-11-17T23:15:50Z"
-        },
-        {
-          "name": "senickimoro-art/pinokio-olvara-ai-workspace",
-          "url": "https://github.com/senickimoro-art/pinokio-olvara-ai-workspace",
-          "description": "A modular desktop workspace for configuring and running local AI models.",
-          "stars": 93,
-          "created_at": "2026-11-18T14:19:25Z"
-        },
-        {
-          "name": "zadazddq/lm-studio-private-ai",
-          "url": "https://github.com/zadazddq/lm-studio-private-ai",
-          "description": "LM Studio: Local LLM Desktop Runtime with Offline Inference and Model Management",
-          "stars": 93,
-          "created_at": "2026-11-17T22:05:16Z"
-        },
-        {
-          "name": "mgolcu00/freeimage-local",
-          "url": "https://github.com/mgolcu00/freeimage-local",
-          "description": "Z-Image Turbo at full speed on a 6 GB laptop GPU. int8 + SageAttention on stable-diffusion.cpp, the engine behind freeimage.dev.",
-          "stars": 50,
-          "created_at": "2026-11-19T21:03:12Z"
-        }
-      ],
-      "releases": []
-    },
     {
       "date": "2026-11-21",
       "discoveries": [
@@ -491,6 +452,26 @@
           "notes": ""
         }
       ]
+    },
+    {
+      "date": "2026-11-27",
+      "discoveries": [
+        {
+          "name": "RustingStudio/RustingStrata",
+          "url": "https://github.com/RustingStudio/RustingStrata",
+          "description": "Pure-Rust LLM inference engine for GGUF (Qwen, DeepSeek, GLM, Hy4, Flint). Runs models bigger than your VRAM on CUDA and Vulkan, with MTP drafts and an OpenAI/Anthropic server. 12 GB RTX 3060 vs",
+          "stars": 515,
+          "created_at": "2026-10-10T10:42:11Z"
+        },
+        {
+          "name": "animede/h3-creator-studio",
+          "url": "https://github.com/animede/h3-creator-studio",
+          "description": "Local AI creator studio for video, images, music, music videos and short videos \u2014 MiniMax-H3 / H3-Image, ACE-Step, AivisSpeech, with VRAM and RAM management for 8\u201396GB GPUs",
+          "stars": 209,
+          "created_at": "2026-11-22T03:09:51Z"
+        }
+      ],
+      "releases": []
     }
   ]
 }

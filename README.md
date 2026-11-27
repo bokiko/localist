@@ -95,14 +95,14 @@ New projects and tool releases from the past week, refreshed daily by the pipeli
 Essentials table above if you want the trusted beginner picks.*
 
 <!-- NEWS:START -->
-*Updated 2026-11-26*
+*Updated 2026-11-27*
 
 **🆕 New & active projects**
 - [AhmadHassan-BTed/Jantt](https://github.com/AhmadHassan-BTed/Jantt) — Create interactive Gantt charts with AI — no code required, free forever. Built-in BYOK AI Copilot (10 providers + Ollama), free cloud rooms, working-calendar CPM, 6 views, · ⭐ 6240
 - [iamajmeena/neonclipping](https://github.com/iamajmeena/neonclipping) — Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM). · ⭐ 1554
 - [opensetlabs/openset-llm](https://github.com/opensetlabs/openset-llm) — Fast local LLM inference on plain CPUs. No GPU, 8 GB of RAM. OpenAI-compatible server. · ⭐ 1442
 - [synchopate/llama-modchip](https://github.com/synchopate/llama-modchip) — Zero-GPU CPU inference for 30B-284B MoE models (Qwen3.8 176.5B cold-cache certified in 28.26/48.35 GiB Cgroup v2, DeepSeek-V4 284B, Nemotron-30B) + RouteCrack 2.0. · ⭐ 1398
-- [bookwjitchieni1986/blender-ai-mcp-addon](https://github.com/bookwjitchieni1986/blender-ai-mcp-addon) — AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python · ⭐ 1015
+- [RustingStudio/RustingStrata](https://github.com/RustingStudio/RustingStrata) — Pure-Rust LLM inference engine for GGUF (Qwen, DeepSeek, GLM, Hy4, Flint). Runs models bigger than your VRAM on CUDA and Vulkan, with MTP drafts and an OpenAI/Anthropic server. 12 GB RTX 3060 vs · ⭐ 515
 
 **📦 Tool releases**
 - [LM Studio 1.2.2](https://lmstudio.ai/changelog/bionic-v1.2.2)
